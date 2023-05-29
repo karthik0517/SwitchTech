@@ -1,0 +1,100 @@
+{% extends 'dependencies.html' %}
+{% load static%}
+{% block content %}
+
+<!-- testing_otp_code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGT Validation</title>
+     <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+   </script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding-top: 100px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 20%;
+            overflow: hidden;
+            margin: 0 auto 20px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Switch Tech System</h2>
+        <div class="logo">
+            <img src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3JhdG5hLWdsb2JhbC10ZWNobm9sb2dpZXMuanBn.webp" alt="Charminar">
+        </div>
+        <form method="POST" action="validate/">
+            {% csrf_token %}
+            <label for="fname">Employee mail:</label>
+<!--            <input id="mail" type="text" name="mail" placeholder="RGT EMAIL ID" readonly ><br><br>-->
+            <input id="mail" type="text" name="mail" placeholder="RGT EMAIL ID" readonly>
+
+            <label for="fname">OTP:</label>
+            <input type="text" name="otp" >
+            <input class="btn btn-success" type="submit" value="Validate OTP" >
+        </form>
+        <script>
+            document.getElementById("mail").value = localStorage.getItem("email");
+        </script>
+    </div>
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #f1f1f1;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333333;
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      color: #666666;
+      font-size: 20px;
+      text-align: center;
+      margin-top: 20px;
+      line-height: 1.5;
+    }
+
+    .blink {
+      animation: blink-animation 1s steps(5, start) infinite;
+      -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    }
+
+    @keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+
+    @-webkit-keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+
+    .contact-container {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .contact-button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-bottom: 20px;
+      text-decoration: none;
+      width: 200px;
+      text-align: center;
+    }
+
+    .contact-button:last-child {
+      margin-bottom: 0;
+    }
+
+    .contact-button:hover {
+      background-color: #45a049;
+    }
+
+    .logout-button {
+			position: absolute;
+			top: 80px;
+			right: 10px;
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		.logout-button:hover {
+			background-color: #555;
+		}
+
+		/* Modal Styling */
+		.modal {
+			display: none;
+			position: fixed;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgba(0, 0, 0, 0.4);
+		}
+
+		.modal-content {
+			background-color: #fefefe;
+			margin: 15% auto;
+			padding: 20px;
+			border: 1px solid #888;
+			width: 300px;
+			text-align: center;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		}
+
+		.modal-close {
+			color: #aaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		.modal-close:hover,
+		.modal-close:focus {
+			color: black;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+		.modal-buttons {
+			margin-top: 20px;
+		}
+
+		.modal-buttons button {
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		.modal-buttons button:first-child {
+			margin-right: 10px;
+			background-color: #333;
+			color: #fff;
+		}
+
+		.modal-buttons button:last-child {
+			background-color: #aaa;
+			color: #fff;
+		}
+
+		.modal-buttons button:hover {
+			background-color: #555;
+		}
+  </style>
+</head>
+<body>
+  <button class="logout-button" onclick="openModal()">Logout</button>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="modal-close" onclick="closeModal()">&times;</span>
+			<p>Are you sure you want to logout?</p>
+			<div class="modal-buttons">
+				<button onclick="logout()">Yes</button>
+				<button onclick="closeModal()">Cancel</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		function openModal() {
+			document.getElementById("myModal").style.display = "block";
+		}
+
+		function closeModal() {
+			document.getElementById("myModal").style.display = "none";
+		}
+
+		function logout() {
+			const url = 'http://127.0.0.1:8000/';
+			window.location.replace(url);
+		}
+	</script>
+  <div class="logo">
+    <img src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3JhdG5hLWdsb2JhbC10ZWNobm9sb2dpZXMuanBn.webp" alt="Logo" width="150">
+  </div>
+  <h1>Your access to this page is restricted!</h1>
+  <h3>
+    Oops! It seems you have already logged-in for 3 times. Please contact the training team or drop us an email if you would like to retake the quiz.
+    <br>
+    <a href="mailto:training@ratnaglobaltech.com">training@ratnaglobaltech.com</a>
+  </h3>
+
+  <div class="contact-container">
+    <a href="mailto:training@ratnaglobaltech.com" class="contact-button">Email Training Team</a>
+    <a href="https://www.ratnaglobaltech.com/lets-connect.html" class="contact-button">Contact Us</a>
+  </div>
+
+  <script>
+    // Add animation class to h1 element
+    document.getElementsByTagName("h1")[0].classList.add("blink");
+  </script>
+</body>
+</html>

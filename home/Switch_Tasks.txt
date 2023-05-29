@@ -1,0 +1,25 @@
+Task of the day 22-02-2023
+1) Username in admin panel
+2) Category 
+3) DateTime
+4) complete your python loop chapter
+
+
+
+Pending tasks:
+
+1) Add timer
+2) user name field has been added , category field is remaining also timing of user entry 
+
+pooja python 50
+
+3) 
+--------------------------------------------------------------------------------
+
+1)Bhargavi and Venu- Add questions to django admin
+2)Pooja-change the website , front end, log in page, result page
+3)Deepika add all the categories, and add category name to django panel 
+4)Pooja- Only  RGT mail should be taken in log in 
+5)Deepi- out of total questions how many attempted
+6)Bhargavi and Venu start creating udemy dataset
+7)
