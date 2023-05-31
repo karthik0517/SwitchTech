@@ -16,7 +16,7 @@ class QuestionAdmin(admin.ModelAdmin):
 
 admin.site.register(Question, QuestionAdmin)
 admin.site.register(Answer)
-admin.site.register(CourseSuggession)
+admin.site.register(CourseSuggestion)
 
 @admin.register(QuizUserScore)
 class QuizScore(admin.ModelAdmin):
