@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<!-- quiz_history.html -->
+
+
+{% block content %}
+  <h1>Quiz History</h1>
+
+  {% if quiz_history %}
+    <ul>
+      {% for history in quiz_history %}
+        <li>
+          <strong>Quiz Attempt:</strong> {{ history.user_score.quiz_domain }} <br>
+          <strong>Score:</strong> {{ history.user_score.score }} <br>
+          <strong>Date and Time:</strong> {{ history.attempted_at }} <br>
+          {% if history.continue_link %}
+            <a href="{{ history.continue_link }}">Continue Quiz</a>
+          {% endif %}
+        </li>
+        <hr>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No quiz history found.</p>
+  {% endif %}
+{% endblock %}
