@@ -1,11 +1,12 @@
 import random
 import uuid
 
+from django.conf import settings
 from django.db import models
-from django.contrib.auth.models import AbstractUser
-from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser, User
 
 
+<<<<<<< HEAD
 class QuizUserScore(models.Model):
     user = models.CharField(User, max_length=50)
     quiz_domain = models.CharField(max_length=50, null=True)
@@ -13,6 +14,8 @@ class QuizUserScore(models.Model):
     created_at = models.DateTimeField(auto_now=True)
 
 
+=======
+>>>>>>> 701cd8ed575ffb49521b83bf46a208d8e9aee08e
 class UserData(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     current_domain = models.CharField(max_length=100)
@@ -61,6 +64,7 @@ class Answer(BaseModel):
 
     def __str__(self) -> str:
         return self.answer
+<<<<<<< HEAD
 
 
 # class CourseSuggession(models.Model):
@@ -77,14 +81,24 @@ class Answer(BaseModel):
 
 
 class CourseSuggession(models.Model):
+=======
+
+
+class CourseSuggestion(models.Model):
+>>>>>>> 701cd8ed575ffb49521b83bf46a208d8e9aee08e
     DIFFICULTY_LEVEL = (
-        ("BG", "Begginer"),
-        ("IN", "Intermediat"),
+        ("BG", "Beginner"),
+        ("IN", "Intermediate"),
         ("AD", "Advanced"),
     )
+<<<<<<< HEAD
     technology = models.ForeignKey(Category, related_name='suggesstion', on_delete=models.CASCADE)
     course_url = models.URLField(max_length=1000)
     # difficulty = models.CharField(max_length=2, choices=DIFFICULTY_LEVEL)
+=======
+    technology = models.ForeignKey(Category, related_name='suggestion', on_delete=models.CASCADE)
+    course_url = models.URLField(max_length=1000,default=None)
+>>>>>>> 701cd8ed575ffb49521b83bf46a208d8e9aee08e
     difficulty = models.CharField(max_length=2, choices=DIFFICULTY_LEVEL, default='BG')
     course_name = models.CharField(max_length=100, default=' ')
     course_instructor = models.CharField(max_length=50, default=' ')
@@ -97,8 +111,11 @@ class CourseSuggession(models.Model):
     def __str__(self) -> str:
         return self.course_url
 
+<<<<<<< HEAD
     #  testing_otp_code
 
+=======
+>>>>>>> 701cd8ed575ffb49521b83bf46a208d8e9aee08e
 
 class Otp(models.Model):
     mail = models.CharField(max_length=50)
@@ -110,3 +127,41 @@ class Otp(models.Model):
 class QuizAttempt(models.Model):
     timer = models.IntegerField(default=0)
     domain = models.CharField(max_length=50, default='')
+
+
+class QuizUserScore(models.Model):
+    user = models.CharField(User, max_length=50)
+    quiz_domain = models.CharField(max_length=50, null=True)
+    score = models.IntegerField()
+    created_at = models.DateTimeField(auto_now=True)
+
+
+class UserTracking(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    timestamp = models.DateTimeField(auto_now_add=True)
+    action = models.CharField(max_length=100)
+
+    def __str__(self) -> str:
+        return f"{self.user.username} - {self.action}"
+
+
+class QuizProgress(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    quiz = models.ForeignKey(Question, on_delete=models.CASCADE)
+    is_answered = models.BooleanField(default=False)
+    is_correct = models.BooleanField(default=False)
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self) -> str:
+        return f"{self.user.username} - {self.quiz.question}"
+
+
+class ProgressUserQuiz(models.Model):
+    STATUS_CHOICES = (
+        ('answered', "Answered"),
+        ('passed', "Passed"),
+        ('closed', "Closed"),
+    )
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    status = models.CharField(choices=STATUS_CHOICES, max_length=50)
