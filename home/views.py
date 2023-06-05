@@ -50,7 +50,7 @@ def loginPage(request):
                 time_entred = list(check_count)
                 time_hours = time_entred[0]
                 print(time_hours)
-                if time_hours > 3:
+                if time_hours > 30:
                     return render(request, 'restrict.html')
             else:
                 database.save()
@@ -58,14 +58,13 @@ def loginPage(request):
     else:
         return render(request,'login.html')
 
-
+global mail
 def validate(request):
     context = {'categories': Category.objects.all()}
     if request.GET.get('category'):
         return redirect(f"/quiz/?category={request.GET.get('category')}")
 
     if request.method == 'POST':
-        global mail
         mail = request.POST.get('mail')
         otp = request.POST.get('otp')
         print('validate:', mail)
@@ -73,14 +72,91 @@ def validate(request):
         sc = Otp.objects.filter(mail=mail, otp=otp)
         if sc:
             # return redirect('home')
+            request.session['mail'] = mail
             return render(request, 'index.html', context)
         else:
             return render(request, 'login.html')
     else:
         return render(request, 'login.html')
+    
 
+def url(score, category):
+    if score <= 50:
+        print("Suggesting Begginer")
+        suggesstion = CourseSuggession.objects.filter(technology__category_name__icontains=category, difficulty='BG')
 
-# testing_otp_code
+        for val in suggesstion:
+            print('value------------->',val)
+            suggesstion_url = val  
+            course_name = val.course_name
+            ratings= val.ratings
+            instructor=val.course_instructor
+            duration=val.course_duration
+            difficulty=val.difficulty
+
+            break     
+    elif 50 < score <= 70:
+    # elif score>50 and score<80:
+        print("Suggesting Intermediate")
+        suggesstion = CourseSuggession.objects.filter(technology__category_name__icontains=category, difficulty='IN')
+        for val in suggesstion:
+            suggesstion_url = val 
+            course_name = val.course_name
+            ratings= val.ratings
+            instructor=val.course_instructor
+            duration=val.course_duration
+            difficulty=val.difficulty
+            
+            break       
+    elif score > 70 <= 100:
+        print("Suggesting Advanced!")
+        suggesstion  = CourseSuggession.objects.filter(technology__category_name__icontains=category, difficulty='AD')
+        for val in suggesstion:
+            suggesstion_url = val  
+            course_name = val.course_name
+            ratings= val.ratings
+            instructor=val.course_instructor
+            duration=val.course_duration
+            difficulty=val.difficulty
+            break
+    return suggesstion_url, course_name, ratings, instructor, duration, difficulty
+
+def history(request):
+    mail = request.session.get('mail')
+    print('MAIL in HISTORY:---->',mail)
+    username = Otp.objects.filter(mail=mail).values_list('id', flat=True)
+    print(username)
+    new = list(username)
+    print("check us:", new)
+    update = new[0]
+    score_details = QuizUserScore.objects.filter(user=update).values_list('score', 'created_at', 'quiz_domain')
+    user_history = list(score_details)
+    if user_history:
+        score = user_history[0][0]
+        user_time = user_history[0][1]
+        user_domain = user_history[0][2]
+        print('user_remaining_score:----->', score)
+        print('user_last_timer:---->', user_time)
+        print("last_domain---->", user_domain)
+        
+        suggesstion_url, course_name, ratings, instructor, duration, difficulty = url(score, category=user_domain)
+        
+        data = {
+            'user_score': score,
+            'user_time': user_time,
+            'previous_domain': user_domain,
+            'suggestion_url': suggesstion_url,
+            'course_name': course_name,
+            'ratings': ratings,
+            'instructor': instructor,
+            'duration': duration,
+            'difficulty': difficulty
+        }
+
+        return render(request, 'history.html', context=data)
+    else:
+        print("no history")
+        return JsonResponse({'message': 'No history'})
 
 def logoutPage(request):
     logout(request)
@@ -94,8 +170,11 @@ def home(request):
     if request.GET.get('category'):
         return redirect(f"/quiz/?category={request.GET.get('category')}")
     return render(request,'index.html',context)
+    
+
 
 def quiz(request):
+    mail = request.session.get('mail')
     username = Otp.objects.filter(mail=mail).values_list('id', flat=True)
     new = list(username)
     print("check us:", new)
@@ -168,6 +247,7 @@ def save_remaining_time(request):
         category = request.POST.get('category')
         print('timer_value_js----------->', remaining_time)
         quiz_timer = QuizAttempt()
+        mail = request.session.get('mail')
         username = Otp.objects.filter(mail=mail).values_list('id', flat=True)
         new = list(username)
         print("check us:", new)
@@ -194,6 +274,7 @@ def result(request):
         quiz_add = QuizUserScore()
         global score, suggesstion_url,course_name,ratings,duration,instructor,difficulty
         # username = User.objects.filter(id= request.user.id).values_list('username',flat=True)
+        mail = request.session.get('mail')
         username = Otp.objects.filter(mail=mail).values_list('id',flat=True)
         new = list(username)
         print("check us:",new)
@@ -206,46 +287,16 @@ def result(request):
         quiz_add.quiz_domain = category
         quiz_add.score = score*10
         quiz_add.user = update
-        quiz_add.save()
+
+        check = QuizUserScore.objects.filter(user=quiz_add.user)
+        if check.count() > 0:
+            QuizUserScore.objects.filter(user=quiz_add.user).update(created_at=datetime.now(), score=quiz_add.score, quiz_domain=quiz_add.quiz_domain)
+        else:
+            quiz_add.save()
         print('Score received:', score * 10,'category:',category)
-        if score <= 5:
-            print("Suggesting Begginer")
-            suggesstion = CourseSuggession.objects.filter(technology__category_name__icontains=category, difficulty='BG')
 
-            for val in suggesstion:
-                print('value------------->',val)
-                suggesstion_url = val  
-                course_name = val.course_name
-                ratings= val.ratings
-                instructor=val.course_instructor
-                duration=val.course_duration
-                difficulty=val.difficulty
+        suggesstion_url, course_name, ratings, instructor, duration, difficulty = url(score=quiz_add.score, category=category)
 
-                break     
-        elif 5 < score <= 7:
-        # elif score>50 and score<80:
-            print("Suggesting Intermediate")
-            suggesstion = CourseSuggession.objects.filter(technology__category_name__icontains=category, difficulty='IN')
-            for val in suggesstion:
-                suggesstion_url = val 
-                course_name = val.course_name
-                ratings= val.ratings
-                instructor=val.course_instructor
-                duration=val.course_duration
-                difficulty=val.difficulty
-                
-                break       
-        elif score > 7 <= 10:
-            print("Suggesting Advanced!")
-            suggesstion  = CourseSuggession.objects.filter(technology__category_name__icontains=category, difficulty='AD')
-            for val in suggesstion:
-                suggesstion_url = val  
-                course_name = val.course_name
-                ratings= val.ratings
-                instructor=val.course_instructor
-                duration=val.course_duration
-                difficulty=val.difficulty
-                break
 
         context = {'score': score,
                    'url':suggesstion_url,
@@ -256,6 +307,7 @@ def result(request):
                    'difficulty': difficulty}
         
         return HttpResponse(status=200)
+
 
 
 def skip_quiz(request):

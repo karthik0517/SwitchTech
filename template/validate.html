@@ -21,11 +21,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         function preventBack() { window.history.forward(); }
         setTimeout("preventBack()", 0);
         window.onunload = function () { null };
-    </script>
+    </script> -->
 
     <style>
     .div-with-bg {
@@ -33,18 +33,18 @@
         width: 100%;
         float: left;
         background-image: url("{% static 'images/loginimg.png' %}");
-        height: 100vh; /* Use viewport height to cover the entire screen */
+        height: 690px; /* Use viewport height to cover the entire screen */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     .div-with-bg .logo {
-        width: 150px;
+        width: 130px;
         float: right;
-        position: absolute; /* Use absolute positioning */
-        top: 18px;
-        right: 135px;
+        position: relative; /* Use absolute positioning */
+        top: 10px;
+        right: 130px;
     }
 
     .validation_page .container-fluid {
@@ -167,8 +167,8 @@
                 </div>
                 <div class="col-md-8">
                     <div class="div-with-bg">
-                        <img class="logo" src="{% static 'images/RGT.jpg' %}" />
-                    </div>
+                        <img class="logo" src="{% static 'images\ratnaglobal_logo.png' %}" />
+                    </div>                    
                 </div>
             </div>
         </div>
