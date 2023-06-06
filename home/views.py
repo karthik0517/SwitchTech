@@ -50,7 +50,7 @@ def loginPage(request):
                 time_entred = list(check_count)
                 time_hours = time_entred[0]
                 print(time_hours)
-                if time_hours > 30:
+                if time_hours > 3:
                     return render(request, 'restrict.html')
             else:
                 database.save()

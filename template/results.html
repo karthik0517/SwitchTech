@@ -1,9 +1,23 @@
+{% load static%}
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Quiz Results</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript">
+		function preventBack() { window.history.forward(); }
+		setTimeout("preventBack()", 0);
+		window.onunload = function () { null };
+	</script>
+
+
+	<script type="text/javascript">
+		function preventBack() { window.history.forward(); }
+		setTimeout("preventBack()", 0);
+		window.onunload = function () { null };
+	</script>
 
 	<style>
 		body {
@@ -11,16 +25,19 @@
 			margin: 0;
 			padding: 0;
 		}
+
 		header {
 			background-color: #333;
 			color: #fff;
 			padding: 10px;
 			text-align: center;
 		}
+
 		h1 {
 			margin: 0;
 			font-size: 36px;
 		}
+
 		main {
 			padding: 20px;
 			max-width: 800px;
@@ -29,59 +46,80 @@
 			flex-wrap: wrap;
 			justify-content: space-between;
 		}
+
 		.score {
 			flex-basis: 100%;
 			text-align: center;
 			font-size: 24px;
 			margin-bottom: 20px;
 		}
+
 		.recommendations {
 			flex-basis: 100%;
 			margin-bottom: 20px;
 		}
+
 		.course {
 			margin-bottom: 20px;
 		}
-		.course-name{
-			font-size:20px;
-			margin-bottom:10px;
+
+		.course-name {
+			font-size: 20px;
+			margin-bottom: 10px;
 		}
+
 		.course-type {
 			font-size: 18px;
 			font-weight: bold;
 			margin-bottom: 5px;
 		}
+
 		.course-rating {
 			font-size: 20px;
 			margin-bottom: 10px;
 		}
-		.course-instructor{
+
+		.course-instructor {
 			font-size: 20px;
 			margin-bottom: 10px;
 		}
-		.course-duration{
+
+		.course-duration {
 			font-size: 20px;
 			margin-bottom: 10px;
 		}
+
 		.course-link {
 			font-size: 20px;
 			color: rgb(255, 162, 0);
 			text-decoration: underline;
 		}
+
 		.logo {
 			width: 200px;
 			height: 200px;
 			top: 200;
 			left: 0;
 		}
+
+		.logo1 {
+			width: 400px;
+			height: 400px;
+			top: 200;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+
 		.highlight {
 			background-color: orange;
 			font-weight: bold;
 		}
+
 		.logout-button {
 			position: absolute;
-			top: 80px;
-			right: 10px;
+			top: 250px;
+			right: 20px;
 			background-color: #333;
 			color: #fff;
 			padding: 10px 20px;
@@ -90,6 +128,7 @@
 			font-size: 16px;
 			cursor: pointer;
 		}
+
 		.logout-button:hover {
 			background-color: #555;
 		}
@@ -144,6 +183,42 @@
 			font-size: 16px;
 			cursor: pointer;
 		}
+		/* .header_title {
+        width: 100%;
+        float: left;
+    }
+
+    .header_title .font_normal {
+        width: 100%;
+        float: left;
+        font-weight: 100;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .header_title .font_bold {
+        width: 100%;
+        float: left;
+        font-weight: bold;
+        font-size: 50px;
+        text-transform: uppercase;
+        letter-spacing: 18px;
+        color: #4169e1;
+        margin: 0;
+    }
+
+    .header_title .header_desc {
+        width: 100%;
+        float: left;
+        margin-top: 30px;
+        font-size: 20px;
+        color: #6495ed;
+    }
+     */
+	  .colored-box1{
+		color: #4169e1;
+
+	  }
 
 		.modal-buttons button:first-child {
 			margin-right: 10px;
@@ -160,11 +235,16 @@
 			background-color: #555;
 		}
 	</style>
+
+	</style>
 </head>
+
 <body>
 	<header>
-		<h1>Quiz Results</h1>
-		<img align="left" class="logo" src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3JhdG5hLWdsb2JhbC10ZWNobm9sb2dpZXMuanBn.webp" alt="Logo">
+		<img align="right" class="logo"
+			src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3JhdG5hLWdsb2JhbC10ZWNobm9sb2dpZXMuanBn.webp"
+			alt="Logo">
+		<img align="right" class="logo1" src="{% static 'images/Result.png' %}" />
 	</header>
 	<button class="logout-button" onclick="openModal()">Logout</button>
 	<div id="myModal" class="modal">
@@ -192,19 +272,33 @@
 		}
 	</script>
 	<main>
+		<div class="header_title">
+
+            <h1 class="font_normal">SWITCHING TECH <span class="colored-box1">SYSTEMS</span></h1>
+
+        </div>
+			
+		</div>
+		<div class="QuizResults">
+			<u>
+				<h2>Quiz Results</h2>
+			</u>
+		</div>
 		<div class="score">
-			<p><span class="highlight">Your Score is: {{score}}</span></p>
+			<p><span class="highlight">Your Score is: {{score}} </span></p>
 		</div>
 		<div class="recommendations">
-			<h2>Here are Your Recommendations</h2>
+			<u>
+				<h2>Here are Your Recommendations</h2>
+			</u>
 			<div class="course">
-				<u><div class="course-type">Paid Course: Yes</div></u>
-				<div class="course-name">Course name: {{course_name}}</div>
-				<div class="course-rating">Course Ratings: {{ratings}}</div>
-				<div class="course-instructor">Course Instructor: {{instructor}}</div>
-				<div class="course-duration">Course Duration: {{duration}} hours</div>
-				<div class="course-link"><a href="{{ suggested }}">Go to course</a></div><hr>
-			</div>
+				<div class="course-type">Paid Course: <span class="colored-box">Yes</span></div>
+				<div class="course-name">Course name: <span class="colored-box">{{course_name}}</span></div>
+				<div class="course-rating">Course Ratings:<span class="colored-box"> {{ratings}}</span></div>
+				<div class="course-instructor">Course Instructor:<span class="colored-box"> {{instructor}}</span></div>
+				<div class="course-duration">Course Duration: <span class="colored-box">{{duration}} hours</span></div>
+				<div class="course-link"><a href="{{ suggested }}">Go to course</a></div>
+			</div>		
 		</div>
 	</main>
 </body>
