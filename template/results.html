@@ -29,6 +29,7 @@
 		h1 {
 			margin: 0;
 			font-size: 36px;
+			float: left;
 		}
 
 		main {
@@ -42,7 +43,7 @@
 
 		.score {
 			flex-basis: 100%;
-			text-align: center;
+			text-align: left;
 			font-size: 24px;
 			margin-bottom: 20px;
 		}
@@ -105,7 +106,7 @@
 		}
 
 		.highlight {
-			background-color: orange;
+			/* background-color: orange; */
 			font-weight: bold;
 		}
 
@@ -176,6 +177,7 @@
 			font-size: 16px;
 			cursor: pointer;
 		}
+
 		/* .header_title {
         width: 100%;
         float: left;
@@ -208,10 +210,24 @@
         color: #6495ed;
     }
      */
-	  .colored-box1{
-		color: #4169e1;
 
-	  }
+
+		.colored-box1 {
+			color: orange;
+
+		}
+
+		.QuizResults {
+			width: 100%;
+			float: left;
+		}
+		
+
+		.colored-box {
+			color: orange;
+			font-style: bold;
+
+		}
 
 		.modal-buttons button:first-child {
 			margin-right: 10px;
@@ -267,14 +283,14 @@
 	<main>
 		<div class="header_title">
 
-            <h1 class="font_normal">SWITCHING TECH <span class="colored-box1">SYSTEMS</span></h1>
+			<h1 class="font_normal">SWITCHING TECH <span class="colored-box1">SYSTEMS</span></h1>
 
-        </div>
+		</div>
 
 		</div>
 		<div class="QuizResults">
 			<u>
-				<h2>Quiz Results</h2>
+				<h2><u>Quiz Results</u></h2>
 			</u>
 		</div>
 		<div class="score">
@@ -290,8 +306,11 @@
 				<div class="course-rating">Course Ratings:<span class="colored-box"> {{ratings}}</span></div>
 				<div class="course-instructor">Course Instructor:<span class="colored-box"> {{instructor}}</span></div>
 				<div class="course-duration">Course Duration: <span class="colored-box">{{duration}} hours</span></div>
+
 				<!-- <div class="course-link"><a href="{{ suggested }}">Go to course</a></div> -->
 				<button class="enroll-button" onclick="openPopup()" data-suggested="{{ suggested }}">Enroll this course</button>
+
+				<div class="course-link"><a href="{{ suggested }}">Go to course</a></div>
 			</div>
 		</div>
 	</main>
@@ -360,4 +379,5 @@
     }
   </script>
 </body>
+
 </html>
