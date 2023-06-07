@@ -176,6 +176,12 @@ function enableButtons() {
     .colored-box1 {
             color: rgb(17, 0, 255);
         }
+
+        .skip_button .btn{
+          position: relative;
+          left: 120px;
+          bottom: 52px;
+        }
     
   </style>
 </head>
@@ -241,7 +247,7 @@ function enableButtons() {
 
           </form>
 
-          <div class="button-container">
+          <div class="button-container skip_button">
             <button id="skipButton" class="btn btn-danger mt-3 me-2" onclick="skipQuiz()" disabled>Skip Quiz</button>
           </div>
         </div>
