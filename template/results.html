@@ -6,18 +6,11 @@
 	<title>Quiz Results</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script type="text/javascript">
-		function preventBack() { window.history.forward(); }
-		setTimeout("preventBack()", 0);
-		window.onunload = function () { null };
-	</script>
-
-
-	<script type="text/javascript">
-		function preventBack() { window.history.forward(); }
-		setTimeout("preventBack()", 0);
-		window.onunload = function () { null };
-	</script>
+<!--	<script type="text/javascript">-->
+<!--		function preventBack() { window.history.forward(); }-->
+<!--		setTimeout("preventBack()", 0);-->
+<!--		window.onunload = function () { null };-->
+<!--	</script>-->
 
 	<style>
 		body {
@@ -236,7 +229,6 @@
 		}
 	</style>
 
-	</style>
 </head>
 
 <body>
@@ -267,6 +259,7 @@
 		}
 
 		function logout() {
+			sessionStorage.clear();
 			const url = 'http://127.0.0.1:8000/';
 			window.location.replace(url);
 		}
@@ -277,7 +270,7 @@
             <h1 class="font_normal">SWITCHING TECH <span class="colored-box1">SYSTEMS</span></h1>
 
         </div>
-			
+
 		</div>
 		<div class="QuizResults">
 			<u>
@@ -297,9 +290,74 @@
 				<div class="course-rating">Course Ratings:<span class="colored-box"> {{ratings}}</span></div>
 				<div class="course-instructor">Course Instructor:<span class="colored-box"> {{instructor}}</span></div>
 				<div class="course-duration">Course Duration: <span class="colored-box">{{duration}} hours</span></div>
-				<div class="course-link"><a href="{{ suggested }}">Go to course</a></div>
-			</div>		
+				<!-- <div class="course-link"><a href="{{ suggested }}">Go to course</a></div> -->
+				<button class="enroll-button" onclick="openPopup()" data-suggested="{{ suggested }}">Enroll this course</button>
+			</div>
 		</div>
 	</main>
+	<div id="popupModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closePopup()">&times;</span>
+      <p>Do you have Udemy credentials?</p>
+      <div class="modal-buttons">
+        <button onclick="redirectToUdemy()">Yes</button>
+        <button onclick="raiseTicket()">No</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function openPopup() {
+      document.getElementById("popupModal").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("popupModal").style.display = "none";
+    }
+    function logout() {
+      const url = 'http://127.0.0.1:8000/';
+      window.location.replace(url);
+    }
+
+    function redirectToUdemy() {
+			const enrollButton = document.querySelector('.enroll-button');
+			const suggestedUrl = enrollButton.getAttribute('data-suggested');
+			const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";
+			const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;
+
+			// Open the Udemy login page in the same tab
+			window.location.href = udemyUrl;
+
+			// Clear session storage when the user tries to navigate away from the page
+			window.addEventListener('beforeunload', () => {
+				sessionStorage.clear();
+			});
+		}
+
+    function raiseTicket() {
+      const popup = document.createElement('div');
+      popup.classList.add('modal');
+      popup.innerHTML = `
+        <div class="modal-content">
+        <span class="modal-close" onclick="closePopup()">&times;</span>
+        <p>You need to raise a ticket in Keka.</p>
+        <div class="modal-buttons">
+          <button onclick="redirectToKeka()">Keka</button>
+        </div>
+        </div>
+      `;
+
+      document.body.appendChild(popup);
+      popup.style.display = "block";
+    }
+
+    function closePopup() {
+      const popup = document.querySelector('.modal');
+      document.body.removeChild(popup);
+    }
+
+    function redirectToKeka() {
+      window.location.href = "https://letmecall.keka.com/#/me/helpdesk/mytickets";
+    }
+  </script>
 </body>
 </html>

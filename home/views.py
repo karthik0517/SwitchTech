@@ -156,7 +156,10 @@ def history(request):
         return render(request, 'history.html', context=data)
     else:
         print("no history")
-        return JsonResponse({'message': 'No history'})
+        data = {
+            'no_data': True  # Add a flag to indicate no data
+        }
+        return render(request, 'history.html', context=data)
 
 def logoutPage(request):
     logout(request)
