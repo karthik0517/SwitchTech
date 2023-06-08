@@ -243,6 +243,25 @@
 		.modal-buttons button:hover {
 			background-color: #555;
 		}
+
+		.enroll-button {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		.enroll-button:hover {
+			background-color: #555;
+		}
+
+		.enroll-button:active {
+			background-color: #777;
+		}
+
 	</style>
 
 </head>
@@ -309,8 +328,6 @@
 
 				<!-- <div class="course-link"><a href="{{ suggested }}">Go to course</a></div> -->
 				<button class="enroll-button" onclick="openPopup()" data-suggested="{{ suggested }}">Enroll this course</button>
-
-				<div class="course-link"><a href="{{ suggested }}">Go to course</a></div>
 			</div>
 		</div>
 	</main>
@@ -337,20 +354,42 @@
       window.location.replace(url);
     }
 
-    function redirectToUdemy() {
+<!--    function redirectToUdemy() {-->
+<!--			const enrollButton = document.querySelector('.enroll-button');-->
+<!--			const suggestedUrl = enrollButton.getAttribute('data-suggested');-->
+<!--			const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";-->
+<!--			const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;-->
+
+<!--			// Open the Udemy login page in the same tab-->
+<!--			window.location.href = udemyUrl;-->
+
+<!--			// Clear session storage when the user tries to navigate away from the page-->
+<!--			window.addEventListener('beforeunload', () => {-->
+<!--				sessionStorage.clear();-->
+<!--			});-->
+<!--		}-->
+
+		function redirectToUdemy() {
+			// Logout logic
+			sessionStorage.clear();
+			const url = 'http://127.0.0.1:8000/';
+			window.location.replace(url);
+
+			// Redirect to Udemy login page
 			const enrollButton = document.querySelector('.enroll-button');
 			const suggestedUrl = enrollButton.getAttribute('data-suggested');
 			const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";
 			const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;
 
 			// Open the Udemy login page in the same tab
-			window.location.href = udemyUrl;
+			window.location.replace(udemyUrl);
 
 			// Clear session storage when the user tries to navigate away from the page
 			window.addEventListener('beforeunload', () => {
 				sessionStorage.clear();
 			});
 		}
+
 
     function raiseTicket() {
       const popup = document.createElement('div');
@@ -375,8 +414,13 @@
     }
 
     function redirectToKeka() {
-      window.location.href = "https://letmecall.keka.com/#/me/helpdesk/mytickets";
-    }
+			// Logout logic
+			sessionStorage.clear();
+
+			// Redirect to Keka after logout
+			const kekaUrl = "https://letmecall.keka.com/#/me/helpdesk/mytickets";
+			window.location.replace(kekaUrl);
+		}
   </script>
 </body>
 
