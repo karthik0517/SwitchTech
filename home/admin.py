@@ -30,4 +30,12 @@ class CourseSuggession(admin.ModelAdmin):
 
     # list_display = ['technology']
     # search_fields = ['technology']
-    
+
+@admin.register(Otp)
+class Otp(admin.ModelAdmin):
+    list_display = ['mail', 'otp', 'username', 'count']
+
+
+@admin.register(QuizAttempt)
+class QuizAttempt(admin.ModelAdmin):
+    list_display = ['id','timer','domain']

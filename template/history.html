@@ -83,25 +83,30 @@
 <div class="container mt-5 pt-5">
   <div class="col-md-8 mx-auto quiz-history-container">
     <h1 class="quiz-history-title">Quiz History</h1>
+    {% if no_data %}
     <div class="quiz-history-card">
-      <h5 class="card-title">Quiz Results</h5>
-      <hr>
-      <p class="quiz-history-card-text"><strong>Score:</strong> {{ user_score }}</p>
-      <p class="quiz-history-card-text"><strong>Attempt Date:</strong> {{ user_time }}</p>
-      <p class="quiz-history-card-text"><strong>Selected Domain:</strong> {{ previous_domain }}</p>
-      <p class="quiz-history-card-text"><strong>Go to course here:</strong> <a href="{{ suggestion_url }}">{{ suggestion_url }}</a></p>
-      <button onclick="goBack()" class="btn btn-primary">Go Back</button>
-    </div>
+        <h5 class="card-title">No Data</h5>
+        <button onclick="goBack()" class="btn btn-primary">Go Back</button>
+      </div>
+    {% else %}
+      <div class="quiz-history-card">
+        <h5 class="card-title">Quiz Results</h5>
+        <hr>
+        <p class="quiz-history-card-text"><strong>Score:</strong> {{ user_score }}</p>
+        <p class="quiz-history-card-text"><strong>Attempt Date:</strong> {{ user_time }}</p>
+        <p class="quiz-history-card-text"><strong>Selected Domain:</strong> {{ previous_domain }}</p>
+        <p class="quiz-history-card-text"><strong>Go to course here:</strong> <a href="{{ suggestion_url }}">{{ suggestion_url }}</a></p>
+        <button onclick="goBack()" class="btn btn-primary">Go Back</button>
+      </div>
+    {% endif %}
   </div>
 </div>
 
 <script>
-    function goBack() {
-      window.history.back();
-    }
-  </script>
-  
-  
+  function goBack() {
+    window.history.back();
+  }
+</script>
 
 </body>
 </html>
