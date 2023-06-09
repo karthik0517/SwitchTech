@@ -5,14 +5,14 @@
 <head>
 	<style>
 		body {
-			background-color: #f1f1f1;
+			background-color: white;
 			font-family: Arial, sans-serif;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 			height: 100vh;
-		 padding: 0px;
+			padding: 0px;
 		}
 
 		h1 {
@@ -28,7 +28,7 @@
 			text-align: leftr;
 			margin-top: 20px;
 			line-height: 1.5;
-			padding-left: 20px;
+			padding-left: 0px;
 		}
 
 		.blink {
@@ -82,7 +82,7 @@
 
 		.logout-button {
 			position: absolute;
-			top: 290px;
+			top: 256px;
 			right: 76px;
 			background-color: #333;
 			color: #fff;
@@ -98,17 +98,17 @@
 		}
 
 		.logo {
-			width: 188px;
-			height: 137px;
+			width: 167px;
+			height: 113px;
 			margin-top: 30px;
 			position: absolute;
-			right: 28px;
+			right: 33px;
 			top: 7px;
 		}
 
 		.logo1 {
-			width: 361px;
-			height: 391px;
+			width: 378px;
+			height: 445px;
 			top: 200;
 			position: absolute;
 			bottom: 0;
@@ -175,8 +175,15 @@
 			font-size: 16px;
 			cursor: pointer;
 		}
+
 		.header_titte {
-			font-size: 42px
+			font-size: 42px;
+			margin-top: -107px;
+		}
+
+		.training {
+			padding-left: 199px;
+			margin-top: 61px;
 		}
 
 		.modal-buttons button:first-child {
@@ -230,15 +237,17 @@
 	</header>
 	<div class="header_title">
 
-		<h2 class="font_normal header_titte text-align:center">SWITCHING TECH <span class="colored-box1">SYSTEMS</span></h2>
+		<h2 class="font_normal header_titte text-align:center">SWITCHING TECH <span class="colored-box1">SYSTEMS</span>
+		</h2>
 
 	</div>
 	<h1>Your access to this page is restricted!</h1>
 	<h3>
-		Oops! It seems you have already logged-in for 3 times. Please contact the <br><br>
+		Oops! It seems you have already logged-in for 3 times.Please contact the <br><br>
 		training team or drop us an email if you would like to retake the quiz.
 		<br>
-		<a href="mailto:training@ratnaglobaltech.com" >training@ratnaglobaltech.com</a>
+		<div class="training"><a href="mailto:training@ratnaglobaltech.com">training@ratnaglobaltech.com</a></div>
+
 	</h3>
 
 	<div class="contact-container">
