@@ -1,0 +1,26 @@
+Watching for file changes with StatReloader
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+Entered employee mail: plkmnj@ratnaglobaltech.com
+OTP is generated 7407
+Employee having login attempts and otp is sent to employee mail-id: plkmnj@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7706
+OTP is validated and redirected to instructions page!.
+"POST /validate/ HTTP/1.1" 200 7350
+Employee needs to switch to the Python domain
+"GET /validate/?category=Python HTTP/1.1" 302 0
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14308
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 3859
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 50 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 9499
+Login page accessed!
+- Broken pipe from ('127.0.0.1', 9514)
