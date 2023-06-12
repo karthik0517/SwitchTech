@@ -1,0 +1,403 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+Entered employee mail: venugopal.pemma12@ratnaglobaltech.com
+OTP is generated 8623
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma12@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7706
+OTP is validated and redirected to instructions page!.
+"POST /validate/ HTTP/1.1" 200 7350
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 13898
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Watching for file changes with StatReloader
+Login page accessed!
+Entered employee mail: karthik.konduru@ratnaglobaltech.com
+OTP is generated 2651
+Previously employee attempted quiz for 5 time
+Employee trying to login for 6 times, so employee is restricted!
+"POST / HTTP/1.1" 200 5067
+Login page accessed!
+- Broken pipe from ('127.0.0.1', 62402)
+Watching for file changes with StatReloader
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+Entered employee mail: srilekha.bollu@ratnaglobaltech.com
+OTP is generated 0240
+Previously employee attempted quiz for 28 time
+Employee trying to login for 29 times, so employee is restricted!
+"POST / HTTP/1.1" 200 5067
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+Entered employee mail: abc11@ratnaglobaltech.com
+OTP is generated 8631
+Employee having login attempts and otp is sent to employee mail-id: abc11@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7706
+OTP is validated and redirected to instructions page!.
+"POST /validate/ HTTP/1.1" 200 7350
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+OTP is validated and redirected to instructions page!.
+"POST /validate/ HTTP/1.1" 200 7197
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2235
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+"GET /static/admin/css/base.css HTTP/1.1" 200 20344
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10525
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /admin/auth/user/ HTTP/1.1" 200 14043
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/filters.js HTTP/1.1" 200 966
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /admin/auth/user/add/ HTTP/1.1" 200 9835
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"POST /admin/auth/user/add/ HTTP/1.1" 200 10112
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/auth/user/add/ HTTP/1.1" 200 10037
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/auth/user/add/ HTTP/1.1" 200 10056
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/auth/user/add/ HTTP/1.1" 302 0
+"GET /admin/auth/user/11/change/ HTTP/1.1" 200 21284
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4360
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19379
+"GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 11317
+"GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+"GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+"GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+"GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+"GET /admin/auth/user/11/history/ HTTP/1.1" 200 6450
+"GET /admin/auth/ HTTP/1.1" 200 3535
+"GET /admin/auth/user/ HTTP/1.1" 200 14428
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/ HTTP/1.1" 200 10644
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/otp/ HTTP/1.1" 200 40479
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/ HTTP/1.1" 200 42243
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/quizattempt/ HTTP/1.1" 200 19494
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/quizuserscore/ HTTP/1.1" 200 43257
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/ HTTP/1.1" 200 42243
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/quizuserscore/ HTTP/1.1" 200 43257
+"GET /admin/home/answer/ HTTP/1.1" 200 37137
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/ HTTP/1.1" 200 10644
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 19475
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/auth/user/ HTTP/1.1" 200 14428
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/auth/user/add/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/auth/user/add/ HTTP/1.1" 200 2422
+"GET /admin/auth/user/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2255
+"GET /admin/home/coursesuggession/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/home/coursesuggession/ HTTP/1.1" 200 2279
+"POST /admin/login/?next=/admin/home/coursesuggession/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 19475
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/auth/user/add/ HTTP/1.1" 200 9835
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2394
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10420
+"GET /admin/auth/user/ HTTP/1.1" 200 14428
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/auth/user/add/ HTTP/1.1" 200 9835
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Login page accessed!
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\SwitchTech\home\views.py", line 76, in loginPage
+    return render(request, 'login.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\defaulttags.py", line 322, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'addQuestion' not found. 'addQuestion' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 181742
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: asd11.ki@ratnaglobaltech.com
+OTP is generated 0280
+Previously employee attempted quiz for 1 time
+Employee having login attempts and otp is sent to employee mail-id: asd11.ki@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7706
+OTP is validated and redirected to instructions page!.
+"POST /validate/ HTTP/1.1" 200 7197
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+OTP is validated and redirected to instructions page!.
+"POST /validate/ HTTP/1.1" 200 7359
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+Entered employee mail: asd12.ki@ratnaglobaltech.com
+OTP is generated 2073
+Previously employee attempted quiz for 3 time
+Employee trying to login for 4 times, so employee is restricted!
+"POST / HTTP/1.1" 200 5067
+"GET /static/images/UserRestrict.png HTTP/1.1" 200 125395
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+Entered employee mail: abc11@ratnaglobaltech.com
+OTP is generated 0720
+Previously employee attempted quiz for 1 time
+Employee having login attempts and otp is sent to employee mail-id: abc11@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7706
+OTP is validated and redirected to instructions page!.
+"POST /validate/ HTTP/1.1" 200 7359
+Employee skipped the quiz and select domain Java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Java HTTP/1.1" 200 13965
+"GET /static/images/recommendation.png HTTP/1.1" 200 113005
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2235
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/base.css HTTP/1.1" 200 20344
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10420
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /admin/home/category/ HTTP/1.1" 200 10644
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/filters.js HTTP/1.1" 200 966
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 19475
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 12685
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /admin/home/otp/add/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/home/otp/add/ HTTP/1.1" 200 2420
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"POST /admin/login/?next=/admin/home/otp/add/ HTTP/1.1" 302 0
+"GET /admin/home/otp/add/ HTTP/1.1" 200 9221
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/otp/add/ HTTP/1.1" 200 9221
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/otp/add/ HTTP/1.1" 200 9221
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/otp/add/ HTTP/1.1" 200 9221
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/otp/add/ HTTP/1.1" 200 9221
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/otp/add/ HTTP/1.1" 200 9221
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/ HTTP/1.1" 200 10420
+"GET /admin/home/otp/ HTTP/1.1" 200 40480
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/otp/ HTTP/1.1" 200 40480
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/home/coursesuggession/ HTTP/1.1" 200 2438
+"POST /admin/login/?next=/admin/home/coursesuggession/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 19475
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 12685
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/ HTTP/1.1" 200 10644
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 19475
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/add/ HTTP/1.1" 200 8473
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 19475
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 12685
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 200 13179
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 19475
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?o=2 HTTP/1.1" 200 20440
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /admin/home/coursesuggession/?o=3.2 HTTP/1.1" 200 20882
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?o=4.3.2 HTTP/1.1" 200 21270
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/home/coursesuggession/add/ HTTP/1.1" 200 2446
+"POST /admin/login/?next=/admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 12685
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 20146
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 12685
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 200 12904
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 20553
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 12685
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 20912
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343

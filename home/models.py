@@ -76,7 +76,7 @@ class Answer(BaseModel):
 
 class CourseSuggession(models.Model):
     DIFFICULTY_LEVEL = (
-        ("BG", "Begginer"),
+        ("BG", "Beginner"),
         ("IN", "Intermediate"),
         ("AD", "Advanced"),
     )
