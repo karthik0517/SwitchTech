@@ -103,8 +103,8 @@ def validate(request):
 
 def url(score, category):
     if score <= 50:
-        print("Suggesting Begginer")
-        logger.info('Based on employee score we are suggesting Begginer course')
+        print("Suggesting Beginner")
+        logger.info('Based on employee score we are suggesting Beginner course')
         suggesstion = CourseSuggession.objects.filter(technology__category_name__icontains=category, difficulty='BG')
         for val in suggesstion:
             print('value------------->', val)
@@ -355,4 +355,3 @@ def final(request):
         'instructor': instructor, 'difficulty': difficulty}
     logger.info(f'Employee submitted quiz and redirect to results page with course suggestion')
     return render(request, 'results.html', context=context)
-
