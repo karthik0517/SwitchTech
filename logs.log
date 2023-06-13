@@ -1,4 +1,12 @@
 Watching for file changes with StatReloader
+<<<<<<< HEAD
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+Entered employee mail: plkmnj@ratnaglobaltech.com
+OTP is generated 7407
+Employee having login attempts and otp is sent to employee mail-id: plkmnj@ratnaglobaltech.com
+=======
 Watching for file changes with StatReloader
 Login page accessed!
 "GET / HTTP/1.1" 200 9572
@@ -6,11 +14,28 @@ Login page accessed!
 Entered employee mail: venugopal.pemma12@ratnaglobaltech.com
 OTP is generated 8623
 Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma12@ratnaglobaltech.com
+>>>>>>> fb7bbd83d0b44bf7648569b24b0aab27e5a8c20f
 Employee details are saved into database
 Employee is redirected to otp validation page!
 "POST / HTTP/1.1" 200 7706
 OTP is validated and redirected to instructions page!.
 "POST /validate/ HTTP/1.1" 200 7350
+<<<<<<< HEAD
+Employee needs to switch to the Python domain
+"GET /validate/?category=Python HTTP/1.1" 302 0
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14308
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 3859
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 50 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 9499
+Login page accessed!
+- Broken pipe from ('127.0.0.1', 9514)
+=======
 Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
 "GET /skipquiz/?category=Python HTTP/1.1" 200 13898
 Login page accessed!
@@ -401,6 +426,7 @@ Login page accessed!
 "POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
 "GET /admin/home/coursesuggession/ HTTP/1.1" 200 20912
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+<<<<<<< HEAD
 "GET /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
 "GET /admin/login/?next=/admin/home/coursesuggession/add/ HTTP/1.1" 200 2446
 "POST /admin/login/?next=/admin/home/coursesuggession/add/ HTTP/1.1" 302 0
@@ -460,3 +486,6 @@ Not Found: /favicon.ico
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 "GET /admin/home/coursesuggession/ HTTP/1.1" 200 20647
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+=======
+>>>>>>> fb7bbd83d0b44bf7648569b24b0aab27e5a8c20f
+>>>>>>> 18f56947f5eb786472bed4535aa59262e1256399
