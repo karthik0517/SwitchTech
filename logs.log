@@ -489,3 +489,45 @@ Not Found: /favicon.ico
 =======
 >>>>>>> fb7bbd83d0b44bf7648569b24b0aab27e5a8c20f
 >>>>>>> 18f56947f5eb786472bed4535aa59262e1256399
+Watching for file changes with StatReloader
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4011
+Login page accessed!
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view home.views.loginPage didn't return an HttpResponse object. It returned None instead.
+"POST / HTTP/1.1" 500 68447
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 3204
+Previously employee attempted quiz for 4 time
+Employee trying to login for 5 times, so employee is restricted!
+"POST / HTTP/1.1" 200 5067
+"GET /static/images/UserRestrict.png HTTP/1.1" 304 0
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+Entered employee mail: abc12@ratnaglobaltech.com
+OTP is generated 2074
+Employee having login attempts and otp is sent to employee mail-id: abc12@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7706
+OTP is validated and redirected to instructions page!.
+"POST /validate/ HTTP/1.1" 200 7359
+"GET /static/images/Instruction.png HTTP/1.1" 304 0

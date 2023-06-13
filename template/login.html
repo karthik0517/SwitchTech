@@ -139,6 +139,7 @@
             border: none;
             border-radius: 4px;
             /* background-color: #007bff; */
+            background-color: green;
             color: #fff;
             cursor: pointer;
         }
@@ -175,7 +176,7 @@
                                     placeholder="Enter your RGT Email only" onkeydown="handleEnterKey(event)"><br>
                             </div>
                             <div class="validate_otp_button">
-                                <input class="btn btn-success" id="sendOTPButton" type="submit" value="Send OTP"
+                                <input class="btn btn-success" style="background: green;" id="sendOTPButton" type="submit" value="Send OTP"
                                     onclick="passValues()">
                             </div>
                         </form>
@@ -202,7 +203,7 @@
             var sendOTPButton = document.getElementById('sendOTPButton');
             var username = usernameInput.value;
 
-            var regex = /^[a-zA-Z0-9]+$/;
+            var regex = /^[a-z /s/s A-Z0-9]+$/;
 
             if (regex.test(username) && !(/^\d+$/.test(username))) {
                 // Valid username
