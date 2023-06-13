@@ -401,3 +401,19 @@ Login page accessed!
 "POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
 "GET /admin/home/coursesuggession/ HTTP/1.1" 200 20912
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/home/coursesuggession/add/ HTTP/1.1" 200 2446
+"POST /admin/login/?next=/admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 12685
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+Entered employee mail: bhargavi.pasam@ratnaglobaltech.com
+OTP is generated 7014
+Previously employee attempted quiz for 51 time
+Employee trying to login for 52 times, so employee is restricted!
+"POST / HTTP/1.1" 200 5067
