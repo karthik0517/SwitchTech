@@ -531,3 +531,360 @@ Employee is redirected to otp validation page!
 OTP is validated and redirected to instructions page!.
 "POST /validate/ HTTP/1.1" 200 7359
 "GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee needs to switch to the Java domain
+"GET /validate/?category=Java HTTP/1.1" 302 0
+Employee agreed to terms and conditions with selected domain Java and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 14302
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 4010
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view home.views.loginPage didn't return an HttpResponse object. It returned None instead.
+"POST / HTTP/1.1" 500 68664
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view home.views.loginPage didn't return an HttpResponse object. It returned None instead.
+"POST / HTTP/1.1" 500 68664
+Login page accessed!
+"GET / HTTP/1.1" 200 9572
+Login page accessed!
+"GET / HTTP/1.1" 200 9609
+Login page accessed!
+"GET / HTTP/1.1" 200 9609
+Login page accessed!
+"GET / HTTP/1.1" 200 9609
+Login page accessed!
+"GET / HTTP/1.1" 200 9609
+Login page accessed!
+Entered employee mail: bhargavi.pasam@ratnaglobaltech.com
+OTP is generated 7837
+Previously employee attempted quiz for 52 time
+Employee trying to login for 53 times, so employee is restricted!
+"POST / HTTP/1.1" 200 5067
+Login page accessed!
+"GET / HTTP/1.1" 200 9609
+Login page accessed!
+Entered employee mail: abc1q@ratnaglobaltech.com
+OTP is generated 0842
+Employee having login attempts and otp is sent to employee mail-id: abc1q@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7706
+Login page accessed!
+Entered employee mail: abc1q@ratnaglobaltech.com
+OTP is generated 9555
+Previously employee attempted quiz for 1 time
+Employee having login attempts and otp is sent to employee mail-id: abc1q@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7706
+Login page accessed!
+"GET / HTTP/1.1" 200 9624
+Login page accessed!
+"GET / HTTP/1.1" 200 9624
+Login page accessed!
+"GET / HTTP/1.1" 200 9586
+Login page accessed!
+"GET / HTTP/1.1" 200 9586
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+Entered employee mail: ab11c@ratnaglobaltech.com
+OTP is generated 8847
+Employee having login attempts and otp is sent to employee mail-id: ab11c@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7724
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+"GET / HTTP/1.1" 200 9721
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+"GET / HTTP/1.1" 200 9641
+Login page accessed!
+"GET / HTTP/1.1" 200 9641
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+"GET / HTTP/1.1" 200 9642
+Login page accessed!
+"GET / HTTP/1.1" 200 9635
+Login page accessed!
+"GET / HTTP/1.1" 200 9635
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Login page accessed!
+Entered employee mail: asd.ki@ratnaglobaltech.com
+OTP is generated 5387
+Previously employee attempted quiz for 2 time
+Employee having login attempts and otp is sent to employee mail-id: asd.ki@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7724
+OTP is invalid and redirecting to login page
+"POST /validate/ HTTP/1.1" 200 9494
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4011
+Login page accessed!
+Entered employee mail: abc11@ratnaglobaltech.com
+OTP is generated 0078
+Previously employee attempted quiz for 2 time
+Employee having login attempts and otp is sent to employee mail-id: abc11@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7724
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Login page accessed!
+Entered employee mail: abc11@ratnaglobaltech.com
+OTP is generated 6631
+Previously employee attempted quiz for 3 time
+Employee trying to login for 4 times, so employee is restricted!
+"POST / HTTP/1.1" 200 5067
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Login page accessed!
+Entered employee mail: abc11@ratnaglobaltech.com
+OTP is generated 9925
+Previously employee attempted quiz for 4 time
+Employee trying to login for 5 times, so employee is restricted!
+"POST / HTTP/1.1" 200 5067
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Login page accessed!
+Entered employee mail: srilekha.boll12u@ratnaglobaltech.com
+OTP is generated 2002
+Employee having login attempts and otp is sent to employee mail-id: srilekha.boll12u@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7724
+Login page accessed!
+"GET / HTTP/1.1" 200 9494
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+Entered employee mail: asd10.ki@ratnaglobaltech.com
+OTP is generated 1480
+Employee having login attempts and otp is sent to employee mail-id: asd10.ki@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7724
+Login page accessed!
+"GET / HTTP/1.1" 200 9640
+Login page accessed!
+Entered employee mail: asd.ki@ratnaglobaltech.com
+OTP is generated 7170
+Previously employee attempted quiz for 3 time
+Employee trying to login for 4 times, so employee is restricted!
+"POST / HTTP/1.1" 200 5067
+Login page accessed!
+"GET / HTTP/1.1" 200 9640
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+"GET / HTTP/1.1" 200 9636
+Login page accessed!
+"GET / HTTP/1.1" 200 9640
+Login page accessed!
+Entered employee mail: asd.123ki@ratnaglobaltech.com
+OTP is generated 2799
+Employee having login attempts and otp is sent to employee mail-id: asd.123ki@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7724
+OTP is validated and redirected to instructions page!.
+"POST /validate/ HTTP/1.1" 200 7359
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 13898
+"GET /static/images/recommendation.png HTTP/1.1" 304 0
+Login page accessed!
+"GET / HTTP/1.1" 200 9642
+Login page accessed!
+Entered employee mail: srilekha.bollu@ratnaglobaltech.com
+OTP is generated 2813
+Previously employee attempted quiz for 29 time
+Employee trying to login for 30 times, so employee is restricted!
+"POST / HTTP/1.1" 200 5067
+Login page accessed!
+"GET / HTTP/1.1" 200 9647
+Login page accessed!
+Entered employee mail: asd.12ki@ratnaglobaltech.com
+OTP is generated 5205
+Employee having login attempts and otp is sent to employee mail-id: asd.12ki@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7724
+Login page accessed!
+"GET / HTTP/1.1" 200 9647
+Login page accessed!
+"GET / HTTP/1.1" 200 9638
+Login page accessed!
+"GET / HTTP/1.1" 200 9644
+Login page accessed!
+Entered employee mail: bhargavi.12pasam@ratnaglobaltech.com
+OTP is generated 3672
+Employee having login attempts and otp is sent to employee mail-id: bhargavi.12pasam@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7724
+OTP is validated and redirected to instructions page!.
+"POST /validate/ HTTP/1.1" 200 7359
+Employee needs to switch to the Java domain
+"GET /validate/?category=Java HTTP/1.1" 302 0
+Employee agreed to terms and conditions with selected domain Java and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 14302
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 4044
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/selenium-webdriver-web-based-automation-testing/
+Based on quiz attempt employee got 10 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 9564
+"GET /static/images/Result.png HTTP/1.1" 304 0
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 9564
+Login page accessed!
+"GET / HTTP/1.1" 200 9642
+Login page accessed!
+Entered employee mail: ram.123@ratnaglobaltech.com
+OTP is generated 3120
+Employee having login attempts and otp is sent to employee mail-id: ram.123@ratnaglobaltech.com
+Login page accessed!
+Entered employee mail: ram.123@ratnaglobaltech.com
+OTP is generated 3569
+Employee having login attempts and otp is sent to employee mail-id: ram.123@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+- Broken pipe from ('127.0.0.1', 55134)
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7724
+OTP is validated and redirected to instructions page!.
+- Broken pipe from ('127.0.0.1', 55460)
+Watching for file changes with StatReloader
+Login page accessed!
+"GET / HTTP/1.1" 200 9642
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal`.pemma@ratnaglobaltech.com
+OTP is generated 9258
+Employee having login attempts and otp is sent to employee mail-id: venugopal`.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7724
+OTP is validated and redirected to instructions page!.
+"POST /validate/ HTTP/1.1" 200 7359
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee needs to switch to the Python domain
+"GET /validate/?category=Python HTTP/1.1" 302 0
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14308
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4141
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 10 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 9499
+"GET /static/images/Result.png HTTP/1.1" 304 0
+Login page accessed!
+"GET / HTTP/1.1" 200 9642
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 5042
+Previously employee attempted quiz for 5 time
+Employee trying to login for 6 times, so employee is restricted!
+"POST / HTTP/1.1" 200 5067
+"GET /static/images/UserRestrict.png HTTP/1.1" 304 0
+Login page accessed!
+"GET / HTTP/1.1" 200 9642
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
