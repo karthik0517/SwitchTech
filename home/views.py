@@ -69,17 +69,18 @@ def loginPage(request):
                 logger.warning(f'Previously employee attempted quiz for {new_count1} time')
                 Otp.objects.filter(mail=database.mail).update(otp=database.otp, user=database.user,
                                                               count=new_count2)
-                check_count = Otp.objects.filter(mail=database.mail).values_list('count', flat=True)
-                time_entred = list(check_count)
-                time_hours = time_entred[0]
-                print(time_hours)
-                if time_hours > 30:
-                    logger.warning(f'Employee trying to login for {time_hours} times, so employee is restricted!')
-                    return render(request, 'restrict.html')
-                else:
-                    logger.info(f'Employee having login attempts and otp is sent to employee mail-id: {Employee_Mail}')
-                    print("otp:", otp)
-                    send_mail(subject="OTP", message=f"Your otp {otp}", from_email="switchingtechsystem@gmail.com",
+
+                # check_count = Otp.objects.filter(mail=database.mail).values_list('count', flat=True)
+                # time_entred = list(check_count)
+                # time_hours = time_entred[0]
+                # print(time_hours)
+                # if time_hours > 30:
+                #     logger.warning(f'Employee trying to login for {time_hours} times, so employee is restricted!')
+                #     return render(request, 'restrict.html')
+                # else:
+                logger.info(f'Employee having login attempts and otp is sent to employee mail-id: {Employee_Mail}')
+                print("otp:", otp)
+                send_mail(subject="OTP", message=f"Your otp {otp}", from_email="switchingtechsystem@gmail.com",
                               recipient_list=[Employee_Mail], fail_silently=False)
             else:
                 logger.info(f'Employee having login attempts and otp is sent to employee mail-id: {Employee_Mail}')

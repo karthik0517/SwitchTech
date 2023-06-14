@@ -2678,3 +2678,93 @@ Employee is redirected to otp validation page!
 "POST / HTTP/1.1" 200 7724
 "POST /validate/ HTTP/1.1" 302 0
 "GET /validate/homepage/ HTTP/1.1" 200 7361
+Watching for file changes with StatReloader
+Login page accessed!
+"GET / HTTP/1.1" 200 9769
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4193
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2394
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+"GET /static/admin/css/base.css HTTP/1.1" 200 20344
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10395
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /admin/auth/user/ HTTP/1.1" 200 13242
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/filters.js HTTP/1.1" 200 966
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /admin/home/quizattempt/ HTTP/1.1" 200 9612
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/quizuserscore/ HTTP/1.1" 200 9741
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/logout/ HTTP/1.1" 200 1566
+Forbidden (CSRF token from POST incorrect.): /
+"POST / HTTP/1.1" 403 2518
+Login page accessed!
+"GET / HTTP/1.1" 200 9769
+Watching for file changes with StatReloader
+Login page accessed!
+"GET / HTTP/1.1" 200 9769
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+"POST / HTTP/1.1" 200 9951
+Login page accessed!
+Entered employee mail: karthik.konduru@ratnaglobaltech.com
+OTP is generated 5007
+Previously employee attempted quiz for 14 time
+Employee having login attempts and otp is sent to employee mail-id: karthik.konduru@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7724
+Watching for file changes with StatReloader
+Login page accessed!
+"GET / HTTP/1.1" 200 9769
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+"POST / HTTP/1.1" 200 9951
+Login page accessed!
+Entered employee mail: karthik.konduru@ratnaglobaltech.com
+OTP is generated 0155
+Previously employee attempted quiz for 15 time
+Employee having login attempts and otp is sent to employee mail-id: karthik.konduru@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7724
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 7361
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+"GET /validate/homepage/?category=Python HTTP/1.1" 302 0
+Employee still having the previous quiz timer with 40 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 40 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14308
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4249
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
