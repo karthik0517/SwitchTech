@@ -31,9 +31,9 @@ class CourseSuggession(admin.ModelAdmin):
 
 @admin.register(Otp)
 class Otp(admin.ModelAdmin):
-    list_display = ['mail', 'otp', 'username', 'count']
+    list_display = ['user','mail', 'otp', 'count']
 
 
 @admin.register(QuizAttempt)
 class QuizAttempt(admin.ModelAdmin):
-    list_display = ['id','timer','domain']
+    list_display = ['user','timer','domain', ]
