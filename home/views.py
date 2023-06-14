@@ -92,13 +92,21 @@ def validate(request):
         if verified:
             request.session['mail'] = mail
             logger.info('OTP is validated and redirected to instructions page!.')
-            return render(request, 'index.html', context)
+            # return render(request, 'index.html', context)
+            response = redirect('homepage/')
+            return response
         else:
             logger.error('OTP is invalid and redirecting to login page')
             return render(request, 'login.html')
     else:
         logger.error('Employee not entred otp or invalid otp and redirecting to login page')
         return render(request, 'login.html')
+
+def homepage(request):
+    context = {'categories': Category.objects.all()}
+    if request.GET.get('category'):
+        return redirect(f"/quiz/?category={request.GET.get('category')}")
+    return render(request, 'index.html', context)
 
 
 def url(score, category):
