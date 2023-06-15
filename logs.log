@@ -2769,6 +2769,7 @@ Employee agreed to terms and conditions with selected domain Python and timer wi
 "GET /api/get-quiz/?category=Python HTTP/1.1" 200 4249
 "POST /api/save-remaining-time/ HTTP/1.1" 200 48
 Watching for file changes with StatReloader
+<<<<<<< HEAD
 "GET / HTTP/1.1" 200 9064
 Login page accessed!
 Entered employee mail: test123@ratnaglobaltech.com
@@ -2783,12 +2784,95 @@ Employee is redirected to otp validation page!
 Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
 "GET /quiz/?category=Python HTTP/1.1" 200 14308
 "GET /api/get-quiz/?category=Python HTTP/1.1" 200 4215
+=======
+"GET /admin/auth/user/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2255
+"GET /static/admin/css/base.css HTTP/1.1" 200 20344
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4193
+Login page accessed!
+"GET / HTTP/1.1" 200 9769
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: bhaviya.babu@ratnaglobaltech.com
+OTP is generated 6532
+Employee having login attempts and otp is sent to employee mail-id: bhaviya.babu@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7724
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 7361
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+"GET /validate/homepage/ HTTP/1.1" 200 7361
+Employee previous quiz history is not present
+"GET /history/ HTTP/1.1" 200 2175
+"GET /validate/homepage/?category=Python HTTP/1.1" 302 0
+Internal Server Error: /quiz/
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\Desktop\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\SwitchTech_dev\SwitchTech\home\views.py", line 253, in quiz
+    update = new[0]
+             ~~~^^^
+IndexError: list index out of range
+"GET /quiz/?category=Python HTTP/1.1" 500 69812
+Internal Server Error: /quiz/
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\Desktop\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\SwitchTech_dev\SwitchTech\home\views.py", line 253, in quiz
+    update = new[0]
+             ~~~^^^
+IndexError: list index out of range
+"GET /quiz/?category=Python HTTP/1.1" 500 69949
+Watching for file changes with StatReloader
+Login page accessed!
+"GET / HTTP/1.1" 200 9769
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: bhaviya.babu@ratnaglobaltech.com
+OTP is generated 5464
+Previously employee attempted quiz for 1 time
+Employee having login attempts and otp is sent to employee mail-id: bhaviya.babu@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7724
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 7361
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/homepage/?category=Python HTTP/1.1" 302 0
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14308
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4021
+>>>>>>> 5043f66cd767b990983d1c2d8e7dce3639f70f32
 Based on employee score we are suggesting Beginner course
 course url : https://www.udemy.com/course/100-days-of-code/
 Based on quiz attempt employee got 50 score
 "POST /api/result/ HTTP/1.1" 200 0
 "POST /api/save-remaining-time/ HTTP/1.1" 200 48
 Employee submitted quiz and redirect to results page with course suggestion
+<<<<<<< HEAD
 "GET /final/ HTTP/1.1" 200 8513
 User session exists (remember me enabled), redirecting to the Instructions page
 - Broken pipe from ('127.0.0.1', 8913)
@@ -2884,3 +2968,1911 @@ Employee agreed to terms and conditions with selected domain Python and timer wi
 Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
 "GET /skipquiz/?category=Python HTTP/1.1" 200 15505
 "GET /static/images/recommendation.png HTTP/1.1" 200 113005
+=======
+"GET /final/ HTTP/1.1" 200 8236
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+"GET /validate/homepage HTTP/1.1" 301 0
+"GET /validate/homepage/ HTTP/1.1" 200 7361
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee previous quiz history present
+Employee previous quiz score : 50
+Employee previous quiz attempt date 2023-06-15 04:35:52.123959+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 2647
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2548
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/login.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10395
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /admin/auth/user/ HTTP/1.1" 200 13659
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+"GET /static/admin/js/filters.js HTTP/1.1" 200 966
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /admin/auth/user/ HTTP/1.1" 200 13659
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/auth/user/ HTTP/1.1" 200 13659
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /validate/homepage/?category=Oracle HTTP/1.1" 302 0
+Internal Server Error: /quiz/
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\Desktop\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\SwitchTech_dev\SwitchTech\home\views.py", line 253, in quiz
+    update = new[0]
+             ~~~^^^
+IndexError: list index out of range
+"GET /quiz/?category=Oracle HTTP/1.1" 500 69812
+Internal Server Error: /quiz/
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\Desktop\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\SwitchTech_dev\SwitchTech\home\views.py", line 253, in quiz
+    update = new[0]
+             ~~~^^^
+IndexError: list index out of range
+"GET /quiz/?category=Python HTTP/1.1" 500 69681
+"GET /validate/homepage/ HTTP/1.1" 200 7361
+Login page accessed!
+"GET / HTTP/1.1" 200 9769
+Forbidden (CSRF token from POST incorrect.): /
+"POST / HTTP/1.1" 403 2518
+Watching for file changes with StatReloader
+Login page accessed!
+"GET / HTTP/1.1" 200 9769
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2394
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/login.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10395
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 20647
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/7/change/?_changelist_filters=technology__uid__exact%3D3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 13705
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /admin/home/coursesuggession/7/change/?_changelist_filters=technology__uid__exact%3D3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 13705
+"GET /admin/home/coursesuggession/7/change/?_changelist_filters=technology__uid__exact%3D3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 13705
+Not Found: /admim
+"GET /admim HTTP/1.1" 404 4175
+"GET /admin/ HTTP/1.1" 200 10395
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 20647
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/20/change/?_changelist_filters=technology__uid__exact%3D03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 13600
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11839
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11868
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=1592eee9-a09f-488a-99cf-e7c37c73f0dd HTTP/1.1" 200 11878
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11888
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=d0c46fae-e43e-4f63-b8d3-38db4851fb1c HTTP/1.1" 200 11833
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 20647
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/? HTTP/1.1" 200 20647
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/7/change/?_changelist_filters=technology__uid__exact%3D3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 13705
+"GET /admin/home/coursesuggession/6/change/?_changelist_filters=technology__uid__exact%3D3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 13768
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/6/change/?_changelist_filters=technology__uid__exact%3D3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 13768
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/6/change/?_changelist_filters=technology__uid__exact%3D3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 13768
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/6/change/?_changelist_filters=technology__uid__exact%3D3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 13760
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/answer/ HTTP/1.1" 200 37137
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 20647
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/7/change/?_changelist_filters=technology__uid__exact%3D3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 13705
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/6/change/?_changelist_filters=technology__uid__exact%3D3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 12134
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/6/change/?_changelist_filters=technology__uid__exact%3D3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 13705
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11852
+"GET /admin/home/coursesuggession/7/change/?_changelist_filters=technology__uid__exact%3D3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 13705
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/7/change/?_changelist_filters=technology__uid__exact%3D3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 12152
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11839
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/27/change/?_changelist_filters=technology__uid__exact%3Db33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 13840
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11839
+"GET /admin/home/coursesuggession/26/change/?_changelist_filters=technology__uid__exact%3Db33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 13571
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11839
+"GET /admin/home/coursesuggession/27/change/?_changelist_filters=technology__uid__exact%3Db33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 13840
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"POST /admin/home/coursesuggession/27/change/?_changelist_filters=technology__uid__exact%3Db33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 12083
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/26/change/?_changelist_filters=technology__uid__exact%3Db33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 13571
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/26/change/?_changelist_filters=technology__uid__exact%3Db33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 12145
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/25/change/?_changelist_filters=technology__uid__exact%3Db33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 13708
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11839
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/25/change/?_changelist_filters=technology__uid__exact%3Db33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 13708
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/25/change/?_changelist_filters=technology__uid__exact%3Db33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 12101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/25/change/?_changelist_filters=technology__uid__exact%3Db33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 13672
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11823
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11823
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/26/change/?_changelist_filters=technology__uid__exact%3Db33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 13840
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/26/change/?_changelist_filters=technology__uid__exact%3Db33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 12105
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11868
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/24/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 13663
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/24/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 12146
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/22/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 13806
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/22/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 12164
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/22/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 13806
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/22/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 12160
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/21/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 13781
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/21/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 12161
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11868
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11868
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/? HTTP/1.1" 200 20627
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11819
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11868
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=1592eee9-a09f-488a-99cf-e7c37c73f0dd HTTP/1.1" 200 11878
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11888
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/31/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 13793
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/? HTTP/1.1" 200 20627
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/20/change/?_changelist_filters=technology__uid__exact%3D03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 13600
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/home/coursesuggession/19/change/?_changelist_filters=technology__uid__exact%3D03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 13554
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/home/coursesuggession/19/change/?_changelist_filters=technology__uid__exact%3D03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 13554
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/19/change/?_changelist_filters=technology__uid__exact%3D03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 12130
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/20/change/?_changelist_filters=technology__uid__exact%3D03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 13600
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/20/change/?_changelist_filters=technology__uid__exact%3D03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 12100
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/20/change/?_changelist_filters=technology__uid__exact%3D03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 13554
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11888
+"GET /admin/home/coursesuggession/30/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 13598
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/30/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 13598
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11888
+"GET /admin/home/coursesuggession/?technology__uid__exact=1592eee9-a09f-488a-99cf-e7c37c73f0dd HTTP/1.1" 200 11878
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11888
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=d0c46fae-e43e-4f63-b8d3-38db4851fb1c HTTP/1.1" 200 11833
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11819
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11819
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11868
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=1592eee9-a09f-488a-99cf-e7c37c73f0dd HTTP/1.1" 200 11878
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11888
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/29/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 13580
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11888
+"GET /admin/home/coursesuggession/?technology__uid__exact=d0c46fae-e43e-4f63-b8d3-38db4851fb1c HTTP/1.1" 200 11833
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=c7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 11844
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/37/change/?_changelist_filters=technology__uid__exact%3Dc7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 13585
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/37/change/?_changelist_filters=technology__uid__exact%3Dc7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 13585
+"GET /admin/home/coursesuggession/?technology__uid__exact=c7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 11844
+"GET /admin/home/coursesuggession/37/change/?_changelist_filters=technology__uid__exact%3Dc7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 13585
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/37/change/?_changelist_filters=technology__uid__exact%3Dc7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 13585
+"GET /admin/home/coursesuggession/?technology__uid__exact=c7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 11844
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/? HTTP/1.1" 200 20627
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=c7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 11844
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/37/change/?_changelist_filters=technology__uid__exact%3Dc7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 13585
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/37/change/?_changelist_filters=technology__uid__exact%3Dc7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 13585
+"GET /admin/home/coursesuggession/?technology__uid__exact=c7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 11844
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11868
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=1592eee9-a09f-488a-99cf-e7c37c73f0dd HTTP/1.1" 200 11878
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/17/change/?_changelist_filters=technology__uid__exact%3D1592eee9-a09f-488a-99cf-e7c37c73f0dd HTTP/1.1" 200 13798
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=1592eee9-a09f-488a-99cf-e7c37c73f0dd HTTP/1.1" 200 11878
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11868
+"GET /admin/home/coursesuggession/?technology__uid__exact=c7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 11844
+"GET /admin/home/coursesuggession/? HTTP/1.1" 200 20627
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/home/coursesuggession/?technology__uid__exact=c7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 11844
+"GET /admin/home/coursesuggession/?technology__uid__exact=d0c46fae-e43e-4f63-b8d3-38db4851fb1c HTTP/1.1" 200 11833
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11888
+"GET /admin/home/coursesuggession/?technology__uid__exact=1592eee9-a09f-488a-99cf-e7c37c73f0dd HTTP/1.1" 200 11878
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11868
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11819
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11819
+"GET /admin/home/coursesuggession/?technology__uid__exact=d0c46fae-e43e-4f63-b8d3-38db4851fb1c HTTP/1.1" 200 11833
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11888
+"GET /admin/home/coursesuggession/?technology__uid__exact=1592eee9-a09f-488a-99cf-e7c37c73f0dd HTTP/1.1" 200 11878
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11888
+"GET /admin/home/coursesuggession/?technology__uid__exact=1592eee9-a09f-488a-99cf-e7c37c73f0dd HTTP/1.1" 200 11878
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11868
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11819
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\Desktop\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\venv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\venv\Lib\site-packages\django\http\request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Bad Request: /admin
+"GET /admin HTTP/1.1" 400 72694
+Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\Desktop\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\venv\Lib\site-packages\django\utils\deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\venv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\venv\Lib\site-packages\django\http\request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8000'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 400 72569
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 10566
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 20627
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11819
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11868
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/21/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 13781
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11868
+"GET /admin/home/coursesuggession/21/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 13781
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/21/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 12157
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/24/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 13663
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/24/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 12142
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/24/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 13663
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/24/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 12167
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/22/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 13806
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11889
+"GET /admin/home/coursesuggession/24/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 13692
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/24/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 12124
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/22/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 13806
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11852
+"GET /admin/home/coursesuggession/22/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 13806
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"POST /admin/home/coursesuggession/22/change/?_changelist_filters=technology__uid__exact%3D932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 12152
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11819
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11856
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=1592eee9-a09f-488a-99cf-e7c37c73f0dd HTTP/1.1" 200 11878
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11888
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=d0c46fae-e43e-4f63-b8d3-38db4851fb1c HTTP/1.1" 200 11833
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=c7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 11844
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11888
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/29/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 13580
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/29/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 12183
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/30/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/home/coursesuggession/30/change/%3F_changelist_filters%3Dtechnology__uid__exact%253D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 2628
+"GET /static/admin/css/login.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"POST /admin/login/?next=/admin/home/coursesuggession/30/change/%3F_changelist_filters%3Dtechnology__uid__exact%253D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/30/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 13598
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/login/?next=/admin/home/coursesuggession/30/change/%3F_changelist_filters%3Dtechnology__uid__exact%253D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10570
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 20615
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11888
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/31/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 13793
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/31/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 12153
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/30/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 13598
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/30/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 13681
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/30/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 13598
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11889
+"GET /admin/home/coursesuggession/29/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 13801
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11889
+"GET /admin/home/coursesuggession/29/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 13801
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/29/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 12177
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/30/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 13598
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/30/change/?_changelist_filters=technology__uid__exact%3D32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 12176
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=c7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 11844
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=d0c46fae-e43e-4f63-b8d3-38db4851fb1c HTTP/1.1" 200 11833
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11881
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=1592eee9-a09f-488a-99cf-e7c37c73f0dd HTTP/1.1" 200 11878
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11856
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11819
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2235
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4193
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10570
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 20608
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11881
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 10570
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4193
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 20608
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=1592eee9-a09f-488a-99cf-e7c37c73f0dd HTTP/1.1" 200 11878
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11881
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2394
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/login.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4193
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10570
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 20608
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11819
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11856
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=1592eee9-a09f-488a-99cf-e7c37c73f0dd HTTP/1.1" 200 11878
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11881
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=d0c46fae-e43e-4f63-b8d3-38db4851fb1c HTTP/1.1" 200 11833
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=c7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 11844
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/35/change/?_changelist_filters=technology__uid__exact%3Dc7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 13744
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=c7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 11844
+"GET /admin/home/coursesuggession/35/change/?_changelist_filters=technology__uid__exact%3Dc7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 13744
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/35/change/?_changelist_filters=technology__uid__exact%3Dc7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 13744
+"POST /admin/logout/ HTTP/1.1" 200 1566
+Login page accessed!
+"GET / HTTP/1.1" 200 9769
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: testjkehrkj@ratnaglobaltech.com
+OTP is generated 1118
+Employee having login attempts and otp is sent to employee mail-id: testjkehrkj@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7724
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 7361
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/homepage/?category=Python HTTP/1.1" 302 0
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14308
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4021
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+Based on quiz attempt employee got 60 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 8231
+"GET /static/images/Result.png HTTP/1.1" 304 0
+Login page accessed!
+- Broken pipe from ('127.0.0.1', 56524)
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2386
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10570
+Login page accessed!
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\switchtech\SwitchTech\home\views.py", line 97, in loginPage
+    return render(request, 'login.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 322, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'addQuestion' not found. 'addQuestion' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 184802
+"GET /admin/ HTTP/1.1" 200 10570
+Login page accessed!
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\switchtech\SwitchTech\home\views.py", line 97, in loginPage
+    return render(request, 'login.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 322, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'addQuestion' not found. 'addQuestion' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 184802
+Login page accessed!
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\Desktop\switchtech\SwitchTech\home\views.py", line 97, in loginPage
+    return render(request, 'login.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 322, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'addQuestion' not found. 'addQuestion' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 184939
+Login page accessed!
+"GET / HTTP/1.1" 200 9769
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2235
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+"GET /static/admin/css/base.css HTTP/1.1" 200 20344
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10570
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 20608
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+"GET /static/admin/js/filters.js HTTP/1.1" 200 966
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/home/coursesuggession/%3Ftechnology__uid__exact%3Dcb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 2562
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"POST /admin/login/?next=/admin/home/coursesuggession/%3Ftechnology__uid__exact%3Dcb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/?technology__uid__exact=cb0740ba-1979-4178-bf30-a4e68e93b97d HTTP/1.1" 200 11860
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=03ea948a-7391-4332-81ae-1388f88d592e HTTP/1.1" 200 11840
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=b33a08df-7176-492b-8d96-e69341247cfa HTTP/1.1" 200 11819
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=932d22b7-fff4-416e-a820-9a1897700abe HTTP/1.1" 200 11856
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=1592eee9-a09f-488a-99cf-e7c37c73f0dd HTTP/1.1" 200 11878
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 200 11881
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=d0c46fae-e43e-4f63-b8d3-38db4851fb1c HTTP/1.1" 200 11833
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/?technology__uid__exact=c7a7e297-d40c-4b67-a60f-1c68c4191acc HTTP/1.1" 200 11844
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+The request's session was deleted before the request completed. The user may have logged out in a concurrent request, for example.: /admin/home/coursesuggession/
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py", line 86, in save
+    obj.save(
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 976, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1040, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1216, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\middleware.py", line 59, in process_response
+    request.session.save()
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py", line 95, in save
+    raise UpdateError
+django.contrib.sessions.backends.base.UpdateError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\middleware.py", line 61, in process_response
+    raise SessionInterrupted(
+django.contrib.sessions.exceptions.SessionInterrupted: The request's session was deleted before the request completed. The user may have logged out in a concurrent request, for example.
+The request's session was deleted before the request completed. The user may have logged out in a concurrent request, for example.: /admin/home/coursesuggession/
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py", line 86, in save
+    obj.save(
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 976, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1040, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1216, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\middleware.py", line 59, in process_response
+    request.session.save()
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py", line 95, in save
+    raise UpdateError
+django.contrib.sessions.backends.base.UpdateError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\middleware.py", line 61, in process_response
+    raise SessionInterrupted(
+django.contrib.sessions.exceptions.SessionInterrupted: The request's session was deleted before the request completed. The user may have logged out in a concurrent request, for example.
+The request's session was deleted before the request completed. The user may have logged out in a concurrent request, for example.: /admin/home/coursesuggession/
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py", line 86, in save
+    obj.save(
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 976, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1040, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1216, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\middleware.py", line 59, in process_response
+    request.session.save()
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py", line 95, in save
+    raise UpdateError
+django.contrib.sessions.backends.base.UpdateError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\middleware.py", line 61, in process_response
+    raise SessionInterrupted(
+django.contrib.sessions.exceptions.SessionInterrupted: The request's session was deleted before the request completed. The user may have logged out in a concurrent request, for example.
+The request's session was deleted before the request completed. The user may have logged out in a concurrent request, for example.: /admin/home/coursesuggession/
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py", line 86, in save
+    obj.save(
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 976, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1040, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1216, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\middleware.py", line 59, in process_response
+    request.session.save()
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py", line 95, in save
+    raise UpdateError
+django.contrib.sessions.backends.base.UpdateError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\middleware.py", line 61, in process_response
+    raise SessionInterrupted(
+django.contrib.sessions.exceptions.SessionInterrupted: The request's session was deleted before the request completed. The user may have logged out in a concurrent request, for example.
+The request's session was deleted before the request completed. The user may have logged out in a concurrent request, for example.: /admin/home/coursesuggession/
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py", line 86, in save
+    obj.save(
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 976, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1040, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1216, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1822, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\middleware.py", line 59, in process_response
+    request.session.save()
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py", line 95, in save
+    raise UpdateError
+django.contrib.sessions.backends.base.UpdateError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\middleware.py", line 61, in process_response
+    raise SessionInterrupted(
+django.contrib.sessions.exceptions.SessionInterrupted: The request's session was deleted before the request completed. The user may have logged out in a concurrent request, for example.
+"GET /admin/home/coursesuggession/?technology__uid__exact=32c13d00-4842-42d6-a75d-864ce6349ca3 HTTP/1.1" 400 170153
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django_auto_logout\middleware.py", line 44, in middleware
+    _auto_logout(request, settings.AUTO_LOGOUT)
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django_auto_logout\middleware.py", line 35, in _auto_logout
+    logout(request)
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\__init__.py", line 158, in logout
+    request.session.flush()
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\base.py", line 295, in flush
+    self.delete()
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py", line 104, in delete
+    self.model.objects.get(session_key=session_key).delete()
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1118, in delete
+    return collector.delete()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\deletion.py", line 448, in delete
+    count = sql.DeleteQuery(model).delete_batch(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\subqueries.py", line 42, in delete_batch
+    num_deleted += self.do_query(
+                   ^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\subqueries.py", line 20, in do_query
+    cursor = self.get_compiler(using).execute_sql(CURSOR)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+"GET /admin/ HTTP/1.1" 500 143596
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2235
+"GET /static/admin/css/base.css HTTP/1.1" 200 20344
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\admin\sites.py", line 441, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\views.py", line 109, in form_valid
+    auth_login(self.request, form.get_user())
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\__init__.py", line 118, in login
+    request.session.cycle_key()
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\base.py", line 304, in cycle_key
+    self.create()
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py", line 54, in create
+    self.save(must_create=True)
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py", line 86, in save
+    obj.save(
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+"POST /admin/login/?next=/admin/ HTTP/1.1" 500 229461
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2235
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\admin\sites.py", line 441, in login
+    return LoginView.as_view(**defaults)(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\views.py", line 90, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\edit.py", line 153, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\views.py", line 109, in form_valid
+    auth_login(self.request, form.get_user())
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\auth\__init__.py", line 118, in login
+    request.session.cycle_key()
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\base.py", line 304, in cycle_key
+    self.create()
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py", line 54, in create
+    self.save(must_create=True)
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\contrib\sessions\backends\db.py", line 86, in save
+    obj.save(
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BhaviyaBabu\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+"POST /admin/login/?next=/admin/ HTTP/1.1" 500 229461
+Watching for file changes with StatReloader
+>>>>>>> 5043f66cd767b990983d1c2d8e7dce3639f70f32
