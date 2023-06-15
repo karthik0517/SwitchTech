@@ -33,6 +33,9 @@ class Category(BaseModel):
     def __str__(self) -> str:
         return self.category_name
 
+    class Meta:
+        verbose_name_plural = "Categories"
+
 class Question(BaseModel):
     category =  models.ForeignKey(Category,related_name='category', on_delete=models.CASCADE)
     question = models.CharField(max_length=200)
@@ -94,6 +97,7 @@ class CourseSuggession(models.Model):
     
     class Meta:
         db_table = 'course_suggestion'
+        verbose_name_plural = "Course Suggestion"
 
     def __str__(self) -> str:
         return self.course_url        
