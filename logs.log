@@ -935,3 +935,13 @@ C:\Users\VenugopalPemma\Documents\Git_Switch\SwitchTech\home\urls.py changed, re
 Watching for file changes with StatReloader
 C:\Users\VenugopalPemma\Documents\Git_Switch\SwitchTech\home\views.py changed, reloading.
 Watching for file changes with StatReloader
+C:\Users\VenugopalPemma\Documents\Git_Switch\SwitchTech\home\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\VenugopalPemma\Documents\Git_Switch\SwitchTech\home\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Login page accessed!
+"GET / HTTP/1.1" 200 9642
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4011
