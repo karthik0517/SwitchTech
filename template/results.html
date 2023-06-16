@@ -178,39 +178,6 @@
 			cursor: pointer;
 		}
 
-		/* .header_title {
-        width: 100%;
-        float: left;
-    }
-
-    .header_title .font_normal {
-        width: 100%;
-        float: left;
-        font-weight: 100;
-        font-size: 40px;
-        margin: 0;
-    }
-
-    .header_title .font_bold {
-        width: 100%;
-        float: left;
-        font-weight: bold;
-        font-size: 50px;
-        text-transform: uppercase;
-        letter-spacing: 18px;
-        color: #4169e1;
-        margin: 0;
-    }
-
-    .header_title .header_desc {
-        width: 100%;
-        float: left;
-        margin-top: 30px;
-        font-size: 20px;
-        color: #6495ed;
-    }
-     */
-
 
 		.colored-box1 {
 			color: orange;
@@ -221,7 +188,7 @@
 			width: 100%;
 			float: left;
 		}
-		
+
 
 		.colored-box {
 			color: orange;
@@ -259,6 +226,24 @@
 		}
 
 		.enroll-button:active {
+			background-color: #777;
+		}
+
+		.home-button {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		.home-button:hover {
+			background-color: #555;
+		}
+
+		.home-button:active {
 			background-color: #777;
 		}
 
@@ -300,12 +285,9 @@
 		}
 	</script>
 	<main>
+		<button class="home-button" onclick="redirectToHome()">Home</button>
 		<div class="header_title">
-
 			<h1 class="font_normal">SWITCHING TECH <span class="colored-box1">SYSTEMS</span></h1>
-
-		</div>
-
 		</div>
 		<div class="QuizResults">
 			<u>
@@ -325,8 +307,6 @@
 				<div class="course-rating">Course Ratings:<span class="colored-box"> {{ratings}}</span></div>
 				<div class="course-instructor">Course Instructor:<span class="colored-box"> {{instructor}}</span></div>
 				<div class="course-duration">Course Duration: <span class="colored-box">{{duration}} hours</span></div>
-
-				<!-- <div class="course-link"><a href="{{ suggested }}">Go to course</a></div> -->
 				<button class="enroll-button" onclick="openPopup()" data-suggested="{{ suggested }}">Enroll this course</button>
 			</div>
 		</div>
@@ -354,41 +334,26 @@
       window.location.replace(url);
     }
 
-<!--    function redirectToUdemy() {-->
-<!--			const enrollButton = document.querySelector('.enroll-button');-->
-<!--			const suggestedUrl = enrollButton.getAttribute('data-suggested');-->
-<!--			const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";-->
-<!--			const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;-->
+	function redirectToUdemy() {
+		// Logout logic
+		sessionStorage.clear();
+		const url = 'http://127.0.0.1:8000/';
+		window.location.replace(url);
 
-<!--			// Open the Udemy login page in the same tab-->
-<!--			window.location.href = udemyUrl;-->
+		// Redirect to Udemy login page
+		const enrollButton = document.querySelector('.enroll-button');
+		const suggestedUrl = enrollButton.getAttribute('data-suggested');
+		const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";
+		const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;
 
-<!--			// Clear session storage when the user tries to navigate away from the page-->
-<!--			window.addEventListener('beforeunload', () => {-->
-<!--				sessionStorage.clear();-->
-<!--			});-->
-<!--		}-->
+		// Open the Udemy login page in the same tab
+		window.location.replace(udemyUrl);
 
-		function redirectToUdemy() {
-			// Logout logic
+		// Clear session storage when the user tries to navigate away from the page
+		window.addEventListener('beforeunload', () => {
 			sessionStorage.clear();
-			const url = 'http://127.0.0.1:8000/';
-			window.location.replace(url);
-
-			// Redirect to Udemy login page
-			const enrollButton = document.querySelector('.enroll-button');
-			const suggestedUrl = enrollButton.getAttribute('data-suggested');
-			const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";
-			const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;
-
-			// Open the Udemy login page in the same tab
-			window.location.replace(udemyUrl);
-
-			// Clear session storage when the user tries to navigate away from the page
-			window.addEventListener('beforeunload', () => {
-				sessionStorage.clear();
-			});
-		}
+		});
+	}
 
 
     function raiseTicket() {
@@ -403,7 +368,6 @@
         </div>
         </div>
       `;
-
       document.body.appendChild(popup);
       popup.style.display = "block";
     }
@@ -416,11 +380,15 @@
     function redirectToKeka() {
 			// Logout logic
 			sessionStorage.clear();
-
 			// Redirect to Keka after logout
 			const kekaUrl = "https://letmecall.keka.com/#/me/helpdesk/mytickets";
 			window.location.replace(kekaUrl);
 		}
+
+	function redirectToHome() {
+		const url = 'http://127.0.0.1:8000/validate/homepage';
+		window.location.replace(url);
+	}
   </script>
 </body>
 

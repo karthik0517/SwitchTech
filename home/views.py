@@ -11,6 +11,9 @@ from datetime import datetime
 from django.views.decorators.csrf import csrf_exempt
 from django.core.mail import send_mail
 import logging
+from django.contrib.auth.models import User
+from django.contrib.auth import login
+
 
 logger = logging.getLogger(__name__)
 
@@ -26,11 +29,40 @@ def generate_otp():
 
 count = 0
 def loginPage(request):
-    logger.info('Login page accessed!')
-    if request.method == "POST":
+    remember_me = request.session.get('remember_me', False)
+    print('^^^^^^^^',remember_me)
+    if remember_me:
+        logger.info('User session exists (remember me enabled), redirecting to the Instructions page')
+        context = {'categories': Category.objects.all()}
+        if request.GET.get('category'):
+            return redirect(f"/quiz/?category={request.GET.get('category')}")
+        return render(request, 'index.html', context)
+
+    # if request.user.is_authenticated:
+    #     logger.info('User session is exists redirecting to Instructions page')
+    #     context = {'categories': Category.objects.all()}
+    #     print(context)
+    #     if request.GET.get('category'):
+    #         return redirect(f"/quiz/?category={request.GET.get('category')}")
+    #     return render(request, 'index.html', context)
+
+    elif request.method == "POST":
+        logger.info('Login page accessed!')
         if request.POST.get('mail'):
             Employee_Mail = request.POST.get('mail')
             username = request.POST.get('username')
+            latest_user = User.objects.latest('date_joined')
+            last_user_id = int(latest_user.id) if latest_user else 1
+            try:
+                user = User.objects.get(username=username)
+                if user.email != Employee_Mail:
+                    error_message = 'Invalid username or email-id.'
+                    return render(request, 'login.html', {'error_message': error_message})
+            except User.DoesNotExist:
+                user = User.objects.create(id=last_user_id + 1, username=username, email=Employee_Mail)
+                user.save()
+                # Additional logic for newly created user if needed
+            user_otp = User.objects.get(username=username)
             print(Employee_Mail)
             logger.info(f'Entered employee mail: {Employee_Mail}')
             otp = generate_otp()
@@ -38,7 +70,7 @@ def loginPage(request):
             update_count = count + 1
             database.mail = Employee_Mail
             database.otp = otp
-            database.username = username
+            database.user = user_otp
             database.count = update_count
             check = Otp.objects.filter(mail=database.mail)
             if check.count() > 0:
@@ -48,19 +80,20 @@ def loginPage(request):
                 new_count2 = new_count1 + 1
                 print('--------->', new_count2)
                 logger.warning(f'Previously employee attempted quiz for {new_count1} time')
-                Otp.objects.filter(mail=database.mail).update(otp=database.otp, username=database.username,
+                Otp.objects.filter(mail=database.mail).update(otp=database.otp, user=database.user,
                                                               count=new_count2)
-                check_count = Otp.objects.filter(mail=database.mail).values_list('count', flat=True)
-                time_entred = list(check_count)
-                time_hours = time_entred[0]
-                print(time_hours)
-                if time_hours > 3:
-                    logger.warning(f'Employee trying to login for {time_hours} times, so employee is restricted!')
-                    return render(request, 'restrict.html')
-                else:
-                    logger.info(f'Employee having login attempts and otp is sent to employee mail-id: {Employee_Mail}')
-                    print("otp:", otp)
-                    send_mail(subject="OTP", message=f"Your otp {otp}", from_email="switchingtechsystem@gmail.com",
+
+                # check_count = Otp.objects.filter(mail=database.mail).values_list('count', flat=True)
+                # time_entred = list(check_count)
+                # time_hours = time_entred[0]
+                # print(time_hours)
+                # if time_hours > 30:
+                #     logger.warning(f'Employee trying to login for {time_hours} times, so employee is restricted!')
+                #     return render(request, 'restrict.html')
+                # else:
+                logger.info(f'Employee having login attempts and otp is sent to employee mail-id: {Employee_Mail}')
+                print("otp:", otp)
+                send_mail(subject="OTP", message=f"Your otp {otp}", from_email="switchingtechsystem@gmail.com",
                               recipient_list=[Employee_Mail], fail_silently=False)
             else:
                 logger.info(f'Employee having login attempts and otp is sent to employee mail-id: {Employee_Mail}')
@@ -68,6 +101,7 @@ def loginPage(request):
                 send_mail(subject="OTP", message=f"Your otp {otp}", from_email="switchingtechsystem@gmail.com",
                           recipient_list=[Employee_Mail], fail_silently=False)
                 database.save()
+            
             logger.info('Employee details are saved into database')
             logger.info('Employee is redirected to otp validation page!')
             return render(request, 'validate.html')
@@ -78,27 +112,44 @@ def loginPage(request):
 
 global mail
 def validate(request):
-    context = {'categories': Category.objects.all()}
-    if request.GET.get('category'):
-        logger.info('Employee needs to switch to the {} domain'.format(request.GET.get('category')))
-        return redirect(f"/quiz/?category={request.GET.get('category')}")
-
     if request.method == 'POST':
         mail = request.POST.get('mail')
         otp = request.POST.get('otp')
         print('validate:', mail)
         print('validate:', otp)
+        request.session['mail'] = mail
         verified = Otp.objects.filter(mail=mail, otp=otp)
         if verified:
-            request.session['mail'] = mail
-            logger.info('OTP is validated and redirected to instructions page!.')
-            return render(request, 'index.html', context)
+            keep_signed_in = request.POST.get('remember_me', False) == 'on'
+            # keep_signed_in = request.POST.get('remember_me', False) = 'True'
+            print('---------',keep_signed_in)
+            print('mail',mail)
+            user = User.objects.get(email=mail)
+            print(user)
+            # user = KeepMeSignedInBackend().authenticate(request, otp=otp)
+            print('-----------',user)
+
+            if user is not None:
+                login(request, user)
+                request.session['username'] = user.username
+
+                # set persistent session or cookie if "Keep me signed in" is checked
+                if keep_signed_in:
+                    request.session.set_expiry(86400 * 30)  # set session expiration time (e.g., 30 days)
+                    request.session['remember_me'] = True
+                return redirect('homepage/')
         else:
-            logger.error('OTP is invalid and redirecting to login page')
+            logger.info('Otp is invalid and redirect to login page')
             return render(request, 'login.html')
-    else:
-        logger.error('Employee not entred otp or invalid otp and redirecting to login page')
-        return render(request, 'login.html')
+
+
+        
+
+def homepage(request):
+    context = {'categories': Category.objects.all()}
+    if request.GET.get('category'):
+        return redirect(f"/quiz/?category={request.GET.get('category')}")
+    return render(request, 'index.html', context)
 
 
 def url(score, category):
@@ -123,6 +174,7 @@ def url(score, category):
         logger.info('Based on employee score we are suggesting Intermediate course')
         suggesstion = CourseSuggession.objects.filter(technology__category_name__icontains=category, difficulty='IN')
         for val in suggesstion:
+            print('value------------->', val)
             logger.info(f'course url : {val}')
             suggesstion_url = val
             course_name = val.course_name
@@ -137,6 +189,7 @@ def url(score, category):
         logger.info('Based on employee score we are suggesting Advanced course')
         suggesstion = CourseSuggession.objects.filter(technology__category_name__icontains=category, difficulty='AD')
         for val in suggesstion:
+            print('value------------->', val)
             logger.info(f'course url : {val}')
             suggesstion_url = val
             course_name = val.course_name
@@ -152,11 +205,12 @@ def url(score, category):
 def history(request):
     mail = request.session.get('mail')
     print('MAIL in HISTORY:---->', mail)
-    username = Otp.objects.filter(mail=mail).values_list('id', flat=True)
-    new = list(username)
-    print("Employee ID :", new)
-    update = new[0]
-    score_details = QuizUserScore.objects.filter(user=update).values_list('score', 'created_at', 'quiz_domain')
+    # username = Otp.objects.filter(mail=mail).values_list('id', flat=True)
+    # new = list(username)
+    # print("Employee ID :", new)
+    # update = new[0]
+    user = User.objects.get(email=mail)
+    score_details = QuizUserScore.objects.filter(user=user).values_list('score', 'created_at', 'quiz_domain')
     user_history = list(score_details)
     if user_history:
         logger.info('Employee previous quiz history present')
@@ -215,11 +269,12 @@ def quiz(request):
     new = list(username)
     print("Employee Id:", new)
     update = new[0]
-    time_remaining = QuizAttempt.objects.filter(id=update).values_list('timer', 'domain')
+    user = User.objects.get(email=mail)
+    time_remaining = QuizAttempt.objects.filter(user=user).values_list('timer', 'domain')
     if time_remaining:
-        print('timer_remaining--->', time_remaining)
+        # print('timer_remaining--->', time_remaining)
         rem_time = list(time_remaining)
-        print('rem_timer---->', rem_time)
+        # print('rem_timer---->', rem_time)
         update_timer = rem_time[0][0]
         logger.info(f'Employee still having the previous quiz timer with {update_timer} sec')
         print('updated_timer_db--------->', update_timer)
@@ -292,8 +347,10 @@ def save_remaining_time(request):
         new = list(username)
         print("check us:", new)
         update = new[0]
+        user = User.objects.get(email=mail)
         quiz_timer.timer = remaining_time
-        quiz_timer.id = update
+        # quiz_timer.id = update
+        quiz_timer.user = user
         quiz_timer.domain = category
         quiz_timer.save()
         return JsonResponse({'message': 'Remaining time saved successfully'})
@@ -317,15 +374,16 @@ def result(request):
         new = list(username)
         print("check us:", new)
         update = new[0]
+        user = User.objects.get(email=mail)
         score_data = json.loads(request.body)
         score = score_data.get('score')
         category = score_data.get('category')
         quiz_add.quiz_domain = category
         quiz_add.score = score * 10
-        quiz_add.user = update
-        check = QuizUserScore.objects.filter(user=quiz_add.user)
+        quiz_add.user = user
+        check = QuizUserScore.objects.filter(user=user)
         if check.count() > 0:
-            QuizUserScore.objects.filter(user=quiz_add.user).update(created_at=datetime.now(), score=quiz_add.score,
+            QuizUserScore.objects.filter(user=user).update(created_at=datetime.now(), score=quiz_add.score,
                                                                     quiz_domain=quiz_add.quiz_domain)
         else:
             quiz_add.save()

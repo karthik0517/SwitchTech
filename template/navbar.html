@@ -17,7 +17,7 @@
     <ul class="navbar-nav">
       {% if user.is_authenticated %}
         <li class="nav-item active">
-          <a class="nav-link" href="{% url 'home' %}">Home</a>
+          <!-- <a class="nav-link" href="{% url 'home' %}">Home</a> -->
         </li>
       {% endif %}
       </li>
@@ -26,7 +26,7 @@
       {% if request.user.is_staff %}
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="{% url 'addQuestion' %}">Add Question</a>
+        <!-- <a class="nav-link" href="{% url 'addQuestion' %}">Add Question</a> -->
       </li>
       {% endif %} 
  
@@ -38,7 +38,7 @@
   </div>
   {% if user.is_authenticated %}
     <span class="greet">Hello, {{request.user}}</span>
-    <span ><a href="{% url 'logout' %}">Logout</a></span>
+    <!-- <span ><a href="{% url 'logout' %}">Logout</a></span> -->
   {% endif %}
   <p></p>
  

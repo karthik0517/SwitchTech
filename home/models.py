@@ -9,7 +9,8 @@ from django.contrib.auth.models import User
 
 
 class QuizUserScore(models.Model):
-    user = models.CharField(User, max_length=50)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    # user = models.CharField(User, max_length=50)
     quiz_domain = models.CharField(max_length=50, null=True)
     score = models.IntegerField()
     created_at = models.DateTimeField(auto_now=True)
@@ -31,6 +32,9 @@ class Category(BaseModel):
 
     def __str__(self) -> str:
         return self.category_name
+
+    class Meta:
+        verbose_name_plural = "Categories"
 
 class Question(BaseModel):
     category =  models.ForeignKey(Category,related_name='category', on_delete=models.CASCADE)
@@ -93,18 +97,22 @@ class CourseSuggession(models.Model):
     
     class Meta:
         db_table = 'course_suggestion'
+        verbose_name_plural = "Course Suggestion"
 
     def __str__(self) -> str:
         return self.course_url        
 
 #  testing_otp_code
 class Otp(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     mail = models.CharField(max_length=50)
     otp = models.CharField(max_length=50)
-    username = models.CharField(max_length=50)
+    # username = models.CharField(max_length=50)
     count = models.IntegerField(default=0)
 
 
 class QuizAttempt(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    # username = models.CharField(max_length=50,default='')
     timer = models.IntegerField(default=0)
     domain = models.CharField(max_length=50, default='')

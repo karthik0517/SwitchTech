@@ -8,6 +8,7 @@ urlpatterns = [
     path('', views.loginPage,name='login'),
     path('home/',views.home,name='home'),
     path('validate/',views.validate, name='validate'),
+    path('validate/homepage/',views.homepage,name='homepage'),
     path('api/get-quiz/',views.get_quiz,name='get_quiz'),
     path('api/result/',views.result,name='result'),
     path('history/',views.history, name='history'),
