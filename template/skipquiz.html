@@ -211,6 +211,42 @@
 	.modal-buttons button:hover {
 		background-color: #555;
 	}
+
+	.enroll-button {
+		background-color: #333;
+		color: #fff;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	.enroll-button:hover {
+		background-color: #555;
+	}
+
+	.enroll-button:active {
+		background-color: #777;
+	}
+
+	.home-button {
+		background-color: #333;
+		color: #fff;
+		padding: 10px 20px; /* Adjust the padding to change the button size */
+		border: none;
+		border-radius: 5px;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	.home-button:hover {
+		background-color: #555;
+	}
+
+	.home-button:active {
+		background-color: #777;
+	}
 </style>
 
 	<style>
@@ -459,6 +495,7 @@
 		}
 	</script>
 	<main>
+		
 		<div class="header_title">
 
 			<h1 class="font_normal text-align:center">SWITCHING TECH <span class="colored-box1">SYSTEMS</span></h1><br>
@@ -467,6 +504,7 @@
 
 		</div>
     <div class="recommendations">
+		<button class="home-button" onclick="redirectToHome()">Home</button>
         <h4>As you have skipped the quiz, we can't analyze how much knowledge you have currently on this technology, so we are suggesting you all levels of courses. These are the best in-house courses we have. Happy learning!!!<hr></h4>
         {% for suggestion in suggestions %}
         <div class="course">
@@ -530,14 +568,37 @@
     window.location.replace(url);
   }
 
-  function redirectToUdemy() {
-    const enrollButton = document.querySelector('.enroll-button');
-    const suggestedUrl = enrollButton.getAttribute('data-suggested');
-    const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";
-    const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;
+//   function redirectToUdemy() {
+//     const enrollButton = document.querySelector('.enroll-button');
+//     const suggestedUrl = enrollButton.getAttribute('data-suggested');
+//     const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";
+//     const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;
 
-    // Open the Udemy login page in the same tab
-    window.location.href = udemyUrl;
+//     // Open the Udemy login page in the same tab
+//     window.location.href = udemyUrl;
+//   }
+  function redirectToUdemy() {
+	// Logout logic
+	sessionStorage.clear();
+	const url = 'http://127.0.0.1:8000/';
+	window.location.replace(url);
+
+	// Redirect to Udemy login page
+	const enrollButton = document.querySelector('.enroll-button');
+	const suggestedUrl = enrollButton.getAttribute('data-suggested');
+	const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";
+	const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;
+
+	console.log('suggestedUrl:', suggestedUrl);
+	console.log('udemyUrl:', udemyUrl);
+
+	// Open the Udemy login page in the same tab
+	window.location.replace(udemyUrl);
+
+	// Clear session storage when the user tries to navigate away from the page
+	window.addEventListener('beforeunload', () => {
+		sessionStorage.clear();
+	});
   }
 
 
@@ -565,6 +626,10 @@
 
   function redirectToKeka() {
     window.location.href = "https://letmecall.keka.com/#/me/helpdesk/mytickets";
+  }
+  function redirectToHome() {
+	const url = 'http://127.0.0.1:8000/validate/homepage';
+	window.location.replace(url);
   }
 </script>
 </body>

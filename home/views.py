@@ -29,17 +29,30 @@ def generate_otp():
 
 count = 0
 def loginPage(request):
-    logger.info('Login page accessed!')
-    if request.method == "POST":
+    remember_me = request.session.get('remember_me', False)
+    print('^^^^^^^^',remember_me)
+    if remember_me:
+        logger.info('User session exists (remember me enabled), redirecting to the Instructions page')
+        context = {'categories': Category.objects.all()}
+        if request.GET.get('category'):
+            return redirect(f"/quiz/?category={request.GET.get('category')}")
+        return render(request, 'index.html', context)
+
+    # if request.user.is_authenticated:
+    #     logger.info('User session is exists redirecting to Instructions page')
+    #     context = {'categories': Category.objects.all()}
+    #     print(context)
+    #     if request.GET.get('category'):
+    #         return redirect(f"/quiz/?category={request.GET.get('category')}")
+    #     return render(request, 'index.html', context)
+
+    elif request.method == "POST":
+        logger.info('Login page accessed!')
         if request.POST.get('mail'):
             Employee_Mail = request.POST.get('mail')
             username = request.POST.get('username')
             latest_user = User.objects.latest('date_joined')
             last_user_id = int(latest_user.id) if latest_user else 1
-            # # user, created = User.objects.get_or_create(id=last_user_id + 1, username=username, email=Employee_Mail)
-            # user, created = User.objects.get_or_create(username=username, email=Employee_Mail)
-            # if created:
-            #     user.save()
             try:
                 user = User.objects.get(username=username)
                 if user.email != Employee_Mail:
@@ -104,12 +117,10 @@ def validate(request):
         otp = request.POST.get('otp')
         print('validate:', mail)
         print('validate:', otp)
-
         request.session['mail'] = mail
         verified = Otp.objects.filter(mail=mail, otp=otp)
         if verified:
-            keep_signed_in = request.POST.get('remember_me', False) == 'True'
-
+            keep_signed_in = request.POST.get('remember_me', False) == 'on'
             # keep_signed_in = request.POST.get('remember_me', False) = 'True'
             print('---------',keep_signed_in)
             print('mail',mail)
@@ -127,6 +138,11 @@ def validate(request):
                     request.session.set_expiry(86400 * 30)  # set session expiration time (e.g., 30 days)
                     request.session['remember_me'] = True
                 return redirect('homepage/')
+        else:
+            logger.info('Otp is invalid and redirect to login page')
+            return render(request, 'login.html')
+
+
         
 
 def homepage(request):
@@ -158,6 +174,7 @@ def url(score, category):
         logger.info('Based on employee score we are suggesting Intermediate course')
         suggesstion = CourseSuggession.objects.filter(technology__category_name__icontains=category, difficulty='IN')
         for val in suggesstion:
+            print('value------------->', val)
             logger.info(f'course url : {val}')
             suggesstion_url = val
             course_name = val.course_name
@@ -172,6 +189,7 @@ def url(score, category):
         logger.info('Based on employee score we are suggesting Advanced course')
         suggesstion = CourseSuggession.objects.filter(technology__category_name__icontains=category, difficulty='AD')
         for val in suggesstion:
+            print('value------------->', val)
             logger.info(f'course url : {val}')
             suggesstion_url = val
             course_name = val.course_name
@@ -254,9 +272,9 @@ def quiz(request):
     user = User.objects.get(email=mail)
     time_remaining = QuizAttempt.objects.filter(user=user).values_list('timer', 'domain')
     if time_remaining:
-        print('timer_remaining--->', time_remaining)
+        # print('timer_remaining--->', time_remaining)
         rem_time = list(time_remaining)
-        print('rem_timer---->', rem_time)
+        # print('rem_timer---->', rem_time)
         update_timer = rem_time[0][0]
         logger.info(f'Employee still having the previous quiz timer with {update_timer} sec')
         print('updated_timer_db--------->', update_timer)

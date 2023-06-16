@@ -2769,6 +2769,22 @@ Employee agreed to terms and conditions with selected domain Python and timer wi
 "GET /api/get-quiz/?category=Python HTTP/1.1" 200 4249
 "POST /api/save-remaining-time/ HTTP/1.1" 200 48
 Watching for file changes with StatReloader
+<<<<<<< HEAD
+"GET / HTTP/1.1" 200 9064
+Login page accessed!
+Entered employee mail: test123@ratnaglobaltech.com
+OTP is generated 7194
+Employee having login attempts and otp is sent to employee mail-id: test123@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8317
+"GET /validate/homepage/?category=Python HTTP/1.1" 302 0
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14308
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4215
+=======
 "GET /admin/auth/user/ HTTP/1.1" 302 0
 "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2255
 "GET /static/admin/css/base.css HTTP/1.1" 200 20344
@@ -2849,12 +2865,110 @@ Employee agreed to terms and conditions with selected domain Python and timer wi
 "GET /quiz/?category=Python HTTP/1.1" 200 14308
 "GET /static/images/Quiz.png HTTP/1.1" 200 89384
 "GET /api/get-quiz/?category=Python HTTP/1.1" 200 4021
+>>>>>>> 5043f66cd767b990983d1c2d8e7dce3639f70f32
 Based on employee score we are suggesting Beginner course
 course url : https://www.udemy.com/course/100-days-of-code/
 Based on quiz attempt employee got 50 score
 "POST /api/result/ HTTP/1.1" 200 0
 "POST /api/save-remaining-time/ HTTP/1.1" 200 48
 Employee submitted quiz and redirect to results page with course suggestion
+<<<<<<< HEAD
+"GET /final/ HTTP/1.1" 200 8513
+User session exists (remember me enabled), redirecting to the Instructions page
+- Broken pipe from ('127.0.0.1', 8913)
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8317
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9064
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: test123@ratnaglobaltech.com
+OTP is generated 1065
+Previously employee attempted quiz for 1 time
+Employee having login attempts and otp is sent to employee mail-id: test123@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8317
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8317
+Employee previous quiz history present
+Employee previous quiz score : 50
+Employee previous quiz attempt date 2023-06-15 11:49:03.388603+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 2648
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 13898
+"GET /static/images/recommendation.png HTTP/1.1" 200 113005
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8317
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9064
+Login page accessed!
+Entered employee mail: test123@ratnaglobaltech.com
+OTP is generated 1560
+Previously employee attempted quiz for 2 time
+Employee having login attempts and otp is sent to employee mail-id: test123@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8317
+"GET /validate/homepage/?category=Python HTTP/1.1" 302 0
+Employee still having the previous quiz timer with 37 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 37 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14308
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4286
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 50 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 8513
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8317
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 15451
+"GET /validate/homepage HTTP/1.1" 301 0
+"GET /validate/homepage/ HTTP/1.1" 200 8317
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 15451
+User session exists (remember me enabled), redirecting to the Instructions page
+- Broken pipe from ('127.0.0.1', 9238)
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9064
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: karthik.konduru@ratnaglobaltech.com
+OTP is generated 9192
+Previously employee attempted quiz for 16 time
+Employee having login attempts and otp is sent to employee mail-id: karthik.konduru@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8320
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+"GET /validate/homepage/?category=Python HTTP/1.1" 302 0
+Employee still having the previous quiz timer with 40 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 40 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14308
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 3984
+- Broken pipe from ('127.0.0.1', 9520)
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 15505
+"GET /static/images/recommendation.png HTTP/1.1" 200 113005
+=======
 "GET /final/ HTTP/1.1" 200 8236
 "GET /static/images/Result.png HTTP/1.1" 200 99021
 "GET /validate/homepage HTTP/1.1" 301 0
@@ -4761,6 +4875,7 @@ Traceback (most recent call last):
 django.db.utils.OperationalError: database is locked
 "POST /admin/login/?next=/admin/ HTTP/1.1" 500 229461
 Watching for file changes with StatReloader
+<<<<<<< HEAD
 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
 "GET /admin/ HTTP/1.1" 200 10570
 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
@@ -4820,3 +4935,6 @@ Not Found: /favicon.ico
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 "GET /admin/home/coursesuggession/?technology__uid__exact=3f56edfa-9d5e-434a-86b9-1cd66d576a41 HTTP/1.1" 200 11862
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+=======
+>>>>>>> 5043f66cd767b990983d1c2d8e7dce3639f70f32
+>>>>>>> 643de7bac4c0aaaba207b991b88719ffc3efb135
