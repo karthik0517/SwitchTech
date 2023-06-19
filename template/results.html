@@ -258,7 +258,7 @@
 			alt="Logo">
 		<img align="right" class="logo1" src="{% static 'images/Result.png' %}" />
 	</header>
-	<button class="logout-button" onclick="openModal()">Logout</button>
+	<button class="logout-button" onclick="openModal()" style="background-color: black;">Logout</button>
 	<div id="myModal" class="modal">
 		<div class="modal-content">
 			<span class="modal-close" onclick="closeModal()">&times;</span>
@@ -285,7 +285,7 @@
 		}
 	</script>
 	<main>
-		<button class="home-button" onclick="redirectToHome()">Home</button>
+		<button class="home-button" onclick="redirectToHome()" style="background-color: black;">Home</button>
 		<div class="header_title">
 			<h1 class="font_normal">SWITCHING TECH <span class="colored-box1">SYSTEMS</span></h1>
 		</div>
@@ -307,7 +307,7 @@
 				<div class="course-rating">Course Ratings:<span class="colored-box"> {{ratings}}</span></div>
 				<div class="course-instructor">Course Instructor:<span class="colored-box"> {{instructor}}</span></div>
 				<div class="course-duration">Course Duration: <span class="colored-box">{{duration}} hours</span></div>
-				<button class="enroll-button" onclick="openPopup()" data-suggested="{{ suggested }}">Enroll this course</button>
+				<button class="enroll-button" style="background: black;" onclick="openPopup()" data-suggested="{{ suggested }}" >Enroll this course</button>
 			</div>
 		</div>
 	</main>
