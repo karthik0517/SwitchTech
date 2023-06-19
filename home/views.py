@@ -143,8 +143,6 @@ def validate(request):
             return render(request, 'login.html')
 
 
-        
-
 def homepage(request):
     context = {'categories': Category.objects.all()}
     if request.GET.get('category'):

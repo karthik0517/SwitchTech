@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 {% load static%}
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -146,7 +145,6 @@
             /* width: 400px; */
             height: 400px;
             /* float:right; */
-
         }
 
         .highlight {
@@ -197,8 +195,6 @@
 </head>
 
 <body>
-
-
 <main>
     <div class="email_form">
         <form method="POST" action="result">
@@ -215,12 +211,15 @@
                             <div class="card-body">
                                 <h5 class="card-title">Question [[index + 1]]</h5>
                                 <p class="card-text">[[question.question]]</p>
-                                <div class="form-check" v-for="answer in question.answers">
+                                <div class="form-check" v-for="(answer, answerIndex) in question.answers">
                                     <input type="radio" @change="checkAnswer($event, question.uid, answer.is_correct)"
-                                        :value="answer.answer" :name="'question-' + question.uid" id="flexRadioDefault1"
+                                        :value="answer.answer" :name="'question-' + question.uid"
                                         class="form-check-input" required
+                                        :id="'option-' + question.uid + '-' + answerIndex"
                                         :checked="selectedOptions[question.uid] === answer.answer">
-                                    <label class="form-check-label" for="flexRadioDefault1">[[answer.answer]]</label>
+                                    <label class="form-check-label" @click="selectOption(question.uid, answer.answer)">
+                                        [[answer.answer]]
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -344,15 +343,20 @@
                                 _this.questions = result.data
                             })
                     },
+
                     checkAnswer(event, uid, isCorrect) {
                         if (isCorrect) {
-                            this.score++
-                            console.log("answer is correct")
-                        } else {
-                            console.log("Incorrect")
+                            this.score++;
                         }
                         this.selectedOptions[uid] = event.target.value; // Store the selected option for the current question
                     },
+
+                    selectOption(questionUid, answer) {
+                        this.selectedOptions[questionUid] = answer;
+                        const radioId = 'option-' + questionUid + '-' + this.questions[this.currentQuestion].answers.findIndex(ans => ans.answer === answer);
+                        document.getElementById(radioId).click();
+                    },
+
                     nextQuestion() {
                         const currentQuestionUid = this.questions[this.currentQuestion].uid;
                         if (!this.selectedOptions[currentQuestionUid]) {
@@ -365,8 +369,20 @@
                     previousQuestion() {
                         this.currentQuestion--;
                     },
+
+                    showConfirmation() {
+                        if (confirm("Are you sure you want to submit the quiz?")) {
+                          this.submitQuiz();
+                        }
+                    },
+
                     submitQuiz() {
                         event.preventDefault();
+                        const currentQuestionUid = this.questions[this.currentQuestion].uid;
+                        if (!this.selectedOptions[currentQuestionUid]) {
+                            $('#errorModal').modal('show');
+                            return;
+                        }
                         const scoreData = { score: this.score, category: this.category }
                         const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value; // get the CSRF token from the page
                         console.log(JSON.stringify(scoreData))
@@ -389,6 +405,7 @@
                         })
                     },
                 },
+
                 created() {
                     this.getQuestions()
                     console.log('Loaded')
@@ -401,5 +418,4 @@
     </div>
 </main>
 </body>
-
 </html>
