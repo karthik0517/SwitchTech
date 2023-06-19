@@ -5353,3 +5353,366 @@ Not Found: /favicon.ico
 >>>>>>> 5043f66cd767b990983d1c2d8e7dce3639f70f32
 >>>>>>> 643de7bac4c0aaaba207b991b88719ffc3efb135
 >>>>>>> 4e871887dac7ace671e2d289305a719302856b0c
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9064
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4193
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 5437
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8317
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8317
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET /?category=Python HTTP/1.1" 302 0
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14308
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4221
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8317
+Employee previous quiz history is not present
+"GET /history/ HTTP/1.1" 200 2175
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET /?category=Python HTTP/1.1" 302 0
+Employee still having the previous quiz timer with 21 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 21 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14308
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4319
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9064
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+"POST / HTTP/1.1" 200 9246
+Login page accessed!
+Entered employee mail: srilekha.bollu@ratnaglobaltech.com
+OTP is generated 0379
+Employee having login attempts and otp is sent to employee mail-id: srilekha.bollu@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8321
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee skipped the quiz and select domain PHP and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=PHP HTTP/1.1" 200 15482
+"GET /static/images/recommendation.png HTTP/1.1" 304 0
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8321
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET /?category=Java HTTP/1.1" 302 0
+Employee agreed to terms and conditions with selected domain Java and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 14302
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 4107
+Internal Server Error: /api/save-remaining-time/
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\SwitchTech\home\views.py", line 349, in save_remaining_time
+    update = new[0]
+             ~~~^^^
+IndexError: list index out of range
+"POST /api/save-remaining-time/ HTTP/1.1" 500 68868
+"GET / HTTP/1.1" 200 9064
+Login page accessed!
+"POST / HTTP/1.1" 200 9246
+Login page accessed!
+"POST / HTTP/1.1" 200 9246
+Login page accessed!
+Entered employee mail: srilekha11.bollu@ratnaglobaltech.com
+OTP is generated 2470
+Employee having login attempts and otp is sent to employee mail-id: srilekha11.bollu@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8318
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 15477
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8318
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET /?category=Python HTTP/1.1" 302 0
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14308
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4264
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 40 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 8513
+"GET /static/images/Result.png HTTP/1.1" 304 0
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 8526
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8318
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET /?category=Java HTTP/1.1" 302 0
+Employee still having the previous quiz timer with 27 sec
+Employee agreed to terms and conditions with selected domain Java and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 14302
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 4037
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Based on quiz attempt employee got 30 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 8537
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 8552
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 8585
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8318
+"GET / HTTP/1.1" 200 9064
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+"POST / HTTP/1.1" 200 9246
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 1165
+Previously employee attempted quiz for 1 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8317
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee previous quiz history is not present
+"GET /history/ HTTP/1.1" 200 2175
+Employee previous quiz history is not present
+"GET /history/ HTTP/1.1" 200 2175
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8346
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8353
+Employee previous quiz history is not present
+"GET /history/ HTTP/1.1" 200 2175
+"GET / HTTP/1.1" 200 9064
+Login page accessed!
+"POST / HTTP/1.1" 200 9246
+Login page accessed!
+Entered employee mail: srilekha.11bollu@ratnaglobaltech.com
+OTP is generated 1031
+Employee having login attempts and otp is sent to employee mail-id: srilekha.11bollu@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8354
+"GET /validate/homepage/?category=Java HTTP/1.1" 302 0
+Employee agreed to terms and conditions with selected domain Java and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 14302
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 4152
+- Broken pipe from ('127.0.0.1', 52846)
+"GET / HTTP/1.1" 200 9064
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+"POST / HTTP/1.1" 200 9246
+Login page accessed!
+"POST / HTTP/1.1" 200 9246
+Login page accessed!
+"POST / HTTP/1.1" 200 9246
+Login page accessed!
+"POST / HTTP/1.1" 200 9246
+"GET / HTTP/1.1" 200 9064
+Login page accessed!
+"POST / HTTP/1.1" 200 9246
+Login page accessed!
+"POST / HTTP/1.1" 200 9246
+"GET / HTTP/1.1" 200 9064
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+"POST / HTTP/1.1" 200 9246
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 7412
+Previously employee attempted quiz for 2 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8353
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee previous quiz history is not present
+"GET /history/ HTTP/1.1" 200 2175
+Employee previous quiz history is not present
+"GET /history/ HTTP/1.1" 200 2211
+"GET / HTTP/1.1" 200 9064
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 8786
+Previously employee attempted quiz for 3 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8353
+Employee skipped the quiz and select domain Java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Java HTTP/1.1" 200 15544
+"GET /static/images/recommendation.png HTTP/1.1" 200 113005
+"GET / HTTP/1.1" 200 9064
+Login page accessed!
+Entered employee mail: srilekha.bollu@ratnaglobaltech.com
+OTP is generated 8701
+Previously employee attempted quiz for 1 time
+Employee having login attempts and otp is sent to employee mail-id: srilekha.bollu@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8357
+Internal Server Error: /history/
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\SwitchTech\home\views.py", line 212, in history
+    user = User.objects.get(email=mail)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+"GET /history/ HTTP/1.1" 500 76359
+Internal Server Error: /history/
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\SwitchTech\home\views.py", line 212, in history
+    user = User.objects.get(email=mail)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+"GET /history/ HTTP/1.1" 500 76359
+Internal Server Error: /history/
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\SwitchTech\home\views.py", line 212, in history
+    user = User.objects.get(email=mail)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Documents\Git_Switch\venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+"GET /history/ HTTP/1.1" 500 76359
+"GET / HTTP/1.1" 200 9064
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 8423
+Previously employee attempted quiz for 4 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8353
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee previous quiz history is not present
+"GET /history/ HTTP/1.1" 200 2214
+"GET / HTTP/1.1" 200 9064
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 4869
+Previously employee attempted quiz for 5 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8353
+Employee previous quiz history is not present
+"GET /history/ HTTP/1.1" 200 2214
+"GET /validate/homepage/ HTTP/1.1" 200 8386
+"GET /validate/homepage/?category=Python HTTP/1.1" 302 0
+Employee still having the previous quiz timer with 21 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 21 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14308
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4265
+- Broken pipe from ('127.0.0.1', 58256)
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 15477
+"GET /static/images/recommendation.png HTTP/1.1" 200 113005
+"GET / HTTP/1.1" 200 9064
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 6616
+Previously employee attempted quiz for 6 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8407
+"GET /validate/homepage/ HTTP/1.1" 200 8408
+Employee skipped the quiz and select domain Java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Java HTTP/1.1" 200 15544
+Employee skipped the quiz and select domain Java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Java HTTP/1.1" 200 15577
+"GET /validate/homepage HTTP/1.1" 301 0
+"GET /validate/homepage/ HTTP/1.1" 200 8408
+"GET / HTTP/1.1" 200 9064
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 5159
+Previously employee attempted quiz for 7 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8408
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 15510
+Forbidden (CSRF token from the 'X-Csrftoken' HTTP header incorrect.): /api/save-remaining-time/
+"POST /api/save-remaining-time/ HTTP/1.1" 403 2553
