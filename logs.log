@@ -6020,6 +6020,7 @@ Forbidden (CSRF token from the 'X-Csrftoken' HTTP header incorrect.): /api/save-
 "POST /api/save-remaining-time/ HTTP/1.1" 403 2553
 >>>>>>> a0d47cc070310e12507ab47c83642529b1e6aabc
 Watching for file changes with StatReloader
+<<<<<<< HEAD
 User session exists (remember me enabled), redirecting to the Instructions page
 "GET / HTTP/1.1" 200 8399
 User session exists (remember me enabled), redirecting to the Instructions page
@@ -6125,3 +6126,5 @@ User session exists (remember me enabled), redirecting to the Instructions page
 "GET / HTTP/1.1" 200 9064
 C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\switching_tech\settings.py changed, reloading.
 Watching for file changes with StatReloader
+=======
+>>>>>>> 1e92a01401fc22268c147c742efefeafdaa26dfe
