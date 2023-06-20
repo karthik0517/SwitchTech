@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # 'question_bank',
     'home',
     'django_extensions',
+    'preventconcurrentlogins',
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -50,7 +51,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django_auto_logout.middleware.auto_logout',
+    'preventconcurrentlogins.middleware.PreventConcurrentLoginsMiddleware',
+    # 'django_auto_logout.middleware.auto_logout',
 ]
 
 ROOT_URLCONF = 'switching_tech.urls'
@@ -66,7 +68,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django_auto_logout.context_processors.auto_logout_client',
+                # 'django_auto_logout.context_processors.auto_logout_client',
             ],
         },
     },
@@ -164,13 +166,17 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# Auto Logout user
-AUTO_LOGOUT = {
-    'IDLE_TIME': timedelta(minutes=5),
-    'MESSAGE': 'The session has expired. Please login again to continue.',
-    'REDIRECT_TO_LOGIN_IMMEDIATELY': True,
+# Session settings
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+SESSION_COOKIE_SECURE = False  # Set to True when testing over HTTPS
 
-}
+# # Auto Logout user
+# AUTO_LOGOUT = {
+#     'IDLE_TIME': timedelta(minutes=5),
+#     'MESSAGE': 'The session has expired. Please login again to continue.',
+#     'REDIRECT_TO_LOGIN_IMMEDIATELY': True,
+
+# }
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 

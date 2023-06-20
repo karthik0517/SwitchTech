@@ -6019,3 +6019,109 @@ Employee skipped the quiz and select domain Python and redirected to all recomen
 Forbidden (CSRF token from the 'X-Csrftoken' HTTP header incorrect.): /api/save-remaining-time/
 "POST /api/save-remaining-time/ HTTP/1.1" 403 2553
 >>>>>>> a0d47cc070310e12507ab47c83642529b1e6aabc
+Watching for file changes with StatReloader
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8399
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET /?category=Python HTTP/1.1" 302 0
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 35 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15229
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4616
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 40 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 8607
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9064
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 6794
+Previously employee attempted quiz for 2 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8447
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8447
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET /?category=Python HTTP/1.1" 302 0
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 35 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15229
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4399
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 20 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 8324
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+"GET /validate/homepage HTTP/1.1" 301 0
+"GET /validate/homepage/ HTTP/1.1" 200 8447
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 15109
+"GET /static/images/recommendation.png HTTP/1.1" 200 113005
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9064
+"GET / HTTP/1.1" 200 9064
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9064
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 6597
+Previously employee attempted quiz for 3 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8447
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8456
+Employee previous quiz history present
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-20 17:26:11.810884+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 2650
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 15109
+"GET /static/images/recommendation.png HTTP/1.1" 200 113005
+"GET /validate/homepage HTTP/1.1" 301 0
+"GET /validate/homepage/ HTTP/1.1" 200 8456
+"GET / HTTP/1.1" 200 9064
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9064
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 6169
+Previously employee attempted quiz for 4 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8456
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8456
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9064
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\switching_tech\settings.py changed, reloading.
+Watching for file changes with StatReloader

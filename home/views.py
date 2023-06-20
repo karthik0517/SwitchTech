@@ -13,10 +13,9 @@ from django.core.mail import send_mail
 import logging
 from django.contrib.auth.models import User
 from django.contrib.auth import login
-
+from django.conf import settings
 
 logger = logging.getLogger(__name__)
-
 
 def generate_otp():
     digits = "0123456789"
@@ -30,7 +29,7 @@ def generate_otp():
 count = 0
 def loginPage(request):
     remember_me = request.session.get('remember_me', False)
-    print('^^^^^^^^',remember_me)
+    print('------->',remember_me)
     if remember_me:
         logger.info('User session exists (remember me enabled), redirecting to the Instructions page')
         context = {'categories': Category.objects.all()}
@@ -82,7 +81,6 @@ def loginPage(request):
                 logger.warning(f'Previously employee attempted quiz for {new_count1} time')
                 Otp.objects.filter(mail=database.mail).update(otp=database.otp, user=database.user,
                                                               count=new_count2)
-
                 # check_count = Otp.objects.filter(mail=database.mail).values_list('count', flat=True)
                 # time_entred = list(check_count)
                 # time_hours = time_entred[0]
@@ -101,7 +99,6 @@ def loginPage(request):
                 send_mail(subject="OTP", message=f"Your otp {otp}", from_email="switchingtechsystem@gmail.com",
                           recipient_list=[Employee_Mail], fail_silently=False)
                 database.save()
-            
             logger.info('Employee details are saved into database')
             logger.info('Employee is redirected to otp validation page!')
             return render(request, 'validate.html')
@@ -127,17 +124,27 @@ def validate(request):
             user = User.objects.get(email=mail)
             print(user)
             # user = KeepMeSignedInBackend().authenticate(request, otp=otp)
-            print('-----------',user)
-
             if user is not None:
                 login(request, user)
                 request.session['username'] = user.username
 
                 # set persistent session or cookie if "Keep me signed in" is checked
                 if keep_signed_in:
-                    request.session.set_expiry(86400 * 30)  # set session expiration time (e.g., 30 days)
+                    # request.session.set_expiry(86400 * 30)  # set session expiration time (e.g., 30 days)
+                    request.session.set_expiry(None)  # Set session expiration to None
                     request.session['remember_me'] = True
+
+                print('Session mail:', request.session.get('mail'))
+                print('Session remember_me:', request.session.get('remember_me'))
+                print('Session username:', request.session.get('username'))
+                # Debug code: Print request headers
+                print('Request headers:', request.headers)
+                # Debug code: Print session cookie
+                session_cookie = request.COOKIES.get(settings.SESSION_COOKIE_NAME)
+                print('Session cookie:', session_cookie)
+
                 return redirect('homepage/')
+                # return redirect('homepage/')
         else:
             logger.info('Otp is invalid and redirect to login page')
             return render(request, 'login.html')
@@ -203,10 +210,6 @@ def url(score, category):
 def history(request):
     mail = request.session.get('mail')
     print('MAIL in HISTORY:---->', mail)
-    # username = Otp.objects.filter(mail=mail).values_list('id', flat=True)
-    # new = list(username)
-    # print("Employee ID :", new)
-    # update = new[0]
     user = User.objects.get(email=mail)
     score_details = QuizUserScore.objects.filter(user=user).values_list('score', 'created_at', 'quiz_domain')
     user_history = list(score_details)
@@ -246,12 +249,9 @@ def history(request):
         return render(request, 'history.html', context=data)
 
 
-def logoutPage(request):
-    logout(request)
-    response = redirect('app.home.views.home')
-    response.delete_cookie('user_location')
-    return redirect('login')
-
+def logout(request):
+    request.session.flush()
+    return redirect('/')
 
 @login_required(login_url='login')
 def home(request):
@@ -263,10 +263,6 @@ def home(request):
 
 def quiz(request):
     mail = request.session.get('mail')
-    username = Otp.objects.filter(mail=mail).values_list('id', flat=True)
-    new = list(username)
-    print("Employee Id:", new)
-    update = new[0]
     user = User.objects.get(email=mail)
     time_remaining = QuizAttempt.objects.filter(user=user).values_list('timer', 'domain')
     if time_remaining:
@@ -341,10 +337,6 @@ def save_remaining_time(request):
         print('timer_value_js----------->', remaining_time)
         quiz_timer = QuizAttempt()
         mail = request.session.get('mail')
-        username = Otp.objects.filter(mail=mail).values_list('id', flat=True)
-        new = list(username)
-        print("check us:", new)
-        update = new[0]
         user = User.objects.get(email=mail)
         quiz_timer.timer = remaining_time
         # quiz_timer.id = update
@@ -368,10 +360,6 @@ def result(request):
         quiz_add = QuizUserScore()
         global score, suggesstion_url, course_name, ratings, duration, instructor, difficulty
         mail = request.session.get('mail')
-        username = Otp.objects.filter(mail=mail).values_list('id', flat=True)
-        new = list(username)
-        print("check us:", new)
-        update = new[0]
         user = User.objects.get(email=mail)
         score_data = json.loads(request.body)
         score = score_data.get('score')

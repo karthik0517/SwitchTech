@@ -35,7 +35,8 @@ function enableButtons() {
 
     function skipQuiz() {
       const selectedTechnology = document.getElementById("selectedCategory").value;
-      const url = `http://127.0.0.1:8000/skipquiz/?category=${selectedTechnology}`;
+      const currentHost = window.location.host;
+      const url = `http://${currentHost}/skipquiz/?category=${selectedTechnology}`;
       window.location.replace(url);
     }
 
@@ -240,7 +241,7 @@ function enableButtons() {
           </form>
 
           <div class="button-container skip_button">
-            <button id="skipButton" class="btn btn-danger mt-3 me-2" onclick="skipQuiz()"  style="background-color:red;">Skip Quiz</button>
+            <button id="skipButton" class="btn btn-danger mt-3 me-2" onclick="skipQuiz()"  style="background-color:red;" disabled>Skip Quiz</button>
           </div>
         </div>
         <div class="col-md-6 ">

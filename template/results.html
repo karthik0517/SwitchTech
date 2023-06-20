@@ -258,7 +258,7 @@
 			alt="Logo">
 		<img align="right" class="logo1" src="{% static 'images/Result.png' %}" />
 	</header>
-	<button class="logout-button" onclick="openModal()" style="background-color: black;">Logout</button>
+	<button class="logout-button" onclick="openModal()">Logout</button>
 	<div id="myModal" class="modal">
 		<div class="modal-content">
 			<span class="modal-close" onclick="closeModal()">&times;</span>
@@ -279,13 +279,12 @@
 		}
 
 		function logout() {
-			sessionStorage.clear();
-			const url = 'http://127.0.0.1:8000/';
-			window.location.replace(url);
+			console.log("Logout function called.")
+		  window.location.href = "{% url 'logout' %}";
 		}
 	</script>
 	<main>
-		<button class="home-button" onclick="redirectToHome()" style="background-color: black;">Home</button>
+		<button class="home-button" onclick="redirectToHome()">Home</button>
 		<div class="header_title">
 			<h1 class="font_normal">SWITCHING TECH <span class="colored-box1">SYSTEMS</span></h1>
 		</div>
@@ -307,7 +306,7 @@
 				<div class="course-rating">Course Ratings:<span class="colored-box"> {{ratings}}</span></div>
 				<div class="course-instructor">Course Instructor:<span class="colored-box"> {{instructor}}</span></div>
 				<div class="course-duration">Course Duration: <span class="colored-box">{{duration}} hours</span></div>
-				<button class="enroll-button" style="background: black;" onclick="openPopup()" data-suggested="{{ suggested }}" >Enroll this course</button>
+				<button class="enroll-button" onclick="openPopup()" data-suggested="{{ suggested }}">Enroll this course</button>
 			</div>
 		</div>
 	</main>
@@ -329,31 +328,22 @@
     function closePopup() {
       document.getElementById("popupModal").style.display = "none";
     }
-    function logout() {
-      const url = 'http://127.0.0.1:8000/';
-      window.location.replace(url);
-    }
 
-	function redirectToUdemy() {
-		// Logout logic
-		sessionStorage.clear();
-		const url = 'http://127.0.0.1:8000/';
-		window.location.replace(url);
+		function redirectToUdemy() {
+			// Redirect to Udemy login page
+			const enrollButton = document.querySelector('.enroll-button');
+			const suggestedUrl = enrollButton.getAttribute('data-suggested');
+			const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";
+			const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;
 
-		// Redirect to Udemy login page
-		const enrollButton = document.querySelector('.enroll-button');
-		const suggestedUrl = enrollButton.getAttribute('data-suggested');
-		const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";
-		const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;
+			// Open the Udemy login page in the same tab
+			window.location.replace(udemyUrl);
 
-		// Open the Udemy login page in the same tab
-		window.location.replace(udemyUrl);
-
-		// Clear session storage when the user tries to navigate away from the page
-		window.addEventListener('beforeunload', () => {
-			sessionStorage.clear();
-		});
-	}
+			// Clear session storage when the user tries to navigate away from the page
+			window.addEventListener('beforeunload', () => {
+				sessionStorage.clear();
+			});
+		}
 
 
     function raiseTicket() {
@@ -386,9 +376,11 @@
 		}
 
 	function redirectToHome() {
-		const url = 'http://127.0.0.1:8000/validate/homepage';
+		const currentHost = window.location.host;
+		const url = `http://${currentHost}/validate/homepage`;
 		window.location.replace(url);
 	}
+
   </script>
 </body>
 

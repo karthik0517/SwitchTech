@@ -180,10 +180,10 @@
 
 
 
-	/* .colored-box1 {
+	.colored-box1 {
 		color: #0d00ff;
 
-	} */
+	}
 
 	.QuizResults {
 		width: 100%;
@@ -490,21 +490,21 @@
 		}
 
 		function logout() {
-			const url = 'http://127.0.0.1:8000/';
-			window.location.replace(url);
+		  console.log("Logout function called.")
+		  window.location.href = "{% url 'logout' %}";
 		}
 	</script>
 	<main>
 		
 		<div class="header_title">
 
-			<h1 class="font_normal text-align:center">SWITCHING TECH SYSTEMS</h1><br>
+			<h1 class="font_normal text-align:center">SWITCHING TECH <span class="colored-box1">SYSTEMS</span></h1><br>
 
 			<h2>Our Recommendations</h2>
 
 		</div>
     <div class="recommendations">
-		<button class="home-button" onclick="redirectToHome()" style="background-color: black;">Home</button>
+		<button class="home-button" onclick="redirectToHome()">Home</button>
         <h4>As you have skipped the quiz, we can't analyze how much knowledge you have currently on this technology, so we are suggesting you all levels of courses. These are the best in-house courses we have. Happy learning!!!<hr></h4>
         {% for suggestion in suggestions %}
         <div class="course">
@@ -563,44 +563,31 @@
   function closePopup() {
     document.getElementById("popupModal").style.display = "none";
   }
-  function logout() {
-    const url = 'http://127.0.0.1:8000/';
-    window.location.replace(url);
-  }
 
-//   function redirectToUdemy() {
-//     const enrollButton = document.querySelector('.enroll-button');
-//     const suggestedUrl = enrollButton.getAttribute('data-suggested');
-//     const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";
-//     const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;
-
-//     // Open the Udemy login page in the same tab
-//     window.location.href = udemyUrl;
-//   }
   function redirectToUdemy() {
-	// Logout logic
-	sessionStorage.clear();
-	const url = 'http://127.0.0.1:8000/';
-	window.location.replace(url);
+    // Logout logic
+    sessionStorage.clear();
+    const currentHost = window.location.host;
+    const url = `http://${currentHost}/`;
+    window.location.replace(url);
 
-	// Redirect to Udemy login page
-	const enrollButton = document.querySelector('.enroll-button');
-	const suggestedUrl = enrollButton.getAttribute('data-suggested');
-	const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";
-	const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;
+    // Redirect to Udemy login page
+    const enrollButton = document.querySelector('.enroll-button');
+    const suggestedUrl = enrollButton.getAttribute('data-suggested');
+    const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";
+    const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;
 
-	console.log('suggestedUrl:', suggestedUrl);
-	console.log('udemyUrl:', udemyUrl);
+    console.log('suggestedUrl:', suggestedUrl);
+    console.log('udemyUrl:', udemyUrl);
 
-	// Open the Udemy login page in the same tab
-	window.location.replace(udemyUrl);
+    // Open the Udemy login page in the same tab
+    window.location.replace(udemyUrl);
 
-	// Clear session storage when the user tries to navigate away from the page
-	window.addEventListener('beforeunload', () => {
-		sessionStorage.clear();
-	});
+    // Clear session storage when the user tries to navigate away from the page
+    window.addEventListener('beforeunload', () => {
+      sessionStorage.clear();
+    });
   }
-
 
   function raiseTicket() {
     const popup = document.createElement('div');
@@ -628,8 +615,9 @@
     window.location.href = "https://letmecall.keka.com/#/me/helpdesk/mytickets";
   }
   function redirectToHome() {
-	const url = 'http://127.0.0.1:8000/validate/homepage';
-	window.location.replace(url);
+    const currentHost = window.location.host;
+    const url = 'http://' + currentHost + '/validate/homepage';
+    window.location.replace(url);
   }
 </script>
 </body>
