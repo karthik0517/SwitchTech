@@ -171,13 +171,13 @@
                             {% csrf_token %}
                             <div class="form-group">
                                 <label for="username">Username:</label>
-                                <input type="text" name="username" id="usernameInput" placeholder="Username"
+                                <input type="text" name="username"  required ="usernameInput" placeholder="Username"
                                     onkeydown="handleEnterKey(event)" oninput="validateUsername()">
                                 <span id="usernameError" style="color: red;"></span><br>
                             </div>
                             <div class="form-group">
                                 <label for="mail">Email:</label>
-                                <input type="text" name="mail" id="mail" pattern=".+@ratnaglobaltech\.com"
+                                <input type="text" name="mail" required  id="mail" pattern=".+@ratnaglobaltech\.com"
                                     placeholder="Enter your RGT Email only" onkeydown="handleEnterKey(event)"><br>
                             </div>
                             {% if error_message %}

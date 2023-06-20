@@ -6019,3 +6019,4 @@ Employee skipped the quiz and select domain Python and redirected to all recomen
 Forbidden (CSRF token from the 'X-Csrftoken' HTTP header incorrect.): /api/save-remaining-time/
 "POST /api/save-remaining-time/ HTTP/1.1" 403 2553
 >>>>>>> a0d47cc070310e12507ab47c83642529b1e6aabc
+Watching for file changes with StatReloader
