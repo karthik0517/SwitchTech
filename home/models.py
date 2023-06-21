@@ -116,3 +116,26 @@ class QuizAttempt(models.Model):
     # username = models.CharField(max_length=50,default='')
     timer = models.IntegerField(default=0)
     domain = models.CharField(max_length=50, default='')
+
+
+class Video(models.Model):
+    DIFFICULTY_LEVEL = (
+        ("BG", "Begginer"),
+        ("IN", "Intermediate"),
+        ("AD", "Advanced"),
+    )
+    title = models.CharField(max_length=100)
+    difficulty = models.CharField(max_length=2, choices=DIFFICULTY_LEVEL, default='BG')
+    video_id = models.CharField(max_length=20)
+    duration = models.DurationField()  # Duration as a timedelta object
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+    technology_v = models.ForeignKey(Category,related_name='tech', on_delete=models.CASCADE)
+
+class PlayerActivity(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE,default='')
+    current_time = models.FloatField()
+    
+
+    def __str__(self):
+        return f"PlayerActivity - current_time: {self.current_time}"

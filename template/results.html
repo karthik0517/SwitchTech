@@ -298,7 +298,7 @@
 		</div>
 		<div class="recommendations">
 			<u>
-				<h2>Here are Your Recommendations</h2>
+				<h2>Here are Your Udemy Recommendations</h2>
 			</u>
 			<div class="course">
 				<div class="course-type">Paid Course: <span class="colored-box">Yes</span></div>
@@ -306,7 +306,87 @@
 				<div class="course-rating">Course Ratings:<span class="colored-box"> {{ratings}}</span></div>
 				<div class="course-instructor">Course Instructor:<span class="colored-box"> {{instructor}}</span></div>
 				<div class="course-duration">Course Duration: <span class="colored-box">{{duration}} hours</span></div>
-				<button class="enroll-button" onclick="openPopup()" data-suggested="{{ suggested }}">Enroll this course</button>
+				<button class="enroll-button" onclick="openPopup()" data-suggested="{{ suggested }}">Enroll this course</button><hr>
+				<h2><u>Here are your Youtube Recommendations</h2></u>
+				</h2>
+
+				<div id="ytplayer"></div>
+				<!-- <h2>{{ Video.title }}</h2>
+				<p>{{ Video.duration }}</p> -->
+				
+			<script>
+
+			var tag = document.createElement('script');
+			  tag.src = "https://www.youtube.com/player_api";
+			  var firstScriptTag = document.getElementsByTagName('script')[0];
+			  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+			  var player;
+			var isSaveExecuted = false; // Flag variable to track whether save operation has been executed
+
+			function onYouTubePlayerAPIReady() {
+				player = new YT.Player('ytplayer', {
+					height: '500',
+					width: '820',
+					videoId: '{{ YouTube_id }}',
+				});
+			}
+
+			// Event listener for logout button
+			// document.querySelector('.logout-button').addEventListener('click', function() {
+			// 	saveCurrentTime(); // Save the current time
+			// });
+
+			// Event listener for window unload (when the user closes the webpage)
+			window.addEventListener('beforeunload', function() {
+				saveCurrentTime();
+			});
+
+			// Function to save the current time
+			function saveCurrentTime() {
+				if (!isSaveExecuted && player && player.playerInfo && player.playerInfo.currentTime !== null) {
+				const currentTime = player.playerInfo.currentTime;
+				console.log('Current Time:', currentTime);
+
+				// Get the CSRF token value from the cookie
+				var csrftoken = getCookie('csrftoken');
+
+				// Send the current time to the server using AJAX
+				var xhr = new XMLHttpRequest();
+				xhr.open('POST', '/save_time', true);
+				xhr.setRequestHeader('Content-Type', 'application/json');
+				xhr.setRequestHeader('X-CSRFToken', csrftoken); // Include the CSRF token in the request header
+				xhr.onreadystatechange = function() {
+					if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+					console.log('Time saved successfully');
+					isSaveExecuted = true; // Update the flag to prevent further saves
+					// logout(); // Perform the logout action
+					}
+				};
+				xhr.send(JSON.stringify({ 'current_time': currentTime }));
+				} else {
+				console.log('Invalid current time or save operation already executed');
+				// logout(); // Perform the logout action even if the current time is invalid or save operation has been executed
+				}
+			}
+
+			// Helper function to get the CSRF cookie value
+			function getCookie(name) {
+				var cookieValue = null;
+				if (document.cookie && document.cookie !== '') {
+				var cookies = document.cookie.split(';');
+				for (var i = 0; i < cookies.length; i++) {
+					var cookie = cookies[i].trim();
+					if (cookie.substring(0, name.length + 1) === (name + '=')) {
+					cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+					break;
+					}
+				}
+				}
+				return cookieValue;
+			}
+
+			</script>
+			
 			</div>
 		</div>
 	</main>
