@@ -464,9 +464,7 @@ def save_time(request):
             if check.count() > 0:
                 PlayerActivity.objects.filter(user=user).update(current_time=current_time)
             else:
-                player_activity = PlayerActivity.objects.create(current_time=current_time, user=user)
-
-            print('Player activity saved:', player_activity)
+                PlayerActivity.objects.create(current_time=current_time, user=user)
             return JsonResponse({'message': 'Time saved successfully'})
         except IntegrityError as e:
             print(f"Error saving time: {str(e)}")

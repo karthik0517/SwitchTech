@@ -15,7 +15,7 @@ class QuestionAdmin(admin.ModelAdmin):
 admin.site.register(Question, QuestionAdmin)
 admin.site.register(Answer)
 # admin.site.register(CourseSuggession)
-admin.site.register(Video)
+# admin.site.register(Video)
 admin.site.register(PlayerActivity)
 
 @admin.register(QuizUserScore)
@@ -30,6 +30,11 @@ class CourseSuggession(admin.ModelAdmin):
 
     # list_display = ['technology']
     # search_fields = ['technology']
+
+@admin.register(Video)
+class Video(admin.ModelAdmin):
+    list_filter = ['technology_v']
+    list_display = ['technology_v','title','difficulty']
 
 @admin.register(Otp)
 class Otp(admin.ModelAdmin):

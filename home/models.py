@@ -126,7 +126,7 @@ class Video(models.Model):
     )
     title = models.CharField(max_length=100)
     difficulty = models.CharField(max_length=2, choices=DIFFICULTY_LEVEL, default='BG')
-    video_id = models.CharField(max_length=20)
+    video_id = models.CharField(max_length=50)
     duration = models.DurationField()  # Duration as a timedelta object
     created_at = models.DateTimeField(auto_now_add=True)
     
