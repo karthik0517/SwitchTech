@@ -6,16 +6,17 @@ from . import forms
 
 urlpatterns = [
     path('', views.loginPage,name='login'),
-    path('home/',views.home,name='home'),
     path('validate/',views.validate, name='validate'),
+    path('validate/homepage/',views.homepage,name='homepage'),
     path('api/get-quiz/',views.get_quiz,name='get_quiz'),
     path('api/result/',views.result,name='result'),
+    path('history/',views.history, name='history'),
     path('quiz/',views.quiz,name='quiz'),
-    path('logout/', views.logoutPage,name='logout'),
     path('api/save-remaining-time/', views.save_remaining_time, name='save_remaining_time'),
-    # path('register/', views.registerPage,name='register'),
     path('skipquiz/', views.skip_quiz, name='skipquiz'),
+    path('save_time', views.save_time, name='save_time'),
     path('final/',views.final,name='final'),
+    path('logout/', views.logout, name='logout'),
 ]
 
 admin.site.site_header = "Switch Tech System Admin"
