@@ -7627,3 +7627,177 @@ Not Found: /favicon.ico
 "GET /validate/homepage HTTP/1.1" 301 0
 "POST /save_time HTTP/1.1" 200 38
 "GET /validate/homepage/ HTTP/1.1" 200 8458
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 9591
+Previously employee attempted quiz for 9 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8456
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9082
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 0222
+Previously employee attempted quiz for 10 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+Internal Server Error: /validate/homepage/
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py", line 155, in homepage
+    return render(request, 'index.html', context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+"GET /validate/homepage/ HTTP/1.1" 500 168207
+"GET /validate/homepage/ HTTP/1.1" 200 8394
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-06-21 12:36:20.524664+00:00
+Employee previous attempted quiz domain Hadoop
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/big-data-harish/
+"GET /history/ HTTP/1.1" 200 2649
+"GET /validate/homepage/?category=Python HTTP/1.1" 302 0
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 35 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15229
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4140
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+Based on quiz attempt employee got 70 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11091
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/homepage HTTP/1.1" 301 0
+"GET /validate/homepage/ HTTP/1.1" 200 8394
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee previous quiz history present
+Employee previous quiz score : 70
+Employee previous quiz attempt date 2023-06-22 15:08:27.841599+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /history/ HTTP/1.1" 200 2668
+Employee previous quiz history present
+Employee previous quiz score : 70
+Employee previous quiz attempt date 2023-06-22 15:08:27.841599+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /history/ HTTP/1.1" 200 2784
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 9647
+Previously employee attempted quiz for 11 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8394
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee previous quiz history present
+Employee previous quiz score : 70
+Employee previous quiz attempt date 2023-06-22 15:08:27.841599+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /history/ HTTP/1.1" 200 2784
+"GET /validate/homepage/ HTTP/1.1" 200 8242
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4205
+"GET /validate/homepage/ HTTP/1.1" 200 8242
+"GET / HTTP/1.1" 200 9082
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 7055
+Previously employee attempted quiz for 12 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8394
+"GET /history/ HTTP/1.1" 302 0
+"GET /?next=/history/ HTTP/1.1" 200 9082
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 0462
+Previously employee attempted quiz for 13 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST /?next=/history/ HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8394
+"GET /skipquiz/?category=PHP HTTP/1.1" 302 0
+"GET /?next=/skipquiz/%3Fcategory%3DPHP HTTP/1.1" 200 9082

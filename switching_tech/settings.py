@@ -86,6 +86,7 @@ DATABASES = {
     }
 }
 
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 #Logging configuration
 LOGGING = {
