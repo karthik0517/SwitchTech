@@ -171,7 +171,7 @@
                             {% csrf_token %}
                             <div class="form-group">
                                 <label for="username">Username:</label>
-                                <input type="text" name="username"  required ="usernameInput" placeholder="Username"
+                                <input type="text" name="username"  id ="usernameInput" placeholder="Username"
                                     onkeydown="handleEnterKey(event)" oninput="validateUsername()">
                                 <span id="usernameError" style="color: red;"></span><br>
                             </div>
@@ -213,7 +213,7 @@
             var sendOTPButton = document.getElementById('sendOTPButton');
             var username = usernameInput.value;
 
-            var regex = /^[a-z /s/s A-Z0-9]+$/;
+            var regex = /^[a-zA-Z0-9]+$/;
 
             if (regex.test(username) && !(/^\d+$/.test(username))) {
                 // Valid username

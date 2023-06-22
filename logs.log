@@ -7801,3 +7801,110 @@ Employee is redirected to otp validation page!
 "GET /validate/homepage/ HTTP/1.1" 200 8394
 "GET /skipquiz/?category=PHP HTTP/1.1" 302 0
 "GET /?next=/skipquiz/%3Fcategory%3DPHP HTTP/1.1" 200 9082
+Watching for file changes with StatReloader
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8394
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 9328
+Previously employee attempted quiz for 14 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+Otp is invalid and redirect to login page
+"POST /validate/ HTTP/1.1" 200 9082
+"GET / HTTP/1.1" 200 9082
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 7786
+Previously employee attempted quiz for 15 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7372
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Otp is invalid and redirect to login page
+"POST /validate/ HTTP/1.1" 200 9082
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9082
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 0859
+Previously employee attempted quiz for 16 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7496
+Otp is invalid and redirect to login page
+"POST /validate/ HTTP/1.1" 200 7603
+Not Found: /validate/validate/
+"POST /validate/validate/ HTTP/1.1" 404 4227
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 1899
+Previously employee attempted quiz for 17 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7496
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 8127
+Previously employee attempted quiz for 18 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7373
+Otp is invalid and redirect to login page
+"POST /validate/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9082
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9082
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 3585
+Previously employee attempted quiz for 19 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7373
+Otp is invalid and redirect to login page
+"POST /validate/ HTTP/1.1" 200 7373
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /validate/validate/
+"POST /validate/validate/ HTTP/1.1" 404 4227
+"GET / HTTP/1.1" 200 9082
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 4638
+Previously employee attempted quiz for 20 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7373
+Otp is invalid and redirect to login page
+"POST /validate/ HTTP/1.1" 200 9265
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader

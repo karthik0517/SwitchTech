@@ -145,7 +145,8 @@ def validate(request):
                 # return redirect('homepage/')
         else:
             logger.info('Otp is invalid and redirect to login page')
-            return render(request, 'login.html')
+            error_message = 'Invalid OTP. Please try again.'
+            return render(request, 'validate.html', {'error_message': error_message})
 
 
 def homepage(request):
