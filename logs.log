@@ -8220,3 +8220,15 @@ django.contrib.auth.models.User.DoesNotExist: User matching query does not exist
 - Broken pipe from ('127.0.0.1', 60706)
 >>>>>>> 9c438c8c05675ce43fa81c0943b0864a0be1c54c
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9070
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 2225
+Previously employee attempted quiz for 24 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7517
