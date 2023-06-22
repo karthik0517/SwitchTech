@@ -7801,3 +7801,314 @@ Employee is redirected to otp validation page!
 "GET /validate/homepage/ HTTP/1.1" 200 8394
 "GET /skipquiz/?category=PHP HTTP/1.1" 302 0
 "GET /?next=/skipquiz/%3Fcategory%3DPHP HTTP/1.1" 200 9082
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 4422
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8395
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee previous quiz history is not present
+"GET /history/ HTTP/1.1" 200 2190
+"GET /validate/homepage/?category=Python HTTP/1.1" 302 0
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15229
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4062
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+Based on quiz attempt employee got 70 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11091
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/homepage/ HTTP/1.1" 200 8395
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee previous quiz history present
+Employee previous quiz score : 70
+Employee previous quiz attempt date 2023-06-22 10:02:26.277231+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /history/ HTTP/1.1" 200 2785
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 2418
+Previously employee attempted quiz for 1 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8395
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/homepage/ HTTP/1.1" 200 8401
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/homepage/ HTTP/1.1" 200 8401
+"GET /validate/homepage/ HTTP/1.1" 200 8401
+"GET /validate/homepage/ HTTP/1.1" 200 8401
+"GET /validate/homepage/ HTTP/1.1" 200 8434
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/homepage/ HTTP/1.1" 200 8399
+"GET /validate/homepage/ HTTP/1.1" 200 8338
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/homepage/ HTTP/1.1" 200 8338
+"GET /validate/homepage/ HTTP/1.1" 200 8338
+"GET /validate/homepage/ HTTP/1.1" 200 8338
+"GET /validate/homepage/ HTTP/1.1" 200 8338
+"GET /validate/homepage/ HTTP/1.1" 200 8338
+"GET /validate/homepage/ HTTP/1.1" 200 8347
+"GET /validate/homepage/ HTTP/1.1" 200 8380
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/homepage/ HTTP/1.1" 200 8380
+"GET /validate/homepage/ HTTP/1.1" 200 8380
+"GET /validate/homepage/?category=Python HTTP/1.1" 302 0
+Internal Server Error: /quiz/
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\SwitchTech\home\views.py", line 281, in quiz
+    user = User.objects.get(email=mail)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+"GET /quiz/?category=Python HTTP/1.1" 500 81513
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4202
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 7853
+Previously employee attempted quiz for 2 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8395
+"GET /validate/homepage/?category=Java HTTP/1.1" 302 0
+Internal Server Error: /quiz/
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\SwitchTech\home\views.py", line 281, in quiz
+    user = User.objects.get(email=mail)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+"GET /quiz/?category=Java HTTP/1.1" 500 81497
+"GET / HTTP/1.1" 200 9082
+Login page accessed!
+"POST / HTTP/1.1" 200 9264
+Login page accessed!
+"POST / HTTP/1.1" 200 9264
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 8738
+Previously employee attempted quiz for 3 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8395
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/homepage/?category=React HTTP/1.1" 302 0
+Internal Server Error: /quiz/
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\SwitchTech\home\views.py", line 281, in quiz
+    user = User.objects.get(email=mail)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+"GET /quiz/?category=React HTTP/1.1" 500 81505
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 7924
+Previously employee attempted quiz for 4 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8395
+Employee skipped the quiz and select domain Tableau and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Tableau HTTP/1.1" 200 15181
+"GET /static/images/recommendation.png HTTP/1.1" 200 113005
+Employee skipped the quiz and select domain Tableau and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Tableau HTTP/1.1" 200 15187
+Employee skipped the quiz and select domain Tableau and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Tableau HTTP/1.1" 200 15187
+Employee skipped the quiz and select domain Tableau and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Tableau HTTP/1.1" 200 15187
+Employee skipped the quiz and select domain Tableau and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Tableau HTTP/1.1" 200 15187
+Employee skipped the quiz and select domain Tableau and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Tableau HTTP/1.1" 200 15187
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9082
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 2949
+Previously employee attempted quiz for 5 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8395
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/homepage/?category=PHP HTTP/1.1" 302 0
+Employee still having the previous quiz timer with 28 sec
+Employee agreed to terms and conditions with selected domain PHP and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=PHP HTTP/1.1" 200 15220
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=PHP HTTP/1.1" 200 3726
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+Based on quiz attempt employee got 10 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11127
+"GET /static/images/Result.png HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 8012
+Previously employee attempted quiz for 6 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8395
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee skipped the quiz and select domain Java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Java HTTP/1.1" 200 15182
+"GET /static/images/recommendation.png HTTP/1.1" 304 0
+Employee skipped the quiz and select domain Java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Java HTTP/1.1" 200 15135
+Employee skipped the quiz and select domain Java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Java HTTP/1.1" 200 15135
+Employee skipped the quiz and select domain Java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Java HTTP/1.1" 200 15135
+Employee skipped the quiz and select domain Java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Java HTTP/1.1" 200 15135
+Employee skipped the quiz and select domain Java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Java HTTP/1.1" 200 15135
+Employee skipped the quiz and select domain Java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Java HTTP/1.1" 200 15135
+"GET / HTTP/1.1" 200 9082
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 2135
+Previously employee attempted quiz for 7 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8395
+Employee skipped the quiz and select domain Java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Java HTTP/1.1" 200 15135
+Forbidden (CSRF token from POST incorrect.): /
+"POST / HTTP/1.1" 403 2518
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 6283
+Previously employee attempted quiz for 8 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8395
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee skipped the quiz and select domain React and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=React HTTP/1.1" 200 15025
+"GET /static/images/recommendation.png HTTP/1.1" 304 0
+Internal Server Error: /save_time
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\SwitchTech\home\views.py", line 442, in save_time
+    user = User.objects.get(email=mail)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_Switching\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+- Broken pipe from ('127.0.0.1', 60706)
+Watching for file changes with StatReloader
