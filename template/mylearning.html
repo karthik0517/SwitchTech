@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Assuming this is your CSS file */
+        .my-learning-button {
+            /* Add your desired button styles here */
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Learning</h1>
+    <div id="player"></div>
+    <h2 id="video-title"></h2>
+
+    <button id="resume-button" class="my-learning-button">Resume Watching</button>
+   
+	<button id="restart-button" class="my-learning-button">Restart</button>
+
+    <script>
+        // Assuming you have JavaScript variables "youtubeVideoId" and "videoTitle"
+       // Assuming you have JavaScript variables "youtubeVideoId" and "videoTitle"
+var youtubeVideoId = "{{ Youtube_id }}";
+var videoTitle = "{{ title }}";
+
+// Load the YouTube Embedded Player API
+var tag = document.createElement('script');
+tag.src = 'https://www.youtube.com/iframe_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// Create the YouTube player after the API has loaded
+var player;
+// var resumeTime;
+
+function onYouTubeIframeAPIReady() {
+    var startTime = {{ resume_time }};
+    player = new YT.Player('player', {
+        height: '360',
+        width: '640',
+        videoId: youtubeVideoId + '?start=' + startTime,
+
+        playerVars: {
+            autoplay: 0,    // Optional: Disable autoplay
+            controls: 1     // Optional: Show video controls
+        },
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
+
+// Set the video title once the player is ready
+function onPlayerReady(event) {
+    document.getElementById('video-title').innerText = videoTitle;
+
+    // Resume watching button functionality
+    var resumeButton = document.getElementById('resume-button');
+    resumeButton.addEventListener('click', function() {
+        player.seekTo({{resume_time}});
+        player.playVideo();
+    });
+
+    // Reset button functionality
+    var resetButton = document.getElementById('restart-button');
+    resetButton.addEventListener('click', function() {
+        player.seekTo(0);
+        player.playVideo();
+    });
+}
+
+// Capture the current time when the player state changes
+function onPlayerStateChange(event) {
+    if (event.data === YT.PlayerState.PLAYING) {
+        // Start capturing the current time when the user navigates away
+        window.addEventListener('beforeunload', function() {
+            var currentTime = player.getCurrentTime();
+            saveCurrentTime(currentTime);
+        });
+    }
+}
+
+// Send an AJAX request to save the current time
+function saveCurrentTime(currentTime) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/save_time', true);  // Replace '/save_time/' with your endpoint URL
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                console.log('Current time saved successfully');
+            } else {
+                console.error('Error saving current time');
+            }
+        }
+    };
+    var data = {
+        current_time: currentTime
+    };
+    xhr.send(JSON.stringify(data));
+}
+
+       
+        
+        
+
+
+        // Set the video title once the player is ready
+        // function onPlayerReady(event) {
+        //     document.getElementById('video-title').innerText = videoTitle;
+            
+            // Resume watching button functionality
+            // var resumeButton = document.getElementById('resume-button');
+            // resumeButton.addEventListener('click', function() {
+            //     player.seekTo({{ resume_time }});
+			// 	player.playVideo();
+            // });
+        
+            // Reset button functionality
+        //     var resetButton = document.getElementById('restart-button');
+        //     resetButton.addEventListener('click', function() {
+        //         player.seekTo(0);
+		// 		player.playVideo();
+        //     });
+        // }
+    </script>
+</body>
+</html>
