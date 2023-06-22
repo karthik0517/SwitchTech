@@ -18,6 +18,7 @@ from django.db import IntegrityError
 
 logger = logging.getLogger(__name__)
 
+
 def generate_otp():
     digits = "0123456789"
     OTP = ""
@@ -28,25 +29,17 @@ def generate_otp():
 
 
 count = 0
+
+
 def loginPage(request):
     remember_me = request.session.get('remember_me', False)
-    print('------->',remember_me)
+    print('------->', remember_me)
     if remember_me:
         logger.info('User session exists (remember me enabled), redirecting to the Instructions page')
         context = {'categories': Category.objects.all()}
         if request.GET.get('category'):
             return redirect(f"/quiz/?category={request.GET.get('category')}")
         return render(request, 'index.html', context)
-    
-    
-
-    # if request.user.is_authenticated:
-    #     logger.info('User session is exists redirecting to Instructions page')
-    #     context = {'categories': Category.objects.all()}
-    #     print(context)
-    #     if request.GET.get('category'):
-    #         return redirect(f"/quiz/?category={request.GET.get('category')}")
-    #     return render(request, 'index.html', context)
 
     elif request.method == "POST":
         logger.info('Login page accessed!')
@@ -95,7 +88,7 @@ def loginPage(request):
                 logger.info(f'Employee having login attempts and otp is sent to employee mail-id: {Employee_Mail}')
                 print("otp:", otp)
                 send_mail(subject="OTP", message=f"Your otp {otp}", from_email="switchingtechsystem@gmail.com",
-                              recipient_list=[Employee_Mail], fail_silently=False)
+                          recipient_list=[Employee_Mail], fail_silently=False)
             else:
                 logger.info(f'Employee having login attempts and otp is sent to employee mail-id: {Employee_Mail}')
                 print("otp:", otp)
@@ -111,6 +104,8 @@ def loginPage(request):
 
 
 global mail
+
+
 def validate(request):
     if request.method == 'POST':
         mail = request.POST.get('mail')
@@ -122,8 +117,8 @@ def validate(request):
         if verified:
             keep_signed_in = request.POST.get('remember_me', False) == 'on'
             # keep_signed_in = request.POST.get('remember_me', False) = 'True'
-            print('---------',keep_signed_in)
-            print('mail',mail)
+            print('---------', keep_signed_in)
+            print('mail', mail)
             user = User.objects.get(email=mail)
             print(user)
             # user = KeepMeSignedInBackend().authenticate(request, otp=otp)
@@ -150,7 +145,8 @@ def validate(request):
                 # return redirect('homepage/')
         else:
             logger.info('Otp is invalid and redirect to login page')
-            return render(request, 'login.html')
+            error_message = 'Invalid OTP. Please try again.'
+            return render(request, 'validate.html', {'error_message': error_message})
 
 
 def homepage(request):
@@ -177,9 +173,10 @@ def url(score, category):
             difficulty = val.difficulty
             break
         for v_id in suggestion_vdo:
-            print('-------->',v_id)
-            YouTube_id =  v_id.video_id
-            print('----------',YouTube_id)
+            print('-------->', v_id)
+            YouTube_id = v_id.video_id
+            Title = v_id.title
+            print('----------', YouTube_id)
             break
 
     elif 50 < score <= 70:
@@ -199,9 +196,10 @@ def url(score, category):
             difficulty = val.difficulty
             break
         for v_id in suggestion_vdo:
-            print('-------->',v_id)
-            YouTube_id =  v_id.video_id
-            print('----------',YouTube_id)
+            print('-------->', v_id)
+            YouTube_id = v_id.video_id
+            Title = v_id.title
+            print('----------', YouTube_id)
             break
 
     elif score > 70 <= 100:
@@ -221,13 +219,14 @@ def url(score, category):
             difficulty = val.difficulty
             break
         for v_id in suggesst_vdo:
-            YouTube_id =  v_id.video_id
+            YouTube_id = v_id.video_id
+            Title = v_id.title
             break
 
-    return suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id
+    return suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title
 
 
-
+@login_required(login_url='login')
 def history(request):
     mail = request.session.get('mail')
     print('MAIL in HISTORY:---->', mail)
@@ -246,7 +245,8 @@ def history(request):
         print("last_domain---->", user_domain)
         logger.info(f'Employee previous attempted quiz domain {user_domain}')
 
-        suggesstion_url, course_name, ratings, instructor, duration, difficulty = url(score, category=user_domain)
+        suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(score,
+                                                                                                         category=user_domain)
 
         data = {
             'user_score': score,
@@ -257,7 +257,8 @@ def history(request):
             'ratings': ratings,
             'instructor': instructor,
             'duration': duration,
-            'difficulty': difficulty
+            'difficulty': difficulty,
+            'title': Title
         }
 
         return render(request, 'history.html', context=data)
@@ -274,14 +275,8 @@ def logout(request):
     request.session.flush()
     return redirect('/')
 
+
 @login_required(login_url='login')
-def home(request):
-    context = {'categories': Category.objects.all()}
-    if request.GET.get('category'):
-        return redirect(f"/quiz/?category={request.GET.get('category')}")
-    return render(request, 'index.html', context)
-
-
 def quiz(request):
     mail = request.session.get('mail')
     user = User.objects.get(email=mail)
@@ -307,6 +302,7 @@ def quiz(request):
     return render(request, 'quiz.html', context)
 
 
+@login_required(login_url='login')
 def get_quiz(request):
     try:
         questions_objs = Question.objects.all()
@@ -333,6 +329,7 @@ def get_quiz(request):
     return HttpResponse("Something went worng")
 
 
+@login_required(login_url='login')
 def render_quiz(request, quiz_id):
     # quiz = get_object_or_404(Quiz, quiz_id)
     # form = QuizForm(questions=quiz.question_set.all())
@@ -351,6 +348,7 @@ def render_quiz(request, quiz_id):
     return render('quiz.html', {"form": form})
 
 
+@login_required(login_url='login')
 def save_remaining_time(request):
     if request.method == 'POST':
         remaining_time = request.POST.get('remainingTime')
@@ -369,42 +367,22 @@ def save_remaining_time(request):
     return JsonResponse({'message': 'Invalid request method'}, status=400)
 
 
-
-# def result(request):
-#     if request.method == 'POST':
-#         quiz_add = QuizUserScore()
-#         global score, suggesstion_url, course_name, ratings, duration, instructor, difficulty
-#         mail = request.session.get('mail')
-#         user = User.objects.get(email=mail)
-#         score_data = json.loads(request.body)
-#         score = score_data.get('score')
-#         category = score_data.get('category')
-#         quiz_add.quiz_domain = category
-#         quiz_add.score = score * 10
-#         quiz_add.user = user
-#         check = QuizUserScore.objects.filter(user=user)
-#         if check.count() > 0:
-#             QuizUserScore.objects.filter(user=user).update(created_at=datetime.now(), score=quiz_add.score,
-#                                                                     quiz_domain=quiz_add.quiz_domain)
-#         else:
-#             quiz_add.save()
-#         print('Score received:', score * 10, 'category:', category)
-#         suggesstion_url, course_name, ratings, instructor, duration, difficulty = url(score=quiz_add.score,
-#                                                                                       category=category)
-#         logger.info(f'Based on quiz attempt employee got {score * 10} score')
-#         return HttpResponse(status=200)
 score = 0
 suggesstion_url = str()
 course_name = str()
 ratings = 0
 instructor = str()
 duration = float()
-difficulty = str()   
+difficulty = str()
 YouTube_id = str()
+Title = str()
+
+
+@login_required(login_url='login')
 def result(request):
     if request.method == 'POST':
         quiz_add = QuizUserScore()
-        global score, suggesstion_url, course_name, ratings, duration, instructor, difficulty, YouTube_id
+        global score, suggesstion_url, course_name, ratings, duration, instructor, difficulty, YouTube_id, Title
         mail = request.session.get('mail')
         user = User.objects.get(email=mail)
         score_data = json.loads(request.body)
@@ -416,16 +394,18 @@ def result(request):
         check = QuizUserScore.objects.filter(user=user)
         if check.count() > 0:
             QuizUserScore.objects.filter(user=user).update(created_at=datetime.now(), score=quiz_add.score,
-                                                                    quiz_domain=quiz_add.quiz_domain)
+                                                           quiz_domain=quiz_add.quiz_domain)
         else:
             quiz_add.save()
         print('Score received:', score * 10, 'category:', category)
-        suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id = url(score=quiz_add.score,
-                                                                                      category=category)
+        suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(
+            score=quiz_add.score,
+            category=category)
         logger.info(f'Based on quiz attempt employee got {score * 10} score')
         return HttpResponse(status=200)
 
 
+@login_required(login_url='login')
 def skip_quiz(request):
     selected_category = request.GET.get('category')
     context = {}
@@ -438,16 +418,17 @@ def skip_quiz(request):
     return render(request, 'skipquiz.html', context)
 
 
+@login_required(login_url='login')
 def final(request):
     context = {
         "score": score * 10, 'suggested': suggesstion_url, 'course_name': course_name, 'ratings': ratings,
-        'duration': duration,
-        'instructor': instructor, 'difficulty': difficulty,'YouTube_id': YouTube_id}
+        'duration': duration, 'instructor': instructor, 'difficulty': difficulty, 'YouTube_id': YouTube_id,
+        'title': Title}
     logger.info(f'Employee submitted quiz and redirect to results page with course suggestion')
     return render(request, 'results.html', context=context)
 
 
-@csrf_exempt   
+@csrf_exempt
 def save_time(request):
     if request.method == 'POST':
         data = json.loads(request.body)
@@ -456,7 +437,7 @@ def save_time(request):
         if current_time is None:
             current_time = 0  # Assign a numeric default value
         print('Received current_time:', current_time)
-        
+
         try:
             mail = request.session.get('mail')
             user = User.objects.get(email=mail)

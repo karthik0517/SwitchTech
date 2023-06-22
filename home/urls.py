@@ -6,7 +6,6 @@ from . import forms
 
 urlpatterns = [
     path('', views.loginPage,name='login'),
-    path('home/',views.home,name='home'),
     path('validate/',views.validate, name='validate'),
     path('validate/homepage/',views.homepage,name='homepage'),
     path('api/get-quiz/',views.get_quiz,name='get_quiz'),
@@ -16,7 +15,6 @@ urlpatterns = [
     path('api/save-remaining-time/', views.save_remaining_time, name='save_remaining_time'),
     path('skipquiz/', views.skip_quiz, name='skipquiz'),
     path('save_time', views.save_time, name='save_time'),
-   
     path('final/',views.final,name='final'),
     path('logout/', views.logout, name='logout'),
 ]
