@@ -8220,6 +8220,56 @@ django.contrib.auth.models.User.DoesNotExist: User matching query does not exist
 - Broken pipe from ('127.0.0.1', 60706)
 >>>>>>> 9c438c8c05675ce43fa81c0943b0864a0be1c54c
 Watching for file changes with StatReloader
+<<<<<<< HEAD
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4202
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 1012
+Previously employee attempted quiz for 9 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8395
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee skipped the quiz and select domain Java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Java HTTP/1.1" 200 15135
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 6438
+Previously employee attempted quiz for 10 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8395
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/homepage/ HTTP/1.1" 200 8442
+"GET /validate/homepage/ HTTP/1.1" 200 8442
+"GET /validate/homepage/ HTTP/1.1" 200 8442
+"GET /validate/homepage/ HTTP/1.1" 200 8425
+"GET /validate/homepage/ HTTP/1.1" 200 8425
+"GET /validate/homepage/ HTTP/1.1" 200 8425
+"GET /validate/homepage/ HTTP/1.1" 200 8425
+"GET /validate/homepage/ HTTP/1.1" 200 8425
+"GET /validate/homepage/ HTTP/1.1" 200 8425
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8425
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+=======
 Watching for file changes with StatReloader
 "GET / HTTP/1.1" 200 9070
 "GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
@@ -8232,6 +8282,7 @@ Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglo
 Employee details are saved into database
 Employee is redirected to otp validation page!
 "POST / HTTP/1.1" 200 7517
+<<<<<<< HEAD
 "GET / HTTP/1.1" 200 9079
 Watching for file changes with StatReloader
 "GET / HTTP/1.1" 200 9079
@@ -8423,3 +8474,6 @@ Otp is invalid and redirect to login page
 "GET /validate/homepage/ HTTP/1.1" 200 8394
 "GET /logout/ HTTP/1.1" 302 0
 "GET / HTTP/1.1" 200 9285
+=======
+>>>>>>> 95be376b6a322959f1dfdbf922330bca9f90bab5
+>>>>>>> bff0b4492b862f4ac55aa4c8f6de9f441ea8440c
