@@ -8477,3 +8477,59 @@ Otp is invalid and redirect to login page
 =======
 >>>>>>> 95be376b6a322959f1dfdbf922330bca9f90bab5
 >>>>>>> bff0b4492b862f4ac55aa4c8f6de9f441ea8440c
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 9539
+Previously employee attempted quiz for 33 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7859
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8394
+Employee previous quiz history present
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-22 16:50:30.064528+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 2827
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9285
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4205
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 6430
+Previously employee attempted quiz for 34 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7859
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8394
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 9285
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4205
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 8166
+Previously employee attempted quiz for 35 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7859
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8394
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+"GET /history/ HTTP/1.1" 302 0
+"GET /?next=/history/ HTTP/1.1" 200 9285
