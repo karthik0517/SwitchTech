@@ -215,7 +215,11 @@
 
             var regex = /^[a-zA-Z0-9]+$/;
 
-            if (regex.test(username) && !(/^\d+$/.test(username))) {
+            if (username === '') {
+                // Empty username
+                usernameError.textContent = '';
+                sendOTPButton.disabled = true; // Disable the button
+            } else if (regex.test(username) && !(/^\d+$/.test(username))) {
                 // Valid username
                 usernameError.textContent = '';
                 sendOTPButton.disabled = false; // Enable the button
@@ -224,6 +228,7 @@
                 usernameError.textContent = 'Invalid username.';
                 sendOTPButton.disabled = true; // Disable the button
             }
+            
         }
 
         function handleEnterKey(event) {
