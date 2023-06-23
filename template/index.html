@@ -1,18 +1,45 @@
 <!doctype html>
+{% load static%}
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <title>Quiz</title>
-  <script type="text/javascript">
-    function preventBack() { window.history.forward(); }
-    setTimeout("preventBack()", 0);
-    window.onunload = function () { null };
+  <script>
+
+function enableButtons() {
+      const dropdown = document.getElementById("selectedCategory");
+      const agreeCheckbox = document.getElementById("agreeCheckbox");
+      const continueButton = document.getElementById("continueButton");
+      const skipButton = document.getElementById("skipButton");
+
+      if (dropdown.value && agreeCheckbox.checked) {
+        continueButton.disabled = false;
+        skipButton.disabled = false;
+      } else {
+        continueButton.disabled = true;
+        skipButton.disabled = true;
+      }
+    }
+
+    function fetchHistory() {
+      window.location.href = '/history/';
+    }
+
+    function skipQuiz() {
+      const selectedTechnology = document.getElementById("selectedCategory").value;
+      const currentHost = window.location.host;
+      const url = `http://${currentHost}/skipquiz/?category=${selectedTechnology}`;
+      window.location.replace(url);
+    }
+
   </script>
   <style>
     .custom-dropdown {
@@ -24,9 +51,11 @@
       appearance: none;
       -webkit-appearance: none;
       -moz-appearance: none;
-      background-color: #fff; /* Add white background color */
+      background-color: #fff;
+      /* Add white background color */
       border: none;
-      padding-right: 20px; /* Add padding to accommodate the triangle logo */
+      padding-right: 20px;
+      /* Add padding to accommodate the triangle logo */
       cursor: pointer;
     }
 
@@ -39,13 +68,16 @@
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 6px 6px 0 6px; /* Adjust the size of the triangle */
-      border-color: #000 transparent transparent transparent; /* Adjust the color of the triangle */
+      border-width: 6px 6px 0 6px;
+      /* Adjust the size of the triangle */
+      border-color: #000 transparent transparent transparent;
+      /* Adjust the color of the triangle */
     }
 
     /* Add this style to override Bootstrap's default select background color */
     .custom-dropdown select.form-control {
-      background-color: #fff;
+      background-color:#d7d7d7 ;
+      margin-top: 0px;
     }
 
     body {
@@ -53,15 +85,19 @@
     }
 
     .container {
-      background-color: rgba(17, 163, 161, 0.453);
+      background-color: #fff;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      padding: 40px;
+      /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+      /* padding: 40px; */
+    }
+    .custom-dropdown::after {
+      top:70%;
     }
 
     img {
       max-width: 100%;
       height: auto;
+      float: right;
     }
 
     label {
@@ -76,90 +112,153 @@
       border: 0;
       border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
+
+    .history-button {
+      position: absolute;
+      top: 200px;
+      right: 200px;
+    }
+
+    .logo {
+      width: 200px;
+      height: 200px;
+      float: left;
+      /* top: 200; */
+      margin-top: 100px;
+      left: 0;
+    }
+
+    .logo1 {
+      width: 400px;
+      height: 400px;
+      top: 200;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-left: 20px;
+    }
+
+    .email_form {
+            width: 100%;
+            
+        }
+
+    .header_title,
+    font_normal {
+      width: 100%;
+      float: left;
+      margin-top: 90px;
+      font-size: 20px;
+      color: #6495ed;
+    }
+
+     
+    .header_title {
+
+      width: 100%;
+      float: left;
+
+    }
+
+    .header_title .font_normal {
+
+      width: 100%;
+      float: left;
+      font-weight: 400;
+      font-size: 40px;
+      margin: 0;
+      color: black;
+      margin-top: 0%;
+    }
+    .formgroup
+    {
+      margin-top: 1px;
+      margin-bottom: 10px;
+    }
+    .colored-box1 {
+        color: rgb(17, 0, 255);
+    }
+
+    .skip_button .btn{
+      position: relative;
+      left: 120px;
+      bottom: 52px;
+    }
+    
   </style>
 </head>
-
 <body>
+  <main>
+    <!-- Include navbar.html -->
+    {% include 'navbar.html' %}
+    <div class="email_form">
+      <div class="container  ">
+        <div class="row p-3">
+        <div class="col-md-6">
+          <div class="header_title">
+            <h1 class="font_normal">SWITCHING TECH <span class="colored-box1">SYSTEMS</span>
+          </div>
+          <button class="btn btn-primary history-button" onclick="fetchHistory()" style="background-color:  #4169e1;">History</button>
+          <form action="">
+            <div>
+            <div class="form-group">
+              <p >Which Technology you want to learn?</p>
+              <div class="custom-dropdown w-100">
+                <label for="category" >Choose</label>
+                <select class="form-control" name="category" id="selectedCategory" onchange="enableButtons()">
+                  <option value="">Choose the technology</option>
+                  {% for category in categories %}
+                  <option value="{{category.category_name}}">{{category.category_name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+            <h1>Instructions</h1>
+            <p>Welcome to the quiz! Before we get started, please read and agree to the following terms and conditions:
+            </p>
+            <ol>
+              <li>The quiz contains 10 questions.</li>
+              <li>Each question is worth 10 marks.</li>
+              <li>Each question will have a single correct answer.</li>
+              <!-- <li>You will have a total of 1 minute to complete the quiz.</li>
+              <li>The quiz will automatically submit after 1 minute.</li> -->
+              <li>Your final score will be displayed at the end of the quiz.</li>
+              
+            </ol>
+            <div>
+              <input type="checkbox" id="agreeCheckbox" onchange="enableButtons()">
+              <label for="agreeCheckbox">I agree to the terms and conditions</label>
+            </div>
+            <div class="d-flex ">
+            <div class="button-container">
+              <button id="continueButton" class="btn btn-success mt-3 mx-3" style="background-color: green;" disabled>Submit</button>
+            </div>
+           
+              
+             </div>
+  </div>
 
-<div class="container mt-5 pt-5">
-  <div class="col-md-6 mx-auto">
-    <form action="">
-      <div class="form-group">
-        <label for="">Which Technology you want to learn?</label>
-        <hr>
-        <p>If you want to switch to a new technology or want to learn a new technology, we will assess your current knowledge in your interested domain. Based on your score, we will recommend a course that is best for you.</p>
-        <hr>
-        <p>Are you ready for the quiz? Let us know which domain you want to choose:</p>
-        <label for="">Which Technology you want to learn?</label>
-        <hr>
-        <div class="custom-dropdown">
-          <select class="form-control" name="category" id="selectedCategory">
-            <option value="">Choose</option>
-            {% for category in categories %}
-            <option value="{{category.category_name}}">{{category.category_name}}</option>
-            {% endfor %}
-          </select>
+          </form>
+
+          <div class="button-container skip_button">
+            <button id="skipButton" class="btn btn-danger mt-3 me-2" onclick="skipQuiz()"  style="background-color:red;" disabled>Skip Quiz</button>
+          </div>
+        </div>
+        <div class="col-md-6 ">
+          <div>
+          <img 
+          src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3JhdG5hLWdsb2JhbC10ZWNobm9sb2dpZXMuanBn.webp" 
+          alt="Logo">
+        </div>
+        <div>
+        <img  src="{% static 'images\Instruction.png' %}" width="100%" />
+      </div>
         </div>
       </div>
-      <br>
-      <br>
-      <h1>Instructions</h1>
-      <p>Welcome to the quiz! Before we get started, please read and agree to the following terms and conditions:</p>
-      <ol>
-        <li>The quiz contains 10 questions.</li>
-        <li>Each question is worth 10 marks.</li>
-        <li>Each question will have a single correct answer.</li>
-        <li>You will have a total of 1 minute to complete the quiz.</li>
-        <li>The quiz will automatically submit after 1 minute.</li>
-        <li>Your final score will be displayed at the end of the quiz.</li>
-        <li>If you, for any reason, don't submit the test, you have a chance to come back and start the same quiz with the remaining time.</li>
-      </ol>
-      <div>
-        <input type="checkbox" id="agreeCheckbox">
-        <label for="agreeCheckbox">I agree to the terms and conditions</label>
+        
       </div>
-      <div class="button-container">
-        <button id="continueButton" class="btn btn-success mt-3" disabled>Submit</button>
-      </div>
-    </form>
-  </div>
-  <center>
-    <div class="button-container">
-      <button id="skipButton" class="btn btn-danger mt-3 me-2" onclick="skipQuiz()" disabled>Skip Quiz</button>
     </div>
-  </center>
-</div>
-
-<script type="text/javascript">
-  const agreeCheckbox = document.getElementById('agreeCheckbox');
-  const continueButton = document.getElementById('continueButton');
-  const selectedCategory = document.getElementById('selectedCategory');
-  const skipButton = document.getElementById('skipButton');
-
-  agreeCheckbox.addEventListener('change', () => {
-    if (agreeCheckbox.checked && selectedCategory.value !== '') {
-      continueButton.disabled = false;
-      skipButton.disabled = false;
-    } else {
-      continueButton.disabled = true;
-      skipButton.disabled = true;
-    }
-  });
-
-  selectedCategory.addEventListener('change', () => {
-    if (agreeCheckbox.checked && selectedCategory.value !== '') {
-      skipButton.disabled = false;
-    } else {
-      skipButton.disabled = true;
-    }
-  });
-
-  function skipQuiz() {
-    const selectedTechnology = selectedCategory.value;
-    const url = `http://127.0.0.1:8000/skipquiz/?category=${selectedTechnology}`;
-    window.location.replace(url);
-  }
-</script>
 
 </body>
+
 </html>
