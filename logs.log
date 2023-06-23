@@ -8112,3 +8112,51 @@ Traceback (most recent call last):
 django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
 - Broken pipe from ('127.0.0.1', 60706)
 Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4202
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 1012
+Previously employee attempted quiz for 9 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8395
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee skipped the quiz and select domain Java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Java HTTP/1.1" 200 15135
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 6438
+Previously employee attempted quiz for 10 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7363
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8395
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/homepage/ HTTP/1.1" 200 8442
+"GET /validate/homepage/ HTTP/1.1" 200 8442
+"GET /validate/homepage/ HTTP/1.1" 200 8442
+"GET /validate/homepage/ HTTP/1.1" 200 8425
+"GET /validate/homepage/ HTTP/1.1" 200 8425
+"GET /validate/homepage/ HTTP/1.1" 200 8425
+"GET /validate/homepage/ HTTP/1.1" 200 8425
+"GET /validate/homepage/ HTTP/1.1" 200 8425
+"GET /validate/homepage/ HTTP/1.1" 200 8425
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8425
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9082
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
