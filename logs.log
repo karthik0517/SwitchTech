@@ -8364,3 +8364,62 @@ Employee skipped the quiz and select domain Python and redirected to all recomen
 "GET /logout/ HTTP/1.1" 302 0
 "GET / HTTP/1.1" 200 9079
 Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9285
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4202
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 1185
+Previously employee attempted quiz for 29 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7517
+Otp is invalid and redirect to login page
+"POST /validate/ HTTP/1.1" 200 7624
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 2099
+Previously employee attempted quiz for 30 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7769
+Otp is invalid and redirect to login page
+"POST /validate/ HTTP/1.1" 200 7876
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8394
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 8157
+Previously employee attempted quiz for 31 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7820
+Otp is invalid and redirect to login page
+"POST /validate/ HTTP/1.1" 200 7927
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8394
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 7258
+Previously employee attempted quiz for 32 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7859
+Otp is invalid and redirect to login page
+"POST /validate/ HTTP/1.1" 200 7966
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8394
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
