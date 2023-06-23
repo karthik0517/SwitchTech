@@ -157,9 +157,9 @@
                             </div>
                             <div class="form-group">
                                 <label for="fname">OTP:</label>
-                                <input type="text" name="otp" required>
+                                <input id="otp-input" type="text" name="otp" required oninput="hideErrorMessage()">
                             </div>
-                            <div class="error-message" style="color: red;">
+                            <div id="error-message" class="error-message" style="color: red;">
                                 {% if error_message %}
                                     <p>{{ error_message }}</p>
                                 {% endif %}
@@ -173,6 +173,11 @@
                                 <input class="" type="submit" value="Validate OTP">
                         </form>
                         <script>
+                            function hideErrorMessage() {
+                                var errorMessage = document.getElementById("error-message");
+                                errorMessage.style.display = "none";
+                            }
+                            
                             document.getElementById("mail").value = localStorage.getItem("email");
                         </script>
                     </div>
