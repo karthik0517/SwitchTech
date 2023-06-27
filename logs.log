@@ -8933,3 +8933,61 @@ Employee is redirected to otp validation page!
 "GET /validate/dashboard/ HTTP/1.1" 200 12681
 "GET /static/images/dashboard.png HTTP/1.1" 404 1819
 Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9285
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 4006
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7859
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12682
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 1306
+Previously employee attempted quiz for 1 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7859
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12682
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10496
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10371
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10376
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10363
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10398
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10431
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10431
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10431
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10431
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10431
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10431
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10431
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10431
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10431
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
