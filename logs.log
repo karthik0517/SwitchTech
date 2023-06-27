@@ -8932,3 +8932,4 @@ Employee is redirected to otp validation page!
 "GET /static/images/dashboard.png HTTP/1.1" 404 1819
 "GET /validate/dashboard/ HTTP/1.1" 200 12681
 "GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Watching for file changes with StatReloader

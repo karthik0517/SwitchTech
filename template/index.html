@@ -110,11 +110,11 @@
       top:70%;
     }
 
-    img {
+    /* img {
       max-width: 100%;
       height: auto;
       float: right;
-    }
+    } */
 
     label {
       font-size: px;
@@ -135,7 +135,7 @@
       right: 200px;
     }
 
-    .logo {
+    /* .logo {
       width: 200px;
       height: 200px;
       float: left;
@@ -152,7 +152,7 @@
       bottom: 0;
       right: 0;
       margin-left: 20px;
-    }
+    } */
 
     .email_form {
       width: 100%;
@@ -220,6 +220,10 @@
       box-shadow: none;
       border-color: #80bdff;
     }
+    .rgt{
+      float: right;
+      width: 100px;
+    }
 
 
 
@@ -267,10 +271,8 @@
           </div>
         </div>
         <div class="col-md-6 animate-slide-up">
-          <div>
-          <img
-          src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3JhdG5hLWdsb2JhbC10ZWNobm9sb2dpZXMuanBn.webp"
-          alt="Logo">
+          <div class="rgt">
+          <img  src="{% static 'images/ratnaglobal_logo.png' %}" />
         </div>
         <div>
         <img  src="{% static 'images\Instruction.png' %}" width="100%" />
