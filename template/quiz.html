@@ -197,7 +197,7 @@
 <body>
 <main>
     <div class="email_form">
-        <form method="POST" action="result">
+        <form id="quiz-form" onsubmit="disableLeaveSiteMessage()" method="POST" action="result">
             {% csrf_token %}
             <div id="app">
                 <div class=" mt-5">
@@ -267,6 +267,18 @@
 
         <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
         <script>
+            var formSubmitted = false;
+            function disableLeaveSiteMessage() {
+                formSubmitted = true;
+            }
+
+            window.addEventListener('beforeunload', function (e) {
+                if (!formSubmitted) {
+                    e.preventDefault();
+                    e.returnValue = ''; // Some browsers require a return value
+                }
+            });
+
             var countdown = {{ new_timer }}; // Total time in seconds
             var timerDisplay = document.getElementById('timer');
 
