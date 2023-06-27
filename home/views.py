@@ -35,11 +35,12 @@ def loginPage(request):
     remember_me = request.session.get('remember_me', False)
     print('------->', remember_me)
     if remember_me:
-        logger.info('User session exists (remember me enabled), redirecting to the Instructions page')
-        context = {'categories': Category.objects.all()}
-        if request.GET.get('category'):
-            return redirect(f"/quiz/?category={request.GET.get('category')}")
-        return render(request, 'index.html', context)
+        # logger.info('User session exists (remember me enabled), redirecting to the Instructions page')
+        # context = {'categories': Category.objects.all()}
+        # if request.GET.get('category'):
+        #     return redirect(f"/quiz/?category={request.GET.get('category')}")
+        # return render(request, 'index.html', context)
+        return render(request, 'dashboard.html')
 
     elif request.method == "POST":
         logger.info('Login page accessed!')
@@ -140,13 +141,21 @@ def validate(request):
                 # Debug code: Print session cookie
                 session_cookie = request.COOKIES.get(settings.SESSION_COOKIE_NAME)
                 print('Session cookie:', session_cookie)
-
-                return redirect('homepage/')
+                return redirect('dashboard/')
+                # return redirect('homepage/')
                 # return redirect('homepage/')
         else:
             logger.info('Otp is invalid and redirect to login page')
             error_message = 'Invalid OTP. Please try again.'
             return render(request, 'validate.html', {'error_message': error_message})
+
+
+def dashboard(request):
+    return render(request, 'dashboard.html')
+
+
+def index(request):
+    return render(request, 'index.html')
 
 
 def homepage(request):
@@ -450,3 +459,85 @@ def save_time(request):
         except IntegrityError as e:
             print(f"Error saving time: {str(e)}")
             return JsonResponse({'message': 'Error saving time'}, status=500)
+        
+
+def my_learning(request):
+    mail = request.session.get('mail')
+    print('MAIL in Mylearning:---->', mail)
+    user = User.objects.get(email=mail)
+    retrieve_time = PlayerActivity.objects.filter(user=user).values_list('current_time', flat=True)
+    resume = list(retrieve_time)
+    score_details = QuizUserScore.objects.filter(user=user).values_list('score','quiz_domain')
+    print('--------------',score_details)
+    user_learning = list(score_details)
+    print('--------',user_learning)
+    if user_learning:
+        logger.info('Employee previous quiz history present')
+        score = user_learning[0][0]
+        user_domain = user_learning[0][1]
+        print(score)
+        print(user_domain)
+        suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(score=score, category=user_domain)
+        data = {
+            # 'title':Title,
+            'Youtube_id':YouTube_id,
+            'resume_time': resume
+
+        }
+        print(data)
+        return render(request, 'mylearning.html', context=data)
+    else:
+        logger.info('Employee doesnt have any learning as of now')
+        print("no my learning")
+        data = {
+            'no_data': True  # Add a flag to indicate no data
+        }
+        return render(request, 'mylearning.html',context=data)
+    
+# def mylearning(request):
+#     mail = request.session.get('mail')
+#     print("Email from session:", mail)
+
+#     try:
+#         user = User.objects.get(email=mail)
+#         print("User found:", user)
+#         retrieve_time = PlayerActivity.objects.filter(user=user).values_list('current_time', flat=True)
+#         resume = list(retrieve_time)
+#         print("Retrieve time:", retrieve_time)
+#         print('Time:',resume)
+
+#         data = {
+#             'resume_time': resume
+#         }
+#         return render(request, 'mylearning.html', context=data)
+#     except User.DoesNotExist:
+#         print("User does not exist.")
+#         # Handle the case when the user does not exist
+#         # You can redirect the user to an appropriate page or show an error message
+#         # For example:
+#         return HttpResponse("User does not exist")
+
+
+
+# def mylearning(request):
+#     mail = request.session.get('mail')
+#     print("Email from session:", mail)
+
+#     try:
+#         user = User.objects.get(email=mail)
+#         print("User found:", user)
+#         retrieve_time = PlayerActivity.objects.filter(user=user).values_list('current_time', flat=True)
+#         resume = list(retrieve_time)
+#         print("Retrieve time:", retrieve_time)
+#         print('Time:',resume)
+
+#         data = {
+#             'resume_time': resume
+#         }
+#         return render(request, 'mylearning.html', context=data)
+#     except User.DoesNotExist:
+#         print("User does not exist.")
+#         # Handle the case when the user does not exist
+#         # You can redirect the user to an appropriate page or show an error message
+#         # For example:
+#         return HttpResponse("User does not exist")

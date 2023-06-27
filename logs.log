@@ -8627,3 +8627,308 @@ Based on quiz attempt employee got 80 score
 Employee submitted quiz and redirect to results page with course suggestion
 "GET /final/ HTTP/1.1" 200 11128
 "POST /save_time HTTP/1.1" 200 38
+Watching for file changes with StatReloader
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8616
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6880
+- Broken pipe from ('127.0.0.1', 8746)
+- Broken pipe from ('127.0.0.1', 8747)
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6910
+"POST /save_time HTTP/1.1" 200 38
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12210
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: karthik.konduru@ratnaglobaltech.com
+OTP is generated 9789
+Previously employee attempted quiz for 27 time
+Employee having login attempts and otp is sent to employee mail-id: karthik.konduru@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7859
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12214
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10417
+Employee skipped the quiz and select domain python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=python HTTP/1.1" 200 15110
+"GET /validate/dashboard/ HTTP/1.1" 200 12214
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10417
+Employee still having the previous quiz timer with 40 sec
+Employee agreed to terms and conditions with selected domain python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=python HTTP/1.1" 200 15682
+"GET /api/get-quiz/?category=python HTTP/1.1" 200 4453
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+Based on quiz attempt employee got 80 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11129
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 12214
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /validate/dashboard/ HTTP/1.1" 200 12214
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10638
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6880
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10499
+"GET / HTTP/1.1" 200 12324
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6880
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6880
+- Broken pipe from ('127.0.0.1', 10085)
+- Broken pipe from ('127.0.0.1', 10120)
+- Broken pipe from ('127.0.0.1', 10090)
+- Broken pipe from ('127.0.0.1', 10122)
+- Broken pipe from ('127.0.0.1', 10121)
+- Broken pipe from ('127.0.0.1', 10119)
+- Broken pipe from ('127.0.0.1', 10117)
+- Broken pipe from ('127.0.0.1', 10118)
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6908
+"POST /save_time HTTP/1.1" 200 38
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 0558
+Previously employee attempted quiz for 39 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7859
+Otp is invalid and redirect to login page
+"POST /validate/ HTTP/1.1" 200 7966
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12320
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6908
+Employee previous quiz history present
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:08:07.196113+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 2827
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10495
+Internal Server Error: /validate/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py", line 154, in dashboard
+    return render(request, 'dashboard.html')
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\loader_tags.py", line 197, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\engine.py", line 206, in select_template
+    return self.get_template(template_name)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 4: 'static'. Did you forget to register or load this tag?
+"GET /validate/dashboard/ HTTP/1.1" 500 168543
+"GET /validate/dashboard/ HTTP/1.1" 200 12189
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 11314
+"GET /validate/dashboard/index/ HTTP/1.1" 200 11317
+"GET /validate/dashboard/index/ HTTP/1.1" 200 12165
+"GET /validate/dashboard/index/ HTTP/1.1" 200 12167
+"GET /validate/dashboard/index/ HTTP/1.1" 200 17081
+"GET / HTTP/1.1" 200 16365
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 12172
+"GET /validate/dashboard/index/ HTTP/1.1" 200 16313
+"GET /validate/dashboard/index/ HTTP/1.1" 200 12486
+"GET /validate/dashboard/index/ HTTP/1.1" 200 12906
+"GET /validate/dashboard/index/ HTTP/1.1" 200 13030
+"GET /validate/dashboard/index/ HTTP/1.1" 200 13116
+"GET /validate/dashboard/index/ HTTP/1.1" 200 13454
+"GET /validate/dashboard/index/ HTTP/1.1" 200 13307
+"GET /validate/dashboard/index/ HTTP/1.1" 200 14081
+"GET /validate/dashboard/index/ HTTP/1.1" 200 13099
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10495
+"GET / HTTP/1.1" 200 12299
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12322
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6908
+Employee previous quiz history present
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:08:07.196113+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 2827
+"GET /validate/dashboard/ HTTP/1.1" 200 13280
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13115
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13128
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13128
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6908
+- Broken pipe from ('127.0.0.1', 12104)
+- Broken pipe from ('127.0.0.1', 12107)
+"GET /validate/dashboard/ HTTP/1.1" 200 13128
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12322
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10495
+"GET / HTTP/1.1" 200 12322
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 8492
+Previously employee attempted quiz for 40 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7859
+Otp is invalid and redirect to login page
+"POST /validate/ HTTP/1.1" 200 7966
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12322
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6910
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:08:07.196113+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 2827
+"GET /validate/dashboard/ HTTP/1.1" 200 12322
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12322
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12671
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:08:07.196113+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 2827
+"GET / HTTP/1.1" 200 12681
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6908
+"GET / HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12684
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 9877
+Previously employee attempted quiz for 41 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7859
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12684
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12684
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
