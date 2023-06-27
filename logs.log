@@ -9522,3 +9522,896 @@ Employee details are saved into database
 Employee is redirected to otp validation page!
 "POST / HTTP/1.1" 200 7517
 >>>>>>> 95be376b6a322959f1dfdbf922330bca9f90bab5
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9079
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 3184
+Previously employee attempted quiz for 12 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7517
+Otp is invalid and redirect to login page
+"POST /validate/ HTTP/1.1" 200 7624
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8394
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9079
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 2877
+Previously employee attempted quiz for 13 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7517
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8616
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /mylearning/ HTTP/1.1" 200 4244
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+- Broken pipe from ('127.0.0.1', 56799)
+- Broken pipe from ('127.0.0.1', 56800)
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /mylearning/ HTTP/1.1" 200 4265
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+- Broken pipe from ('127.0.0.1', 56833)
+Employee previous quiz history present
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-06-22 14:17:33.691001+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 2762
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 15109
+"GET /static/images/recommendation.png HTTP/1.1" 200 113005
+"GET /validate/homepage HTTP/1.1" 301 0
+"GET /validate/homepage/ HTTP/1.1" 200 8616
+"GET /validate/homepage/?category=Python HTTP/1.1" 302 0
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 35 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15229
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4354
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+Internal Server Error: /api/result/
+Traceback (most recent call last):
+  File "C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\views.py", line 404, in result
+    suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id = url(score=quiz_add.score,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 7)
+"POST /api/result/ HTTP/1.1" 500 69851
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10964
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10964
+Watching for file changes with StatReloader
+"POST /save_time HTTP/1.1" 200 38
+"GET / HTTP/1.1" 200 9079
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 2136
+Previously employee attempted quiz for 14 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7517
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8616
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+"GET /validate/homepage/?category=Python HTTP/1.1" 302 0
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 35 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15229
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4667
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+Internal Server Error: /api/result/
+Traceback (most recent call last):
+  File "C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\views.py", line 404, in result
+    suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id = url(score=quiz_add.score,
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 7)
+"POST /api/result/ HTTP/1.1" 500 69851
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10964
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10964
+C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Employee submitted quiz and redirect to results page with course suggestion
+"POST /save_time HTTP/1.1" 200 38
+"GET /final/ HTTP/1.1" 200 10963
+"POST /save_time HTTP/1.1" 200 38
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9079
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 7772
+Previously employee attempted quiz for 15 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7517
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8616
+"GET /validate/homepage/?category=Python HTTP/1.1" 302 0
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 35 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15229
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4296
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+Based on quiz attempt employee got 70 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11091
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/homepage HTTP/1.1" 301 0
+"GET /validate/homepage/ HTTP/1.1" 200 8616
+Employee previous quiz history present
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /mylearning/ HTTP/1.1" 200 4244
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+- Broken pipe from ('127.0.0.1', 56965)
+- Broken pipe from ('127.0.0.1', 56966)
+- Broken pipe from ('127.0.0.1', 56993)
+- Broken pipe from ('127.0.0.1', 56992)
+- Broken pipe from ('127.0.0.1', 56991)
+Employee previous quiz history present
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /mylearning/ HTTP/1.1" 200 4247
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+- Broken pipe from ('127.0.0.1', 56995)
+C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Employee previous quiz history present
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /mylearning/ HTTP/1.1" 200 4247
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+- Broken pipe from ('127.0.0.1', 57031)
+- Broken pipe from ('127.0.0.1', 57032)
+C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\PoojaAmolYawalkar\Desktop\NewGitSwitchTech\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Employee previous quiz history present
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /mylearning/ HTTP/1.1" 200 4247
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+- Broken pipe from ('127.0.0.1', 57043)
+- Broken pipe from ('127.0.0.1', 57042)
+Employee previous quiz history present
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /mylearning/ HTTP/1.1" 200 4232
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Employee previous quiz score : 70
+Employee previous quiz attempt date 2023-06-22 17:51:38.995434+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /history/ HTTP/1.1" 200 2784
+Employee previous quiz history present
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /mylearning/ HTTP/1.1" 200 4247
+Employee previous quiz history present
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /mylearning/ HTTP/1.1" 200 4248
+Employee previous quiz history present
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /mylearning/ HTTP/1.1" 200 4248
+Employee previous quiz history present
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /mylearning/ HTTP/1.1" 200 4247
+Employee previous quiz history present
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /mylearning/ HTTP/1.1" 200 4247
+Employee previous quiz history present
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /mylearning/ HTTP/1.1" 200 4247
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /mylearning/ HTTP/1.1" 200 4233
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /mylearning/ HTTP/1.1" 200 4245
+Employee previous quiz history present
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /mylearning/ HTTP/1.1" 200 4245
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+- Broken pipe from ('127.0.0.1', 57086)
+- Broken pipe from ('127.0.0.1', 57047)
+Employee previous quiz history present
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /mylearning/ HTTP/1.1" 200 4245
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+"POST /save_time HTTP/1.1" 200 38
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9079
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 3644
+Previously employee attempted quiz for 16 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7517
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8616
+Employee previous quiz history present
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+"GET /mylearning/ HTTP/1.1" 200 4245
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9079
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+Login page accessed!
+Entered employee mail: Pooja.yawalkar@ratnaglobaltech.com
+OTP is generated 4166
+Previously employee attempted quiz for 9 time
+Employee having login attempts and otp is sent to employee mail-id: Pooja.yawalkar@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7517
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8618
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /mylearning/ HTTP/1.1" 200 4245
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+- Broken pipe from ('127.0.0.1', 54319)
+- Broken pipe from ('127.0.0.1', 54257)
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /mylearning/ HTTP/1.1" 200 4263
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /mylearning/ HTTP/1.1" 200 4233
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+- Broken pipe from ('127.0.0.1', 54321)
+- Broken pipe from ('127.0.0.1', 54323)
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /mylearning/ HTTP/1.1" 200 4248
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+"POST /save_time HTTP/1.1" 200 38
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8618
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /mylearning/ HTTP/1.1" 200 4248
+- Broken pipe from ('127.0.0.1', 54429)
+- Broken pipe from ('127.0.0.1', 54428)
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /mylearning/ HTTP/1.1" 200 4266
+- Broken pipe from ('127.0.0.1', 54442)
+- Broken pipe from ('127.0.0.1', 54444)
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET /?category=Java HTTP/1.1" 302 0
+Employee still having the previous quiz timer with 14 sec
+Employee agreed to terms and conditions with selected domain Java and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 15223
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 3930
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Based on quiz attempt employee got 30 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11107
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/homepage HTTP/1.1" 301 0
+"GET /validate/homepage/ HTTP/1.1" 200 8618
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 4245
+- Broken pipe from ('127.0.0.1', 54446)
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-23 10:37:07.199820+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 2805
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 4245
+"POST /save_time HTTP/1.1" 200 38
+Watching for file changes with StatReloader
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8618
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 3990
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8618
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8618
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 3990
+- Broken pipe from ('127.0.0.1', 54658)
+- Broken pipe from ('127.0.0.1', 54659)
+- Broken pipe from ('127.0.0.1', 54677)
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8618
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 4245
+- Broken pipe from ('127.0.0.1', 54682)
+Watching for file changes with StatReloader
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8618
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 4252
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 4364
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 4728
+"POST /save_time HTTP/1.1" 200 38
+- Broken pipe from ('127.0.0.1', 54833)
+- Broken pipe from ('127.0.0.1', 54821)
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"POST /save_time HTTP/1.1" 200 38
+"GET /mylearning/ HTTP/1.1" 200 4499
+- Broken pipe from ('127.0.0.1', 54832)
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 4511
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 4614
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 4934
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"POST /save_time HTTP/1.1" 200 38
+"GET /mylearning/ HTTP/1.1" 200 4364
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 4373
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 4377
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 4658
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 4659
+- Broken pipe from ('127.0.0.1', 55008)
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 4659
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 4658
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 4375
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5555
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+"POST /save_time HTTP/1.1" 200 38
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5563
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5564
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5576
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5560
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5999
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5999
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5997
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5574
+"POST /save_time HTTP/1.1" 200 38
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 9938
+Not Found: /profile/
+"GET /profile/ HTTP/1.1" 404 4535
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8618
+Watching for file changes with StatReloader
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5564
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5564
+"POST /save_time HTTP/1.1" 200 38
+User session exists (remember me enabled), redirecting to the Instructions page
+"POST /save_time HTTP/1.1" 200 38
+"GET / HTTP/1.1" 200 8618
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5564
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5653
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5663
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5658
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5528
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 5528
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6116
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+"POST /save_time HTTP/1.1" 200 38
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"GET /mylearning/ HTTP/1.1" 200 6114
+- Broken pipe from ('127.0.0.1', 55619)
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6635
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6623
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6627
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6621
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6617
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6703
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+"POST /save_time HTTP/1.1" 200 38
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"POST /save_time HTTP/1.1" 200 38
+"GET /mylearning/ HTTP/1.1" 200 6739
+- Broken pipe from ('127.0.0.1', 55730)
+- Broken pipe from ('127.0.0.1', 55661)
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6734
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6794
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6794
+Watching for file changes with StatReloader
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8618
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8618
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6794
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6795
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6787
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8618
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6795
+- Broken pipe from ('127.0.0.1', 55772)
+- Broken pipe from ('127.0.0.1', 55771)
+- Broken pipe from ('127.0.0.1', 55761)
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6791
+- Broken pipe from ('127.0.0.1', 55781)
+- Broken pipe from ('127.0.0.1', 55782)
+- Broken pipe from ('127.0.0.1', 55786)
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6793
+- Broken pipe from ('127.0.0.1', 56001)
+- Broken pipe from ('127.0.0.1', 55999)
+- Broken pipe from ('127.0.0.1', 56010)
+- Broken pipe from ('127.0.0.1', 56011)
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6795
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8618
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6795
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6795
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6887
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6887
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6889
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6889
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6889
+"POST /save_time HTTP/1.1" 200 38
+- Broken pipe from ('127.0.0.1', 56175)
+- Broken pipe from ('127.0.0.1', 56173)
+User session exists (remember me enabled), redirecting to the Instructions page
+"GET / HTTP/1.1" 200 8618
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6889
+"POST /save_time HTTP/1.1" 200 38
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6889
+- Broken pipe from ('127.0.0.1', 56174)
+- Broken pipe from ('127.0.0.1', 56234)
+- Broken pipe from ('127.0.0.1', 56235)
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6887
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-23 10:37:07.199820+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 2805
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-23 10:37:07.199820+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 2805
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-23 10:37:07.199820+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 2805
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6887
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6887
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+Watching for file changes with StatReloader
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9079
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9079
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4544
+Login page accessed!
+"POST / HTTP/1.1" 200 9261
+Login page accessed!
+"POST / HTTP/1.1" 200 9261
+Login page accessed!
+Entered employee mail: Pooja.yawalkar@ratnaglobaltech.com
+OTP is generated 1889
+Previously employee attempted quiz for 10 time
+Employee having login attempts and otp is sent to employee mail-id: Pooja.yawalkar@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7517
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/homepage/ HTTP/1.1" 200 8618
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6887
+- Broken pipe from ('127.0.0.1', 62494)
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /mylearning/ HTTP/1.1" 200 6899
+- Broken pipe from ('127.0.0.1', 62539)
+- Broken pipe from ('127.0.0.1', 62555)
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-23 10:37:07.199820+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 2805

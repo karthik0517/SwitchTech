@@ -33,6 +33,11 @@ function enableButtons() {
       window.location.href = '/history/';
     }
 
+    function mylearning() {
+      window.location.href = '/mylearning/';
+
+    }
+
     function skipQuiz() {
       const selectedTechnology = document.getElementById("selectedCategory").value;
       const currentHost = window.location.host;
@@ -199,6 +204,7 @@ function enableButtons() {
             <h1 class="font_normal">SWITCHING TECH <span class="colored-box1">SYSTEMS</span>
           </div>
           <button class="btn btn-primary history-button" onclick="fetchHistory()" style="background-color:  #4169e1;">History</button>
+          <button class="btn btn-primary my-learning-button" onclick="mylearning()" style="background-color:  #4169e1;">My Learning</button>
           <form action="">
             <div>
             <div class="form-group">

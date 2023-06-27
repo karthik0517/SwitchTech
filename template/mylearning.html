@@ -12,125 +12,177 @@
             text-decoration: none;
             display: inline-block;
         }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .progress-bar {
+            width: 0%;
+            height: 100%;
+            background-color: #007bff;
+            border-radius: 5px;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .progress-percentage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #000;
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
 
     <h1>My Learning</h1>
+    <p>(Note:Watch the video on our website only, so that you can resume watch anytime!!)</p>
     <div id="player"></div>
     <h2 id="video-title"></h2>
 
     <button id="resume-button" class="my-learning-button">Resume Watching</button>
-   
-	<button id="restart-button" class="my-learning-button">Restart</button>
+
+    <button id="restart-button" class="my-learning-button">Restart</button><hr>
+
+    <div class="progress-bar-container">
+        <div id="progress" class="progress-bar"></div>
+        <span id="progress-percentage" class="progress-percentage"></span>
+    </div>
+
+    <div id="topic-list">
+        <h3>Topics:</h3>
+        <ul>
+            <li><a href="#" onclick="jumpToTime(0)">Introduction</a></li>
+            <li><a href="#" onclick="jumpToTime(304)">JDK Setup</a></li>
+            <li><a href="#" onclick="jumpToTime(801)">first Code in Java</a></li>
+            <li><a href="#" onclick="jumpToTime(1475)">How Java works </a></li>
+            <li><a href="#" onclick="jumpToTime(2194)">Variables in Java </a></li>
+            <li><a href="#" onclick="jumpToTime(2891)">Datatypes in Java </a></li>
+            <li><a href="#" onclick="jumpToTime(3628)">Literals in Java </a></li>
+            <li><a href="#" onclick="jumpToTime(3889)">Type conversion </a></li>
+            <li><a href="#" onclick="jumpToTime(4640)"> Assignment Operators </a></li>
+            <li><a href="#" onclick="jumpToTime(5252)">Relational Operators </a></li>
+        </ul>
+    </div>
 
     <script>
         // Assuming you have JavaScript variables "youtubeVideoId" and "videoTitle"
-       // Assuming you have JavaScript variables "youtubeVideoId" and "videoTitle"
-var youtubeVideoId = "{{ Youtube_id }}";
-var videoTitle = "{{ title }}";
+        var youtubeVideoId = "{{ Youtube_id }}";
+        var videoTitle = "{{ title }}";
 
-// Load the YouTube Embedded Player API
-var tag = document.createElement('script');
-tag.src = 'https://www.youtube.com/iframe_api';
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        // Load the YouTube Embedded Player API
+        var tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-// Create the YouTube player after the API has loaded
-var player;
-// var resumeTime;
+        // Create the YouTube player after the API has loaded
+        var player;
+        var progressElement;
+        var progressPercentageElement;
 
-function onYouTubeIframeAPIReady() {
-    var startTime = {{ resume_time }};
-    player = new YT.Player('player', {
-        height: '360',
-        width: '640',
-        videoId: youtubeVideoId + '?start=' + startTime,
+        function onYouTubeIframeAPIReady() {
+            var startTime = {{ resume_time }};
+            player = new YT.Player('player', {
+                height: '580',
+                width: '1000',
+                // videoId: youtubeVideoId + '?start=' + startTime,
+                videoId: youtubeVideoId + '?start=' + startTime + '&rel=0&showinfo=0',
 
-        playerVars: {
-            autoplay: 0,    // Optional: Disable autoplay
-            controls: 1     // Optional: Show video controls
-        },
-        events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
+
+                
+
+                playerVars: {
+                    autoplay: 0,    // Optional: Disable autoplay
+                    controls: 1, 
+                    rel: 0,
+                    showinfo: 0    // Optional: Show video controls
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
         }
-    });
-}
-
-// Set the video title once the player is ready
-function onPlayerReady(event) {
-    document.getElementById('video-title').innerText = videoTitle;
-
-    // Resume watching button functionality
-    var resumeButton = document.getElementById('resume-button');
-    resumeButton.addEventListener('click', function() {
-        player.seekTo({{resume_time}});
-        player.playVideo();
-    });
-
-    // Reset button functionality
-    var resetButton = document.getElementById('restart-button');
-    resetButton.addEventListener('click', function() {
-        player.seekTo(0);
-        player.playVideo();
-    });
-}
-
-// Capture the current time when the player state changes
-function onPlayerStateChange(event) {
-    if (event.data === YT.PlayerState.PLAYING) {
-        // Start capturing the current time when the user navigates away
-        window.addEventListener('beforeunload', function() {
-            var currentTime = player.getCurrentTime();
-            saveCurrentTime(currentTime);
-        });
-    }
-}
-
-// Send an AJAX request to save the current time
-function saveCurrentTime(currentTime) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', '/save_time', true);  // Replace '/save_time/' with your endpoint URL
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                console.log('Current time saved successfully');
-            } else {
-                console.error('Error saving current time');
-            }
-        }
-    };
-    var data = {
-        current_time: currentTime
-    };
-    xhr.send(JSON.stringify(data));
-}
-
-       
-        
-        
-
 
         // Set the video title once the player is ready
-        // function onPlayerReady(event) {
-        //     document.getElementById('video-title').innerText = videoTitle;
-            
+        function onPlayerReady(event) {
+            document.getElementById('video-title').innerText = videoTitle;
+
             // Resume watching button functionality
-            // var resumeButton = document.getElementById('resume-button');
-            // resumeButton.addEventListener('click', function() {
-            //     player.seekTo({{ resume_time }});
-			// 	player.playVideo();
-            // });
-        
+            var resumeButton = document.getElementById('resume-button');
+            resumeButton.addEventListener('click', function() {
+                player.seekTo({{resume_time}});
+                player.playVideo();
+            });
+
             // Reset button functionality
-        //     var resetButton = document.getElementById('restart-button');
-        //     resetButton.addEventListener('click', function() {
-        //         player.seekTo(0);
-		// 		player.playVideo();
-        //     });
-        // }
+            var resetButton = document.getElementById('restart-button');
+            resetButton.addEventListener('click', function() {
+                player.seekTo(0);
+                player.playVideo();
+            });
+
+            // Update progress bar while the video is playing
+            progressElement = document.getElementById('progress');
+            progressPercentageElement = document.getElementById('progress-percentage');
+            setInterval(updateProgressBar, 100);
+        }
+
+        // Update the progress bar based on the current video time
+        function updateProgressBar() {
+            var currentTime = player.getCurrentTime();
+            var duration = player.getDuration();
+            var progress = (currentTime / duration) * 100;
+            progressElement.style.width = progress + '%';
+
+            var progressPercentage = Math.round(progress) + '% Complete';
+            progressPercentageElement.innerText = progressPercentage;
+        }
+
+        // Capture the current time when the player state changes
+        function onPlayerStateChange(event) {
+            if (event.data === YT.PlayerState.PLAYING) {
+                // Start capturing the current time when the user navigates away
+                window.addEventListener('beforeunload', function() {
+                    var currentTime = player.getCurrentTime();
+                    saveCurrentTime(currentTime);
+                });
+            }
+        }
+
+        // Send an AJAX request to save the current time
+        function saveCurrentTime(currentTime) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/save_time', true);  // Replace '/save_time/' with your endpoint URL
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        console.log('Current time saved successfully');
+                    } else {
+                        console.error('Error saving current time');
+                    }
+                }
+            };
+            var data = {
+                current_time: currentTime
+            };
+            xhr.send(JSON.stringify(data));
+        }
+
+        // Jump to a specific time in the video
+        function jumpToTime(time) {
+            player.seekTo(time);
+            player.playVideo();
+        }
     </script>
 </body>
 </html>
