@@ -4,6 +4,8 @@ import uuid
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from django.contrib.auth.models import User
+import pytz
+from django.utils import timezone
 
 
 
@@ -13,7 +15,13 @@ class QuizUserScore(models.Model):
     # user = models.CharField(User, max_length=50)
     quiz_domain = models.CharField(max_length=50, null=True)
     score = models.IntegerField()
-    created_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField()
+
+    def save(self, *args, **kwargs):
+        india_tz = pytz.timezone('Asia/Kolkata')
+        current_date = timezone.now().astimezone(india_tz)
+        self.created_at = current_date
+        super().save(*args, **kwargs)
 
 class UserData(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)

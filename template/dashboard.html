@@ -320,63 +320,39 @@
       </div>
   </div>
   <div class="certification_block your_preparation_block">
-      <div class="dashboard-section-header" style="width: 100%; float: left;">
-          <h2 class="text-para-headline bold dashboard-section-title">Select a domain to switch<span
-                  style="font-size: 14px;">(<a href="">View All</a>)</span></h2>
-      </div>
-      <div class="" style="width: 33.33%; float: left;">
+    <div class="dashboard-section-header" style="width: 100%; float: left;">
+        <h2 class="text-para-headline bold dashboard-section-title">Select a domain to switch<span style="font-size: 14px;">(<a href="">View All</a>)</span></h2>
+    </div>
+    <div class="" style="width: 33.33%; float: left;">
         <ul class="list-group">
-          <li class="list-group-item">
-            <a href="javascript:void(0);" onclick="storeLink('python')">Python</a>
-          </li>
-          <li class="list-group-item">
-            <a href="javascript:void(0);" onclick="storeLink('java')">Java</a>
-          </li>
-          <li class="list-group-item">
-            <a href="javascript:void(0);" onclick="storeLink('dotnet')">DOT NET</a>
-          </li>
+            {% for category in categories %}
+                {% if forloop.counter0|divisibleby:3 %}
+                    </ul>
+                </div>
+                <div class="" style="width: 33.33%; float: left;">
+                    <ul class="list-group">
+                {% endif %}
+                <li class="list-group-item">
+                    <a href="javascript:void(0);" onclick="storeLink('{{ category.category_name }}')">{{ category.category_name }}</a>
+                </li>
+            {% endfor %}
         </ul>
-      </div>
-      <div class="" style="width: 33.33%; float: left;">
-        <ul class="list-group">
-          <li class="list-group-item">
-            <a href="javascript:void(0);" onclick="storeLink('php')">PHP</a>
-          </li>
-          <li class="list-group-item">
-            <a href="javascript:void(0);" onclick="storeLink('javascript')">JavaScript</a>
-          </li>
-          <li class="list-group-item">
-            <a href="javascript:void(0);" onclick="storeLink('oracle')">Oracle</a>
-          </li>
-        </ul>
-      </div>
-      <div class="" style="width: 33.33%; float: left;">
-        <ul class="list-group">
-          <li class="list-group-item">
-            <a href="javascript:void(0);" onclick="storeLink('microstrategy')">Microstrategy</a>
-          </li>
-          <li class="list-group-item">
-            <a href="javascript:void(0);" onclick="storeLink('powerbi')">Power Bi</a>
-          </li>
-          <li class="list-group-item">
-            <a href="javascript:void(0);" onclick="storeLink('bigdata')">Big Data</a>
-          </li>
-        </ul>
-      </div>
-      <div class="logo">
-          <img src="{% static 'images\dashboard.png' %}" alt="">
-      </div>
-      <div class="Progress_bar">
-          <h2> Your Progress</h2>
-      </div>
-      <div class="container">
-          <div class="circular-progress">
-              <span class="progress-value">0%</span>
-          </div>
-          <!-- <span class="text"> HTML & CSS & JavaScripts</span> -->
-      </div>
+    </div>
+  </div>
+  <div class="logo">
+      <img src="{% static 'images\dashboard.png' %}" alt="">
+  </div>
+  <div class="Progress_bar">
+      <h2> Your Progress</h2>
+  </div>
+  <div class="container">
+    <div class="circular-progress">
+        <span class="progress-value">0%</span>
+    </div>
   </div>
   <script>
+
+
       let circularProgress = document.querySelector(".circular-progress");
       let progressValue = document.querySelector(".progress-value");
 

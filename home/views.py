@@ -15,6 +15,8 @@ from django.contrib.auth.models import User
 from django.contrib.auth import login
 from django.conf import settings
 from django.db import IntegrityError
+import pytz
+from django.utils import timezone
 
 logger = logging.getLogger(__name__)
 
@@ -36,11 +38,9 @@ def loginPage(request):
     print('------->', remember_me)
     if remember_me:
         # logger.info('User session exists (remember me enabled), redirecting to the Instructions page')
-        # context = {'categories': Category.objects.all()}
-        # if request.GET.get('category'):
-        #     return redirect(f"/quiz/?category={request.GET.get('category')}")
+        context = {'categories': Category.objects.all()}
         # return render(request, 'index.html', context)
-        return render(request, 'dashboard.html')
+        return render(request, 'dashboard.html',context)
 
     elif request.method == "POST":
         logger.info('Login page accessed!')
@@ -151,7 +151,8 @@ def validate(request):
 
 
 def dashboard(request):
-    return render(request, 'dashboard.html')
+    context = {'categories': Category.objects.all()}
+    return render(request, 'dashboard.html', context)
 
 
 def index(request):
@@ -166,6 +167,8 @@ def homepage(request):
 
 
 def url(score, category):
+    YouTube_id = ''
+    Title = ''
     if score <= 50:
         print("Suggesting Beginner")
         logger.info('Based on employee score we are suggesting Beginner course')
@@ -240,37 +243,69 @@ def history(request):
     mail = request.session.get('mail')
     print('MAIL in HISTORY:---->', mail)
     user = User.objects.get(email=mail)
-    score_details = QuizUserScore.objects.filter(user=user).values_list('score', 'created_at', 'quiz_domain')
+    score_details = QuizUserScore.objects.filter(user=user).order_by('-created_at').values_list('score', 'created_at', 'quiz_domain')[:3]
+    print('score_details', score_details)
     user_history = list(score_details)
+    print('user_history', user_history)
     if user_history:
         logger.info('Employee previous quiz history present')
-        score = user_history[0][0]
-        user_time = user_history[0][1]
-        user_domain = user_history[0][2]
-        print('employee_previous_score:----->', score)
-        logger.info(f'Employee previous quiz score : {score}')
-        print('user_last_timer:---->', user_time)
-        logger.info(f'Employee previous quiz attempt date {user_time}')
-        print("last_domain---->", user_domain)
-        logger.info(f'Employee previous attempted quiz domain {user_domain}')
+        attempts_data = []
 
-        suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(score,
-                                                                                                         category=user_domain)
+        for score, user_time, user_domain in user_history:
+            print('employee_previous_score:----->', score)
+            logger.info(f'Employee previous quiz score : {score}')
+            print('user_last_timer:---->', user_time)
+            logger.info(f'Employee previous quiz attempt date {user_time}')
+            print("last_domain---->", user_domain)
+            logger.info(f'Employee previous attempted quiz domain {user_domain}')
 
-        data = {
-            'user_score': score,
-            'user_time': user_time,
-            'previous_domain': user_domain,
-            'suggestion_url': suggesstion_url,
-            'course_name': course_name,
-            'ratings': ratings,
-            'instructor': instructor,
-            'duration': duration,
-            'difficulty': difficulty,
-            'title': Title
-        }
+            suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(score,
+                                                                                                             category=user_domain)
 
-        return render(request, 'history.html', context=data)
+            # Create a dictionary for each attempt and append it to the attempts_data list
+            attempt_data = {
+                'user_score': score,
+                'user_time': user_time,
+                'previous_domain': user_domain,
+                'suggestion_url': suggesstion_url,
+                'course_name': course_name,
+                'ratings': ratings,
+                'instructor': instructor,
+                'duration': duration,
+                'difficulty': difficulty,
+                'title': Title
+            }
+            attempts_data.append(attempt_data)
+
+        print('history data', attempts_data)
+        return render(request, 'history.html', context={'attempts_data': attempts_data})
+        # score = user_history[0][0]
+        # user_time = user_history[0][1]
+        # user_domain = user_history[0][2]
+        # print('employee_previous_score:----->', score)
+        # logger.info(f'Employee previous quiz score : {score}')
+        # print('user_last_timer:---->', user_time)
+        # logger.info(f'Employee previous quiz attempt date {user_time}')
+        # print("last_domain---->", user_domain)
+        # logger.info(f'Employee previous attempted quiz domain {user_domain}')
+        #
+        # suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(score,
+        #                                                                                                  category=user_domain)
+        #
+        # data = {
+        #     'user_score': score,
+        #     'user_time': user_time,
+        #     'previous_domain': user_domain,
+        #     'suggestion_url': suggesstion_url,
+        #     'course_name': course_name,
+        #     'ratings': ratings,
+        #     'instructor': instructor,
+        #     'duration': duration,
+        #     'difficulty': difficulty,
+        #     'title': Title
+        # }
+
+        # return render(request, 'history.html', context=data)
     else:
         logger.info('Employee previous quiz history is not present')
         print("no history")
@@ -372,7 +407,6 @@ def save_remaining_time(request):
         quiz_timer.domain = category
         quiz_timer.save()
         return JsonResponse({'message': 'Remaining time saved successfully'})
-
     return JsonResponse({'message': 'Invalid request method'}, status=400)
 
 
@@ -385,7 +419,6 @@ duration = float()
 difficulty = str()
 YouTube_id = str()
 Title = str()
-
 
 @login_required(login_url='login')
 def result(request):
@@ -400,12 +433,16 @@ def result(request):
         quiz_add.quiz_domain = category
         quiz_add.score = score * 10
         quiz_add.user = user
-        check = QuizUserScore.objects.filter(user=user)
-        if check.count() > 0:
-            QuizUserScore.objects.filter(user=user).update(created_at=datetime.now(), score=quiz_add.score,
-                                                           quiz_domain=quiz_add.quiz_domain)
-        else:
-            quiz_add.save()
+        kolkata_tz = timezone.get_current_timezone()
+        current_time = timezone.localtime(timezone.now(), kolkata_tz)
+        quiz_add.created_at = current_time.astimezone(timezone.utc)
+        # check = QuizUserScore.objects.filter(user=user)
+
+        # if check.count() > 0:
+        #     QuizUserScore.objects.filter(user=user).update(created_at=datetime.now(), score=quiz_add.score,
+        #                                                    quiz_domain=quiz_add.quiz_domain)
+        # else:
+        quiz_add.save()
         print('Score received:', score * 10, 'category:', category)
         suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(
             score=quiz_add.score,

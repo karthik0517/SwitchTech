@@ -8991,3 +8991,1427 @@ Employee is redirected to otp validation page!
 "GET / HTTP/1.1" 200 9285
 "GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
 "GET /static/images/loginimg.png HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12681
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6908
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee skipped the quiz and select domain python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=python HTTP/1.1" 200 15148
+"GET /static/images/recommendation.png HTTP/1.1" 304 0
+- Broken pipe from ('127.0.0.1', 1283)
+"GET / HTTP/1.1" 200 12681
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=python HTTP/1.1" 200 15148
+"GET / HTTP/1.1" 200 12681
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=python HTTP/1.1" 200 15203
+- Broken pipe from ('127.0.0.1', 1522)
+"GET / HTTP/1.1" 200 12681
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=python HTTP/1.1" 200 15203
+- Broken pipe from ('127.0.0.1', 1523)
+"GET / HTTP/1.1" 200 12681
+"GET / HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=python HTTP/1.1" 200 15134
+- Broken pipe from ('127.0.0.1', 1615)
+"GET / HTTP/1.1" 200 12681
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=python HTTP/1.1" 200 15326
+- Broken pipe from ('127.0.0.1', 1786)
+"GET / HTTP/1.1" 200 12681
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=java HTTP/1.1" 200 15393
+- Broken pipe from ('127.0.0.1', 1787)
+"GET / HTTP/1.1" 200 12681
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=java HTTP/1.1" 200 15393
+- Broken pipe from ('127.0.0.1', 1829)
+"GET / HTTP/1.1" 200 12681
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=java HTTP/1.1" 200 15393
+- Broken pipe from ('127.0.0.1', 1848)
+"GET / HTTP/1.1" 200 12681
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=java HTTP/1.1" 200 15393
+- Broken pipe from ('127.0.0.1', 1860)
+"GET / HTTP/1.1" 200 12681
+"GET / HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=python HTTP/1.1" 200 15385
+- Broken pipe from ('127.0.0.1', 1945)
+"GET / HTTP/1.1" 200 12681
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=python HTTP/1.1" 200 15385
+- Broken pipe from ('127.0.0.1', 1947)
+"GET / HTTP/1.1" 200 12681
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=python HTTP/1.1" 200 15385
+- Broken pipe from ('127.0.0.1', 1969)
+"GET / HTTP/1.1" 200 12681
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=python HTTP/1.1" 200 15385
+- Broken pipe from ('127.0.0.1', 2033)
+"GET / HTTP/1.1" 200 12681
+"GET / HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=python HTTP/1.1" 200 14926
+- Broken pipe from ('127.0.0.1', 2127)
+"GET / HTTP/1.1" 200 12681
+"GET / HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=python HTTP/1.1" 200 15052
+"GET / HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain java and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=java HTTP/1.1" 200 15119
+"GET / HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=python HTTP/1.1" 200 14935
+- Broken pipe from ('127.0.0.1', 2328)
+"GET / HTTP/1.1" 200 12681
+"GET / HTTP/1.1" 200 12681
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=python HTTP/1.1" 200 14935
+- Broken pipe from ('127.0.0.1', 2384)
+"GET / HTTP/1.1" 200 12681
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: karthik.konduru@ratnaglobaltech.com
+OTP is generated 3087
+Previously employee attempted quiz for 28 time
+Employee having login attempts and otp is sent to employee mail-id: karthik.konduru@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7859
+Otp is invalid and redirect to login page
+"POST /validate/ HTTP/1.1" 200 7966
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12685
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12685
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: karthik.konduru@ratnaglobaltech.com
+OTP is generated 9120
+Previously employee attempted quiz for 29 time
+Employee having login attempts and otp is sent to employee mail-id: karthik.konduru@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12685
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12685
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10434
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10434
+"GET / HTTP/1.1" 200 12682
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12682
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: karthik.konduru@ratnaglobaltech.com
+OTP is generated 2551
+Previously employee attempted quiz for 30 time
+Employee having login attempts and otp is sent to employee mail-id: karthik.konduru@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12682
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10434
+Employee still having the previous quiz timer with 40 sec
+Employee agreed to terms and conditions with selected domain python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=python HTTP/1.1" 200 15682
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=python HTTP/1.1" 200 4283
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+"GET / HTTP/1.1" 200 12682
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:48:38.161081+00:00
+Employee previous attempted quiz domain python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 2827
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6908
+Employee previous quiz history present
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:48:38.161081+00:00
+Employee previous attempted quiz domain python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 2827
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 4716
+Previously employee attempted quiz for 42 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py", line 91, in loginPage
+    send_mail(subject="OTP", message=f"Your otp {otp}", from_email="switchingtechsystem@gmail.com",
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\mail\__init__.py", line 87, in send_mail
+    return mail.send()
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\mail\backends\smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\mail\backends\smtp.py", line 80, in open
+    self.connection = self.connection_class(
+  File "C:\Users\KarthikKonduru\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\KarthikKonduru\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\KarthikKonduru\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\KarthikKonduru\AppData\Local\Programs\Python\Python310\lib\socket.py", line 824, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "C:\Users\KarthikKonduru\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+"POST / HTTP/1.1" 500 110622
+"GET / HTTP/1.1" 200 9285
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9285
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+"GET / HTTP/1.1" 200 9285
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 6175
+Previously employee attempted quiz for 43 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py", line 91, in loginPage
+    send_mail(subject="OTP", message=f"Your otp {otp}", from_email="switchingtechsystem@gmail.com",
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\mail\__init__.py", line 87, in send_mail
+    return mail.send()
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\mail\message.py", line 298, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\mail\backends\smtp.py", line 124, in send_messages
+    new_conn_created = self.open()
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\mail\backends\smtp.py", line 80, in open
+    self.connection = self.connection_class(
+  File "C:\Users\KarthikKonduru\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\KarthikKonduru\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\KarthikKonduru\AppData\Local\Programs\Python\Python310\lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\KarthikKonduru\AppData\Local\Programs\Python\Python310\lib\socket.py", line 824, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "C:\Users\KarthikKonduru\AppData\Local\Programs\Python\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+"POST / HTTP/1.1" 500 110622
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9285
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 9730
+Previously employee attempted quiz for 44 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12678
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain java and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=java HTTP/1.1" 200 15676
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=java HTTP/1.1" 200 3912
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Based on quiz attempt employee got 20 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11108
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+"GET /validate/dashboard HTTP/1.1" 301 0
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 12678
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:08:07.196113+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 2827
+Employee previous quiz history present
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:08:07.196113+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 2827
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Employee previous quiz history present
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:08:07.196113+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 2827
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Employee previous quiz history present
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-28 05:52:16.955236+00:00
+Employee previous attempted quiz domain java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 2838
+Employee previous quiz history present
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-28 05:52:16.955236+00:00
+Employee previous attempted quiz domain java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 2838
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+"GET /validate/dashboard/ HTTP/1.1" 200 12678
+Watching for file changes with StatReloader
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-28 05:52:16.955236+00:00
+Employee previous attempted quiz domain java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:08:07.196113+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 3685
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Employee previous quiz history present
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-28 05:52:16.955236+00:00
+Employee previous attempted quiz domain java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:08:07.196113+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 3601
+Employee previous quiz history present
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-28 05:52:16.955236+00:00
+Employee previous attempted quiz domain java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:08:07.196113+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 3604
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain oracle and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=oracle HTTP/1.1" 200 15682
+"GET /api/get-quiz/?category=oracle HTTP/1.1" 200 4147
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Based on quiz attempt employee got 40 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11132
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 12678
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-06-28 06:09:35.284686+00:00
+Employee previous attempted quiz domain oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-28 05:52:16.955236+00:00
+Employee previous attempted quiz domain java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:08:07.196113+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 4375
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain hadoop and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=hadoop HTTP/1.1" 200 15682
+"GET /api/get-quiz/?category=hadoop HTTP/1.1" 200 3906
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/big-data-harish/
+Based on quiz attempt employee got 20 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11073
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 12678
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-28 06:13:13.343494+00:00
+Employee previous attempted quiz domain hadoop
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/big-data-harish/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-06-28 06:09:35.284686+00:00
+Employee previous attempted quiz domain oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-28 05:52:16.955236+00:00
+Employee previous attempted quiz domain java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:08:07.196113+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 5073
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain dotnet and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=dotnet HTTP/1.1" 200 15682
+"GET /api/get-quiz/?category=dotnet HTTP/1.1" 200 28
+- Broken pipe from ('127.0.0.1', 9159)
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain powerbi and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=powerbi HTTP/1.1" 200 15685
+"GET /api/get-quiz/?category=powerbi HTTP/1.1" 200 28
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain microstrategy and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=microstrategy HTTP/1.1" 200 15703
+"GET /api/get-quiz/?category=microstrategy HTTP/1.1" 200 4046
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/introduction-to-microstrategy-report-development/
+Based on quiz attempt employee got 30 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11100
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 12678
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain php and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=php HTTP/1.1" 200 15673
+"GET /api/get-quiz/?category=php HTTP/1.1" 200 3657
+Internal Server Error: /api/result/
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py", line 438, in result
+    current_date = timezone.now()
+NameError: name 'timezone' is not defined
+"POST /api/result/ HTTP/1.1" 500 74011
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10965
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /validate/dashboard/ HTTP/1.1" 200 12678
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain php and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=php HTTP/1.1" 200 15673
+"GET /api/get-quiz/?category=php HTTP/1.1" 200 3442
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=python HTTP/1.1" 200 15682
+"GET /api/get-quiz/?category=python HTTP/1.1" 200 4492
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+Based on quiz attempt employee got 80 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11129
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 12678
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=python HTTP/1.1" 200 15682
+"GET /api/get-quiz/?category=python HTTP/1.1" 200 4712
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 50 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11097
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 12678
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=python HTTP/1.1" 200 15682
+"GET /api/get-quiz/?category=python HTTP/1.1" 200 3977
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 40 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11097
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /logout/ HTTP/1.1" 302 0
+"POST /save_time HTTP/1.1" 200 38
+"GET / HTTP/1.1" 200 9285
+"GET /final/ HTTP/1.1" 302 0
+"GET /?next=/final/ HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 9012
+Previously employee attempted quiz for 45 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12678
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=python HTTP/1.1" 200 15682
+"GET /api/get-quiz/?category=python HTTP/1.1" 200 4244
+Watching for file changes with StatReloader
+Forbidden (CSRF cookie not set.): /api/result/
+"POST /api/result/ HTTP/1.1" 403 2870
+Forbidden (CSRF cookie not set.): /api/save-remaining-time/
+"POST /api/save-remaining-time/ HTTP/1.1" 403 2870
+"GET /final/ HTTP/1.1" 302 0
+"GET /?next=/final/ HTTP/1.1" 200 9285
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 9018
+Previously employee attempted quiz for 46 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12678
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=python HTTP/1.1" 200 15682
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=python HTTP/1.1" 200 4541
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 40 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11097
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard HTTP/1.1" 301 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12678
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-06-28 07:26:03.634132+00:00
+Employee previous attempted quiz domain python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-06-28 06:31:42.314967+00:00
+Employee previous attempted quiz domain python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 50
+Employee previous quiz attempt date 2023-06-28 06:30:08.055998+00:00
+Employee previous attempted quiz domain python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-28 06:24:49.500934+00:00
+Employee previous attempted quiz domain python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-28 06:15:27.280172+00:00
+Employee previous attempted quiz domain microstrategy
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/introduction-to-microstrategy-report-development/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-28 06:13:13.343494+00:00
+Employee previous attempted quiz domain hadoop
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/big-data-harish/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-06-28 06:09:35.284686+00:00
+Employee previous attempted quiz domain oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-28 05:52:16.955236+00:00
+Employee previous attempted quiz domain java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:08:07.196113+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 8745
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain microstrategy and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=microstrategy HTTP/1.1" 200 15703
+"GET /api/get-quiz/?category=microstrategy HTTP/1.1" 200 4160
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/introduction-to-microstrategy-report-development/
+Based on quiz attempt employee got 40 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11100
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 12678
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-06-28 07:29:21.566915+00:00
+Employee previous attempted quiz domain microstrategy
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/introduction-to-microstrategy-report-development/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-06-28 07:26:03.634132+00:00
+Employee previous attempted quiz domain python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-06-28 06:31:42.314967+00:00
+Employee previous attempted quiz domain python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4284
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /validate/dashboard/ HTTP/1.1" 200 11240
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 4338
+Previously employee attempted quiz for 47 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 11240
+"GET /validate/dashboard/ HTTP/1.1" 200 11198
+"GET /validate/dashboard/ HTTP/1.1" 200 12052
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12052
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12273
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12284
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12914
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+"GET /validate/dashboard/ HTTP/1.1" 200 12914
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12783
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11042
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11042
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11042
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12783
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 9173
+Previously employee attempted quiz for 48 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12783
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11042
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11042
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11042
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11491
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11491
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Not Found: /v
+"GET /v HTTP/1.1" 404 4537
+"GET / HTTP/1.1" 200 11042
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11042
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11042
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11042
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 2798
+Previously employee attempted quiz for 49 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12759
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 14935
+"GET /static/images/recommendation.png HTTP/1.1" 200 113005
+"GET /validate/dashboard/ HTTP/1.1" 200 12759
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-06-28 07:29:21.566915+00:00
+Employee previous attempted quiz domain microstrategy
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/introduction-to-microstrategy-report-development/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-06-28 07:26:03.634132+00:00
+Employee previous attempted quiz domain python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-06-28 06:31:42.314967+00:00
+Employee previous attempted quiz domain python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4284
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6880
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 12759
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11042
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11042
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11042
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11052
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 0907
+Previously employee attempted quiz for 50 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13291
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 14935
+"GET /validate/dashboard/ HTTP/1.1" 200 13291
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain React and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=React HTTP/1.1" 200 14892
+"GET / HTTP/1.1" 200 11052
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11052
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12225
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 3697
+Previously employee attempted quiz for 51 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 14464
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12225
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12188
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 0599
+Previously employee attempted quiz for 52 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13923
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12188
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12188
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12188
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 9726
+Previously employee attempted quiz for 53 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+Internal Server Error: /validate/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py", line 162, in dashboard
+    updateCategories(newCategories)
+NameError: name 'updateCategories' is not defined
+"GET /validate/dashboard/ HTTP/1.1" 500 69202
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /validate/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py", line 166, in dashboard
+    updateCategories(newCategories)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py", line 158, in updateCategories
+    localStorage.setItem('categories', JSON.stringify(categories))
+NameError: name 'localStorage' is not defined
+"GET /validate/dashboard/ HTTP/1.1" 500 74046
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /validate/dashboard/ HTTP/1.1" 200 13293
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+"GET / HTTP/1.1" 200 11054
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11054
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 4548
+Previously employee attempted quiz for 54 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13293
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11054
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 11054
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 2985
+Previously employee attempted quiz for 55 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13293
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 11054
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13293
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 3565
+Previously employee attempted quiz for 56 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13293
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 13293
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee skipped the quiz and select domain Microstrategy and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Microstrategy HTTP/1.1" 200 14915
+"GET /validate/dashboard/ HTTP/1.1" 200 13293
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain System Admin and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=System%20Admin HTTP/1.1" 200 15700
+"GET /api/get-quiz/?category=System%20Admin HTTP/1.1" 200 4656
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/complete-windows-server-2016-administration-course/
+Internal Server Error: /api/result/
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py", line 451, in result
+    suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py", line 240, in url
+    return suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title
+UnboundLocalError: local variable 'YouTube_id' referenced before assignment
+"POST /api/result/ HTTP/1.1" 500 79981
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10965
+"GET /validate/dashboard/ HTTP/1.1" 200 13293
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+- Broken pipe from ('127.0.0.1', 3304)
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 35 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15682
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4529
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+Based on quiz attempt employee got 60 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11092
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13293
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 60
+Employee previous quiz attempt date 2023-06-28 09:43:40.452090+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-28 09:42:57.472698+00:00
+Employee previous attempted quiz domain System Admin
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/complete-windows-server-2016-administration-course/
+Internal Server Error: /history/
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py", line 264, in history
+    suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(score,
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py", line 240, in url
+    return suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title
+UnboundLocalError: local variable 'YouTube_id' referenced before assignment
+"GET /history/ HTTP/1.1" 500 83882
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9285
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 9671
+Previously employee attempted quiz for 57 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13293
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 60
+Employee previous quiz attempt date 2023-06-28 09:43:40.452090+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-28 09:42:57.472698+00:00
+Employee previous attempted quiz domain System Admin
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/complete-windows-server-2016-administration-course/
+Internal Server Error: /history/
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py", line 264, in history
+    suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(score,
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py", line 240, in url
+    return suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title
+UnboundLocalError: local variable 'YouTube_id' referenced before assignment
+"GET /history/ HTTP/1.1" 500 83882
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Employee previous quiz history present
+Employee previous quiz score : 60
+Employee previous quiz attempt date 2023-06-28 09:43:40.452090+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-28 09:42:57.472698+00:00
+Employee previous attempted quiz domain System Admin
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/complete-windows-server-2016-administration-course/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-06-28 07:29:21.566915+00:00
+Employee previous attempted quiz domain microstrategy
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/introduction-to-microstrategy-report-development/
+"GET /history/ HTTP/1.1" 200 4346
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6880
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 5258
+Previously employee attempted quiz for 58 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13293
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2385
+"GET /static/admin/css/base.css HTTP/1.1" 200 20344
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10662
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /admin/home/category/add/ HTTP/1.1" 200 9075
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"POST /admin/home/category/add/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 11762
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+"GET /static/admin/js/filters.js HTTP/1.1" 200 966
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /validate/dashboard/ HTTP/1.1" 200 13660
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Internal Server Error: /validate/dashboard/index/
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py", line 163, in index
+    return render(request, 'index.html')
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\template\defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\Dev_ST\venv\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'addQuestion' not found. 'addQuestion' is not a valid view function or pattern name.
+"GET /validate/dashboard/index/ HTTP/1.1" 500 161790
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 9285
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 4717
+Previously employee attempted quiz for 59 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13658
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10430
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain DevOps and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=DevOps HTTP/1.1" 200 15682
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=DevOps HTTP/1.1" 200 28
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6880
+Employee previous quiz history present
+Employee previous quiz score : 60
+Employee previous quiz attempt date 2023-06-28 09:43:40.452090+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-28 09:42:57.472698+00:00
+Employee previous attempted quiz domain System Admin
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/complete-windows-server-2016-administration-course/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-06-28 07:29:21.566915+00:00
+Employee previous attempted quiz domain microstrategy
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/introduction-to-microstrategy-report-development/
+"GET /history/ HTTP/1.1" 200 4346
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6880
+Employee previous quiz history present
+Employee previous quiz score : 60
+Employee previous quiz attempt date 2023-06-28 09:43:40.452090+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-28 09:42:57.472698+00:00
+Employee previous attempted quiz domain System Admin
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/complete-windows-server-2016-administration-course/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-06-28 07:29:21.566915+00:00
+Employee previous attempted quiz domain microstrategy
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/introduction-to-microstrategy-report-development/
+"GET /history/ HTTP/1.1" 200 4346
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6880
+C:\Users\KarthikKonduru\Desktop\Dev_ST\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /save_time HTTP/1.1" 200 38
+"GET / HTTP/1.1" 200 9285
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: karthik.konduru@ratnaglobaltech.com
+OTP is generated 8457
+Previously employee attempted quiz for 31 time
+Employee having login attempts and otp is sent to employee mail-id: karthik.konduru@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 7873
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13662
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /mylearning/ HTTP/1.1" 200 6908
+Employee previous quiz history present
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:48:38.161081+00:00
+Employee previous attempted quiz domain python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 2857
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10434
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 14935
+"GET /static/images/recommendation.png HTTP/1.1" 200 113005
+"GET /validate/dashboard HTTP/1.1" 301 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13662
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 13662
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10434
+Employee still having the previous quiz timer with 40 sec
+Employee agreed to terms and conditions with selected domain Oracle and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Oracle HTTP/1.1" 200 15682
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Oracle HTTP/1.1" 200 4037
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Based on quiz attempt employee got 20 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11132
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13662
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-28 09:59:28.114767+00:00
+Employee previous attempted quiz domain Oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Employee previous quiz score : 80
+Employee previous quiz attempt date 2023-06-27 14:48:38.161081+00:00
+Employee previous attempted quiz domain python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 3628
