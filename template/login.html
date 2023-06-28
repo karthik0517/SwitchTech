@@ -1,8 +1,6 @@
 {% extends 'dependencies.html' %}
 {% load static %}
 {% block content %}
-
-<!-- testing_otp_code -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,11 +45,9 @@
             float: right;
             position: relative;
             /* Use absolute positioning */
-
             top: 2px;
             right: 112px;
         }
-
 
         .login_page .container-fluid {
             width: 100%;
@@ -77,7 +73,7 @@
             width: 100%;
             float: left;
             font-weight: 100;
-            font-size: 40px;
+            font-size: 37px;
             margin: 0;
         }
 
@@ -85,17 +81,34 @@
             width: 100%;
             float: left;
             font-weight: bold;
-            font-size: 50px;
+            font-size: 38px;
             text-transform: uppercase;
-            letter-spacing: 17.5px;
             color: #4169e1;
             margin: 0;
+            position: relative;
+            text-align: center;
+        }
+
+        .header_title .font_bold::before {
+            width: 100%;
+            height: 1px;
+            background-color: #4169e1;
+        }
+
+        .header_title .font_bold::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 17.5px;
+            height: 1px;
+            background-color: #4169e1;
         }
 
         .header_title .header_desc {
+            padding-top: 25px;
             width: 100%;
             float: left;
-            margin-top: 30px;
+            /* margin-top: 30px; */
             font-size: 20px;
             color: #6495ed;
         }
@@ -105,6 +118,7 @@
             float: left;
             margin-top: 50px;
         }
+
 
         .validate_otp_button {
             width: 100%;
@@ -143,15 +157,143 @@
             color: #fff;
             cursor: pointer;
         }
-        
+
         .error-message {
             color: red;
             margin-top: 10px;
         }
 
+        .col-md-4 {
+            margin-top: 30px;
+        }
+
         /* input[type="submit"]:hover {
         background-color: #0056b3;
     } */
+
+
+        /* Media Queries */
+
+        @media (max-width: 375px) {
+            .div-with-bg {
+                height: 488px;
+                margin-top: 70px;
+            }
+
+
+            .div-with-bg .logo {
+                top: -6px;
+                right: 50px;
+            }
+        }
+        @media (max-width: 1024px) {
+            .div-with-bg {
+                height: 488px;
+                margin-top: 70px;
+            }
+
+
+            .div-with-bg .logo {
+                top: 88px;
+                right: 50px;
+            }
+        }
+
+
+
+        @media (max-width: 768px) {
+            .div-with-bg {
+                height: 400px;
+                margin-top: 10px;
+            }
+
+
+            .div-with-bg .logo {
+                top: 37px;
+                right: 50px;
+            }
+        }
+
+
+        @media (max-width: 767px) {
+            .div-with-bg {
+                height: 400px;
+                margin-top: 10px;
+            }
+
+
+            .div-with-bg .logo {
+                top: -4px;
+                right: 50px;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            /* Styles for screens smaller than 767px (mobile) */
+            .div-with-bg {
+                height: 400px;
+                margin-top: 10px;
+            }
+
+            .div-with-bg .logo {
+                top: -2px;
+                right: 50px;
+            }
+
+            .email_main_form {
+                padding: 20px;
+
+            }
+
+            .header_title .font_normal {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            .header_title .font_bold {
+                font-size: 28px;
+            }
+
+            .header_title .header_desc {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 767px) and (max-width: 900px) {
+            .header_title .font_normal {
+                font-size: 24px;
+            }
+
+            .email_main_form {
+                padding: 20px;
+                padding-top: 60px;
+
+            }
+
+            .div-with-bg .logo {
+                top: -2px;
+                right: 50px;
+            }
+
+            .header_title .header_desc {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+
+            /* Styles for screens smaller than 1200px (zoomed screens) */
+            .div-with-bg {
+                background-size: contain;
+                /* Adjust image display */
+            }
+
+            .div-with-bg .logo {
+                top: -7px;
+                right: 50px;
+            }
+        }
     </style>
 </head>
 
@@ -159,11 +301,11 @@
     <div class="login_page">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-5 col-xl-4">
                     <div class="email_main_form">
                         <div class="header_title">
                             <h1 class="font_normal">SWITCHING TECH</h1>
-                            <h3 class="font_bold">Systems</h3>
+                            <h3 class="font_bold p-2">Systems</h3>
                             <p class="header_desc">Do you want to learn new technology or do you want to switch to a new
                                 domain? If your answer is yes then you are at right place !!!</p>
                         </div>
@@ -171,13 +313,13 @@
                             {% csrf_token %}
                             <div class="form-group">
                                 <label for="username">Username:</label>
-                                <input type="text" name="username"  id ="usernameInput" placeholder="Username"
+                                <input type="text" name="username" id="usernameInput" placeholder="Username"
                                     onkeydown="handleEnterKey(event)" oninput="validateUsername()" required>
                                 <span id="usernameError" style="color: red;"></span><br>
                             </div>
                             <div class="form-group">
                                 <label for="mail">Email:</label>
-                                <input type="text" name="mail" required  id="mail" pattern=".+@ratnaglobaltech\.com"
+                                <input type="text" name="mail" required id="mail" pattern=".+@ratnaglobaltech\.com"
                                     placeholder="Enter your RGT Email only" onkeydown="handleEnterKey(event)"><br>
                             </div>
                             {% if error_message %}
@@ -186,13 +328,13 @@
                             </div>
                             {% endif %}
                             <div class="validate_otp_button">
-                                <input class="btn btn-success" style="background: green;" id="sendOTPButton" type="submit" value="Send OTP"
-                                    onclick="passValues()">
+                                <input class="btn btn-success" style="background: green;" id="sendOTPButton"
+                                    type="submit" value="Send OTP" onclick="passValues()">
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-7 col-xl-8">
                     <div class="div-with-bg">
                         <img class="logo" src="{% static 'images/ratnaglobal_logo.png' %}" />
                     </div>
@@ -200,7 +342,6 @@
             </div>
         </div>
     </div>
-
     <script>
         function passValues() {
             const email = document.getElementById("mail").value;
@@ -228,7 +369,7 @@
                 usernameError.textContent = 'Invalid username.';
                 sendOTPButton.disabled = true; // Disable the button
             }
-            
+
         }
 
         function handleEnterKey(event) {
@@ -251,5 +392,4 @@
 </body>
 
 </html>
-
 {% endblock %}

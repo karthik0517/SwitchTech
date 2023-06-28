@@ -10415,3 +10415,12 @@ Employee previous attempted quiz domain python
 Based on employee score we are suggesting Advanced course
 course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
 "GET /history/ HTTP/1.1" 200 3628
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 9285
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
