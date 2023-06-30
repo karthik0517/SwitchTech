@@ -10424,3 +10424,323 @@ Watching for file changes with StatReloader
 "GET /static/images/loginimg.png HTTP/1.1" 200 331530
 Not Found: /favicon.ico
 "GET /favicon.ico HTTP/1.1" 404 4567
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12327
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 9108
+Previously employee attempted quiz for 3 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13659
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10431
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15682
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4186
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 20 score
+"POST /api/result/ HTTP/1.1" 200 0
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Based on quiz attempt employee got 20 score
+"POST /api/result/ HTTP/1.1" 200 0
+Employee submitted quiz and redirect to results page with course suggestion
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+"GET /final/ HTTP/1.1" 200 11097
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11097
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+"GET / HTTP/1.1" 200 13659
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 5647
+Previously employee attempted quiz for 4 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13659
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 13659
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 8842
+Previously employee attempted quiz for 5 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13659
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10431
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12327
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 0402
+Previously employee attempted quiz for 6 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13659
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10431
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15682
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4095
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 30 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11097
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11097
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11097
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11097
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11097
+"POST /save_time HTTP/1.1" 200 38
+"GET / HTTP/1.1" 200 13659
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10431
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain React and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=React HTTP/1.1" 200 15679
+"GET /api/get-quiz/?category=React HTTP/1.1" 200 4154
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Based on quiz attempt employee got 20 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11098
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11098
+Employee submitted quiz and redirect to results page with course suggestion
+"POST /save_time HTTP/1.1" 200 38
+"GET /final/ HTTP/1.1" 200 10952
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10975
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10975
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11087
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11104
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11202
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11185
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11202
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11202
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11202
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11221
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11214
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11215
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11221
+Employee submitted quiz and redirect to results page with course suggestion
+"POST /save_time HTTP/1.1" 200 38
+"GET /final/ HTTP/1.1" 200 11221
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11221
+- Broken pipe from ('127.0.0.1', 53818)
+"POST /save_time HTTP/1.1" 200 38
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+"GET / HTTP/1.1" 200 13659
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10431
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15682
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 3906
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15163
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4241
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4024
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4475
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13659
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 5020
+Previously employee attempted quiz for 7 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13659
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10431
+Forbidden (CSRF token from the 'X-Csrftoken' HTTP header incorrect.): /api/save-remaining-time/
+"POST /api/save-remaining-time/ HTTP/1.1" 403 2553
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 3979
+"GET /validate/dashboard/ HTTP/1.1" 200 13659
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+- Broken pipe from ('127.0.0.1', 60443)
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13659
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+"GET / HTTP/1.1" 200 13659
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 12327
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+"POST / HTTP/1.1" 200 12509
+Login page accessed!
+"POST / HTTP/1.1" 200 12509
+"GET / HTTP/1.1" 200 12327
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 5108
+Previously employee attempted quiz for 8 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13659
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 6605
+Previously employee attempted quiz for 9 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13659
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10431
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 13659
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 4834
+Previously employee attempted quiz for 10 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13659
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 14935
+"GET /static/images/recommendation.png HTTP/1.1" 200 113005
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 14427
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 14427
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 14427
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 14427
+Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
+"GET /skipquiz/?category=Python HTTP/1.1" 200 14427
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4270
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 10 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48

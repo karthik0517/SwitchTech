@@ -6,11 +6,11 @@
 	<title>Quiz Results</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--	<script type="text/javascript">-->
-<!--		function preventBack() { window.history.forward(); }-->
-<!--		setTimeout("preventBack()", 0);-->
-<!--		window.onunload = function () { null };-->
-<!--	</script>-->
+	<!--	<script type="text/javascript">-->
+	<!--		function preventBack() { window.history.forward(); }-->
+	<!--		setTimeout("preventBack()", 0);-->
+	<!--		window.onunload = function () { null };-->
+	<!--	</script>-->
 
 	<style>
 		body {
@@ -20,7 +20,7 @@
 		}
 
 		header {
-			background-color: #333;
+			/* background-color: #333; */
 			color: #fff;
 			padding: 10px;
 			text-align: center;
@@ -90,19 +90,23 @@
 		}
 
 		.logo {
-			width: 200px;
-			height: 200px;
-			top: 200;
+			top: 33px;
+			position: relative;
+			width: 90px;
+			height: 85px;
 			left: 0;
+			float: right;
+			right: 10px;
 		}
 
 		.logo1 {
+			top: 259px;
 			width: 400px;
 			height: 400px;
 			top: 200;
-			position: absolute;
+			position: relative;
 			bottom: 0;
-			right: 0;
+			right: -70px;
 		}
 
 		.highlight {
@@ -112,7 +116,7 @@
 
 		.logout-button {
 			position: absolute;
-			top: 250px;
+			top: 153px;
 			right: 20px;
 			background-color: #333;
 			color: #fff;
@@ -179,10 +183,10 @@
 		}
 
 
-		.colored-box1 {
+		/* .colored-box1 {
 			color: orange;
 
-		}
+		} */
 
 		.QuizResults {
 			width: 100%;
@@ -247,15 +251,20 @@
 			background-color: #777;
 		}
 
+		.header_title,
+		font_normal {
+			top: -27px;
+			right: -203px;
+			position: relative;
+			
+		}
 	</style>
 
 </head>
 
 <body>
 	<header>
-		<img align="right" class="logo"
-			src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3JhdG5hLWdsb2JhbC10ZWNobm9sb2dpZXMuanBn.webp"
-			alt="Logo">
+		<img class="logo" src="{% static 'images\ratnaglobal_logo.png' %}" />
 		<img align="right" class="logo1" src="{% static 'images/Result.png' %}" />
 	</header>
 	<button class="logout-button" onclick="openModal()">Logout</button>
@@ -280,7 +289,7 @@
 
 		function logout() {
 			console.log("Logout function called.")
-		  window.location.href = "{% url 'logout' %}";
+			window.location.href = "{% url 'logout' %}";
 		}
 	</script>
 	<main>
@@ -306,108 +315,110 @@
 				<div class="course-rating">Course Ratings:<span class="colored-box"> {{ratings}}</span></div>
 				<div class="course-instructor">Course Instructor:<span class="colored-box"> {{instructor}}</span></div>
 				<div class="course-duration">Course Duration: <span class="colored-box">{{duration}} hours</span></div>
-				<button class="enroll-button" onclick="openPopup()" data-suggested="{{ suggested }}">Enroll this course</button><hr>
+				<button class="enroll-button" onclick="openPopup()" data-suggested="{{ suggested }}">Enroll this
+					course</button>
+				<hr>
 				<h2><u>Here are your Youtube Recommendations</h2></u>
 				</h2>
 
 				<div id="ytplayer"></div>
 				<!-- <h2>{{ Video.title }}</h2>
 				<p>{{ Video.duration }}</p> -->
-				
-			<script>
 
-			var tag = document.createElement('script');
-			  tag.src = "https://www.youtube.com/player_api";
-			  var firstScriptTag = document.getElementsByTagName('script')[0];
-			  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-			  var player;
-			var isSaveExecuted = false; // Flag variable to track whether save operation has been executed
+				<script>
 
-			function onYouTubePlayerAPIReady() {
-				player = new YT.Player('ytplayer', {
-					height: '500',
-					width: '820',
-					videoId: '{{ YouTube_id }}',
-				});
-			}
+					var tag = document.createElement('script');
+					tag.src = "https://www.youtube.com/player_api";
+					var firstScriptTag = document.getElementsByTagName('script')[0];
+					firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+					var player;
+					var isSaveExecuted = false; // Flag variable to track whether save operation has been executed
 
-			// Event listener for logout button
-			// document.querySelector('.logout-button').addEventListener('click', function() {
-			// 	saveCurrentTime(); // Save the current time
-			// });
-
-			// Event listener for window unload (when the user closes the webpage)
-			window.addEventListener('beforeunload', function() {
-				saveCurrentTime();
-			});
-
-			// Function to save the current time
-			function saveCurrentTime() {
-				if (!isSaveExecuted && player && player.playerInfo && player.playerInfo.currentTime !== null) {
-				const currentTime = player.playerInfo.currentTime;
-				console.log('Current Time:', currentTime);
-
-				// Get the CSRF token value from the cookie
-				var csrftoken = getCookie('csrftoken');
-
-				// Send the current time to the server using AJAX
-				var xhr = new XMLHttpRequest();
-				xhr.open('POST', '/save_time', true);
-				xhr.setRequestHeader('Content-Type', 'application/json');
-				xhr.setRequestHeader('X-CSRFToken', csrftoken); // Include the CSRF token in the request header
-				xhr.onreadystatechange = function() {
-					if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-					console.log('Time saved successfully');
-					isSaveExecuted = true; // Update the flag to prevent further saves
-					// logout(); // Perform the logout action
+					function onYouTubePlayerAPIReady() {
+						player = new YT.Player('ytplayer', {
+							height: '500',
+							width: '820',
+							videoId: '{{ YouTube_id }}',
+						});
 					}
-				};
-				xhr.send(JSON.stringify({ 'current_time': currentTime }));
-				} else {
-				console.log('Invalid current time or save operation already executed');
-				// logout(); // Perform the logout action even if the current time is invalid or save operation has been executed
-				}
-			}
 
-			// Helper function to get the CSRF cookie value
-			function getCookie(name) {
-				var cookieValue = null;
-				if (document.cookie && document.cookie !== '') {
-				var cookies = document.cookie.split(';');
-				for (var i = 0; i < cookies.length; i++) {
-					var cookie = cookies[i].trim();
-					if (cookie.substring(0, name.length + 1) === (name + '=')) {
-					cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-					break;
+					// Event listener for logout button
+					// document.querySelector('.logout-button').addEventListener('click', function() {
+					// 	saveCurrentTime(); // Save the current time
+					// });
+
+					// Event listener for window unload (when the user closes the webpage)
+					window.addEventListener('beforeunload', function () {
+						saveCurrentTime();
+					});
+
+					// Function to save the current time
+					function saveCurrentTime() {
+						if (!isSaveExecuted && player && player.playerInfo && player.playerInfo.currentTime !== null) {
+							const currentTime = player.playerInfo.currentTime;
+							console.log('Current Time:', currentTime);
+
+							// Get the CSRF token value from the cookie
+							var csrftoken = getCookie('csrftoken');
+
+							// Send the current time to the server using AJAX
+							var xhr = new XMLHttpRequest();
+							xhr.open('POST', '/save_time', true);
+							xhr.setRequestHeader('Content-Type', 'application/json');
+							xhr.setRequestHeader('X-CSRFToken', csrftoken); // Include the CSRF token in the request header
+							xhr.onreadystatechange = function () {
+								if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+									console.log('Time saved successfully');
+									isSaveExecuted = true; // Update the flag to prevent further saves
+									// logout(); // Perform the logout action
+								}
+							};
+							xhr.send(JSON.stringify({ 'current_time': currentTime }));
+						} else {
+							console.log('Invalid current time or save operation already executed');
+							// logout(); // Perform the logout action even if the current time is invalid or save operation has been executed
+						}
 					}
-				}
-				}
-				return cookieValue;
-			}
 
-			</script>
-			
+					// Helper function to get the CSRF cookie value
+					function getCookie(name) {
+						var cookieValue = null;
+						if (document.cookie && document.cookie !== '') {
+							var cookies = document.cookie.split(';');
+							for (var i = 0; i < cookies.length; i++) {
+								var cookie = cookies[i].trim();
+								if (cookie.substring(0, name.length + 1) === (name + '=')) {
+									cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+									break;
+								}
+							}
+						}
+						return cookieValue;
+					}
+
+				</script>
+
 			</div>
 		</div>
 	</main>
 	<div id="popupModal" class="modal">
-    <div class="modal-content">
-      <span class="modal-close" onclick="closePopup()">&times;</span>
-      <p>Do you have Udemy credentials?</p>
-      <div class="modal-buttons">
-        <button onclick="redirectToUdemy()">Yes</button>
-        <button onclick="raiseTicket()">No</button>
-      </div>
-    </div>
-  </div>
-  <script>
-    function openPopup() {
-      document.getElementById("popupModal").style.display = "block";
-    }
+		<div class="modal-content">
+			<span class="modal-close" onclick="closePopup()">&times;</span>
+			<p>Do you have Udemy credentials?</p>
+			<div class="modal-buttons">
+				<button onclick="redirectToUdemy()">Yes</button>
+				<button onclick="raiseTicket()">No</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		function openPopup() {
+			document.getElementById("popupModal").style.display = "block";
+		}
 
-    function closePopup() {
-      document.getElementById("popupModal").style.display = "none";
-    }
+		function closePopup() {
+			document.getElementById("popupModal").style.display = "none";
+		}
 
 		function redirectToUdemy() {
 			// Redirect to Udemy login page
@@ -426,10 +437,10 @@
 		}
 
 
-    function raiseTicket() {
-      const popup = document.createElement('div');
-      popup.classList.add('modal');
-      popup.innerHTML = `
+		function raiseTicket() {
+			const popup = document.createElement('div');
+			popup.classList.add('modal');
+			popup.innerHTML = `
         <div class="modal-content">
         <span class="modal-close" onclick="closePopup()">&times;</span>
         <p>You need to raise a ticket in Keka.</p>
@@ -438,16 +449,16 @@
         </div>
         </div>
       `;
-      document.body.appendChild(popup);
-      popup.style.display = "block";
-    }
+			document.body.appendChild(popup);
+			popup.style.display = "block";
+		}
 
-    function closePopup() {
-      const popup = document.querySelector('.modal');
-      document.body.removeChild(popup);
-    }
+		function closePopup() {
+			const popup = document.querySelector('.modal');
+			document.body.removeChild(popup);
+		}
 
-    function redirectToKeka() {
+		function redirectToKeka() {
 			// Logout logic
 			sessionStorage.clear();
 			// Redirect to Keka after logout
@@ -455,13 +466,13 @@
 			window.location.replace(kekaUrl);
 		}
 
-	function redirectToHome() {
-		const currentHost = window.location.host;
-		const url = `http://${currentHost}/validate/dashboard`;
-		window.location.replace(url);
-	}
+		function redirectToHome() {
+			const currentHost = window.location.host;
+			const url = `http://${currentHost}/validate/dashboard`;
+			window.location.replace(url);
+		}
 
-  </script>
+	</script>
 </body>
 
 </html>
