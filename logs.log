@@ -10744,3 +10744,727 @@ course url : https://www.udemy.com/course/100-days-of-code/
 Based on quiz attempt employee got 10 score
 "POST /api/result/ HTTP/1.1" 200 0
 "POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 1063
+Previously employee attempted quiz for 11 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13659
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-06-30 11:11:02.204089+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-30 04:04:45.567760+00:00
+Employee previous attempted quiz domain React
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-30 03:59:03.025858+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4279
+"GET /validate/dashboard/ HTTP/1.1" 200 14061
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 14061
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 14061
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /mylearning/ HTTP/1.1" 200 6880
+Employee previous quiz history present
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-06-30 11:11:02.204089+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-30 04:04:45.567760+00:00
+Employee previous attempted quiz domain React
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-30 03:59:03.025858+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4279
+"GET /validate/dashboard/ HTTP/1.1" 200 14070
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-06-30 11:11:02.204089+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-30 04:04:45.567760+00:00
+Employee previous attempted quiz domain React
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-30 03:59:03.025858+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4279
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /mylearning/ HTTP/1.1" 200 6880
+"GET /validate/dashboard/ HTTP/1.1" 200 14061
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 14029
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 14029
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /mylearning/ HTTP/1.1" 200 6880
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /mylearning/ HTTP/1.1" 200 6880
+Employee previous quiz history present
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-06-30 11:11:02.204089+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-30 04:04:45.567760+00:00
+Employee previous attempted quiz domain React
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-30 03:59:03.025858+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4279
+"GET /validate/dashboard/ HTTP/1.1" 200 13421
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12273
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12296
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12328
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12328
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12328
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12328
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12328
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12328
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12328
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12349
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12368
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12368
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12368
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12388
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+"GET /validate/dashboard/ HTTP/1.1" 200 11357
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 6330
+Previously employee attempted quiz for 12 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET / HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-06-30 11:11:02.204089+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-30 04:04:45.567760+00:00
+Employee previous attempted quiz domain React
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-30 03:59:03.025858+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4279
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 7932
+Previously employee attempted quiz for 13 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-06-30 11:11:02.204089+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-30 04:04:45.567760+00:00
+Employee previous attempted quiz domain React
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-30 03:59:03.025858+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4279
+Employee previous quiz history present
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-06-30 11:11:02.204089+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-30 04:04:45.567760+00:00
+Employee previous attempted quiz domain React
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-06-30 03:59:03.025858+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4279
+"GET / HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4633
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 20 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11224
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+"POST /save_time HTTP/1.1" 200 38
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 8501
+Previously employee attempted quiz for 14 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+Employee previous quiz history present
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-07-03 09:10:45.721848+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-06-30 11:11:02.204089+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-06-30 04:04:45.567760+00:00
+Employee previous attempted quiz domain React
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+"GET /history/ HTTP/1.1" 200 4278
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4289
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 20 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11224
+"POST /save_time HTTP/1.1" 200 38
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 5160
+Previously employee attempted quiz for 15 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-07-03 09:23:14.275964+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-07-03 09:10:45.721848+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-06-30 11:11:02.204089+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Internal Server Error: /history/
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\SwitchTech\home\views.py", line 281, in history
+    return render(request, 'history.html', context={'attempts_data': attempts_data})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\defaulttags.py", line 968, in do_if
+    nodelist = parser.parse(("endif",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '('en-US', { year: 'numeric', month: 'long', day: 'numeric' })' from 'attempt.user_time.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })'
+"GET /history/ HTTP/1.1" 500 207671
+Employee previous quiz history present
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-07-03 09:23:14.275964+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-07-03 09:10:45.721848+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-06-30 11:11:02.204089+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4130
+Employee previous quiz history present
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-07-03 09:23:14.275964+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-07-03 09:10:45.721848+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-06-30 11:11:02.204089+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4130
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 1041
+Previously employee attempted quiz for 16 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Java and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 15237
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 4133
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Based on quiz attempt employee got 40 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11235
+"GET /static/images/Result.png HTTP/1.1" 304 0
+"POST /save_time HTTP/1.1" 200 38
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 1056
+Previously employee attempted quiz for 17 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 09:30:18.636181+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-07-03 09:23:14.275964+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-07-03 09:10:45.721848+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Internal Server Error: /history/
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\SwitchTech\home\views.py", line 281, in history
+    return render(request, 'history.html', context={'attempts_data': attempts_data})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\defaulttags.py", line 968, in do_if
+    nodelist = parser.parse(("endif",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' ? attempt.user_time.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : (new Date()).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })' from 'attempt.user_time ? attempt.user_time.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : (new Date()).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })'
+"GET /history/ HTTP/1.1" 500 210795
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 09:30:18.636181+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-07-03 09:23:14.275964+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-07-03 09:10:45.721848+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4241
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 09:30:18.636181+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-07-03 09:23:14.275964+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-07-03 09:10:45.721848+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 5114
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 4968
+Previously employee attempted quiz for 18 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Oracle and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Oracle HTTP/1.1" 200 15243
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Oracle HTTP/1.1" 200 4363
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Based on quiz attempt employee got 50 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11259
+"GET /static/images/Result.png HTTP/1.1" 304 0
+"POST /save_time HTTP/1.1" 200 38
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 0843
+Previously employee attempted quiz for 19 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 50
+Employee previous quiz attempt date 2023-07-03 09:51:22.996797+00:00
+Employee previous attempted quiz domain Oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 09:30:18.636181+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-07-03 09:23:14.275964+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 5180
+Employee previous quiz history present
+Employee previous quiz score : 50
+Employee previous quiz attempt date 2023-07-03 09:51:22.996797+00:00
+Employee previous attempted quiz domain Oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 09:30:18.636181+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 20
+Employee previous quiz attempt date 2023-07-03 09:23:14.275964+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4826
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Java and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 15237
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 4112
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Based on quiz attempt employee got 30 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11235
+"POST /save_time HTTP/1.1" 200 38
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 0591
+Previously employee attempted quiz for 20 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 50
+Employee previous quiz attempt date 2023-07-03 09:51:22.996797+00:00
+Employee previous attempted quiz domain Oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 09:30:18.636181+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 4868
+Watching for file changes with StatReloader

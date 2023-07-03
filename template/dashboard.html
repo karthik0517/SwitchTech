@@ -90,6 +90,7 @@
         .certification_block {
             width: 100%;
             float: left;
+            padding-left: 93px;
         }
 
         .your_preparation_block {
@@ -108,11 +109,7 @@
             text-transform: capitalize;
         }
 
-        .preparation_cards {
-            width: 100%;
-            float: left;
-            margin-top: 20px;
-        }
+       
 
         .ui_card {
             padding: 30px;
@@ -283,6 +280,12 @@
                           <a class="dropdown-item logout_btn" href="#" onclick="LogoutUser()">
                             <i class="fas fa-sign-out-alt"></i> Logout
                           </a>
+                          <a class="dropdown-item logout_btn" href="#" onclick="mylearning()">
+                            <i class="fas fa-sign-out-alt"></i> My Learning
+                          </a>
+                          <a class="dropdown-item logout_btn" href="#" onclick="fetchHistory()">
+                            <i class="fas fa-sign-out-alt"></i> History
+                          </a>
                       </div>
                       {% endif %}
                   </li>
@@ -295,42 +298,15 @@
             <h1>Employee Dashboard</h1>
         </div>
     </div>
-    <div class="preparation_cards">
-      <div class="row">
-          <div class="col-md-6">
-              <div class="card ui_card">
-                  <span></span>
-                  <h2>My Learnings</h2>
-                  <p>You can check your learning progress here!</p>
-                  <p>Track your completed courses, modules, or lessons to see your overall learning journey.</p>
-                  <button class="btn viewall_btn" onclick="mylearning()">My Learning</button>
-              </div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-6">
-              <div class="card ui_card">
-                  <span></span>
-                  <h2>History</h2>
-                  <p>You can check your previous quiz attempt history below!</p>
-                  <p>Review your past quiz attempts and see your scores, time taken, and course suggested.</p>
-                  <button class="btn viewall_btn" onclick="fetchHistory()">History</button>
-              </div>
-          </div>
-      </div>
-  </div>
+   
   <div class="certification_block your_preparation_block">
-    <div class="dashboard-section-header" style="width: 100%; float: left;">
-        <h2 class="text-para-headline bold dashboard-section-title">Select a domain to switch<span style="font-size: 14px;">(<a href="">View All</a>)</span></h2>
+    <div class="dashboard-section-header" style="width: 100%; float: left; padding-top: 10px;">
+        <h2 class="text-para-headline bold dashboard-section-title p-5">Select a domain to switch<span style="font-size: 14px; padding-left: 10px;">(<a href="">View All</a>)</span></h2>
     </div>
-    <div class="" style="width: 33.33%; float: left;">
+    <div class="" style="width: 33.33%; float: left; padding-top: 10px; padding-left: 111px; text-align: center;">
         <ul class="list-group">
             {% for category in categories %}
                 {% if forloop.counter0|divisibleby:3 %}
-                    </ul>
-                </div>
-                <div class="" style="width: 33.33%; float: left;">
-                    <ul class="list-group">
                 {% endif %}
                 <li class="list-group-item">
                     <a href="javascript:void(0);" onclick="storeLink('{{ category.category_name }}')">{{ category.category_name }}</a>
