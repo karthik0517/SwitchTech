@@ -11468,3 +11468,925 @@ Based on employee score we are suggesting Beginner course
 course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
 "GET /history/ HTTP/1.1" 200 4868
 Watching for file changes with StatReloader
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 50
+Employee previous quiz attempt date 2023-07-03 09:51:22.996797+00:00
+Employee previous attempted quiz domain Oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 09:30:18.636181+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 5026
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 50
+Employee previous quiz attempt date 2023-07-03 09:51:22.996797+00:00
+Employee previous attempted quiz domain Oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 09:30:18.636181+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 5026
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 50
+Employee previous quiz attempt date 2023-07-03 09:51:22.996797+00:00
+Employee previous attempted quiz domain Oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 09:30:18.636181+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 5026
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 50
+Employee previous quiz attempt date 2023-07-03 09:51:22.996797+00:00
+Employee previous attempted quiz domain Oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 09:30:18.636181+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 5026
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 50
+Employee previous quiz attempt date 2023-07-03 09:51:22.996797+00:00
+Employee previous attempted quiz domain Oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 09:30:18.636181+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 5024
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 50
+Employee previous quiz attempt date 2023-07-03 09:51:22.996797+00:00
+Employee previous attempted quiz domain Oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 09:30:18.636181+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 5183
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain PHP and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=PHP HTTP/1.1" 200 15234
+"GET /api/get-quiz/?category=PHP HTTP/1.1" 200 3665
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+Based on quiz attempt employee got 30 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11255
+"POST /save_time HTTP/1.1" 200 38
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 4700
+Previously employee attempted quiz for 21 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 50
+Employee previous quiz attempt date 2023-07-03 09:51:22.996797+00:00
+Employee previous attempted quiz domain Oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+"GET /history/ HTTP/1.1" 200 5199
+"GET / HTTP/1.1" 200 12327
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 1158
+Previously employee attempted quiz for 22 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 50
+Employee previous quiz attempt date 2023-07-03 09:51:22.996797+00:00
+Employee previous attempted quiz domain Oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+"GET /history/ HTTP/1.1" 200 5100
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 50
+Employee previous quiz attempt date 2023-07-03 09:51:22.996797+00:00
+Employee previous attempted quiz domain Oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+"GET /history/ HTTP/1.1" 200 5100
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 3885
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 30 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11224
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+"POST /save_time HTTP/1.1" 200 38
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 9138
+Previously employee attempted quiz for 23 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 5034
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 4202
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 4985
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 4909
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 4909
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 5059
+Employee previous quiz history present
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 09:55:48.380224+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 5063
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Java and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 15237
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 3933
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Based on quiz attempt employee got 40 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11235
+"GET /static/images/Result.png HTTP/1.1" 304 0
+"POST /save_time HTTP/1.1" 200 38
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 6908
+Previously employee attempted quiz for 24 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 5064
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 5064
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 5123
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 5123
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 5123
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 5123
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 5123
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 5123
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 4302
+Employee previous quiz history present
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /mylearning/ HTTP/1.1" 200 6880
+C:\Users\VenugopalPemma\Desktop\Switching_July\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\VenugopalPemma\Desktop\Switching_July\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 4302
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Java and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 15237
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 4174
+Internal Server Error: /api/result/
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\SwitchTech\home\views.py", line 445, in result
+    quiz_add.save()
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\SwitchTech\home\models.py", line 21, in save
+    india_tz = pytz.timezone('india')
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\pytz\__init__.py", line 188, in timezone
+    raise UnknownTimeZoneError(zone)
+pytz.exceptions.UnknownTimeZoneError: 'india'
+"POST /api/result/ HTTP/1.1" 500 80652
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11092
+"POST /save_time HTTP/1.1" 200 38
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 3873
+Previously employee attempted quiz for 25 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 4302
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 4302
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 4302
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 4302
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 4302
+C:\Users\VenugopalPemma\Desktop\Switching_July\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12408
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 0313
+Previously employee attempted quiz for 26 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 4302
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 4054
+Previously employee attempted quiz for 27 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+Otp is invalid and redirect to login page
+"POST /validate/ HTTP/1.1" 200 11326
+Otp is invalid and redirect to login page
+"POST /validate/ HTTP/1.1" 200 11326
+Watching for file changes with StatReloader
+Internal Server Error: /validate/
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\VenugopalPemma\Desktop\Switching_July\venv\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view home.views.validate didn't return an HttpResponse object. It returned None instead.
+"GET /validate/ HTTP/1.1" 500 67432
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 4346
+Previously employee attempted quiz for 28 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:05:03.665645+00:00
+Employee previous attempted quiz domain PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+"GET /history/ HTTP/1.1" 200 4302
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Java and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 15237
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 3929
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Based on quiz attempt employee got 10 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11235
+"GET /static/images/Result.png HTTP/1.1" 304 0
+"POST /save_time HTTP/1.1" 200 38
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 8236
+Previously employee attempted quiz for 29 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12408
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-07-04 03:57:09.381501+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4285
+Employee previous quiz history present
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-07-04 03:57:09.381501+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4285
+Employee previous quiz history present
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-07-04 03:57:09.381501+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4285
+Employee previous quiz history present
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-07-04 03:57:09.381501+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4285
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain DevOps and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=DevOps HTTP/1.1" 200 15243
+"GET /api/get-quiz/?category=DevOps HTTP/1.1" 200 28
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee previous quiz history present
+Employee previous quiz score : 10
+Employee previous quiz attempt date 2023-07-04 03:57:09.381501+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 40
+Employee previous quiz attempt date 2023-07-03 10:36:38.981611+00:00
+Employee previous attempted quiz domain Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score : 30
+Employee previous quiz attempt date 2023-07-03 10:12:16.169155+00:00
+Employee previous attempted quiz domain Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4285
+C:\Users\VenugopalPemma\Desktop\Switching_July\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\VenugopalPemma\Desktop\Switching_July\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\VenugopalPemma\Desktop\Switching_July\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\VenugopalPemma\Desktop\Switching_July\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\VenugopalPemma\Desktop\Switching_July\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12327
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 331530
+Login page accessed!
+"POST / HTTP/1.1" 200 12509
+Watching for file changes with StatReloader

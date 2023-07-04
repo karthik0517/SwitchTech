@@ -18,7 +18,7 @@ class QuizUserScore(models.Model):
     created_at = models.DateTimeField()
 
     def save(self, *args, **kwargs):
-        india_tz = pytz.timezone('Asia/Kolkata')
+        india_tz = pytz.timezone('india')
         current_date = timezone.now().astimezone(india_tz)
         self.created_at = current_date
         super().save(*args, **kwargs)

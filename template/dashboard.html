@@ -277,14 +277,14 @@
                           <span class="username">{{ request.user }}</span>
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item logout_btn" href="#" onclick="LogoutUser()">
-                            <i class="fas fa-sign-out-alt"></i> Logout
-                          </a>
                           <a class="dropdown-item logout_btn" href="#" onclick="mylearning()">
                             <i class="fas fa-sign-out-alt"></i> My Learning
                           </a>
                           <a class="dropdown-item logout_btn" href="#" onclick="fetchHistory()">
                             <i class="fas fa-sign-out-alt"></i> History
+                          </a>
+                          <a class="dropdown-item logout_btn" href="#" onclick="LogoutUser()">
+                            <i class="fas fa-sign-out-alt"></i> Logout
                           </a>
                       </div>
                       {% endif %}
