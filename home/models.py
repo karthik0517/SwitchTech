@@ -8,8 +8,6 @@ import pytz
 from django.utils import timezone
 
 
-
-
 class QuizUserScore(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     # user = models.CharField(User, max_length=50)
@@ -18,9 +16,8 @@ class QuizUserScore(models.Model):
     created_at = models.DateTimeField()
 
     def save(self, *args, **kwargs):
-        india_tz = pytz.timezone('india')
-        current_date = timezone.now().astimezone(india_tz)
-        self.created_at = current_date
+        if not self.created_at:
+            self.created_at = timezone.localtime(timezone.now(), timezone=pytz.timezone('Asia/Kolkata'))
         super().save(*args, **kwargs)
 
 class UserData(models.Model):
@@ -143,7 +140,9 @@ class Video(models.Model):
 class PlayerActivity(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE,default='')
     current_time = models.FloatField()
+    youtube_id = models.CharField(max_length=25, default='')
+    percentage = models.FloatField(default=0.0)
     
 
     def __str__(self):
-        return f"PlayerActivity - current_time: {self.current_time}"
+        return f"PlayerActivity - youtube_id: {self.youtube_id}, current_time: {self.current_time}, percentage: {self.percentage}"

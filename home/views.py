@@ -31,15 +31,19 @@ def generate_otp():
 
 
 count = 0
-
-
 def loginPage(request):
     remember_me = request.session.get('remember_me', False)
     print('------->', remember_me)
     if remember_me:
         # logger.info('User session exists (remember me enabled), redirecting to the Instructions page')
-        context = {'categories': Category.objects.all()}
-        # return render(request, 'index.html', context)
+        mail = request.session.get('mail')
+        user = User.objects.get(email=mail)
+        overall_progress = PlayerActivity.objects.filter(user=user).values_list('percentage', flat=True)
+        list_overall_progress = list(overall_progress)
+        sum_overall_progress = sum(list_overall_progress)
+        formatted_progress = round(sum_overall_progress, 2)
+        print('overall_progress',formatted_progress)
+        context = {'categories': Category.objects.all(), 'overall_progress':formatted_progress}
         return render(request, 'dashboard.html',context)
 
     elif request.method == "POST":
@@ -105,8 +109,6 @@ def loginPage(request):
 
 
 global mail
-
-
 def validate(request):
     if request.method == 'POST':
         mail = request.POST.get('mail')
@@ -151,7 +153,14 @@ def validate(request):
 
 
 def dashboard(request):
-    context = {'categories': Category.objects.all()}
+    mail = request.session.get('mail')
+    user = User.objects.get(email=mail)
+    overall_progress = PlayerActivity.objects.filter(user=user).values_list('percentage', flat=True)
+    list_overall_progress = list(overall_progress)
+    sum_overall_progress = sum(list_overall_progress)
+    formatted_progress = round(sum_overall_progress, 2)
+    print('overall_progress', formatted_progress)
+    context = {'categories': Category.objects.all(), 'overall_progress':formatted_progress}
     return render(request, 'dashboard.html', context)
 
 
@@ -253,11 +262,12 @@ def history(request):
 
         for score, user_time, user_domain in user_history:
             print('employee_previous_score:----->', score)
-            logger.info(f'Employee previous quiz score : {score}')
+            logger.info(f'Employee previous quiz score: {score}')
             print('user_last_timer:---->', user_time)
-            logger.info(f'Employee previous quiz attempt date {user_time}')
+            user_time = timezone.localtime(user_time, timezone=pytz.timezone('Asia/Kolkata'))
+            logger.info(f'Employee previous quiz attempt date: {user_time}')
             print("last_domain---->", user_domain)
-            logger.info(f'Employee previous attempted quiz domain {user_domain}')
+            logger.info(f'Employee previous attempted quiz domain: {user_domain}')
 
             suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(score,
                                                                                                              category=user_domain)
@@ -279,33 +289,6 @@ def history(request):
 
         print('history data', attempts_data)
         return render(request, 'history.html', context={'attempts_data': attempts_data})
-        # score = user_history[0][0]
-        # user_time = user_history[0][1]
-        # user_domain = user_history[0][2]
-        # print('employee_previous_score:----->', score)
-        # logger.info(f'Employee previous quiz score : {score}')
-        # print('user_last_timer:---->', user_time)
-        # logger.info(f'Employee previous quiz attempt date {user_time}')
-        # print("last_domain---->", user_domain)
-        # logger.info(f'Employee previous attempted quiz domain {user_domain}')
-        #
-        # suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(score,
-        #                                                                                                  category=user_domain)
-        #
-        # data = {
-        #     'user_score': score,
-        #     'user_time': user_time,
-        #     'previous_domain': user_domain,
-        #     'suggestion_url': suggesstion_url,
-        #     'course_name': course_name,
-        #     'ratings': ratings,
-        #     'instructor': instructor,
-        #     'duration': duration,
-        #     'difficulty': difficulty,
-        #     'title': Title
-        # }
-
-        # return render(request, 'history.html', context=data)
     else:
         logger.info('Employee previous quiz history is not present')
         print("no history")
@@ -479,49 +462,42 @@ def save_time(request):
     if request.method == 'POST':
         data = json.loads(request.body)
         current_time = data.get('current_time')
-        print("Received time:", current_time)
+        youtube_id = data.get('youtube_id')
+        percentage = data.get('percentage')
+        print("percentage==================", percentage)
         if current_time is None:
             current_time = 0  # Assign a numeric default value
-        print('Received current_time:', current_time)
-
         try:
             mail = request.session.get('mail')
             user = User.objects.get(email=mail)
-            check = PlayerActivity.objects.filter(user=user)
-            if check.count() > 0:
-                PlayerActivity.objects.filter(user=user).update(current_time=current_time)
-            else:
-                PlayerActivity.objects.create(current_time=current_time, user=user)
+            player_activity = PlayerActivity.objects.filter(youtube_id=youtube_id, user=user).latest('id')
+            player_activity.current_time = current_time
+            player_activity.percentage = percentage
+            player_activity.save()
+            return JsonResponse({'message': 'Time saved successfully'})
+
+        except PlayerActivity.DoesNotExist:
+            PlayerActivity.objects.create(current_time=current_time, percentage=percentage, youtube_id=youtube_id, user=user)
             return JsonResponse({'message': 'Time saved successfully'})
         except IntegrityError as e:
             print(f"Error saving time: {str(e)}")
             return JsonResponse({'message': 'Error saving time'}, status=500)
+    else:
+        return HttpResponseBadRequest('Invalid request method')
         
 
 def my_learning(request):
     mail = request.session.get('mail')
     print('MAIL in Mylearning:---->', mail)
     user = User.objects.get(email=mail)
-    retrieve_time = PlayerActivity.objects.filter(user=user).values_list('current_time', flat=True)
+    retrieve_time = PlayerActivity.objects.filter(user=user).values_list('current_time','youtube_id')[0:3]
     resume = list(retrieve_time)
-    score_details = QuizUserScore.objects.filter(user=user).values_list('score','quiz_domain')
-    print('--------------',score_details)
-    user_learning = list(score_details)
-    print('--------',user_learning)
-    if user_learning:
-        logger.info('Employee previous quiz history present')
-        score = user_learning[0][0]
-        user_domain = user_learning[0][1]
-        print(score)
-        print(user_domain)
-        suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(score=score, category=user_domain)
+    if resume:
+        print('checking',resume)
         data = {
-            # 'title':Title,
-            'Youtube_id':YouTube_id,
-            'resume_time': resume
-
+            'videos': [{'youtube_id': item[1], 'resume_time': item[0]} for item in resume]
         }
-        print(data)
+
         return render(request, 'mylearning.html', context=data)
     else:
         logger.info('Employee doesnt have any learning as of now')
@@ -531,50 +507,3 @@ def my_learning(request):
         }
         return render(request, 'mylearning.html',context=data)
     
-# def mylearning(request):
-#     mail = request.session.get('mail')
-#     print("Email from session:", mail)
-
-#     try:
-#         user = User.objects.get(email=mail)
-#         print("User found:", user)
-#         retrieve_time = PlayerActivity.objects.filter(user=user).values_list('current_time', flat=True)
-#         resume = list(retrieve_time)
-#         print("Retrieve time:", retrieve_time)
-#         print('Time:',resume)
-
-#         data = {
-#             'resume_time': resume
-#         }
-#         return render(request, 'mylearning.html', context=data)
-#     except User.DoesNotExist:
-#         print("User does not exist.")
-#         # Handle the case when the user does not exist
-#         # You can redirect the user to an appropriate page or show an error message
-#         # For example:
-#         return HttpResponse("User does not exist")
-
-
-
-# def mylearning(request):
-#     mail = request.session.get('mail')
-#     print("Email from session:", mail)
-
-#     try:
-#         user = User.objects.get(email=mail)
-#         print("User found:", user)
-#         retrieve_time = PlayerActivity.objects.filter(user=user).values_list('current_time', flat=True)
-#         resume = list(retrieve_time)
-#         print("Retrieve time:", retrieve_time)
-#         print('Time:',resume)
-
-#         data = {
-#             'resume_time': resume
-#         }
-#         return render(request, 'mylearning.html', context=data)
-#     except User.DoesNotExist:
-#         print("User does not exist.")
-#         # Handle the case when the user does not exist
-#         # You can redirect the user to an appropriate page or show an error message
-#         # For example:
-#         return HttpResponse("User does not exist")
