@@ -346,27 +346,27 @@
             }, speed);
         };
 
-      function fetchHistory() {
-        window.location.href = '/history/';
-      }
-
-      function mylearning() {
-        window.location.href = '/mylearning/';
+        function fetchHistory() {
+            window.location.href = '/history/';
         }
 
-      function LogoutUser() {
-        window.location.href = '/logout/';
-      }
+        function mylearning() {
+            window.location.href = '/mylearning/';
+        }
+
+        function LogoutUser() {
+            window.location.href = '/logout/';
+        }
 
 
-      function storeLink(link) {
-        // Store the selected link in local session
-        sessionStorage.setItem('selectedLink', link);
-        console.log('Selected Link:', link);
+        function storeLink(link) {
+            // Store the selected link in local session
+            sessionStorage.setItem('selectedLink', link);
+            console.log('Selected Link:', link);
 
-        // Redirect to the other HTML page
-        window.location.href = '/validate/dashboard/index/';
-      }
+            // Redirect to the other HTML page
+            window.location.href = '/validate/dashboard/index/';
+        }
   </script>
 </body>
 </html>

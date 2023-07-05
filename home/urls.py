@@ -13,6 +13,7 @@ urlpatterns = [
     path('api/get-quiz/',views.get_quiz,name='get_quiz'),
     path('api/result/',views.result,name='result'),
     path('history/',views.history, name='history'),
+    
     path('quiz/',views.quiz,name='quiz'),
     path('api/save-remaining-time/', views.save_remaining_time, name='save_remaining_time'),
     path('skipquiz/', views.skip_quiz, name='skipquiz'),
