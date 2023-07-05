@@ -13425,3 +13425,574 @@ course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
 "POST /save_time HTTP/1.1" 200 38
 "GET /validate/dashboard/ HTTP/1.1" 200 12569
 "GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12327
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 2266
+Previously employee attempted quiz for 34 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12566
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+"GET / HTTP/1.1" 200 12327
+"GET / HTTP/1.1" 200 12327
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 5883
+Previously employee attempted quiz for 35 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12566
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score: 10
+Employee previous quiz attempt date: 2023-07-04 09:27:09.381501+05:30
+Employee previous attempted quiz domain: Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score: 40
+Employee previous quiz attempt date: 2023-07-03 16:06:38.981611+05:30
+Employee previous attempted quiz domain: Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score: 30
+Employee previous quiz attempt date: 2023-07-03 15:42:16.169155+05:30
+Employee previous attempted quiz domain: Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4283
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12327
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4571
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2239
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/base.css HTTP/1.1" 200 20344
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 11546
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"GET /admin/home/category/ HTTP/1.1" 200 11531
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/filters.js HTTP/1.1" 200 966
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/home/category/add/ HTTP/1.1" 200 9079
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"POST /admin/home/category/add/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 12044
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /admin/home/category/add/ HTTP/1.1" 200 9079
+"GET /admin/home/question/add/ HTTP/1.1" 200 20859
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/inlines.js HTTP/1.1" 200 15526
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 560
+"GET /admin/home/question/add/ HTTP/1.1" 200 20859
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43127
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 20859
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43151
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 20859
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43113
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 20859
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43155
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 20859
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43129
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/90d0f903-ffa4-4dca-8847-8bfe13e59fd3/change/ HTTP/1.1" 200 30627
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/ HTTP/1.1" 200 42864
+"GET /admin/home/question/add/ HTTP/1.1" 200 20859
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43106
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 20859
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43128
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 20859
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43126
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 20859
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43136
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 20859
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43090
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/ HTTP/1.1" 200 11808
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /admin/home/category/add/ HTTP/1.1" 200 9079
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"POST /admin/home/category/add/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 12323
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /admin/home/question/ HTTP/1.1" 200 42845
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/fd3a7b16-8c17-4dd6-b784-831df026adff/change/ HTTP/1.1" 200 30981
+"GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+"GET /admin/home/question/ HTTP/1.1" 200 42845
+"GET /admin/home/question/add/ HTTP/1.1" 200 20933
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43091
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 20933
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43141
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 20933
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43146
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 20933
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43139
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 20933
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43134
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 20933
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43146
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 20933
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43073
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 20933
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43071
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 20933
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43099
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 20933
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43088
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET / HTTP/1.1" 200 12327
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 2259
+Previously employee attempted quiz for 36 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+Internal Server Error: /validate/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Desktop\Switching_Dude\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_Dude\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_Dude\SwitchTech\home\views.py", line 157, in dashboard
+    user = User.objects.get(email=mail)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_Dude\venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_Dude\venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+"GET /validate/dashboard/ HTTP/1.1" 500 76600
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Desktop\Switching_Dude\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_Dude\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_Dude\SwitchTech\home\views.py", line 40, in loginPage
+    user = User.objects.get(email=mail)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_Dude\venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Switching_Dude\venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+"GET / HTTP/1.1" 500 76319
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2390
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/css/login.css HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 11418
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /admin/home/category/add/ HTTP/1.1" 200 9079
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"POST /admin/home/category/add/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 12601
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21007
+"GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43108
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21007
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43089
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21007
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43118
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21007
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43080
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21007
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43100
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21007
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43109
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21007
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43073
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21007
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43143
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21007
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43136
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21007
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43131
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21007
+"POST /admin/logout/ HTTP/1.1" 200 1570
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2239
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 11573
+"GET /admin/home/category/ HTTP/1.1" 200 12364
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/add/ HTTP/1.1" 200 9079
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/category/add/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 12881
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/add/ HTTP/1.1" 200 9079
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/category/add/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 13160
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21157
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43097
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"POST /admin/logout/ HTTP/1.1" 200 1570
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2239
+"GET /static/admin/css/login.css HTTP/1.1" 304 0
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 11438
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /admin/home/category/add/ HTTP/1.1" 200 9079
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/ HTTP/1.1" 200 12922
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/5e6d2cb9-7f71-403a-aa6c-ecb505417e3e/change/ HTTP/1.1" 200 9407
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/5e6d2cb9-7f71-403a-aa6c-ecb505417e3e/delete/ HTTP/1.1" 200 8453
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+"POST /admin/home/category/5e6d2cb9-7f71-403a-aa6c-ecb505417e3e/delete/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 12803
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/9b32b4d2-e7c3-4cae-8fe1-a3117cf1b22e/change/ HTTP/1.1" 200 9407
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/9b32b4d2-e7c3-4cae-8fe1-a3117cf1b22e/delete/ HTTP/1.1" 200 7807
+"POST /admin/home/category/9b32b4d2-e7c3-4cae-8fe1-a3117cf1b22e/delete/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 12524
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/add/ HTTP/1.1" 200 9079
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/category/add/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 12881
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/ HTTP/1.1" 200 42829
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21082
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43058
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21082
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43089
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21082
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43055
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21082
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43056
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21082
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43051
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21082
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43092
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21082
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43084
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21082
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43042
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21082
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43059
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
