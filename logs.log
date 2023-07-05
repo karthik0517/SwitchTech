@@ -15538,3 +15538,237 @@ django.contrib.auth.models.User.DoesNotExist: User matching query does not exist
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 Watching for file changes with StatReloader
 >>>>>>> e1dbb30322c61483c924cb082dd3cf3597614d47
+Watching for file changes with StatReloader
+Internal Server Error: /save_time
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\push\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\push\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\push\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\push\SwitchTech\home\views.py", line 472, in save_time
+    user = User.objects.get(email=mail)
+  File "C:\Users\KarthikKonduru\Desktop\push\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\push\venv\lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+- Broken pipe from ('127.0.0.1', 13676)
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 4454
+Previously employee attempted quiz for 62 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13396
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10474
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain Front End and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Front%20End HTTP/1.1" 200 15252
+"GET /api/get-quiz/?category=Front%20End HTTP/1.1" 200 3473
+Based on employee score we are suggesting Beginner course
+Internal Server Error: /api/result/
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\push\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\push\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\push\venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\push\SwitchTech\home\views.py", line 430, in result
+    suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(
+  File "C:\Users\KarthikKonduru\Desktop\push\SwitchTech\home\views.py", line 247, in url
+    return suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title
+UnboundLocalError: local variable 'suggesstion_url' referenced before assignment
+"POST /api/result/ HTTP/1.1" 500 78792
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Based on employee score we are suggesting Beginner course
+Internal Server Error: /api/result/
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\push\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\push\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\push\venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\push\SwitchTech\home\views.py", line 430, in result
+    suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(
+  File "C:\Users\KarthikKonduru\Desktop\push\SwitchTech\home\views.py", line 247, in url
+    return suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title
+UnboundLocalError: local variable 'suggesstion_url' referenced before assignment
+"POST /api/result/ HTTP/1.1" 500 78793
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14223
+Internal Server Error: /save_time
+"POST /save_time HTTP/1.1" 500 32
+"GET /validate/dashboard/ HTTP/1.1" 200 13396
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10474
+Employee still having the previous quiz timer with 35 sec
+Employee agreed to terms and conditions with selected domain Power BI and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Power%20BI HTTP/1.1" 200 15249
+"GET /api/get-quiz/?category=Power%20BI HTTP/1.1" 200 4309
+Based on employee score we are suggesting Beginner course
+Internal Server Error: /api/result/
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\push\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\push\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\push\venv\lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\push\SwitchTech\home\views.py", line 430, in result
+    suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(
+  File "C:\Users\KarthikKonduru\Desktop\push\SwitchTech\home\views.py", line 247, in url
+    return suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title
+UnboundLocalError: local variable 'suggesstion_url' referenced before assignment
+"POST /api/result/ HTTP/1.1" 500 78789
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14223
+Internal Server Error: /save_time
+"POST /save_time HTTP/1.1" 500 32
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 8913
+Previously employee attempted quiz for 62 time
+Employee having login attempts and otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12611
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /mylearning/ HTTP/1.1" 200 7006
+"GET /validate/dashboard/ HTTP/1.1" 200 12611
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score: 60
+Employee previous quiz attempt date: 2023-06-28 15:13:40.452090+05:30
+Employee previous attempted quiz domain: Python
+Based on employee score we are suggesting Intermediate course
+course url : https://www.udemy.com/course/python-3-deep-dive-part-1/
+Employee previous quiz score: 30
+Employee previous quiz attempt date: 2023-06-28 15:12:57.472698+05:30
+Employee previous attempted quiz domain: System Admin
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/complete-windows-server-2016-administration-course/
+Employee previous quiz score: 40
+Employee previous quiz attempt date: 2023-06-28 12:59:21.566915+05:30
+Employee previous attempted quiz domain: microstrategy
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/introduction-to-microstrategy-report-development/
+"GET /history/ HTTP/1.1" 200 4347
+"GET /mylearning/ HTTP/1.1" 200 7006
+"GET /mylearning/ HTTP/1.1" 200 7006
+"GET /mylearning/ HTTP/1.1" 200 7006
+"GET /validate/dashboard/ HTTP/1.1" 200 12611
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10474
+"GET /mylearning/ HTTP/1.1" 200 7006
+"GET /validate/dashboard/ HTTP/1.1" 200 12611
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: westren@ratnaglobaltech.com
+OTP is generated 6216
+Employee having login attempts and otp is sent to employee mail-id: westren@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 12613
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee doesnt have any learning as of now
+"GET /mylearning/ HTTP/1.1" 200 5134
+"GET /validate/dashboard/ HTTP/1.1" 200 12613
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history is not present
+"GET /history/ HTTP/1.1" 200 2191
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10478
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4354
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+Based on quiz attempt employee got 80 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14387
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 12615
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score: 80
+Employee previous quiz attempt date: 2023-07-05 17:03:22.163665+05:30
+Employee previous attempted quiz domain: Python
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+"GET /history/ HTTP/1.1" 200 2856
+"GET /mylearning/ HTTP/1.1" 200 7029
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 12617
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: vinod@ratnaglobaltech.com
+OTP is generated 1741
+Employee having login attempts and otp is sent to employee mail-id: vinod@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13396
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee doesnt have any learning as of now
+"GET /mylearning/ HTTP/1.1" 200 5134
+"GET /validate/dashboard/ HTTP/1.1" 200 13396
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history is not present
+"GET /history/ HTTP/1.1" 200 2191
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10476
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10476
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4477
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 50 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14355
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13398
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /mylearning/ HTTP/1.1" 200 7029
+"GET /mylearning/ HTTP/1.1" 200 7029
+"GET /validate/dashboard/ HTTP/1.1" 200 13398
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score: 50
+Employee previous quiz attempt date: 2023-07-05 17:17:34.627667+05:30
+Employee previous attempted quiz domain: Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 2791
+"GET /mylearning/ HTTP/1.1" 200 7029
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13400
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /mylearning/ HTTP/1.1" 200 7057
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13399
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
