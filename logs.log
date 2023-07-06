@@ -15772,3 +15772,531 @@ course url : https://www.udemy.com/course/100-days-of-code/
 "POST /save_time HTTP/1.1" 200 38
 "GET /validate/dashboard/ HTTP/1.1" 200 13399
 "GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 12327
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Login page accessed!
+Entered employee mail: Pooja.yawalkar@ratnaglobaltech.com
+OTP is generated 1418
+Previously employee attempted quiz for 3 time
+Employee having login attempts and otp is sent to employee mail-id: Pooja.yawalkar@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13398
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10476
+Employee still having the previous quiz timer with 14 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 14 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4442
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+"GET /mylearning/ HTTP/1.1" 200 7012
+"GET /validate/dashboard/ HTTP/1.1" 200 13398
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10476
+Employee still having the previous quiz timer with 14 sec
+Employee agreed to terms and conditions with selected domain Java and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 15237
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 4164
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Based on quiz attempt employee got 10 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14366
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13400
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /mylearning/ HTTP/1.1" 200 8808
+"GET /mylearning/ HTTP/1.1" 200 8808
+"GET /mylearning/ HTTP/1.1" 200 8808
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13399
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /mylearning/ HTTP/1.1" 200 8806
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13399
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /mylearning/ HTTP/1.1" 200 8806
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13399
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13399
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13399
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10476
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10476
+Employee still having the previous quiz timer with 14 sec
+Employee agreed to terms and conditions with selected domain React and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=React HTTP/1.1" 200 15240
+"GET /api/get-quiz/?category=React HTTP/1.1" 200 4301
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee still having the previous quiz timer with 14 sec
+Employee agreed to terms and conditions with selected domain React and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=React HTTP/1.1" 200 15240
+"GET /api/get-quiz/?category=React HTTP/1.1" 200 3895
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee still having the previous quiz timer with 14 sec
+Employee agreed to terms and conditions with selected domain React and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=React HTTP/1.1" 200 15875
+"GET /api/get-quiz/?category=React HTTP/1.1" 200 4042
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Based on quiz attempt employee got 0 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14355
+"GET /static/images/Result.png HTTP/1.1" 304 0
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13399
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10476
+Employee still having the previous quiz timer with 14 sec
+Employee agreed to terms and conditions with selected domain Oracle and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Oracle HTTP/1.1" 200 15878
+"GET /api/get-quiz/?category=Oracle HTTP/1.1" 200 4319
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Based on quiz attempt employee got 0 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14389
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13399
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /mylearning/ HTTP/1.1" 200 9701
+"GET /mylearning/ HTTP/1.1" 200 9701
+"GET / HTTP/1.1" 200 13399
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+"GET /mylearning/ HTTP/1.1" 200 11331
+"POST /save_time HTTP/1.1" 200 38
+"GET /mylearning/ HTTP/1.1" 200 11333
+"POST /save_time HTTP/1.1" 200 38
+"GET /mylearning/ HTTP/1.1" 200 12223
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13400
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /mylearning/ HTTP/1.1" 200 12241
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13398
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /mylearning/ HTTP/1.1" 200 12251
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+"POST /save_time HTTP/1.1" 200 38
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13400
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /mylearning/ HTTP/1.1" 200 12237
+"GET /validate/dashboard/ HTTP/1.1" 200 13400
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+Login page accessed!
+Entered employee mail: Hrithikroshan@ratnaglobaltech.com
+OTP is generated 2455
+Employee having login attempts and otp is sent to employee mail-id: Hrithikroshan@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13398
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee doesnt have any learning as of now
+"GET /mylearning/ HTTP/1.1" 200 6122
+"GET /validate/dashboard/ HTTP/1.1" 200 13398
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10478
+Employee agreed to terms and conditions with selected domain Java and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 15872
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 4108
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Based on quiz attempt employee got 10 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Based on quiz attempt employee got 10 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14366
+"GET /static/images/Result.png HTTP/1.1" 304 0
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13400
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /mylearning/ HTTP/1.1" 200 8320
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13402
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score: 10
+Employee previous quiz attempt date: 2023-07-06 10:51:17.569004+05:30
+Employee previous attempted quiz domain: Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score: 10
+Employee previous quiz attempt date: 2023-07-06 10:50:50.162084+05:30
+Employee previous attempted quiz domain: Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 3581
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10478
+Employee still having the previous quiz timer with 21 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15878
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4456
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 20 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 20 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14355
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13402
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10478
+Employee still having the previous quiz timer with 21 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15878
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4178
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 0 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14354
+"GET /static/images/Result.png HTTP/1.1" 304 0
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13402
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13402
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10478
+Employee still having the previous quiz timer with 21 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15872
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4190
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 0 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14354
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13402
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10478
+Employee still having the previous quiz timer with 21 sec
+Employee agreed to terms and conditions with selected domain Java and timer will starts from 21 seconds, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 15866
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 3959
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Based on quiz attempt employee got 0 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14365
+"GET /static/images/Result.png HTTP/1.1" 304 0
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13400
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10478
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10478
+Employee still having the previous quiz timer with 21 sec
+Employee agreed to terms and conditions with selected domain Front End and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Front%20End HTTP/1.1" 200 15881
+"GET /api/get-quiz/?category=Front%20End HTTP/1.1" 200 3473
+Based on employee score we are suggesting Beginner course
+Internal Server Error: /api/result/
+Traceback (most recent call last):
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\SwitchTech\home\views.py", line 430, in result
+    suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title = url(
+                                                                                                 ^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\SwitchTech\home\views.py", line 247, in url
+    return suggesstion_url, course_name, ratings, instructor, duration, difficulty, YouTube_id, Title
+           ^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'suggesstion_url' where it is not associated with a value
+"POST /api/result/ HTTP/1.1" 500 79380
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14365
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13400
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10478
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 21 sec
+Employee agreed to terms and conditions with selected domain Microstrategy and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Microstrategy HTTP/1.1" 200 15893
+"GET /api/get-quiz/?category=Microstrategy HTTP/1.1" 200 4076
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/introduction-to-microstrategy-report-development/
+Based on quiz attempt employee got 0 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14357
+"GET /static/images/Result.png HTTP/1.1" 304 0
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13400
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10478
+Employee still having the previous quiz timer with 21 sec
+Employee agreed to terms and conditions with selected domain System Admin and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=System%20Admin HTTP/1.1" 200 15890
+"GET /api/get-quiz/?category=System%20Admin HTTP/1.1" 200 4228
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/complete-windows-server-2016-administration-course/
+Based on quiz attempt employee got 0 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14361
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14361
+Internal Server Error: /save_time
+Traceback (most recent call last):
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\SwitchTech\home\views.py", line 473, in save_time
+    player_activity = PlayerActivity.objects.filter(youtube_id=youtube_id, user=user).latest('id')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\query.py", line 1040, in latest
+    return self.reverse()._earliest(*fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\query.py", line 1023, in _earliest
+    return obj.get()
+           ^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+home.models.PlayerActivity.DoesNotExist: PlayerActivity matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: home_playeractivity.percentage
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\SwitchTech\home\views.py", line 480, in save_time
+    PlayerActivity.objects.create(current_time=current_time, percentage=percentage, youtube_id=youtube_id, user=user)
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: home_playeractivity.percentage
+"GET /static/images/Result.png HTTP/1.1" 304 0
+- Broken pipe from ('127.0.0.1', 58976)
+"GET /validate/dashboard/ HTTP/1.1" 200 13400
+Internal Server Error: /save_time
+Traceback (most recent call last):
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\SwitchTech\home\views.py", line 473, in save_time
+    player_activity = PlayerActivity.objects.filter(youtube_id=youtube_id, user=user).latest('id')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\query.py", line 1040, in latest
+    return self.reverse()._earliest(*fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\query.py", line 1023, in _earliest
+    return obj.get()
+           ^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+home.models.PlayerActivity.DoesNotExist: PlayerActivity matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: home_playeractivity.percentage
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\SwitchTech\home\views.py", line 480, in save_time
+    PlayerActivity.objects.create(current_time=current_time, percentage=percentage, youtube_id=youtube_id, user=user)
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PoojaAmolYawalkar\Desktop\gitswitch_localrepo\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: home_playeractivity.percentage
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+- Broken pipe from ('127.0.0.1', 59023)
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10478
+Employee still having the previous quiz timer with 21 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 3924
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 20 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14355
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13400
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score: 20
+Employee previous quiz attempt date: 2023-07-06 11:19:38.814816+05:30
+Employee previous attempted quiz domain: Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score: 0
+Employee previous quiz attempt date: 2023-07-06 11:14:16.332441+05:30
+Employee previous attempted quiz domain: System Admin
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/complete-windows-server-2016-administration-course/
+Employee previous quiz score: 0
+Employee previous quiz attempt date: 2023-07-06 11:11:32.368208+05:30
+Employee previous attempted quiz domain: Microstrategy
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/introduction-to-microstrategy-report-development/
+"GET /history/ HTTP/1.1" 200 4322
+"GET /mylearning/ HTTP/1.1" 200 12222
+"GET /validate/dashboard/ HTTP/1.1" 200 13400
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
