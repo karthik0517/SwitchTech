@@ -319,8 +319,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="mail">Email:</label>
-                                <input type="text" name="mail" required id="mail" pattern=".+@ratnaglobaltech\.com"
-                                    placeholder="Enter your RGT Email only" onkeydown="handleEnterKey(event)"><br>
+                                <input type="text" name="mail" required id="mail" pattern="[a-zA-Z].*@ratnaglobaltech\.com"
+                                    placeholder="Enter your RGT Email only" onkeydown="handleEnterKey(event)" oninput="validateEmail()"><br>
                             </div>
                             {% if error_message %}
                             <div class="error-message">
@@ -369,7 +369,6 @@
                 usernameError.textContent = 'Invalid username.';
                 sendOTPButton.disabled = true; // Disable the button
             }
-
         }
 
         function handleEnterKey(event) {

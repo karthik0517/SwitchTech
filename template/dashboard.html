@@ -109,7 +109,7 @@
             text-transform: capitalize;
         }
 
-       
+
 
         .ui_card {
             padding: 30px;
@@ -301,7 +301,7 @@
             <h1>Employee Dashboard</h1>
         </div>
     </div>
-   
+
   <div class="certification_block your_preparation_block">
     <div class="dashboard-section-header" style="width: 100%; float: left; padding-top: 10px;">
         <h2 class="text-para-headline bold dashboard-section-title align">Select a domain to switch<span style="font-size: 14px; padding-left: 10px;">(<a href="">View All</a>)</span></h2>
@@ -334,8 +334,8 @@
             let circularProgress = document.querySelector(".circular-progress");
             let progressValue = document.querySelector(".progress-value");
 
-            let progressStartValue = 0;
-            let progressEndValue = parseInt(progressValue.textContent);
+            let progressStartValue = -1;
+            let progressEndValue = parseFloat(progressValue.textContent);
             let speed = 25;
 
             let progress = setInterval(() => {
