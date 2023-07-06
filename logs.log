@@ -14,28 +14,6 @@ Login page accessed!
 Entered employee mail: venugopal.pemma12@ratnaglobaltech.com
 OTP is generated 8623
 Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma12@ratnaglobaltech.com
->>>>>>> fb7bbd83d0b44bf7648569b24b0aab27e5a8c20f
-Employee details are saved into database
-Employee is redirected to otp validation page!
-"POST / HTTP/1.1" 200 7706
-OTP is validated and redirected to instructions page!.
-"POST /validate/ HTTP/1.1" 200 7350
-<<<<<<< HEAD
-Employee needs to switch to the Python domain
-"GET /validate/?category=Python HTTP/1.1" 302 0
-Employee agreed to terms and conditions with selected domain Python and timer will starts from 60 seconds, redirecting to quiz page
-"GET /quiz/?category=Python HTTP/1.1" 200 14308
-"GET /api/get-quiz/?category=Python HTTP/1.1" 200 3859
-Based on employee score we are suggesting Beginner course
-course url : https://www.udemy.com/course/100-days-of-code/
-Based on quiz attempt employee got 50 score
-"POST /api/result/ HTTP/1.1" 200 0
-"POST /api/save-remaining-time/ HTTP/1.1" 200 48
-Employee submitted quiz and redirect to results page with course suggestion
-"GET /final/ HTTP/1.1" 200 9499
-Login page accessed!
-- Broken pipe from ('127.0.0.1', 9514)
-=======
 Employee skipped the quiz and select domain Python and redirected to all recomendations page with all the avaliable courses
 "GET /skipquiz/?category=Python HTTP/1.1" 200 13898
 Login page accessed!
@@ -16301,6 +16279,7 @@ course url : https://www.udemy.com/course/introduction-to-microstrategy-report-d
 "GET /validate/dashboard/ HTTP/1.1" 200 13400
 "GET /static/images/dashboard.png HTTP/1.1" 404 1819
 Watching for file changes with StatReloader
+<<<<<<< HEAD
 "GET / HTTP/1.1" 200 13400
 "GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
 "GET /static/images/dashboard.png HTTP/1.1" 404 1819
@@ -16370,12 +16349,15 @@ Based on quiz attempt employee got 20 score
 Employee submitted quiz and redirect to results page with course suggestion
 "GET /final/ HTTP/1.1" 200 14355
 Watching for file changes with StatReloader
+=======
+>>>>>>> 2bddd5ead52402bfdaa6c9adf7294033cca65005
 "GET / HTTP/1.1" 200 12327
 "GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
 "GET /static/images/loginimg.png HTTP/1.1" 200 331530
 Not Found: /favicon.ico
 "GET /favicon.ico HTTP/1.1" 404 4567
 Login page accessed!
+<<<<<<< HEAD
 "POST / HTTP/1.1" 200 12509
 Login page accessed!
 "POST / HTTP/1.1" 200 12509
@@ -16412,12 +16394,91 @@ Employee agreed to terms and conditions with selected domain Python and timer wi
 Based on employee score we are suggesting Beginner course
 course url : https://www.udemy.com/course/100-days-of-code/
 Based on quiz attempt employee got 40 score
+=======
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 9007
+Previously employee attempted quiz for 38 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13397
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 3971
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+"GET / HTTP/1.1" 200 13397
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Java and timer will starts from 60 seconds, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 15237
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 4221
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4634
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+"GET /mylearning/ HTTP/1.1" 200 8287
+"GET /mylearning/ HTTP/1.1" 200 8287
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+"GET /mylearning/ HTTP/1.1" 200 8287
+"GET /mylearning/ HTTP/1.1" 200 8287
+"GET /validate/dashboard HTTP/1.1" 301 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13397
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score: 10
+Employee previous quiz attempt date: 2023-07-04 09:27:09.381501+05:30
+Employee previous attempted quiz domain: Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score: 40
+Employee previous quiz attempt date: 2023-07-03 16:06:38.981611+05:30
+Employee previous attempted quiz domain: Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Employee previous quiz score: 30
+Employee previous quiz attempt date: 2023-07-03 15:42:16.169155+05:30
+Employee previous attempted quiz domain: Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+"GET /history/ HTTP/1.1" 200 4283
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4226
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 30 score
+>>>>>>> 2bddd5ead52402bfdaa6c9adf7294033cca65005
 "POST /api/result/ HTTP/1.1" 200 0
 "POST /api/save-remaining-time/ HTTP/1.1" 200 48
 Employee submitted quiz and redirect to results page with course suggestion
 "GET /final/ HTTP/1.1" 200 14355
 "GET /static/images/Result.png HTTP/1.1" 200 99021
 "POST /save_time HTTP/1.1" 200 38
+<<<<<<< HEAD
 "GET /validate/dashboard HTTP/1.1" 301 0
 "GET /validate/dashboard/ HTTP/1.1" 200 13400
 "GET /static/images/dashboard.png HTTP/1.1" 404 1819
@@ -16551,10 +16612,30 @@ Employee agreed to terms and conditions with selected domain Python and timer wi
 Based on employee score we are suggesting Beginner course
 course url : https://www.udemy.com/course/100-days-of-code/
 Based on quiz attempt employee got 10 score
+=======
+"GET /validate/dashboard/ HTTP/1.1" 200 13399
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /mylearning/ HTTP/1.1" 200 10254
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13399
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4488
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 30 score
+>>>>>>> 2bddd5ead52402bfdaa6c9adf7294033cca65005
 "POST /api/result/ HTTP/1.1" 200 0
 "POST /api/save-remaining-time/ HTTP/1.1" 200 48
 Employee submitted quiz and redirect to results page with course suggestion
 "GET /final/ HTTP/1.1" 200 14355
+<<<<<<< HEAD
 "POST /save_time HTTP/1.1" 200 38
 "GET /validate/dashboard/ HTTP/1.1" 200 13399
 "GET /static/images/dashboard.png HTTP/1.1" 404 1819
@@ -16633,3 +16714,164 @@ Employee submitted quiz and redirect to results page with course suggestion
 "GET /admin/home/video/ HTTP/1.1" 200 19736
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 "POST /admin/logout/ HTTP/1.1" 200 1570
+=======
+"GET /static/images/Result.png HTTP/1.1" 304 0
+"POST /save_time HTTP/1.1" 200 38
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 12327
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 9274
+Previously employee attempted quiz for 39 time
+Employee having login attempts and otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11223
+"POST /validate/ HTTP/1.1" 302 0
+"GET /validate/dashboard/ HTTP/1.1" 200 13397
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee previous quiz history present
+Employee previous quiz score: 30
+Employee previous quiz attempt date: 2023-07-06 12:30:03.708216+05:30
+Employee previous attempted quiz domain: Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score: 30
+Employee previous quiz attempt date: 2023-07-06 12:28:37.735652+05:30
+Employee previous attempted quiz domain: Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Employee previous quiz score: 10
+Employee previous quiz attempt date: 2023-07-04 09:27:09.381501+05:30
+Employee previous attempted quiz domain: Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+"GET /history/ HTTP/1.1" 200 4243
+"GET / HTTP/1.1" 200 13397
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4708
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Based on quiz attempt employee got 30 score
+"POST /api/result/ HTTP/1.1" 200 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14355
+"GET /static/images/Result.png HTTP/1.1" 304 0
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14912
+"GET /static/images/Result.png HTTP/1.1" 304 0
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14918
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14865
+"POST /save_time HTTP/1.1" 200 38
+Employee submitted quiz and redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14865
+"GET /static/images/Result.png HTTP/1.1" 304 0
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 13397
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13443
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13443
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13397
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13397
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13397
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13446
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13422
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13441
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13441
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13441
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13397
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13412
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13456
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/ HTTP/1.1" 200 13456
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10475
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 15243
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4577
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+"GET /quiz/?category=Python HTTP/1.1" 200 14644
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4642
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14719
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 3936
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14757
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4142
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14744
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4326
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14762
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4768
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14762
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4156
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14808
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4441
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14796
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4180
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee still having the previous quiz timer with 23 sec
+Employee agreed to terms and conditions with selected domain Python and timer will starts from 23 seconds, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 14797
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4250
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Watching for file changes with StatReloader
+>>>>>>> 2bddd5ead52402bfdaa6c9adf7294033cca65005
