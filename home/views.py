@@ -41,6 +41,7 @@ def loginPage(request):
         overall_progress = PlayerActivity.objects.filter(user=user).values_list('percentage', flat=True)
         list_overall_progress = list(overall_progress)
         sum_overall_progress = sum(list_overall_progress)
+        print('sum_overall', sum_overall_progress)
         formatted_progress = round(sum_overall_progress, 2)
         print('overall_progress',formatted_progress)
         context = {'categories': Category.objects.all(), 'overall_progress':formatted_progress}
@@ -178,6 +179,15 @@ def homepage(request):
 def url(score, category):
     YouTube_id = ''
     Title = ''
+    suggesstion_url = None
+    course_name = None
+    ratings = None
+    instructor = None
+    duration = None
+    difficulty = None
+    YouTube_id = None
+    Title = None
+
     if score <= 50:
         print("Suggesting Beginner")
         logger.info('Based on employee score we are suggesting Beginner course')
