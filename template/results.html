@@ -6,11 +6,11 @@
     <title>Quiz Results</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--    <script type="text/javascript">-->
-<!--        function preventBack() { window.history.forward(); }-->
-<!--        setTimeout("preventBack()", 0);-->
-<!--        window.onunload = function () { null };-->
-<!--    </script>-->
+    <!--    <script type="text/javascript">-->
+    <!--        function preventBack() { window.history.forward(); }-->
+    <!--        setTimeout("preventBack()", 0);-->
+    <!--        window.onunload = function () { null };-->
+    <!--    </script>-->
 
     <style>
         body {
@@ -20,7 +20,7 @@
         }
 
         header {
-            background-color: #333;
+            /* background-color: #333; */
             color: #fff;
             padding: 10px;
             text-align: center;
@@ -90,19 +90,21 @@
         }
 
         .logo {
-            width: 200px;
-            height: 200px;
-            top: 200;
-            left: 0;
+            margin-right: 17px;
+            top: 33px;
+            right: 33px;
+            position: relative;
+            width: 91px;
+            height: 62px;
         }
 
         .logo1 {
-            width: 400px;
-            height: 400px;
-            top: 200;
-            position: absolute;
-            bottom: 0;
-            right: 0;
+            float: right;
+            right: -101px;
+            top: 232px;
+            position: relative;
+            width: 405px;
+            height: 419px;
         }
 
         .highlight {
@@ -112,8 +114,8 @@
 
         .logout-button {
             position: absolute;
-            top: 250px;
-            right: 20px;
+            top: 161px;
+            right: 62px;
             background-color: #333;
             color: #fff;
             padding: 10px 20px;
@@ -179,10 +181,7 @@
         }
 
 
-        .colored-box1 {
-            color: orange;
-
-        }
+        
 
         .QuizResults {
             width: 100%;
@@ -246,7 +245,6 @@
         .home-button:active {
             background-color: #777;
         }
-
     </style>
 
 </head>
@@ -280,7 +278,7 @@
 
         function logout() {
             console.log("Logout function called.")
-          window.location.href = "{% url 'logout' %}";
+            window.location.href = "{% url 'logout' %}";
         }
     </script>
     <main>
@@ -306,7 +304,9 @@
                 <div class="course-rating">Course Ratings:<span class="colored-box"> {{ratings}}</span></div>
                 <div class="course-instructor">Course Instructor:<span class="colored-box"> {{instructor}}</span></div>
                 <div class="course-duration">Course Duration: <span class="colored-box">{{duration}} hours</span></div>
-                <button class="enroll-button" onclick="openPopup()" data-suggested="{{ suggested }}">Enroll this course</button><hr>
+                <button class="enroll-button" onclick="openPopup()" data-suggested="{{ suggested }}">Enroll this
+                    course</button>
+                <hr>
                 <h2><u>Here are your Youtube Recommendations</h2></u>
                 </h2>
 
@@ -332,38 +332,38 @@
                     }
 
                     // Event listener for window unload (when the user closes the webpage)
-                    window.addEventListener('beforeunload', function() {
-                                saveCurrentTime();
-                            });
+                    window.addEventListener('beforeunload', function () {
+                        saveCurrentTime();
+                    });
 
-                            // Function to save the current time
-                            function saveCurrentTime() {
-            if (!isSaveExecuted && player && player.playerInfo && player.playerInfo.currentTime !== null) {
-                const currentTime = player.playerInfo.currentTime;
-                const duration = player.getDuration();
-                const percentage = (currentTime / duration) * 100;
-                console.log('Current Time:', currentTime);
-                console.log('Percentage:', percentage);
+                    // Function to save the current time
+                    function saveCurrentTime() {
+                        if (!isSaveExecuted && player && player.playerInfo && player.playerInfo.currentTime !== null) {
+                            const currentTime = player.playerInfo.currentTime;
+                            const duration = player.getDuration();
+                            const percentage = (currentTime / duration) * 100;
+                            console.log('Current Time:', currentTime);
+                            console.log('Percentage:', percentage);
 
-                // Get the CSRF token value from the cookie
-                var csrftoken = getCookie('csrftoken');
+                            // Get the CSRF token value from the cookie
+                            var csrftoken = getCookie('csrftoken');
 
-                // Send the current time, percentage, and youtube ID to the server using AJAX
-                var xhr = new XMLHttpRequest();
-                xhr.open('POST', '/save_time', true);
-                xhr.setRequestHeader('Content-Type', 'application/json');
-                xhr.setRequestHeader('X-CSRFToken', csrftoken); // Include the CSRF token in the request header
-                xhr.onreadystatechange = function() {
-                    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-                        console.log('Time saved successfully');
-                        isSaveExecuted = true; // Update the flag to prevent further saves
+                            // Send the current time, percentage, and youtube ID to the server using AJAX
+                            var xhr = new XMLHttpRequest();
+                            xhr.open('POST', '/save_time', true);
+                            xhr.setRequestHeader('Content-Type', 'application/json');
+                            xhr.setRequestHeader('X-CSRFToken', csrftoken); // Include the CSRF token in the request header
+                            xhr.onreadystatechange = function () {
+                                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                                    console.log('Time saved successfully');
+                                    isSaveExecuted = true; // Update the flag to prevent further saves
+                                }
+                            };
+                            xhr.send(JSON.stringify({ 'current_time': currentTime, 'youtube_id': youtubeId, 'percentage': percentage }));
+                        } else {
+                            console.log('Invalid current time or save operation already executed');
+                        }
                     }
-                };
-                xhr.send(JSON.stringify({ 'current_time': currentTime, 'youtube_id': youtubeId, 'percentage': percentage }));
-            } else {
-                console.log('Invalid current time or save operation already executed');
-            }
-        }
 
                     // Helper function to get the CSRF cookie value
                     function getCookie(name) {
@@ -387,23 +387,23 @@
         </div>
     </main>
     <div id="popupModal" class="modal">
-    <div class="modal-content">
-      <span class="modal-close" onclick="closePopup()">&times;</span>
-      <p>Do you have Udemy credentials?</p>
-      <div class="modal-buttons">
-        <button onclick="redirectToUdemy()">Yes</button>
-        <button onclick="raiseTicket()">No</button>
-      </div>
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup()">&times;</span>
+            <p>Do you have Udemy credentials?</p>
+            <div class="modal-buttons">
+                <button onclick="redirectToUdemy()">Yes</button>
+                <button onclick="raiseTicket()">No</button>
+            </div>
+        </div>
     </div>
-  </div>
-  <script>
-    function openPopup() {
-      document.getElementById("popupModal").style.display = "block";
-    }
+    <script>
+        function openPopup() {
+            document.getElementById("popupModal").style.display = "block";
+        }
 
-    function closePopup() {
-      document.getElementById("popupModal").style.display = "none";
-    }
+        function closePopup() {
+            document.getElementById("popupModal").style.display = "none";
+        }
 
         function redirectToUdemy() {
             // Redirect to Udemy login page
@@ -422,10 +422,10 @@
         }
 
 
-    function raiseTicket() {
-      const popup = document.createElement('div');
-      popup.classList.add('modal');
-      popup.innerHTML = `
+        function raiseTicket() {
+            const popup = document.createElement('div');
+            popup.classList.add('modal');
+            popup.innerHTML = `
         <div class="modal-content">
         <span class="modal-close" onclick="closePopup()">&times;</span>
         <p>You need to raise a ticket in Keka.</p>
@@ -434,16 +434,16 @@
         </div>
         </div>
       `;
-      document.body.appendChild(popup);
-      popup.style.display = "block";
-    }
+            document.body.appendChild(popup);
+            popup.style.display = "block";
+        }
 
-    function closePopup() {
-      const popup = document.querySelector('.modal');
-      document.body.removeChild(popup);
-    }
+        function closePopup() {
+            const popup = document.querySelector('.modal');
+            document.body.removeChild(popup);
+        }
 
-    function redirectToKeka() {
+        function redirectToKeka() {
             // Logout logic
             sessionStorage.clear();
             // Redirect to Keka after logout
@@ -451,13 +451,13 @@
             window.location.replace(kekaUrl);
         }
 
-    function redirectToHome() {
-        const currentHost = window.location.host;
-        const url = `http://${currentHost}/validate/dashboard`;
-        window.location.replace(url);
-    }
+        function redirectToHome() {
+            const currentHost = window.location.host;
+            const url = `http://${currentHost}/validate/dashboard`;
+            window.location.replace(url);
+        }
 
-  </script>
+    </script>
 </body>
 
 </html>
