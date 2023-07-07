@@ -117,6 +117,7 @@
                         <div class="p-3 row">
                             <div class="col-md-8 pl-5">
                                 <div class="header_title">
+                                     <!-- //This class defines the name of the project -->
                                     <h1 class="font_normal ">SWITCHING TECH <span class="colored-box1">SYSTEMS</span>
                                     </h1>
                                     <h4 class=" mt-4 align">QUIZ PAGE</h4>
@@ -140,6 +141,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                //The below code defines the previous,next,submit and skip buttons in the questions page.
                                 <center>
                                     <button v-if="currentQuestion > 0" type="button" class="btn btn-secondary" @click="previousQuestion">Previous</button>
                                     <button v-if="currentQuestion < questions.length - 1" type="button" class="btn btn-primary" @click="nextQuestion">Next</button>
@@ -148,6 +150,8 @@
 
                                 </center>
                             </div>
+                            //
+                            //The below code defines the quiz page logo.
                             <div class="col-md-4">
                                 <img class="logo"
                                     src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3JhdG5hLWdsb2JhbC10ZWNobm9sb2dpZXMuanBn.webp"
@@ -169,6 +173,7 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
+                        //The below class defines the pop up if question didnot get answered.
                         <div class="modal-body">
                             <p>Please select an answer before proceeding.</p>
                         </div>
@@ -178,7 +183,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div id="timer" style="position: fixed; top: 90px; right: 10px;"></div>
 
             <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
@@ -309,7 +314,7 @@
                         },
                         showConfirmation() {
                             if (confirm("Are you sure you want to submit the quiz?")) {
-                                this.submitQuiz();
+                                this.submitQuiz();//To confirm the quiz submission
                             }
                         },
                         submitQuiz(showErrorModal = true) {

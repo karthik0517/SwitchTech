@@ -13,6 +13,7 @@
 
   <title>Quiz</title>
   <script>
+    //this function use the dropdown of domain
     function enableButtons() {
       const dropdown = document.getElementById("selectedCategory");
       const agreeCheckbox = document.getElementById("agreeCheckbox");
@@ -28,6 +29,7 @@
       }
     }
 
+    //this function defines the mylearning tab
     function mylearning() {
       window.location.href = '/mylearning/';
     }
@@ -39,6 +41,7 @@
       window.location.replace(url);
     }
 
+    //This function is used to start the quiz.
     function startQuiz() {
       const selectedTechnology = document.getElementById("selectedCategory").value;
       const currentHost = window.location.host;
@@ -241,14 +244,19 @@
         <div class="row p-3">
         <div class="col-md-6 animate-slide-up">
           <div class="header_title">
+            <!-- //This class defines the name of the project -->
             <h1 class="font_normal">SWITCHING TECH <span class="colored-box1">SYSTEMS</span>
             </div>
+
+    
           <form action="" onsubmit="startQuiz(); return false;">
             <div>
             <div class="form-group">
+              <!-- //here select a domain -->
               <p >Selected domain</p>
               <input type="text" class="form-control" id="selectedCategory" onchange="enableButtons()" readonly>
             </div>
+            <!-- //These are the user Instructions -->
             <h1>Instructions</h1>
             <p>Welcome to the quiz! Before we get started, please read and agree to the following terms and conditions:
             </p>
@@ -262,6 +270,7 @@
               <input type="checkbox" id="agreeCheckbox" onchange="enableButtons()">
               <label for="agreeCheckbox">I agree to the terms and conditions</label>
             </div>
+            <!-- //This button is used to redirect the page to quiz page. -->
             <div class="d-flex ">
             <div class="button-container">
               <button id="continueButton" class="btn btn-success mt-3 mx-3" style="background-color: green;" disabled>Submit</button>
@@ -269,10 +278,12 @@
              </div>
   </div>
           </form>
+          <!-- //This function is used to skip the quiz by the user.  -->
           <div class="button-container skip_button">
             <button id="skipButton" class="btn btn-danger mt-3 me-2" onclick="skipQuiz()"  style="background-color:red;" disabled>Skip Quiz</button>
           </div>
         </div>
+        <!-- //The below are the RGT and instruction page  -->
         <div class="col-md-6 animate-slide-up">
           <div class="rgt">
           <img  src="{% static 'images/ratnaglobal_logo.png' %}" />
@@ -287,6 +298,7 @@
 </div>
 
 <script>
+  //This function is used to enable the buttons.
     function enableButtons() {
       const dropdown = document.getElementById("selectedCategory");
       const agreeCheckbox = document.getElementById("agreeCheckbox");
@@ -302,13 +314,15 @@
       }
     }
 
+    //This function is used to skip the quiz by the user. 
     function skipQuiz() {
       const selectedTechnology = document.getElementById("selectedCategory").value;
       const currentHost = window.location.host;
       const url = `http://${currentHost}/skipquiz/?category=${selectedTechnology}`;
       window.location.replace(url);
     }
-
+ 
+    //This function is used to start the quiz.
     function startQuiz() {
       const selectedTechnology = document.getElementById("selectedCategory").value;
       const currentHost = window.location.host;
@@ -337,15 +351,7 @@
     integrity="sha384-pzjwLpsohi4ryZ9eBDSO+dqHi2mhYwlMj7klWJigFRDI4biL6NW3QLaW00Wsd4e7"
     crossorigin="anonymous"></script>
 
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-pzjwLpsohi4ryZ9eBDSO+dqHi2mhYwlMj7klWJigFRDI4biL6NW3QLaW00Wsd4e7"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-pzjwLpsohi4ryZ9eBDSO+dqHi2mhYwlMj7klWJigFRDI4biL6NW3QLaW00Wsd4e7"
-    crossorigin="anonymous"></script>
-  -->
+   
 </body>
 
 </html>

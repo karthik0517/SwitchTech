@@ -483,11 +483,13 @@
 
 <body>
 	<header>
+		<!-- //This shows the recommendation page image and RGT logo -->
 		<img align="right" class="logo"
 			src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3JhdG5hLWdsb2JhbC10ZWNobm9sb2dpZXMuanBn.webp"
 			alt="Logo">
 		<img align="right" class="logo1" src="{% static 'images/recommendation.png' %}" />
 	</header>
+  <!-- //this logout the page -->
 	<button class="logout-button" onclick="openModal()">Logout</button>
 	<div id="myModal" class="modal">
 		<div class="modal-content">
@@ -507,17 +509,19 @@
 		function closeModal() {
 			document.getElementById("myModal").style.display = "none";
 		}
-
+        //This shows the logout button
 		function logout() {
 			console.log("Logout function called.")
 			window.location.href = "{% url 'logout' %}";
 		}
 	</script>
 	<main>
+		 <!-- //This class defines the name of the project -->
 		<div class="header_title">
 			<h1 class="font_normal text-align:center">SWITCHING TECH <span class="colored-box1">SYSTEMS</span></h1><br>
 			<h2>Our Recommendations</h2>
 		</div>
+		<!-- // this will give the course suggestion -->
 		<div class="recommendations">
 			<button class="home-button" onclick="redirectToHome()">Home</button>
 			<h4>As you have skipped the quiz, we can't analyze how much knowledge you have currently on this technology,
@@ -531,7 +535,7 @@
 					<div class="course-type">Paid Course: Yes</div>
 				</u>
 				<u>
-					<div class="course-level">
+					<div class="course-level">//This gives the beginner,intermediate and advanced levels
 						Course Level:
 						{% if suggestion.difficulty == "BG" %}
 						Beginner
@@ -559,6 +563,9 @@
 			{% endfor %}
 		</div>
 	</main>
+	
+	<!-- //it shows whether this buy oor not -->
+
 	<div id="popupModal" class="modal">
 		<div class="modal-content">
 			<span class="modal-close" onclick="closePopup()">&times;</span>
@@ -604,7 +611,7 @@
 				sessionStorage.clear();
 			});
 		}
-
+        //To raise a ticket in keka
 		function raiseTicket() {
 			const popup = document.createElement('div');
 			popup.classList.add('modal');
@@ -626,11 +633,11 @@
 			const popup = document.querySelector('.modal');
 			document.body.removeChild(popup);
 		}
-
+        //Redirects to keka portal
 		function redirectToKeka() {
 			window.location.href = "https://letmecall.keka.com/#/me/helpdesk/mytickets";
 		}
-
+        //Redirects to home page
 		function redirectToHome() {
 			const currentHost = window.location.host;
 			const url = 'http://' + currentHost + '/validate/dashboard';
