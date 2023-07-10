@@ -11,8 +11,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-from datetime import timedelta
-
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -22,12 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-u2+w++r9l)^-4-t*5(f4t(-s02-k7fnr@c&4=f!r1gu*(6c1y$'
+SECRET_KEY = 'django-insecure-u2+w++r9l)^-' \
+             '4-t*5(f4t(-s02-k7fnr@c&4=f!r1gu*(6c1y$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','192.168.2.182']
+ALLOWED_HOSTS = ['127.0.0.1', '192.168.2.182']
 
 # Application definition
 
@@ -88,7 +87,7 @@ DATABASES = {
 
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
-#Logging configuration
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -105,7 +104,7 @@ LOGGING = {
     },
     'root': {
         'level': 'INFO',
-        'handlers': ['console','file'],
+        'handlers': ['console', 'file'],
     },
     'loggers': {
         'django': {
@@ -138,16 +137,20 @@ EMAIL_USE_SSL = False
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+                'UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+                'MinimumLengthValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+                'CommonPasswordValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.'
+                'NumericPasswordValidator',
     },
 ]
 
@@ -182,7 +185,3 @@ SESSION_COOKIE_SECURE = False  # Set to True when testing over HTTPS
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-
-
