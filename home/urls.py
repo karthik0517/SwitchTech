@@ -19,7 +19,7 @@ urlpatterns = [
     path('save_time', views.save_time, name='save_time'),
     path('mylearning/', views.my_learning, name='mylearning'),
     path('final/', views.final, name='final'),
-    path('logout/', views.logout, name='logout'),
+    path('logout/', views.user_logout, name='logout'),
 ]
 
 

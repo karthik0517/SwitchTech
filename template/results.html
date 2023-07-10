@@ -3,8 +3,7 @@
 <html>
 
 <head>
-    
-    <title>Quiz Results</title>//Title for Quiz Results
+    <title>Quiz Results</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--    <script type="text/javascript">-->
@@ -182,7 +181,7 @@
         }
 
 
-        
+
 
         .QuizResults {
             width: 100%;
@@ -252,13 +251,12 @@
 
 <body>
     <header>
-        <!-- //The below code shows the result image and logo. -->
         <img align="right" class="logo"
             src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3JhdG5hLWdsb2JhbC10ZWNobm9sb2dpZXMuanBn.webp"
             alt="Logo">
         <img align="right" class="logo1" src="{% static 'images/Result.png' %}" />
     </header>
-    <button class="logout-button" onclick="openModal()">Logout</button>//Logout button after quiz completion
+    <button class="logout-button" onclick="openModal()">Logout</button>
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="modal-close" onclick="closeModal()">&times;</span>
@@ -270,7 +268,6 @@
         </div>
     </div>
     <script>
-
         function openModal() {
             document.getElementById("myModal").style.display = "block";
         }
@@ -285,7 +282,6 @@
         }
     </script>
     <main>
-         <!-- //This class defines the name of the project -->
         <button class="home-button" onclick="redirectToHome()">Home</button>
         <div class="header_title">
             <h1 class="font_normal">SWITCHING TECH <span class="colored-box1">SYSTEMS</span></h1>
@@ -302,7 +298,6 @@
             <u>
                 <h2>Here are Your Udemy Recommendations</h2>
             </u>
-            <!-- //This class shows the course-name,ratings,instructor,hours and enroll this course details. -->
             <div class="course">
                 <div class="course-type">Paid Course: <span class="colored-box">Yes</span></div>
                 <div class="course-name">Course name: <span class="colored-box">{{course_name}}</span></div>
@@ -312,7 +307,7 @@
                 <button class="enroll-button" onclick="openPopup()" data-suggested="{{ suggested }}">Enroll this
                     course</button>
                 <hr>
-                <h2><u>Here are your Youtube Recommendations</h2></u>//This gives the youtube recommendations
+                <h2><u>Here are your Youtube Recommendations</h2></u>
                 </h2>
 
                 <div id="ytplayer"></div>
@@ -391,7 +386,6 @@
             </div>
         </div>
     </main>
-    <!-- //it shows the udemy course details -->
     <div id="popupModal" class="modal">
         <div class="modal-content">
             <span class="modal-close" onclick="closePopup()">&times;</span>
@@ -427,8 +421,8 @@
             });
         }
 
-      //this function used to raise in keka
-        function raiseTicket() *{
+
+        function raiseTicket() {
             const popup = document.createElement('div');
             popup.classList.add('modal');
             popup.innerHTML = `
@@ -444,13 +438,12 @@
             popup.style.display = "block";
         }
 
-          //here it show closepop 
         function closePopup() {
             const popup = document.querySelector('.modal');
             document.body.removeChild(popup);
         }
 
-        function redirectToKeka()  {
+        function redirectToKeka() {
             // Logout logic
             sessionStorage.clear();
             // Redirect to Keka after logout
@@ -458,7 +451,6 @@
             window.location.replace(kekaUrl);
         }
 
-         // here click on home button that is redirect to homepage
         function redirectToHome() {
             const currentHost = window.location.host;
             const url = `http://${currentHost}/validate/dashboard`;

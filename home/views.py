@@ -5,7 +5,7 @@ import random
 import math
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
-from django.contrib.auth import login
+from django.contrib.auth import login, logout
 from .models import Question, QuizAttempt, QuizUserScore, Otp
 from .models import PlayerActivity, CourseSuggession, Category, Video
 from django.contrib.auth.decorators import login_required
@@ -36,7 +36,7 @@ count = 0
 
 def loginPage(request):
     '''
-    In this method it will check user sesssion is still active or not if active
+    In this method it will check user session is still active or not if active
     it will redirect to Dashboard page, if not it will redirect to login page
     '''
     remember_me = request.session.get('remember_me', False)
@@ -169,7 +169,7 @@ def validate(request):
 def dashboard(request):
     '''
     This is the dashboard method where it will
-    calculate employee overall progress and categories
+    calculate employee overall progress and generate categories
     '''
     logger.info('Dashboard page is accessed!')
     mail = request.session.get('mail')
@@ -191,13 +191,6 @@ def index(request):
     '''
     logger.info('Instruction page is accessed')
     return render(request, 'index.html')
-
-
-# def homepage(request):
-#     context = {'categories': Category.objects.all()}
-#     if request.GET.get('category'):
-#         return redirect(f"/quiz/?category={request.GET.get('category')}")
-#     return render(request, 'index.html', context)
 
 
 def url(score, category):
@@ -344,10 +337,11 @@ def history(request):
         return render(request, 'history.html', context=data)
 
 
-def logout(request):
+def user_logout(request):
     '''
     In this method user will be logout and clear all employee sessions
     '''
+    logout(request)
     logger.info('Employee is logged-out successfully!')
     request.session.flush()
     return redirect('/')
@@ -356,7 +350,7 @@ def logout(request):
 @login_required(login_url='login')
 def quiz(request):
     '''
-    Based on the selected category it will redirec to quiz page
+    Based on the selected category it will redirect to quiz page
     '''
     mail = request.session.get('mail')
     user = User.objects.get(email=mail)
@@ -384,7 +378,8 @@ def quiz(request):
 @login_required(login_url='login')
 def get_quiz(request):
     '''
-    Based on selected category it will generate 10 randmom questions along with options
+    Based on selected category it will generate
+    ten random questions along with options
     '''
     try:
         logger.info('Quiz question loaded successfully')
@@ -413,28 +408,6 @@ def get_quiz(request):
     return HttpResponse("Something went worng")
 
 
-# @login_required(login_url='login')
-# def render_quiz(request, quiz_id):
-#     form = Question.objects.all()
-#     questions_objs = Question.objects.all()  # Initialize questions_objs
-#
-#     if request.GET.get('category'):
-#         logger.info('Quiz question loaded successfully')
-#         questions_objs = questions_objs.filter(
-#             category__category_name__icontains=request.GET.get('category'))
-#
-#     questions_objs = list(questions_objs)
-#     random.shuffle(questions_objs)
-#
-#     if request.method == "POST":
-#         form = QuizForm(request.POST, questions=quiz.question_set.all())
-#         if form.is_valid():
-#             attempt = form.save()
-#             return redirect(attempt)
-#
-#     return render(request, 'quiz.html', {"form": form})
-
-
 @login_required(login_url='login')
 def save_remaining_time(request):
     '''
@@ -447,7 +420,6 @@ def save_remaining_time(request):
         mail = request.session.get('mail')
         user = User.objects.get(email=mail)
         quiz_timer.timer = remaining_time
-        # quiz_timer.id = update
         quiz_timer.user = user
         quiz_timer.domain = category
         quiz_timer.save()
@@ -535,7 +507,8 @@ def final(request):
 @csrf_exempt
 def save_time(request):
     '''
-    This method is used to save youtube watch history timer
+    This method is used to record the duration
+    of completed time for a YouTube video
     '''
     if request.method == 'POST':
         data = json.loads(request.body)
