@@ -183,35 +183,6 @@
             line-height: 65px;
         }
 
-        .circular-progress {
-            position: absolute;
-            height: 250px;
-            width: 250px;
-            border-radius: 50%;
-            background: conic-gradient(green 3.6deg, #ededed 0deg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            top: 368px;
-            right: 254px;
-        }
-
-        .circular-progress::before {
-            content: "";
-            position: absolute;
-            height: 210px;
-            width: 210px;
-            border-radius: 50%;
-            background-color: white;
-        }
-
-        .progress-value {
-            position: relative;
-            font-size: 40px;
-            font-weight: 600;
-            color: #7d2ae8;
-        }
-
         .username-wrapper {
           display: flex;
           align-items: center;
@@ -250,7 +221,32 @@
         .align{
             margin-left: 90px;
         }
+        .chart-container {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            top: 30%;
+            left: 60%;
+        }
 
+        .chart-sum {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #000; /* Add this line to override the font-weight property */
+            white-space: nowrap;
+        }
+
+        .chart-title {
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
     </style>
 </head>
 <body style="background-color: #17b8b838;">
@@ -321,33 +317,101 @@
   <div class="logo">
       <img src="{% static 'images\dashboard.png' %}" alt="">
   </div>
-  <div class="Progress_bar">
-      <h2> Your Progress</h2>
+  <div class="chart-container">
+    <h2 class="chart-title">Your Progress</h2>
+    <canvas id="doughnutChart"></canvas>
+    <div class="chart-sum" id="chartSum"></div>
   </div>
-  <div class="container">
-    <div class="circular-progress">
-        <span class="progress-value">{{ overall_progress }}</span>
-    </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
-        window.onload = function() {
-            let circularProgress = document.querySelector(".circular-progress");
-            let progressValue = document.querySelector(".progress-value");
+        // Retrieve the canvas element
+        var canvas = document.getElementById('doughnutChart');
 
-            let progressStartValue = -1;
-            let progressEndValue = parseFloat(progressValue.textContent);
-            let speed = 25;
+        // Create the chart context
+        var ctx = canvas.getContext('2d');
 
-            let progress = setInterval(() => {
-                progressStartValue++;
-                progressValue.textContent = `${progressStartValue}%`;
-                circularProgress.style.background = `conic-gradient(green ${progressStartValue * 3.6}deg, #ededed 0deg)`;
+        // Define the labels and data for the chart
+        var labels = {{ list_categories|safe }};
+        var data = {{ list_overall_progress }};
 
-                if (progressStartValue >= progressEndValue) {
-                    clearInterval(progress);
-                }
-            }, speed);
-        };
+        // Calculate the sum of all data values
+        var sum = data.reduce(function (a, b) {
+          return a + b;
+        }, 0);
+
+        // Append the sum to the labels and data
+        labels.push('Remaining');
+        data.push(100 - sum);
+
+        // Define the colors for the chart segments
+        var colors = ['red', 'blue', 'green', 'orange', 'gray'];
+
+        // Create an array to store the background colors for the chart segments
+        var backgroundColors = [];
+
+        // Assign colors to each segment
+        for (var i = 0; i < labels.length; i++) {
+          if (labels[i] === 'Remaining') {
+            backgroundColors.push('gray');
+          } else {
+            backgroundColors.push(colors[i % colors.length]);
+          }
+        }
+
+        // Create the doughnut chart
+        var doughnutChart = new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+            labels: labels,
+            datasets: [
+              {
+                data: data,
+                backgroundColor: backgroundColors,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            legend: {
+              display: true,
+            },
+            plugins: {
+              labels: [
+                {
+                  render: function (args) {
+                    if (args.label === 'Total') {
+                      return {
+                        text: 'Total',
+                        position: 'default',
+                        fontColor: '#000',
+                        fontStyle: 'bold',
+                        fontSize: 14,
+                      };
+                    } else {
+                      return args.label + ': ' + args.value;
+                    }
+                  },
+                  position: 'outside',
+                  fontColor: '#000',
+                  fontStyle: 'bold',
+                  fontSize: 14,
+                },
+                {
+                  render: 'percentage',
+                  fontColor: '#fff',
+                  fontStyle: 'bold',
+                  fontSize: 12,
+                },
+              ],
+            },
+          },
+        });
+
+        // Display the sum in the center of the chart
+        chartSum.innerHTML = sum.toFixed(2) + '%<br> Completed';
+
 
         function fetchHistory() {
             window.location.href = '/history/';

@@ -41,20 +41,39 @@ def loginPage(request):
     '''
     remember_me = request.session.get('remember_me', False)
     if remember_me:
-        logger.info('User session exists (remember me enabled), \
-                                redirecting to the Dashboard page')
+        logger.info('User session exists (remember me enabled), redirecting to the Dashboard page')
         mail = request.session.get('mail')
         user = User.objects.get(email=mail)
-        overall_progress = PlayerActivity.objects.filter(user=user).\
-            values_list('percentage', flat=True)
-        list_overall_progress = list(overall_progress)
-        sum_overall_progress = sum(list_overall_progress)
-        formatted_progress = round(sum_overall_progress, 2)
-        logger.info(f'Employee overall Progress: {formatted_progress} %')
-        context = {'categories': Category.objects.all(),
-                   'overall_progress': formatted_progress}
-        logger.info('Dashboard page is accessed')
-        return render(request, 'dashboard.html', context)
+        overall_progress = PlayerActivity.objects.filter(user=user).order_by('-id').values_list('percentage', 'category')[:3]
+
+        if overall_progress:
+            percentages, categories = zip(*overall_progress)
+            list_overall_progress = list(percentages)
+            list_overall_categories = list(categories)
+            rounded_progress = [round(value, 2) for value in list_overall_progress]
+            print(rounded_progress)
+            sum_overall_progress = sum(rounded_progress)
+            logger.info(f'Employee overall Progress: {sum_overall_progress} %')
+            context = {
+                'categories': Category.objects.all(),
+                'list_overall_progress': rounded_progress,
+                'list_categories': list_overall_categories,
+                'overall_progress': sum_overall_progress
+            }
+            logger.info('Dashboard page is accessed')
+            print(context)
+            return render(request, 'dashboard.html', context)
+        else:
+            # Handle the case when no progress data is available
+            logger.info('No progress data found')
+            context = {
+                'categories': Category.objects.all(),
+                'list_overall_progress': [],
+                'list_categories': [],
+                'overall_progress': 0
+            }
+            return render(request, 'dashboard.html', context)
+
 
     elif request.method == "POST":
         logger.info('Login page accessed!')
@@ -99,21 +118,21 @@ def loginPage(request):
                     otp=database.otp, user=database.user, count=new_count2)
                 check_count = Otp.objects.filter(mail=database.mail)\
                     .values_list('count', flat=True)
-                time_entred = list(check_count)
-                time_count = time_entred[0]
-                if time_count > 3:
-                    logger.warning(
-                        f'Employee trying to login for '
-                        f'{time_count} times, so employee is restricted!')
-                    return render(request, 'restrict.html')
-                else:
-                    logger.info(f'Otp is sent to employee '
-                                f'mail-id: {Employee_Mail}')
+                # time_entred = list(check_count)
+                # time_count = time_entred[0]
+                # if time_count > 3:
+                #     logger.warning(
+                #         f'Employee trying to login for '
+                #         f'{time_count} times, so employee is restricted!')
+                #     return render(request, 'restrict.html')
+                # else:
+                logger.info(f'Otp is sent to employee '
+                            f'mail-id: {Employee_Mail}')
 
-                    send_mail(subject="OTP", message=f"Your otp {otp}",
-                              from_email="switchingtechsystem@gmail.com",
-                              recipient_list=[Employee_Mail],
-                              fail_silently=False)
+                send_mail(subject="OTP", message=f"Your otp {otp}",
+                          from_email="switchingtechsystem@gmail.com",
+                          recipient_list=[Employee_Mail],
+                          fail_silently=False)
             else:
                 logger.info(f'Otp is sent to employee '
                             f'mail-id: {Employee_Mail}')
@@ -174,15 +193,34 @@ def dashboard(request):
     logger.info('Dashboard page is accessed!')
     mail = request.session.get('mail')
     user = User.objects.get(email=mail)
-    overall_progress = PlayerActivity.objects.filter(
-        user=user).values_list('percentage', flat=True)
-    list_overall_progress = list(overall_progress)
-    sum_overall_progress = sum(list_overall_progress)
-    formatted_progress = round(sum_overall_progress, 2)
-    logger.info(f'Employee overall Progress: {formatted_progress} %')
-    context = {'categories': Category.objects.all(),
-               'overall_progress': formatted_progress}
-    return render(request, 'dashboard.html', context)
+    overall_progress = PlayerActivity.objects.filter(user=user).order_by('-id').values_list('percentage', 'category')[:3]
+
+    if overall_progress:
+        percentages, categories = zip(*overall_progress)
+        list_overall_progress = list(percentages)
+        list_overall_categories = list(categories)
+        rounded_progress = [round(value, 2) for value in list_overall_progress]
+        sum_overall_progress = sum(rounded_progress)
+        logger.info(f'Employee overall Progress: {sum_overall_progress} %')
+        context = {
+            'categories': Category.objects.all(),
+            'list_overall_progress': rounded_progress,
+            'list_categories': list_overall_categories,
+            'overall_progress': sum_overall_progress
+        }
+        logger.info('Dashboard page is accessed')
+        print(context)
+        return render(request, 'dashboard.html', context)
+    else:
+        # Handle the case when no progress data is available
+        logger.info('No progress data found')
+        context = {
+            'categories': Category.objects.all(),
+            'list_overall_progress': [],
+            'list_categories': [],
+            'overall_progress': 0
+        }
+        return render(request, 'dashboard.html', context)
 
 
 def index(request):
@@ -385,6 +423,7 @@ def get_quiz(request):
         logger.info('Quiz question loaded successfully')
         questions_objs = Question.objects.all()
         if request.GET.get('category'):
+            request.session['category'] = request.GET.get('category')
             questions_objs = questions_objs.filter(
                 category__category_name__icontains=request.GET.get('category'))
         questions_objs = list(questions_objs)
@@ -515,29 +554,29 @@ def save_time(request):
         current_time = data.get('current_time')
         youtube_id = data.get('youtube_id')
         percentage = data.get('percentage')
+        selectedcategory = data.get('selectedcategory')
 
         if current_time is None:
             current_time = 0  # Assign a numeric default value
-        try:
-            mail = request.session.get('mail')
-            user = User.objects.get(email=mail)
-            player_activity = PlayerActivity.objects.filter(
-                youtube_id=youtube_id, user=user).latest('id')
-            player_activity.current_time = current_time
-            player_activity.percentage = percentage
-            player_activity.save()
-            logger.info(f'Watched timer for youtube id: '
-                        f'{youtube_id} with percentage : {percentage}')
-            return JsonResponse({'message': 'Time saved successfully'})
 
-        except PlayerActivity.DoesNotExist:
+        mail = request.session.get('mail')
+        user = User.objects.get(email=mail)
+        check = PlayerActivity.objects.filter(youtube_id=youtube_id, user=user, category=selectedcategory)
+        print(check)
+        if check:
+            PlayerActivity.objects.filter(user=user, category=selectedcategory, youtube_id=youtube_id).update(current_time=current_time, percentage=percentage)
+        # player_activity.current_time = current_time
+        # player_activity.percentage = percentage
+        # player_activity.save()
+        else:
             PlayerActivity.objects.create(current_time=current_time,
                                           percentage=percentage,
                                           youtube_id=youtube_id,
+                                          category=selectedcategory,
                                           user=user)
-            logger.info(f'Watched timer for youtube id: '
-                        f'{youtube_id} with percentage : {percentage}')
-            return JsonResponse({'message': 'Time saved successfully'})
+        logger.info(f'Watched timer for youtube id: '
+                    f'{youtube_id} with percentage : {percentage}')
+        return JsonResponse({'message': 'Time saved successfully'})
     else:
         return HttpResponseBadRequest('Invalid request method')
 

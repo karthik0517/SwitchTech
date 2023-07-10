@@ -137,6 +137,8 @@ class PlayerActivity(models.Model):
     current_time = models.FloatField()
     youtube_id = models.CharField(max_length=25, default='')
     percentage = models.FloatField(default=0.0)
+    category = models.CharField(max_length=50, default='')
+
 
     def __str__(self):
         return f"PlayerActivity - youtube_id: {self.youtube_id}, " \

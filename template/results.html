@@ -342,8 +342,10 @@
                             const currentTime = player.playerInfo.currentTime;
                             const duration = player.getDuration();
                             const percentage = (currentTime / duration) * 100;
+                            const selectedcategory = sessionStorage.getItem('selectedLink')
                             console.log('Current Time:', currentTime);
                             console.log('Percentage:', percentage);
+
 
                             // Get the CSRF token value from the cookie
                             var csrftoken = getCookie('csrftoken');
@@ -359,7 +361,7 @@
                                     isSaveExecuted = true; // Update the flag to prevent further saves
                                 }
                             };
-                            xhr.send(JSON.stringify({ 'current_time': currentTime, 'youtube_id': youtubeId, 'percentage': percentage }));
+                            xhr.send(JSON.stringify({ 'current_time': currentTime, 'youtube_id': youtubeId, 'percentage': percentage, 'selectedcategory':selectedcategory }));
                         } else {
                             console.log('Invalid current time or save operation already executed');
                         }

@@ -340,6 +340,11 @@
       }
     });
 
+    document.getElementById("selectedCategory").addEventListener("change", function() {
+      const selectedCategory = this.value;
+      sessionStorage.setItem('selectedLink', selectedCategory);
+    });
+
   </script>
 
   </main>
