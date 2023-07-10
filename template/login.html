@@ -304,57 +304,67 @@
                 <div class="col-md-5 col-xl-4">
                     <div class="email_main_form">
                         <div class="header_title">
+                            <!-- // this is a header part -->
                             <h1 class="font_normal">SWITCHING TECH</h1>
                             <h3 class="font_bold p-2">Systems</h3>
                             <p class="header_desc">Do you want to learn new technology or do you want to switch to a new
                                 domain? If your answer is yes then you are at right place !!!</p>
                         </div>
-                        <form method="POST" action="">
+                        <form method="POST" action="">   
                             {% csrf_token %}
-                            <div class="form-group">
+                        <!-- //here enter valid user name -->
+                            <div class="form-group">  
                                 <label for="username">Username:</label>
                                 <input type="text" name="username" id="usernameInput" placeholder="Username"
                                     onkeydown="handleEnterKey(event)" oninput="validateUsername()" required>
                                 <span id="usernameError" style="color: red;"></span><br>
                             </div>
+                            <!-- // here enter valid mail password -->
                             <div class="form-group">
                                 <label for="mail">Email:</label>
                                 <input type="text" name="mail" required id="mail" pattern="[a-zA-Z].*@ratnaglobaltech\.com"
                                     placeholder="Enter your RGT Email only" onkeydown="handleEnterKey(event)" oninput="validateEmail()"><br>
                             </div>
                             {% if error_message %}
+
+                            <!-- //its a dispaly error messages -->
                             <div class="error-message">
                                 {{ error_message }}
                             </div>
                             {% endif %}
-                            <div class="validate_otp_button">
+                            <!-- It serves as a container for the "Send OTP" button. -->
+                            <div class="validate_otp_button">  
                                 <input class="btn btn-success" style="background: green;" id="sendOTPButton"
                                     type="submit" value="Send OTP" onclick="passValues()">
                             </div>
                         </form>
                     </div>
                 </div>
+
                 <div class="col-md-7 col-xl-8">
                     <div class="div-with-bg">
-                        <img class="logo" src="{% static 'images/ratnaglobal_logo.png' %}" />
-                    </div>
+                         <!-- Its represents an ratnaglobal_logo image. -->
+                        <img class="logo" src="{% static 'images/ratnaglobal_logo.png' %}" /> 
+                    </div> 
                 </div>
             </div>
         </div>
     </div>
     <script>
+        //Its purpose is to retrieve the value of an email input field from an HTML form and store it in the browser's localStorage.
         function passValues() {
-            const email = document.getElementById("mail").value;
-            localStorage.setItem('email', email);
+            const email = document.getElementById("mail").value; //method to retrieve the value of the input field with the id "mail". 
+            localStorage.setItem('email', email); // method to store the email value in the browser's localStorage.
         }
 
-        function validateUsername() {
+
+        function validateUsername() {  // Its purpose is to validate a username input field and enable or disable a 
             var usernameInput = document.getElementById('usernameInput');
             var usernameError = document.getElementById('usernameError');
-            var sendOTPButton = document.getElementById('sendOTPButton');
+            var sendOTPButton = document.getElementById('sendOTPButton');    //based on the validity of the username
             var username = usernameInput.value;
 
-            var regex = /^[a-zA-Z0-9]+$/;
+            var regex = /^[a-zA-Z0-9]+$/; // validate the format of the username input.
 
             if (username === '') {
                 // Empty username
@@ -371,7 +381,7 @@
             }
         }
 
-        function handleEnterKey(event) {
+        function handleEnterKey(event) { //Its purpose is to handle the behavior when the Enter key is pressed on an input field within a form.
             if (event.keyCode === 13) {
                 event.preventDefault(); // Prevent form submission
 
