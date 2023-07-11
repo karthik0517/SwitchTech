@@ -2709,3 +2709,244 @@ Suggested udemy course: React 18 Tutorial and Projects Course (2023)
 Suggested youtube course: React Course - Beginner's Tutorial for React JavaScript Library [2022]
 Youtube ID: bMknfKXIFA8
 "GET /history/ HTTP/1.1" 200 4476
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13272
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Login page accessed!
+New employee details are entered and saving into database
+Entered employee mail: Pooja.yawalkar@ratnaglobaltech.com
+OTP is generated 3869
+Otp is sent to employee mail-id: Pooja.yawalkar@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11718
+OTP validation is accessed!
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+"POST /validate/ HTTP/1.1" 302 0
+Dashboard page is accessed!
+No progress data found
+"GET /validate/dashboard/ HTTP/1.1" 200 16033
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10875
+Employee agreed to terms and conditions with selected domain Python, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 16099
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 3993
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Suggested udemy course: 100 Days of Code: The Complete Python Pro Bootcamp for 2023
+Suggested youtube course: Python for Beginners | Full Course
+Youtube ID: YfO28Ihehbk
+Based on quiz attempt employee got 0 score & selected domain Python
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 41
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14986
+Watched timer for youtube id: YfO28Ihehbk with percentage : 16.108331268882175
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 16.11 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16046
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 8336
+Watched timer for youtube id: YfO28Ihehbk with percentage : 27.545821466051834
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 27.55 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16046
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10875
+Employee still having the previous quiz timer with 41 sec
+Employee agreed to terms and conditions with selected domain Java, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 16093
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 3951
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Suggested udemy course: Java Programming Masterclass updated to Java 17
+Suggested youtube course: Java Tutorial for Beginners 2023
+Youtube ID: BGTx91t8q50
+Based on quiz attempt employee got 10 score & selected domain Java
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 44
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14998
+Watched timer for youtube id: BGTx91t8q50 with percentage : 14.698387007600386
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 42.25 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16060
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10303
+Watched timer for youtube id: BGTx91t8q50 with percentage : 16.45231428919566
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 44.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16061
+Watched timer for youtube id: YfO28Ihehbk with percentage : 14.736201536719276
+- Broken pipe from ('127.0.0.1', 62822)
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10305
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Watched timer for youtube id: BGTx91t8q50 with percentage : 16.4664723189812
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 31.21 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16061
+Watched timer for youtube id: YfO28Ihehbk with percentage : 14.746391434545398
+- Broken pipe from ('127.0.0.1', 62829)
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10331
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Dashboard page is accessed!
+Dashboard page is accessed!
+Employee overall Progress: 31.22 %
+Dashboard page is accessed
+- Broken pipe from ('127.0.0.1', 62893)
+Employee overall Progress: 31.22 %
+Dashboard page is accessed
+Watched timer for youtube id: BGTx91t8q50 with percentage : 0.002858809615963532
+"POST /save_time HTTP/1.1" 200 38
+Watched timer for youtube id: BGTx91t8q50 with percentage : 0.002858809615963532
+"POST /save_time HTTP/1.1" 200 38
+"GET /validate/dashboard/ HTTP/1.1" 200 16061
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Employee is logged-out successfully!
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 13272
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13272
+Login page accessed!
+Entered employee mail: Pooja.yawalkar@ratnaglobaltech.com
+OTP is generated 8345
+Previously employee attempted quiz for 1 time
+Otp is sent to employee mail-id: Pooja.yawalkar@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11718
+OTP validation is accessed!
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+"POST /validate/ HTTP/1.1" 302 0
+Dashboard page is accessed!
+Employee overall Progress: 14.75 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16059
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10311
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10416
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Watched timer for youtube id: BGTx91t8q50 with percentage : 0.008505010106222854
+"POST /save_time HTTP/1.1" 200 38
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10426
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Watched timer for youtube id: BGTx91t8q50 with percentage : 0.009264771570693386
+"POST /save_time HTTP/1.1" 200 38
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10430
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10428
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Watched timer for youtube id: BGTx91t8q50 with percentage : 0.011989519631875457
+"POST /save_time HTTP/1.1" 200 38
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10426
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Watched timer for youtube id: BGTx91t8q50 with percentage : 0.01344306111039436
+"POST /save_time HTTP/1.1" 200 38
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10422
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10426
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Watched timer for youtube id: BGTx91t8q50 with percentage : 22.93623513381786
+"POST /save_time HTTP/1.1" 200 38
+Watched timer for youtube id: YfO28Ihehbk with percentage : 14.749025616766295
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 37.69 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16061
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10420
+Dashboard page is accessed!
+Employee overall Progress: 37.69 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16061
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+History page is accessed!
+Employee previous quiz history present
+Employee previous quiz score: 10
+Employee previous quiz attempt date: 2023-07-11 11:44:39.147787+05:30
+Employee previous attempted quiz domain: Java
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Suggested udemy course: Java Programming Masterclass updated to Java 17
+Suggested youtube course: Java Tutorial for Beginners 2023
+Youtube ID: BGTx91t8q50
+Employee previous quiz score: 0
+Employee previous quiz attempt date: 2023-07-11 11:42:41.961549+05:30
+Employee previous attempted quiz domain: Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Suggested udemy course: 100 Days of Code: The Complete Python Pro Bootcamp for 2023
+Suggested youtube course: Python for Beginners | Full Course
+Youtube ID: YfO28Ihehbk
+"GET /history/ HTTP/1.1" 200 3540
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10420
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Watched timer for youtube id: YfO28Ihehbk with percentage : 14.75207134993334
+"POST /save_time HTTP/1.1" 200 38
+Watched timer for youtube id: BGTx91t8q50 with percentage : 37.06748468011296
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 51.82 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16061
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819

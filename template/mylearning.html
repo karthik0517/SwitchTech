@@ -114,7 +114,7 @@
                     <h2>{{ video.title }}</h2>
                     <div class="video-player" id="player{{ forloop.counter }}"></div>
                     <div class="video-details">
-                        <p id="duration{{ forloop.counter }}"></p>
+                        <p id="duration{{ forloop.counter }}">Hours</p>
                         <p id="percentage{{ forloop.counter }}"></p>
                     </div>
                     <hr>
@@ -174,10 +174,12 @@
         {% endfor %}
 
         function formatTime(time) {
-            var minutes = Math.floor(time / 60);
+            var hours = Math.floor(time / 3600);
+            var minutes = Math.floor((time % 3600) / 60);
             var seconds = Math.floor(time % 60);
-            return minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
-        }
+            return hours + ':' + (minutes < 10 ? '0' : '') + minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+            }
+
 
         function updateTotalDuration() {
             var totalDurationElement = document.getElementById('total-duration');
