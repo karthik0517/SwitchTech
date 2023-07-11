@@ -2950,3 +2950,43 @@ Employee overall Progress: 51.82 %
 Dashboard page is accessed
 "GET /validate/dashboard/ HTTP/1.1" 200 16061
 "GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Watching for file changes with StatReloader
+User session exists (remember me enabled), redirecting to the Dashboard page
+No progress data found
+"GET / HTTP/1.1" 200 16033
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10875
+Employee agreed to terms and conditions with selected domain Python, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 16099
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4190
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Suggested udemy course: 100 Days of Code: The Complete Python Pro Bootcamp for 2023
+Suggested youtube course: Python for Beginners | Full Course
+Youtube ID: YfO28Ihehbk
+Based on quiz attempt employee got 0 score & selected domain Python
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 44
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14986
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Watched timer for youtube id: YfO28Ihehbk with percentage : 12.707573099856894
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 12.71 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16046
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 8446
+Dashboard page is accessed!
+Employee overall Progress: 12.71 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16046
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
