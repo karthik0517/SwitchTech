@@ -41,16 +41,19 @@ def loginPage(request):
     '''
     remember_me = request.session.get('remember_me', False)
     if remember_me:
-        logger.info('User session exists (remember me enabled), redirecting to the Dashboard page')
+        logger.info('User session exists (remember me enabled), '
+                    'redirecting to the Dashboard page')
         mail = request.session.get('mail')
         user = User.objects.get(email=mail)
-        overall_progress = PlayerActivity.objects.filter(user=user).order_by('-id').values_list('percentage', 'category')[:3]
+        overall_progress = PlayerActivity.objects.filter(user=user).order_by(
+            '-id').values_list('percentage', 'category')[:3]
 
         if overall_progress:
             percentages, categories = zip(*overall_progress)
             list_overall_progress = list(percentages)
             list_overall_categories = list(categories)
-            rounded_progress = [round(value, 2) for value in list_overall_progress]
+            rounded_progress = [round(value, 2)
+                                for value in list_overall_progress]
             print(rounded_progress)
             sum_overall_progress = sum(rounded_progress)
             logger.info(f'Employee overall Progress: {sum_overall_progress} %')
@@ -73,7 +76,6 @@ def loginPage(request):
                 'overall_progress': 0
             }
             return render(request, 'dashboard.html', context)
-
 
     elif request.method == "POST":
         logger.info('Login page accessed!')
@@ -116,8 +118,8 @@ def loginPage(request):
                                f'quiz for {new_count1} time')
                 Otp.objects.filter(mail=database.mail).update(
                     otp=database.otp, user=database.user, count=new_count2)
-                check_count = Otp.objects.filter(mail=database.mail)\
-                    .values_list('count', flat=True)
+                # check_count = Otp.objects.filter(mail=database.mail)\
+                #     .values_list('count', flat=True)
                 # time_entred = list(check_count)
                 # time_count = time_entred[0]
                 # if time_count > 3:
@@ -193,7 +195,8 @@ def dashboard(request):
     logger.info('Dashboard page is accessed!')
     mail = request.session.get('mail')
     user = User.objects.get(email=mail)
-    overall_progress = PlayerActivity.objects.filter(user=user).order_by('-id').values_list('percentage', 'category')[:3]
+    overall_progress = PlayerActivity.objects.filter(user=user).order_by(
+        '-id').values_list('percentage', 'category')[:3]
 
     if overall_progress:
         percentages, categories = zip(*overall_progress)
@@ -556,19 +559,28 @@ def save_time(request):
         percentage = data.get('percentage')
         selectedcategory = data.get('selectedcategory')
 
+        print(current_time)
+        print(youtube_id)
+        print(percentage)
+        print(selectedcategory)
+
         if current_time is None:
             current_time = 0  # Assign a numeric default value
 
         mail = request.session.get('mail')
         user = User.objects.get(email=mail)
-        check = PlayerActivity.objects.filter(youtube_id=youtube_id, user=user, category=selectedcategory)
+        check = PlayerActivity.objects.filter(youtube_id=youtube_id, user=user)
         print(check)
         if check:
-            PlayerActivity.objects.filter(user=user, category=selectedcategory, youtube_id=youtube_id).update(current_time=current_time, percentage=percentage)
+            PlayerActivity.objects.filter(
+                user=user, youtube_id=youtube_id).update(
+                current_time=current_time, percentage=percentage)
+            print('inside check')
         # player_activity.current_time = current_time
         # player_activity.percentage = percentage
         # player_activity.save()
         else:
+            print('its else')
             PlayerActivity.objects.create(current_time=current_time,
                                           percentage=percentage,
                                           youtube_id=youtube_id,
@@ -590,7 +602,7 @@ def my_learning(request):
     mail = request.session.get('mail')
     user = User.objects.get(email=mail)
     retrieve_time = PlayerActivity.objects.filter(
-        user=user).values_list('current_time', 'youtube_id')[0:3]
+        user=user).order_by('-id').values_list('current_time', 'youtube_id')[0:3]
     resume = list(retrieve_time)
     if resume:
         logger.info('Learning modules are present')

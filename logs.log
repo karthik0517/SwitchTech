@@ -1871,3 +1871,841 @@ Instruction page is accessed
 "GET /static/admin/js/filters.js HTTP/1.1" 200 966
 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
 "GET / HTTP/1.1" 200 13272
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 13272
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Login page accessed!
+New employee details are entered and saving into database
+Entered employee mail: abc@ratnaglobaltech.com
+OTP is generated 3480
+Otp is sent to employee mail-id: abc@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 11718
+OTP validation is accessed!
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+"POST /validate/ HTTP/1.1" 302 0
+Dashboard page is accessed!
+No progress data found
+"GET /validate/dashboard/ HTTP/1.1" 200 16031
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Employee doesnt have any learning as of now
+"GET /mylearning/ HTTP/1.1" 200 6122
+Dashboard page is accessed!
+No progress data found
+"GET /validate/dashboard/ HTTP/1.1" 200 16031
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+History page is accessed!
+Employee previous quiz history is not present
+"GET /history/ HTTP/1.1" 200 2191
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10873
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee agreed to terms and conditions with selected domain Python, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 16099
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 3972
+Results page accessed!
+Based on employee score we are suggesting Advanced course
+course url : https://www.udemy.com/course/learn-the-advanced-professional-python-programming/
+Suggested udemy course: Learn the Advanced Professional Python Programming
+Suggested youtube course: Python Advance Programming 2022
+Youtube ID: Yrtm7d3TJbs
+Based on quiz attempt employee got 80 score & selected domain Python
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 26
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 15019
+"GET /static/images/Result.png HTTP/1.1" 200 99021
+Watched timer for youtube id: Yrtm7d3TJbs with percentage : 10.1212127196463
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 10.12 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16044
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 8334
+Dashboard page is accessed!
+Employee overall Progress: 10.12 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16044
+Internal Server Error: /save_time
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: home_playeractivity.category
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py", line 573, in save_time
+    PlayerActivity.objects.create(current_time=current_time,
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: home_playeractivity.category
+- Broken pipe from ('127.0.0.1', 8747)
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 8334
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+User session exists (remember me enabled), redirecting to the Dashboard page
+Employee overall Progress: 10.12 %
+Dashboard page is accessed
+Watched timer for youtube id: Yrtm7d3TJbs with percentage : 10.127496360956806
+"POST /save_time HTTP/1.1" 200 38
+"GET / HTTP/1.1" 200 16044
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10299
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 8334
+Watched timer for youtube id: Yrtm7d3TJbs with percentage : 32.02467468679368
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 32.02 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16040
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+User session exists (remember me enabled), redirecting to the Dashboard page
+Employee overall Progress: 32.02 %
+Dashboard page is accessed
+"GET / HTTP/1.1" 200 16040
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+User session exists (remember me enabled), redirecting to the Dashboard page
+Employee overall Progress: 32.02 %
+Dashboard page is accessed
+"GET / HTTP/1.1" 200 16042
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 8350
+Dashboard page is accessed!
+Employee overall Progress: 32.02 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16042
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Internal Server Error: /save_time
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: home_playeractivity.category
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py", line 573, in save_time
+    PlayerActivity.objects.create(current_time=current_time,
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: home_playeractivity.category
+- Broken pipe from ('127.0.0.1', 8818)
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 8350
+Watching for file changes with StatReloader
+User session exists (remember me enabled), redirecting to the Dashboard page
+Employee overall Progress: 32.02 %
+Dashboard page is accessed
+"GET / HTTP/1.1" 200 16042
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 8350
+Internal Server Error: /save_time
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: home_playeractivity.category
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py", line 573, in save_time
+    PlayerActivity.objects.create(current_time=current_time,
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: home_playeractivity.category
+- Broken pipe from ('127.0.0.1', 8848)
+My Learning page accessed!
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\models.py changed, reloading.
+Watching for file changes with StatReloader
+My Learning page accessed!
+Employee doesnt have any learning as of now
+"GET /mylearning/ HTTP/1.1" 200 6122
+Watching for file changes with StatReloader
+Dashboard page is accessed!
+No progress data found
+"GET /validate/dashboard/ HTTP/1.1" 200 16031
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10873
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee agreed to terms and conditions with selected domain Python, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 16099
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4090
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Suggested udemy course: 100 Days of Code: The Complete Python Pro Bootcamp for 2023
+Suggested youtube course: Python for Beginners | Full Course
+Youtube ID: YfO28Ihehbk
+Based on quiz attempt employee got 50 score & selected domain Python
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14987
+"GET /static/images/Result.png HTTP/1.1" 304 0
+Watched timer for youtube id: YfO28Ihehbk with percentage : 12.710796764191446
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 12.71 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16044
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 8336
+Dashboard page is accessed!
+Employee overall Progress: 12.71 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16044
+Internal Server Error: /save_time
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: home_playeractivity.category
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py", line 573, in save_time
+    PlayerActivity.objects.create(current_time=current_time,
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: home_playeractivity.category
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+- Broken pipe from ('127.0.0.1', 8909)
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 8336
+Dashboard page is accessed!
+Employee overall Progress: 12.71 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16044
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Internal Server Error: /save_time
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: home_playeractivity.category
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py", line 578, in save_time
+    PlayerActivity.objects.create(current_time=current_time,
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: home_playeractivity.category
+- Broken pipe from ('127.0.0.1', 8956)
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dashboard page is accessed!
+Employee overall Progress: 12.71 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16044
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 8336
+Watched timer for youtube id: YfO28Ihehbk with percentage : 33.69781438151927
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 12.71 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16044
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 8336
+Watched timer for youtube id: YfO28Ihehbk with percentage : 56.18603251333803
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 12.71 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16044
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py changed, reloading.
+My Learning page accessed!
+Watching for file changes with StatReloader
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 8336
+Watched timer for youtube id: YfO28Ihehbk with percentage : 48.301742908950054
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 12.71 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16044
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+User session exists (remember me enabled), redirecting to the Dashboard page
+Employee overall Progress: 12.71 %
+Dashboard page is accessed
+"GET / HTTP/1.1" 200 16044
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 8336
+Watched timer for youtube id: YfO28Ihehbk with percentage : 37.93370631632672
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 12.71 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16044
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py changed, reloading.
+Dashboard page is accessed!
+Watching for file changes with StatReloader
+Dashboard page is accessed!
+Employee overall Progress: 12.71 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16044
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 8336
+Dashboard page is accessed!
+Employee overall Progress: 12.71 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16044
+Internal Server Error: /save_time
+Traceback (most recent call last):
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py", line 578, in save_time
+    player_activity.save()
+UnboundLocalError: local variable 'player_activity' referenced before assignment
+- Broken pipe from ('127.0.0.1', 9164)
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dashboard page is accessed!
+Employee overall Progress: 12.71 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16044
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 8336
+Watched timer for youtube id: YfO28Ihehbk with percentage : 51.02117743676408
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 51.02 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16044
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10873
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 0 sec
+Employee agreed to terms and conditions with selected domain React, redirecting to quiz page
+"GET /quiz/?category=React HTTP/1.1" 200 16096
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=React HTTP/1.1" 200 3716
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Suggested udemy course: React 18 Tutorial and Projects Course (2023)
+Suggested youtube course: React Course - Beginner's Tutorial for React JavaScript Library [2022]
+Youtube ID: bMknfKXIFA8
+Based on quiz attempt employee got 40 score & selected domain React
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Suggested udemy course: React 18 Tutorial and Projects Course (2023)
+Suggested youtube course: React Course - Beginner's Tutorial for React JavaScript Library [2022]
+Youtube ID: bMknfKXIFA8
+Based on quiz attempt employee got 40 score & selected domain React
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 14988
+"GET /static/images/Result.png HTTP/1.1" 304 0
+Watched timer for youtube id: bMknfKXIFA8 with percentage : 28.645776271897134
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 79.67 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16060
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10319
+Watched timer for youtube id: bMknfKXIFA8 with percentage : 18.063370335146185
+"POST /save_time HTTP/1.1" 200 38
+Watched timer for youtube id: YfO28Ihehbk with percentage : 18.860469613938992
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 36.92 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16060
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10331
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10331
+Dashboard page is accessed!
+Employee overall Progress: 36.92 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16060
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10331
+Watched timer for youtube id: YfO28Ihehbk with percentage : 25.621784395628765
+"POST /save_time HTTP/1.1" 200 38
+Watched timer for youtube id: bMknfKXIFA8 with percentage : 39.070128215176815
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 64.69 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16060
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10873
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+User session exists (remember me enabled), redirecting to the Dashboard page
+Employee overall Progress: 64.69 %
+Dashboard page is accessed
+"GET / HTTP/1.1" 200 16060
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Watching for file changes with StatReloader
+User session exists (remember me enabled), redirecting to the Dashboard page
+Employee overall Progress: 64.69 %
+Dashboard page is accessed
+"GET / HTTP/1.1" 200 16060
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10327
+Watched timer for youtube id: YfO28Ihehbk with percentage : 3.2496885478973168
+"POST /save_time HTTP/1.1" 200 38
+Watched timer for youtube id: bMknfKXIFA8 with percentage : 5.7137205819562205
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 8.96 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16058
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+History page is accessed!
+Employee previous quiz history present
+Employee previous quiz score: 40
+Employee previous quiz attempt date: 2023-07-11 10:19:42.069888+05:30
+Employee previous attempted quiz domain: React
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Suggested udemy course: React 18 Tutorial and Projects Course (2023)
+Suggested youtube course: React Course - Beginner's Tutorial for React JavaScript Library [2022]
+Youtube ID: bMknfKXIFA8
+Employee previous quiz score: 40
+Employee previous quiz attempt date: 2023-07-11 10:19:27.858227+05:30
+Employee previous attempted quiz domain: React
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Suggested udemy course: React 18 Tutorial and Projects Course (2023)
+Suggested youtube course: React Course - Beginner's Tutorial for React JavaScript Library [2022]
+Youtube ID: bMknfKXIFA8
+Employee previous quiz score: 50
+Employee previous quiz attempt date: 2023-07-11 09:57:04.557609+05:30
+Employee previous attempted quiz domain: Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Suggested udemy course: 100 Days of Code: The Complete Python Pro Bootcamp for 2023
+Suggested youtube course: Python for Beginners | Full Course
+Youtube ID: YfO28Ihehbk
+"GET /history/ HTTP/1.1" 200 4356
+Watching for file changes with StatReloader
+User session exists (remember me enabled), redirecting to the Dashboard page
+Employee overall Progress: 8.96 %
+Dashboard page is accessed
+"GET / HTTP/1.1" 200 16058
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 10329
+Watched timer for youtube id: YfO28Ihehbk with percentage : 22.374125664093096
+"POST /save_time HTTP/1.1" 200 38
+Watched timer for youtube id: bMknfKXIFA8 with percentage : 42.949547970059264
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 65.32000000000001 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16060
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10873
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 0 sec
+Employee agreed to terms and conditions with selected domain Oracle, redirecting to quiz page
+"GET /quiz/?category=Oracle HTTP/1.1" 200 16099
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Oracle HTTP/1.1" 200 4259
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Suggested udemy course: 1Z0-071 Oracle SQL Developer: Certified Associate (Database)
+Suggested youtube course: SQL Full Course In 10 Hours [2023]
+Youtube ID: q_JsgpiuY98
+Based on quiz attempt employee got 20 score & selected domain Oracle
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 46
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 15022
+"GET /static/images/Result.png HTTP/1.1" 304 0
+Watched timer for youtube id: q_JsgpiuY98 with percentage : 39.24915818758168
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 104.57000000000001 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16077
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 12298
+Watched timer for youtube id: YfO28Ihehbk with percentage : 14.642880028073147
+"POST /save_time HTTP/1.1" 200 38
+Watched timer for youtube id: bMknfKXIFA8 with percentage : 28.106152273519285
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Watched timer for youtube id: q_JsgpiuY98 with percentage : 13.567180142554525
+"POST /save_time HTTP/1.1" 200 38
+Employee overall Progress: 56.32 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16077
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 10873
+Employee still having the previous quiz timer with 0 sec
+Employee agreed to terms and conditions with selected domain Power BI, redirecting to quiz page
+"GET /quiz/?category=Power%20BI HTTP/1.1" 200 16105
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Power%20BI HTTP/1.1" 200 4309
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop/
+Suggested udemy course: Microsoft Power BI Desktop for Business Intelligence (2023)
+Suggested youtube course: Power BI Full Course - Learn Power BI in 4 Hours | Power BI Tutorial for Beginners | Edureka
+Youtube ID: 3u7MQz1EyPY
+Based on quiz attempt employee got 0 score & selected domain Power BI
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 56
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 15032
+Watched timer for youtube id: 3u7MQz1EyPY with percentage : 1.2112077137115473
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 42.89 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16078
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 12310
+C:\Users\KarthikKonduru\Desktop\check\SwitchTech\home\views.py changed, reloading.
+Watching for file changes with StatReloader
+Dashboard page is accessed!
+Employee overall Progress: 42.89 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16078
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 12294
+Watched timer for youtube id: 3u7MQz1EyPY with percentage : 0.17434889207647275
+"POST /save_time HTTP/1.1" 200 38
+Watched timer for youtube id: q_JsgpiuY98 with percentage : 15.374866835029199
+"POST /save_time HTTP/1.1" 200 38
+Watched timer for youtube id: bMknfKXIFA8 with percentage : 31.847207931155836
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 47.39 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 16078
+"GET /static/images/dashboard.png HTTP/1.1" 404 1819
+History page is accessed!
+Employee previous quiz history present
+Employee previous quiz score: 0
+Employee previous quiz attempt date: 2023-07-11 10:51:52.285752+05:30
+Employee previous attempted quiz domain: Power BI
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop/
+Suggested udemy course: Microsoft Power BI Desktop for Business Intelligence (2023)
+Suggested youtube course: Power BI Full Course - Learn Power BI in 4 Hours | Power BI Tutorial for Beginners | Edureka
+Youtube ID: 3u7MQz1EyPY
+Employee previous quiz score: 20
+Employee previous quiz attempt date: 2023-07-11 10:50:12.169652+05:30
+Employee previous attempted quiz domain: Oracle
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/1z0-071-learn-oracle-sql-database-using-developer/
+Suggested udemy course: 1Z0-071 Oracle SQL Developer: Certified Associate (Database)
+Suggested youtube course: SQL Full Course In 10 Hours [2023]
+Youtube ID: q_JsgpiuY98
+Employee previous quiz score: 40
+Employee previous quiz attempt date: 2023-07-11 10:19:42.069888+05:30
+Employee previous attempted quiz domain: React
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Suggested udemy course: React 18 Tutorial and Projects Course (2023)
+Suggested youtube course: React Course - Beginner's Tutorial for React JavaScript Library [2022]
+Youtube ID: bMknfKXIFA8
+"GET /history/ HTTP/1.1" 200 4476
