@@ -8722,3 +8722,221 @@ Employee redirect to results page with course suggestion
 "GET /static/css/result.css HTTP/1.1" 200 2667
 Watched timer for youtube id: YfO28Ihehbk with percentage : 0
 - Broken pipe from ('127.0.0.1', 54221)
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 7641
+"GET /static/css/login.css HTTP/1.1" 200 1016
+"GET /static/images/loginimg.png HTTP/1.1" 200 1006807
+Login page accessed!
+New employee details are entered and saving into database
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 8052
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 6148
+OTP validation is accessed!
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+"POST /validate/ HTTP/1.1" 302 0
+Dashboard page is accessed!
+No progress data found
+"GET /validate/dashboard/ HTTP/1.1" 200 12487
+"GET /static/css/dashboard.css HTTP/1.1" 200 3820
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee agreed to terms and conditions with selected domain Python, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 12908
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4055
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Suggested udemy course: 100 Days of Code: The Complete Python Pro Bootcamp for 2023
+Suggested youtube course: Python for Beginners | Full Course
+Youtube ID: YfO28Ihehbk
+Based on quiz attempt employee got 10 score & selected domain Python
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 44
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10938
+"GET /static/css/result.css HTTP/1.1" 200 2667
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Watched timer for youtube id: YfO28Ihehbk with percentage : 71.78952459850532
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 71.79 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 12500
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 44 sec
+Employee agreed to terms and conditions with selected domain PHP, redirecting to quiz page
+"GET /quiz/?category=PHP HTTP/1.1" 200 12899
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=PHP HTTP/1.1" 200 3877
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+Suggested udemy course: PHP for Beginners - Become a PHP Master - CMS Project
+Suggested youtube course: PHP Full Course
+Youtube ID: 6EukZDFE_Zg
+Based on quiz attempt employee got 0 score & selected domain PHP
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 48
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10968
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4567
+Watched timer for youtube id: 6EukZDFE_Zg with percentage : 73.44536970768208
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 145.24 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 12514
+Dashboard page is accessed!
+Employee overall Progress: 145.24 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 12514
+Dashboard page is accessed!
+Employee overall Progress: 145.24 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 12514
+Dashboard page is accessed!
+Employee overall Progress: 145.24 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 12514
+Dashboard page is accessed!
+Employee overall Progress: 145.24 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 12514
+"GET / HTTP/1.1" 200 7641
+"GET /static/css/login.css HTTP/1.1" 200 1016
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 1006807
+"GET / HTTP/1.1" 200 7641
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 1514
+Previously employee attempted quiz for 1 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 6148
+OTP validation is accessed!
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+"POST /validate/ HTTP/1.1" 302 0
+Dashboard page is accessed!
+Employee overall Progress: 145.24 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 12515
+"GET /static/css/dashboard.css HTTP/1.1" 200 3853
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 9175
+"GET /static/css/mylearning.css HTTP/1.1" 200 1554
+"GET /validate/dashboard HTTP/1.1" 301 0
+Dashboard page is accessed!
+Employee overall Progress: 145.24 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 12515
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+History page is accessed!
+Employee previous quiz history present
+Employee previous quiz score: 0
+Employee previous quiz attempt date: 2023-07-14 15:51:21.526417+05:30
+Employee previous attempted quiz domain: PHP
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+Suggested udemy course: PHP for Beginners - Become a PHP Master - CMS Project
+Suggested youtube course: PHP Full Course
+Youtube ID: 6EukZDFE_Zg
+Employee previous quiz score: 10
+Employee previous quiz attempt date: 2023-07-14 15:50:42.616062+05:30
+Employee previous attempted quiz domain: Python
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Suggested udemy course: 100 Days of Code: The Complete Python Pro Bootcamp for 2023
+Suggested youtube course: Python for Beginners | Full Course
+Youtube ID: YfO28Ihehbk
+"GET /history/ HTTP/1.1" 200 2947
+"GET /static/css/history.css HTTP/1.1" 200 1088
+Dashboard page is accessed!
+Employee overall Progress: 145.24 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 12515
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+Dashboard page is accessed!
+Employee overall Progress: 145.24 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 12515
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 9175
+"GET /static/css/login.css HTTP/1.1" 304 0
+Dashboard page is accessed!
+Employee overall Progress: 145.24 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 12515
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee still having the previous quiz timer with 44 sec
+Employee agreed to terms and conditions with selected domain Python, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 12908
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4059
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Suggested udemy course: 100 Days of Code: The Complete Python Pro Bootcamp for 2023
+Suggested youtube course: Python for Beginners | Full Course
+Youtube ID: YfO28Ihehbk
+Based on quiz attempt employee got 0 score & selected domain Python
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 35
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10937
+"GET /static/css/result.css HTTP/1.1" 200 2667
+Watched timer for youtube id: YfO28Ihehbk with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 73.45 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 12513
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 44 sec
+Employee agreed to terms and conditions with selected domain Java, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 12902
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 4093
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Suggested udemy course: Java Programming Masterclass updated to Java 17
+Suggested youtube course: Java Tutorial for Beginners 2023
+Youtube ID: BGTx91t8q50
+Based on quiz attempt employee got 0 score & selected domain Java
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 47
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10948
+Watched timer for youtube id: BGTx91t8q50 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 73.45 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 12526
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
