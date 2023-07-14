@@ -90,18 +90,22 @@
         <button onclick="goBack()" class="btn btn-primary">Go Back</button>
       </div>
     {% else %}
-      <div class="quiz-history-card">
-        <h5 class="card-title">Quiz Results</h5>
-        <hr>
-        <p class="quiz-history-card-text"><strong>Score:</strong> {{ user_score }}</p>
-        <p class="quiz-history-card-text"><strong>Attempt Date:</strong> {{ user_time }}</p>
-        <p class="quiz-history-card-text"><strong>Selected Domain:</strong> {{ previous_domain }}</p>
-        <p class="quiz-history-card-text"><strong>Go to course here:</strong> <a href="{{ suggestion_url }}">{{ suggestion_url }}</a></p>
-        <p class="quiz-history-card-text"><strong>Youtube course:</strong> {{ title }}</p>
-        <button onclick="goBack()" class="btn btn-primary">Go Back</button>
-      </div>
+      {% for attempt in attempts_data %}
+        <div class="quiz-history-card">
+          <h5 class="card-title">Quiz Results</h5>
+          <hr>
+          <p class="quiz-history-card-text"><strong>Score:</strong> {{ attempt.user_score }}</p>
+          <p class="quiz-history-card-text"><strong>Attempt Date:</strong> {{ attempt.user_time }}</p>
+          <p class="quiz-history-card-text"><strong>Selected Domain:</strong> {{ attempt.previous_domain }}</p>
+          <p class="quiz-history-card-text"><strong>Go to course here:</strong> <a href="{{ attempt.suggestion_url }}">{{ attempt.suggestion_url }}</a></p>
+          <p class="quiz-history-card-text"><strong>Youtube course:</strong> {{ attempt.title }}</p>
+
+        </div>
+      {% endfor %}
+    <button onclick="goBack()" class="btn btn-primary">Go Back</button>
     {% endif %}
   </div>
+
 </div>
 
 <script>

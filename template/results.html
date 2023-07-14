@@ -3,433 +3,431 @@
 <html>
 
 <head>
-	<title>Quiz Results</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--	<script type="text/javascript">-->
-<!--		function preventBack() { window.history.forward(); }-->
-<!--		setTimeout("preventBack()", 0);-->
-<!--		window.onunload = function () { null };-->
-<!--	</script>-->
+    <title>Quiz Results</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    <script type="text/javascript">-->
+    <!--        function preventBack() { window.history.forward(); }-->
+    <!--        setTimeout("preventBack()", 0);-->
+    <!--        window.onunload = function () { null };-->
+    <!--    </script>-->
 
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-		header {
-			background-color: #333;
-			color: #fff;
-			padding: 10px;
-			text-align: center;
-		}
+        header {
+            /* background-color: #333; */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
 
-		h1 {
-			margin: 0;
-			font-size: 36px;
-			float: left;
-		}
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            float: left;
+        }
 
-		main {
-			padding: 20px;
-			max-width: 800px;
-			margin: 0 auto;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
 
-		.score {
-			flex-basis: 100%;
-			text-align: left;
-			font-size: 24px;
-			margin-bottom: 20px;
-		}
+        .score {
+            flex-basis: 100%;
+            text-align: left;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
 
-		.recommendations {
-			flex-basis: 100%;
-			margin-bottom: 20px;
-		}
+        .recommendations {
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        }
 
-		.course {
-			margin-bottom: 20px;
-		}
+        .course {
+            margin-bottom: 20px;
+        }
 
-		.course-name {
-			font-size: 20px;
-			margin-bottom: 10px;
-		}
+        .course-name {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
 
-		.course-type {
-			font-size: 18px;
-			font-weight: bold;
-			margin-bottom: 5px;
-		}
+        .course-type {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
 
-		.course-rating {
-			font-size: 20px;
-			margin-bottom: 10px;
-		}
+        .course-rating {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
 
-		.course-instructor {
-			font-size: 20px;
-			margin-bottom: 10px;
-		}
+        .course-instructor {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
 
-		.course-duration {
-			font-size: 20px;
-			margin-bottom: 10px;
-		}
+        .course-duration {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
 
-		.course-link {
-			font-size: 20px;
-			color: rgb(255, 162, 0);
-			text-decoration: underline;
-		}
+        .course-link {
+            font-size: 20px;
+            color: rgb(255, 162, 0);
+            text-decoration: underline;
+        }
 
-		.logo {
-			width: 200px;
-			height: 200px;
-			top: 200;
-			left: 0;
-		}
+        .logo {
+            margin-right: 17px;
+            top: 33px;
+            right: 33px;
+            position: relative;
+            width: 91px;
+            height: 62px;
+        }
 
-		.logo1 {
-			width: 400px;
-			height: 400px;
-			top: 200;
-			position: absolute;
-			bottom: 0;
-			right: 0;
-		}
+        .logo1 {
+            float: right;
+            right: -101px;
+            top: 232px;
+            position: relative;
+            width: 405px;
+            height: 419px;
+        }
 
-		.highlight {
-			/* background-color: orange; */
-			font-weight: bold;
-		}
+        .highlight {
+            /* background-color: orange; */
+            font-weight: bold;
+        }
 
-		.logout-button {
-			position: absolute;
-			top: 250px;
-			right: 20px;
-			background-color: #333;
-			color: #fff;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 5px;
-			font-size: 16px;
-			cursor: pointer;
-		}
+        .logout-button {
+            position: absolute;
+            top: 161px;
+            right: 62px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-		.logout-button:hover {
-			background-color: #555;
-		}
+        .logout-button:hover {
+            background-color: #555;
+        }
 
-		/* Modal Styling */
-		.modal {
-			display: none;
-			position: fixed;
-			z-index: 1;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			overflow: auto;
-			background-color: rgba(0, 0, 0, 0.4);
-		}
+        /* Modal Styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
 
-		.modal-content {
-			background-color: #fefefe;
-			margin: 15% auto;
-			padding: 20px;
-			border: 1px solid #888;
-			width: 300px;
-			text-align: center;
-			border-radius: 5px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-		}
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
 
-		.modal-close {
-			color: #aaa;
-			float: right;
-			font-size: 28px;
-			font-weight: bold;
-			cursor: pointer;
-		}
+        .modal-close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
 
-		.modal-close:hover,
-		.modal-close:focus {
-			color: black;
-			text-decoration: none;
-			cursor: pointer;
-		}
+        .modal-close:hover,
+        .modal-close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
-		.modal-buttons {
-			margin-top: 20px;
-		}
+        .modal-buttons {
+            margin-top: 20px;
+        }
 
-		.modal-buttons button {
-			padding: 10px 20px;
-			border: none;
-			border-radius: 5px;
-			font-size: 16px;
-			cursor: pointer;
-		}
-
-
-		.colored-box1 {
-			color: orange;
-
-		}
-
-		.QuizResults {
-			width: 100%;
-			float: left;
-		}
+        .modal-buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
 
-		.colored-box {
-			color: orange;
-			font-style: bold;
 
-		}
 
-		.modal-buttons button:first-child {
-			margin-right: 10px;
-			background-color: #333;
-			color: #fff;
-		}
+        .QuizResults {
+            width: 100%;
+            float: left;
+        }
 
-		.modal-buttons button:last-child {
-			background-color: #aaa;
-			color: #fff;
-		}
 
-		.modal-buttons button:hover {
-			background-color: #555;
-		}
+        .colored-box {
+            color: orange;
+            font-style: bold;
 
-		.enroll-button {
-			background-color: #333;
-			color: #fff;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 5px;
-			font-size: 16px;
-			cursor: pointer;
-		}
+        }
 
-		.enroll-button:hover {
-			background-color: #555;
-		}
+        .modal-buttons button:first-child {
+            margin-right: 10px;
+            background-color: #333;
+            color: #fff;
+        }
 
-		.enroll-button:active {
-			background-color: #777;
-		}
+        .modal-buttons button:last-child {
+            background-color: #aaa;
+            color: #fff;
+        }
 
-		.home-button {
-			background-color: #333;
-			color: #fff;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 5px;
-			font-size: 16px;
-			cursor: pointer;
-		}
+        .modal-buttons button:hover {
+            background-color: #555;
+        }
 
-		.home-button:hover {
-			background-color: #555;
-		}
+        .enroll-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-		.home-button:active {
-			background-color: #777;
-		}
+        .enroll-button:hover {
+            background-color: #555;
+        }
 
-	</style>
+        .enroll-button:active {
+            background-color: #777;
+        }
+
+        .home-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .home-button:hover {
+            background-color: #555;
+        }
+
+        .home-button:active {
+            background-color: #777;
+        }
+    </style>
 
 </head>
 
 <body>
-	<header>
-		<img align="right" class="logo"
-			src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3JhdG5hLWdsb2JhbC10ZWNobm9sb2dpZXMuanBn.webp"
-			alt="Logo">
-		<img align="right" class="logo1" src="{% static 'images/Result.png' %}" />
-	</header>
-	<button class="logout-button" onclick="openModal()">Logout</button>
-	<div id="myModal" class="modal">
-		<div class="modal-content">
-			<span class="modal-close" onclick="closeModal()">&times;</span>
-			<p>Are you sure you want to logout?</p>
-			<div class="modal-buttons">
-				<button onclick="logout()">Yes</button>
-				<button onclick="closeModal()">Cancel</button>
-			</div>
-		</div>
-	</div>
-	<script>
-		function openModal() {
-			document.getElementById("myModal").style.display = "block";
-		}
-
-		function closeModal() {
-			document.getElementById("myModal").style.display = "none";
-		}
-
-		function logout() {
-			console.log("Logout function called.")
-		  window.location.href = "{% url 'logout' %}";
-		}
-	</script>
-	<main>
-		<button class="home-button" onclick="redirectToHome()">Home</button>
-		<div class="header_title">
-			<h1 class="font_normal">SWITCHING TECH <span class="colored-box1">SYSTEMS</span></h1>
-		</div>
-		<div class="QuizResults">
-			<u>
-				<h2><u>Quiz Results</u></h2>
-			</u>
-		</div>
-		<div class="score">
-			<p><span class="highlight">Your Score is: {{score}} </span></p>
-		</div>
-		<div class="recommendations">
-			<u>
-				<h2>Here are Your Udemy Recommendations</h2>
-			</u>
-			<div class="course">
-				<div class="course-type">Paid Course: <span class="colored-box">Yes</span></div>
-				<div class="course-name">Course name: <span class="colored-box">{{course_name}}</span></div>
-				<div class="course-rating">Course Ratings:<span class="colored-box"> {{ratings}}</span></div>
-				<div class="course-instructor">Course Instructor:<span class="colored-box"> {{instructor}}</span></div>
-				<div class="course-duration">Course Duration: <span class="colored-box">{{duration}} hours</span></div>
-				<button class="enroll-button" onclick="openPopup()" data-suggested="{{ suggested }}">Enroll this course</button><hr>
-				<h2><u>Here are your Youtube Recommendations</h2></u>
-				</h2>
-
-				<div id="ytplayer"></div>
-				<!-- <h2>{{ Video.title }}</h2>
-				<p>{{ Video.duration }}</p> -->
-				
-			<script>
-
-			var tag = document.createElement('script');
-			  tag.src = "https://www.youtube.com/player_api";
-			  var firstScriptTag = document.getElementsByTagName('script')[0];
-			  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-			  var player;
-			var isSaveExecuted = false; // Flag variable to track whether save operation has been executed
-
-			function onYouTubePlayerAPIReady() {
-				player = new YT.Player('ytplayer', {
-					height: '500',
-					width: '820',
-					videoId: '{{ YouTube_id }}',
-				});
-			}
-
-			// Event listener for logout button
-			// document.querySelector('.logout-button').addEventListener('click', function() {
-			// 	saveCurrentTime(); // Save the current time
-			// });
-
-			// Event listener for window unload (when the user closes the webpage)
-			window.addEventListener('beforeunload', function() {
-				saveCurrentTime();
-			});
-
-			// Function to save the current time
-			function saveCurrentTime() {
-				if (!isSaveExecuted && player && player.playerInfo && player.playerInfo.currentTime !== null) {
-				const currentTime = player.playerInfo.currentTime;
-				console.log('Current Time:', currentTime);
-
-				// Get the CSRF token value from the cookie
-				var csrftoken = getCookie('csrftoken');
-
-				// Send the current time to the server using AJAX
-				var xhr = new XMLHttpRequest();
-				xhr.open('POST', '/save_time', true);
-				xhr.setRequestHeader('Content-Type', 'application/json');
-				xhr.setRequestHeader('X-CSRFToken', csrftoken); // Include the CSRF token in the request header
-				xhr.onreadystatechange = function() {
-					if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-					console.log('Time saved successfully');
-					isSaveExecuted = true; // Update the flag to prevent further saves
-					// logout(); // Perform the logout action
-					}
-				};
-				xhr.send(JSON.stringify({ 'current_time': currentTime }));
-				} else {
-				console.log('Invalid current time or save operation already executed');
-				// logout(); // Perform the logout action even if the current time is invalid or save operation has been executed
-				}
-			}
-
-			// Helper function to get the CSRF cookie value
-			function getCookie(name) {
-				var cookieValue = null;
-				if (document.cookie && document.cookie !== '') {
-				var cookies = document.cookie.split(';');
-				for (var i = 0; i < cookies.length; i++) {
-					var cookie = cookies[i].trim();
-					if (cookie.substring(0, name.length + 1) === (name + '=')) {
-					cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-					break;
-					}
-				}
-				}
-				return cookieValue;
-			}
-
-			</script>
-			
-			</div>
-		</div>
-	</main>
-	<div id="popupModal" class="modal">
-    <div class="modal-content">
-      <span class="modal-close" onclick="closePopup()">&times;</span>
-      <p>Do you have Udemy credentials?</p>
-      <div class="modal-buttons">
-        <button onclick="redirectToUdemy()">Yes</button>
-        <button onclick="raiseTicket()">No</button>
-      </div>
+    <header>
+        <img align="right" class="logo"
+            src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3JhdG5hLWdsb2JhbC10ZWNobm9sb2dpZXMuanBn.webp"
+            alt="Logo">
+        <img align="right" class="logo1" src="{% static 'images/Result.png' %}" />
+    </header>
+    <button class="logout-button" onclick="openModal()">Logout</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <p>Are you sure you want to logout?</p>
+            <div class="modal-buttons">
+                <button onclick="logout()">Yes</button>
+                <button onclick="closeModal()">Cancel</button>
+            </div>
+        </div>
     </div>
-  </div>
-  <script>
-    function openPopup() {
-      document.getElementById("popupModal").style.display = "block";
-    }
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
 
-    function closePopup() {
-      document.getElementById("popupModal").style.display = "none";
-    }
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
 
-		function redirectToUdemy() {
-			// Redirect to Udemy login page
-			const enrollButton = document.querySelector('.enroll-button');
-			const suggestedUrl = enrollButton.getAttribute('data-suggested');
-			const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";
-			const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;
+        function logout() {
+            console.log("Logout function called.")
+            window.location.href = "{% url 'logout' %}";
+        }
+    </script>
+    <main>
+        <button class="home-button" onclick="redirectToHome()">Home</button>
+        <div class="header_title">
+            <h1 class="font_normal">SWITCHING TECH <span class="colored-box1">SYSTEMS</span></h1>
+        </div>
+        <div class="QuizResults">
+            <u>
+                <h2><u>Quiz Results</u></h2>
+            </u>
+        </div>
+        <div class="score">
+            <p><span class="highlight">Your Score is: {{score}} </span></p>
+        </div>
+        <div class="recommendations">
+            <u>
+                <h2>Here are Your Udemy Recommendations</h2>
+            </u>
+            <div class="course">
+                <div class="course-type">Paid Course: <span class="colored-box">Yes</span></div>
+                <div class="course-name">Course name: <span class="colored-box">{{course_name}}</span></div>
+                <div class="course-rating">Course Ratings:<span class="colored-box"> {{ratings}}</span></div>
+                <div class="course-instructor">Course Instructor:<span class="colored-box"> {{instructor}}</span></div>
+                <div class="course-duration">Course Duration: <span class="colored-box">{{duration}} hours</span></div>
+                <button class="enroll-button" onclick="openPopup()" data-suggested="{{ suggested }}">Enroll this
+                    course</button>
+                <hr>
+                <h2><u>Here are your Youtube Recommendations</h2></u>
+                </h2>
 
-			// Open the Udemy login page in the same tab
-			window.location.replace(udemyUrl);
+                <div id="ytplayer"></div>
+                <!-- <h2>{{ Video.title }}</h2>
+                <p>{{ Video.duration }}</p> -->
 
-			// Clear session storage when the user tries to navigate away from the page
-			window.addEventListener('beforeunload', () => {
-				sessionStorage.clear();
-			});
-		}
+                <script>
+                    var tag = document.createElement('script');
+                    tag.src = "https://www.youtube.com/player_api";
+                    var firstScriptTag = document.getElementsByTagName('script')[0];
+                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                    var player;
+                    var isSaveExecuted = false; // Flag variable to track whether save operation has been executed
+                    var youtubeId = '{{ YouTube_id }}'; // Add this line to get the YouTube video ID
+
+                    function onYouTubePlayerAPIReady() {
+                        player = new YT.Player('ytplayer', {
+                            height: '500',
+                            width: '820',
+                            videoId: youtubeId, // Use the youtubeId variable here
+                        });
+                    }
+
+                    // Event listener for window unload (when the user closes the webpage)
+                    window.addEventListener('beforeunload', function () {
+                        saveCurrentTime();
+                    });
+
+                    // Function to save the current time
+                    function saveCurrentTime() {
+                        if (!isSaveExecuted && player && player.playerInfo && player.playerInfo.currentTime !== null) {
+                            const currentTime = player.playerInfo.currentTime;
+                            const duration = player.getDuration();
+                            const percentage = (currentTime / duration) * 100;
+                            const selectedcategory = sessionStorage.getItem('selectedLink')
+                            console.log('Current Time:', currentTime);
+                            console.log('Percentage:', percentage);
 
 
-    function raiseTicket() {
-      const popup = document.createElement('div');
-      popup.classList.add('modal');
-      popup.innerHTML = `
+                            // Get the CSRF token value from the cookie
+                            var csrftoken = getCookie('csrftoken');
+
+                            // Send the current time, percentage, and youtube ID to the server using AJAX
+                            var xhr = new XMLHttpRequest();
+                            xhr.open('POST', '/save_time', true);
+                            xhr.setRequestHeader('Content-Type', 'application/json');
+                            xhr.setRequestHeader('X-CSRFToken', csrftoken); // Include the CSRF token in the request header
+                            xhr.onreadystatechange = function () {
+                                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                                    console.log('Time saved successfully');
+                                    isSaveExecuted = true; // Update the flag to prevent further saves
+                                }
+                            };
+                            xhr.send(JSON.stringify({ 'current_time': currentTime, 'youtube_id': youtubeId, 'percentage': percentage, 'selectedcategory':selectedcategory }));
+                        } else {
+                            console.log('Invalid current time or save operation already executed');
+                        }
+                    }
+
+                    // Helper function to get the CSRF cookie value
+                    function getCookie(name) {
+                        var cookieValue = null;
+                        if (document.cookie && document.cookie !== '') {
+                            var cookies = document.cookie.split(';');
+                            for (var i = 0; i < cookies.length; i++) {
+                                var cookie = cookies[i].trim();
+                                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                                    break;
+                                }
+                            }
+                        }
+                        return cookieValue;
+                    }
+                </script>
+
+
+            </div>
+        </div>
+    </main>
+    <div id="popupModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closePopup()">&times;</span>
+            <p>Do you have Udemy credentials?</p>
+            <div class="modal-buttons">
+                <button onclick="redirectToUdemy()">Yes</button>
+                <button onclick="raiseTicket()">No</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openPopup() {
+            document.getElementById("popupModal").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popupModal").style.display = "none";
+        }
+
+        function redirectToUdemy() {
+            // Redirect to Udemy login page
+            const enrollButton = document.querySelector('.enroll-button');
+            const suggestedUrl = enrollButton.getAttribute('data-suggested');
+            const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";
+            const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;
+
+            // Open the Udemy login page in the same tab
+            window.location.replace(udemyUrl);
+
+            // Clear session storage when the user tries to navigate away from the page
+            window.addEventListener('beforeunload', () => {
+                sessionStorage.clear();
+            });
+        }
+
+
+        function raiseTicket() {
+            const popup = document.createElement('div');
+            popup.classList.add('modal');
+            popup.innerHTML = `
         <div class="modal-content">
         <span class="modal-close" onclick="closePopup()">&times;</span>
         <p>You need to raise a ticket in Keka.</p>
@@ -438,30 +436,30 @@
         </div>
         </div>
       `;
-      document.body.appendChild(popup);
-      popup.style.display = "block";
-    }
+            document.body.appendChild(popup);
+            popup.style.display = "block";
+        }
 
-    function closePopup() {
-      const popup = document.querySelector('.modal');
-      document.body.removeChild(popup);
-    }
+        function closePopup() {
+            const popup = document.querySelector('.modal');
+            document.body.removeChild(popup);
+        }
 
-    function redirectToKeka() {
-			// Logout logic
-			sessionStorage.clear();
-			// Redirect to Keka after logout
-			const kekaUrl = "https://letmecall.keka.com/#/me/helpdesk/mytickets";
-			window.location.replace(kekaUrl);
-		}
+        function redirectToKeka() {
+            // Logout logic
+            sessionStorage.clear();
+            // Redirect to Keka after logout
+            const kekaUrl = "https://letmecall.keka.com/#/me/helpdesk/mytickets";
+            window.location.replace(kekaUrl);
+        }
 
-	function redirectToHome() {
-		const currentHost = window.location.host;
-		const url = `http://${currentHost}/validate/homepage`;
-		window.location.replace(url);
-	}
+        function redirectToHome() {
+            const currentHost = window.location.host;
+            const url = `http://${currentHost}/validate/dashboard`;
+            window.location.replace(url);
+        }
 
-  </script>
+    </script>
 </body>
 
 </html>
