@@ -131,10 +131,11 @@ def loginPage(request):
                 logger.info(f'Otp is sent to employee '
                             f'mail-id: {Employee_Mail}')
 
-                send_mail(subject="OTP", message=f"Your otp {otp}",
-                          from_email="switchingtechsystem@gmail.com",
-                          recipient_list=[Employee_Mail],
-                          fail_silently=False)
+                # send_mail(subject="OTP", message=f"Your otp {otp}",
+                #           from_email="switchingtechsystem@gmail.com",
+                #           recipient_list=[Employee_Mail],
+                #           fail_silently=False)
+                
             else:
                 logger.info(f'Otp is sent to employee '
                             f'mail-id: {Employee_Mail}')

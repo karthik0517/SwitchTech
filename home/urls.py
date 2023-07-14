@@ -26,9 +26,3 @@ urlpatterns = [
 admin.site.site_header = "Switch Tech System Admin"
 admin.site.site_title = "Switch Tech System Admin Portal"
 admin.site.index_title = "Welcome to Admin Portal"
-# urlpatterns = [
-#     path('',views.loginPage,name='login'),
-#     path('home/',views.jotQuiz,name='home'),
-#     path('logout/', views.logoutPage,name='logout'),
-#     path('register/', views.registerPage,name='register')
-# ]

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static%}
+<html>
+
+<head>
+	<link href="{% static 'css/restrict.css' %}" rel="stylesheet">
+</head>
+
+<body>
+	<button class="logout-button" onclick="openModal()">Logout</button>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="modal-close" onclick="closeModal()">&times;</span>
+			<p>Are you sure you want to logout?</p>
+			<div class="modal-buttons">
+				<button onclick="logout()">Yes</button>
+				<button onclick="closeModal()">Cancel</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		function openModal() {
+			document.getElementById("myModal").style.display = "block";
+		}
+
+		function closeModal() {
+			document.getElementById("myModal").style.display = "none";
+		}
+
+		function logout() {
+			const url = 'http://127.0.0.1:8000/';
+			window.location.replace(url);
+		}
+	</script>
+	<header>
+		<img align="right" class="logo"
+			src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3JhdG5hLWdsb2JhbC10ZWNobm9sb2dpZXMuanBn.webp"
+			alt="Logo">
+		<img align="right" class="logo1" src="{% static 'images/UserRestrict.png' %}" />
+	</header>
+	<div class="header_title">
+
+		<h2 class="font_normal header_titte text-align:center">SWITCHING TECH <span class="colored-box1">SYSTEMS</span>
+		</h2>
+
+	</div>
+	<h1>Your access to this page is restricted!</h1>
+	<h3>
+		Oops! It seems you have already logged-in for 3 times.Please contact the <br><br>
+		training team or drop us an email if you would like to retake the quiz.
+		<br>
+		<div class="training"><a href="mailto:training@ratnaglobaltech.com">training@ratnaglobaltech.com</a></div>
+
+	</h3>
+
+	<div class="contact-container">
+		<a href="mailto:training@ratnaglobaltech.com" class="contact-button">Email Training Team</a>
+		<a href="https://www.ratnaglobaltech.com/lets-connect.html" class="contact-button">Contact Us</a>
+	</div>
+
+	<script>
+		// Add animation class to h1 element
+		document.getElementsByTagName("h1")[0].classList.add("blink");
+	</script>
+</body>
+
+</html>
