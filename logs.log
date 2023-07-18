@@ -11906,3 +11906,10 @@ Dashboard page is accessed
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 C:\Users\VenugopalPemma\Desktop\Final_july_git\SwitchTech\home\urls.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/home/video/ HTTP/1.1" 200 29362
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 32743
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+C:\Users\VenugopalPemma\Desktop\Final_july_git\SwitchTech\home\urls.py changed, reloading.
+Watching for file changes with StatReloader
