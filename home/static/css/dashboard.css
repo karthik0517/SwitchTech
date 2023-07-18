@@ -167,25 +167,25 @@
 }
 
 .username-wrapper {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
+display: flex;
+align-items: center;
+margin-right: 10px;
 }
 
 .greet {
-  font-weight: 600;
-  font-size: 20px;
-  color: #000;
-  margin-right: 5px;
+font-weight: 600;
+font-size: 20px;
+color: #000;
+margin-right: 5px;
 }
 
 .username {
-  font-weight: 600;
-  font-size: 20px;
-  color: #000;
-  text-transform: capitalize;
-  text-decoration: none;
-  position: relative;
+font-weight: 600;
+font-size: 20px;
+color: #000;
+text-transform: capitalize;
+text-decoration: none;
+position: relative;
 }
 
 .logout_btn {
@@ -201,11 +201,9 @@
 .logout_btn:hover {
   background-color: #05f635;
 }
-
-.align {
+.align{
   margin-left: 90px;
 }
-
 .chart-container {
   /* position: absolute; */
   width: 300px;
@@ -215,27 +213,26 @@
 
 .chart-sum {
   position: absolute;
-  top: 62%;
-  left: 55%;
+  top: 64%;
+  left: 52%;
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 18px;
   font-weight: bold;
-  color: #000;
-  /* Add this line to override the font-weight property */
+  color: #000; /* Add this line to override the font-weight property */
   white-space: nowrap;
 }
 
 .chart-title {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
+text-align: center;
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
 }
 
-.list-group {
-  height: 283px;
-  overflow: hidden;
+.list-group{
+  height: 283px; 
+  overflow: hidden; 
   overflow-y: scroll;
 }
 
@@ -245,4 +242,12 @@
 
   height: 100px;
   ;
+}
+
+.body{
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard syntax */
+  -webkit-touch-callout: none; /* Chrome */
 }

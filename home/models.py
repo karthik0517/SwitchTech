@@ -105,8 +105,8 @@ class Otp(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     mail = models.CharField(max_length=50)
     otp = models.CharField(max_length=50)
-    # username = models.CharField(max_length=50)
     count = models.IntegerField(default=0)
+    assigned_to = models.CharField(max_length=100, default=None, null=True)
 
 
 class QuizAttempt(models.Model):

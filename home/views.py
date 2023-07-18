@@ -14,6 +14,8 @@ from django.core.mail import send_mail
 from django.contrib.auth.models import User
 from django.utils import timezone
 from django.http import HttpResponseBadRequest
+from django.db.models import Q
+import ast
 
 
 logger = logging.getLogger(__name__)
@@ -39,12 +41,19 @@ def loginPage(request):
     In this method it will check user session is still active or not if active
     it will redirect to Dashboard page, if not it will redirect to login page
     '''
+
+    # del request.session['mail']
+    # request.session.save()
+
     remember_me = request.session.get('remember_me', False)
+    print('remember_me is:', remember_me)
     if remember_me:
         logger.info('User session exists (remember me enabled), '
                     'redirecting to the Dashboard page')
         mail = request.session.get('mail')
+        # print('mail is:', mail)
         user = User.objects.get(email=mail)
+        
         overall_progress = PlayerActivity.objects.filter(user=user).order_by(
             '-id').values_list('percentage', 'category')[:3]
 
@@ -54,7 +63,7 @@ def loginPage(request):
             list_overall_categories = list(categories)
             rounded_progress = [round(value, 2)
                                 for value in list_overall_progress]
-            print(rounded_progress)
+            # print(rounded_progress)
             sum_overall_progress = sum(rounded_progress)
             logger.info(f'Employee overall Progress: {sum_overall_progress} %')
             context = {
@@ -64,7 +73,7 @@ def loginPage(request):
                 'overall_progress': sum_overall_progress
             }
             logger.info('Dashboard page is accessed')
-            print(context)
+            # print(context)
             return render(request, 'dashboard.html', context)
         else:
             # Handle the case when no progress data is available
@@ -85,12 +94,11 @@ def loginPage(request):
             latest_user = User.objects.latest('date_joined')
             last_user_id = int(latest_user.id) if latest_user else 1
             try:
-                user = User.objects.get(username=username)
-                if user.email != Employee_Mail:
-                    error_message = 'Invalid username or email-id.'
+                user = User.objects.get(Q(username__exact=username) | Q(email__exact=Employee_Mail))
+                if user.username != username or user.email != Employee_Mail:
+                    error_message = 'Invalid username or email.'
                     logger.info('Employee entered invalid username or email')
-                    return render(request, 'login.html',
-                                  {'error_message': error_message})
+                    return render(request, 'login.html', {'error_message': error_message})
             except User.DoesNotExist:
                 logger.info('New employee details are entered '
                             'and saving into database')
@@ -194,7 +202,9 @@ def dashboard(request):
     calculate employee overall progress and generate categories
     '''
     logger.info('Dashboard page is accessed!')
+    
     mail = request.session.get('mail')
+    print('mail in dashboard is:', mail)
     user = User.objects.get(email=mail)
     overall_progress = PlayerActivity.objects.filter(user=user).order_by(
         '-id').values_list('percentage', 'category')[:3]
@@ -213,7 +223,7 @@ def dashboard(request):
             'overall_progress': sum_overall_progress
         }
         logger.info('Dashboard page is accessed')
-        print(context)
+        # print(context)
         return render(request, 'dashboard.html', context)
     else:
         # Handle the case when no progress data is available
@@ -225,8 +235,7 @@ def dashboard(request):
             'overall_progress': 0
         }
         return render(request, 'dashboard.html', context)
-
-
+    
 def index(request):
     '''
     Instructions page
@@ -266,13 +275,13 @@ def url(score, category):
             instructor = val.course_instructor
             duration = val.course_duration
             difficulty = val.difficulty
-            logger.info(f'Suggested udemy course: {course_name}')
+            # logger.info(f'Suggested udemy course: {course_name}')
             break
         for v_id in suggestion_vdo:
             YouTube_id = v_id.video_id
             Title = v_id.title
-            logger.info(f'Suggested youtube course: {Title}')
-            logger.info(f'Youtube ID: {YouTube_id}')
+            # logger.info(f'Suggested youtube course: {Title}')
+            # logger.info(f'Youtube ID: {YouTube_id}')
             break
 
     elif 50 < score <= 70:
@@ -378,6 +387,41 @@ def history(request):
         }
         return render(request, 'history.html', context=data)
 
+
+@login_required(login_url='login')
+def team(request):
+    # print('entered into team view function')
+    '''
+    This method will display the employee previous quiz attempt history
+    '''
+    logger.info('Team page is accessed!')
+    mail = request.session.get('mail')
+    print('mail is', mail)
+    get_user = Otp.objects.filter(assigned_to=mail)
+    assigned_user = [user.user_id for user in get_user]
+    user_list = User.objects.filter(id__in=assigned_user)
+    print('list_quantity is:', user_list, len(user_list))
+    if len(user_list) == 0:
+        return render(request, 'team_member.html', {'no_data':True})
+    else:
+        return render(request, 'team_member.html', {'user_list':user_list})
+
+@login_required(login_url='login')
+def userlist(request):
+    # print('entered into team view function')
+    '''
+    This method will display the employee previous quiz attempt history
+    '''
+    logger.info('User list page is accessed!')
+    mail = request.session.get('mail')
+    active_user = User.objects.filter(email=mail)
+    active_user_id = [active.id for active in active_user]
+    get_user = Otp.objects.filter(assigned_to=mail)
+    assigned_user = [user.user_id for user in get_user]
+    assigned_user = assigned_user + [1] + active_user_id
+    user_list = User.objects.exclude(id__in=assigned_user)
+
+    return render(request, 'userlist.html', {'user_list':user_list})
 
 def user_logout(request):
     '''
@@ -560,10 +604,10 @@ def save_time(request):
         percentage = data.get('percentage')
         selectedcategory = data.get('selectedcategory')
 
-        print(current_time)
-        print(youtube_id)
-        print(percentage)
-        print(selectedcategory)
+        # print(current_time)
+        # print(youtube_id)
+        # print(percentage)
+        # print(selectedcategory)
 
         if current_time is None:
             current_time = 0  # Assign a numeric default value
@@ -571,17 +615,17 @@ def save_time(request):
         mail = request.session.get('mail')
         user = User.objects.get(email=mail)
         check = PlayerActivity.objects.filter(youtube_id=youtube_id, user=user)
-        print(check)
+        # print(check)
         if check:
             PlayerActivity.objects.filter(
                 user=user, youtube_id=youtube_id).update(
                 current_time=current_time, percentage=percentage)
-            print('inside check')
+            # print('inside check')
         # player_activity.current_time = current_time
         # player_activity.percentage = percentage
         # player_activity.save()
         else:
-            print('its else')
+            # print('its else')
             PlayerActivity.objects.create(current_time=current_time,
                                           percentage=percentage,
                                           youtube_id=youtube_id,
