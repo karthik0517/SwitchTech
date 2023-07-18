@@ -13940,6 +13940,7 @@ course url : https://www.udemy.com/course/100-days-of-code/
 "GET /history/ HTTP/1.1" 200 3577
 My Learning page accessed!
 Learning modules are present
+<<<<<<< HEAD
 "GET /mylearning/ HTTP/1.1" 200 11111
 "GET /static/css/mylearning.css HTTP/1.1" 200 1770
 "GET /validate/dashboard HTTP/1.1" 301 0
@@ -14372,10 +14373,20 @@ Dashboard page is accessed!
 Employee overall Progress: 0.0 %
 Dashboard page is accessed
 "GET /validate/dashboard/ HTTP/1.1" 200 12540
+=======
+"GET /mylearning/ HTTP/1.1" 200 9175
+"GET /static/css/login.css HTTP/1.1" 304 0
+Dashboard page is accessed!
+Employee overall Progress: 145.24 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 12515
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+>>>>>>> parent of 577997f (resolved front end bugs)
 Instruction page is accessed
 "GET /validate/dashboard/index/ HTTP/1.1" 200 7774
 "GET /static/images/Instruction.png HTTP/1.1" 200 91625
 Employee still having the previous quiz timer with 44 sec
+<<<<<<< HEAD
 Employee agreed to terms and conditions with selected domain NodeJS, redirecting to quiz page
 "GET /quiz/?category=NodeJS HTTP/1.1" 200 12908
 "GET /static/images/Quiz.png HTTP/1.1" 200 89384
@@ -15133,10 +15144,51 @@ Suggested udemy course: Salesforce CRM Full Training Tutorial For Beginners
 Suggested youtube course: Salesforce CRM Full Training Tutorial For Beginners
 Youtube ID: jHzIGGU-Ph0
 Based on quiz attempt employee got 0 score & selected domain Salesforce
+=======
+Employee agreed to terms and conditions with selected domain Python, redirecting to quiz page
+"GET /quiz/?category=Python HTTP/1.1" 200 12908
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Python HTTP/1.1" 200 4059
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/100-days-of-code/
+Suggested udemy course: 100 Days of Code: The Complete Python Pro Bootcamp for 2023
+Suggested youtube course: Python for Beginners | Full Course
+Youtube ID: YfO28Ihehbk
+Based on quiz attempt employee got 0 score & selected domain Python
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 35
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10937
+"GET /static/css/result.css HTTP/1.1" 200 2667
+Watched timer for youtube id: YfO28Ihehbk with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 73.45 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 12513
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 44 sec
+Employee agreed to terms and conditions with selected domain Java, redirecting to quiz page
+"GET /quiz/?category=Java HTTP/1.1" 200 12902
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Java HTTP/1.1" 200 4093
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/java-the-complete-java-developer-course/
+Suggested udemy course: Java Programming Masterclass updated to Java 17
+Suggested youtube course: Java Tutorial for Beginners 2023
+Youtube ID: BGTx91t8q50
+Based on quiz attempt employee got 0 score & selected domain Java
+>>>>>>> parent of 577997f (resolved front end bugs)
 "POST /api/result/ HTTP/1.1" 200 0
 saving remaining time in database: 47
 "POST /api/save-remaining-time/ HTTP/1.1" 200 48
 Employee redirect to results page with course suggestion
+<<<<<<< HEAD
 "GET /final/ HTTP/1.1" 200 10925
 Watched timer for youtube id: jHzIGGU-Ph0 with percentage : 0
 "POST /save_time HTTP/1.1" 200 38
@@ -15358,3 +15410,15 @@ User list page is accessed!
 "GET /userlist/ HTTP/1.1" 200 2475
 >>>>>>> 179dc1c0319d824a5f69d838810bf326589b88e5
 Watching for file changes with StatReloader
+=======
+"GET /final/ HTTP/1.1" 200 10948
+Watched timer for youtube id: BGTx91t8q50 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 73.45 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 12526
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+>>>>>>> parent of 577997f (resolved front end bugs)
