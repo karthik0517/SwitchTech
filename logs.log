@@ -11900,3 +11900,7 @@ Dashboard page is accessed
 "POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
 "GET /admin/home/coursesuggession/64/change/ HTTP/1.1" 200 14878
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 32743
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29362
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
