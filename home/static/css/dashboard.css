@@ -213,8 +213,8 @@ position: relative;
 
 .chart-sum {
   position: absolute;
-  top: 70%;
-  left: 50%;
+  top: 64%;
+  left: 52%;
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 18px;
@@ -244,5 +244,10 @@ margin-bottom: 10px;
   ;
 }
 
-
-
+.body{
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard syntax */
+  -webkit-touch-callout: none; /* Chrome */
+}

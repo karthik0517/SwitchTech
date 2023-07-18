@@ -18,6 +18,7 @@ admin.site.register(Answer)
 admin.site.register(PlayerActivity)
 
 
+
 @admin.register(QuizUserScore)
 class QuizScore(admin.ModelAdmin):
     list_display = ['user', 'quiz_domain', 'created_at', 'score']
@@ -38,7 +39,7 @@ class Video(admin.ModelAdmin):
 
 @admin.register(Otp)
 class Otp(admin.ModelAdmin):
-    list_display = ['user', 'mail', 'otp', 'count']
+    list_display = ['user', 'mail', 'otp', 'count', 'assigned_to']
 
 
 @admin.register(QuizAttempt)
