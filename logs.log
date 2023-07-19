@@ -15748,3 +15748,1518 @@ Dashboard page is accessed
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 "GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13960
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 7623
+"GET /static/css/login.css HTTP/1.1" 200 1254
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 3000
+Previously employee attempted quiz for 6 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 6149
+OTP validation is accessed!
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+"POST /validate/ HTTP/1.1" 302 0
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13344
+"GET /static/css/dashboard.css HTTP/1.1" 200 4043
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+"GET /static/css/login.css HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain Front End, redirecting to quiz page
+"GET /quiz/?category=Front%20End HTTP/1.1" 200 13231
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Front%20End HTTP/1.1" 200 3841
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.youtube.com/watch?v=zJSY8tbf_ys
+Based on quiz attempt employee got 0 score & selected domain Front End
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 23
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10914
+"GET /static/css/result.css HTTP/1.1" 200 2907
+Watched timer for youtube id: zJSY8tbf_ys with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13344
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+"GET /static/css/login.css HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain Salesforce, redirecting to quiz page
+"GET /quiz/?category=Salesforce HTTP/1.1" 200 13234
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Salesforce HTTP/1.1" 200 3996
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+Based on quiz attempt employee got 0 score & selected domain Salesforce
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 45
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+Based on quiz attempt employee got 0 score & selected domain Salesforce
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 25
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10832
+"GET /static/css/result.css HTTP/1.1" 304 0
+Watched timer for youtube id: Sm-GSxKCYhc with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee is logged-out successfully!
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 7623
+"GET /static/css/login.css HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 9850
+Previously employee attempted quiz for 7 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 6149
+"GET /static/css/login.css HTTP/1.1" 304 0
+OTP validation is accessed!
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+"POST /validate/ HTTP/1.1" 302 0
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13363
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain React, redirecting to quiz page
+"GET /quiz/?category=React HTTP/1.1" 200 13219
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=React HTTP/1.1" 200 4325
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Based on quiz attempt employee got 0 score & selected domain React
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 45
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10938
+"GET /static/css/result.css HTTP/1.1" 304 0
+Watched timer for youtube id: bMknfKXIFA8 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2390
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10890
+"GET /admin/home/question/ HTTP/1.1" 200 42680
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29324
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/ HTTP/1.1" 200 13762
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/0cd7b0fe-6c0c-4ecc-93b4-6260552287d5/change/ HTTP/1.1" 200 9395
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/0cd7b0fe-6c0c-4ecc-93b4-6260552287d5/delete/ HTTP/1.1" 200 14349
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+"POST /admin/logout/ HTTP/1.1" 200 1570
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2239
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 2400
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10890
+"GET /admin/home/category/ HTTP/1.1" 200 13762
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/6e864416-2ff0-48b8-b974-7e11d7a089cc/change/ HTTP/1.1" 200 9411
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/6e864416-2ff0-48b8-b974-7e11d7a089cc/delete/ HTTP/1.1" 200 15125
+"GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+"POST /admin/home/category/6e864416-2ff0-48b8-b974-7e11d7a089cc/delete/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 13643
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/add/ HTTP/1.1" 200 9079
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/category/add/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 14001
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/ HTTP/1.1" 200 42799
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21385
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/inlines.js HTTP/1.1" 200 15526
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 200 560
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21773
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21736
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21694
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43087
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21385
+"GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21748
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21760
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21751
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21731
+"GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43097
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21385
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43145
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/ HTTP/1.1" 200 6467
+"GET /admin/home/video/ HTTP/1.1" 200 28286
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/add/ HTTP/1.1" 200 12762
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/add/ HTTP/1.1" 302 0
+"GET /admin/home/video/ HTTP/1.1" 200 28815
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/59/change/ HTTP/1.1" 200 13112
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/59/change/ HTTP/1.1" 302 0
+"GET /admin/home/video/add/ HTTP/1.1" 200 13003
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/add/ HTTP/1.1" 302 0
+"GET /admin/home/video/ HTTP/1.1" 200 29152
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/add/ HTTP/1.1" 200 12762
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/add/ HTTP/1.1" 302 0
+"GET /admin/home/video/ HTTP/1.1" 200 29471
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 28117
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13960
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/56/change/ HTTP/1.1" 200 14836
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 28494
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/56/change/ HTTP/1.1" 200 14552
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/ HTTP/1.1" 200 13762
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 28494
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13960
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/57/change/ HTTP/1.1" 200 14842
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 28874
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13960
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/58/change/ HTTP/1.1" 200 14842
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/ HTTP/1.1" 200 6467
+"GET /admin/home/category/ HTTP/1.1" 200 13762
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/aca7c40f-faac-4eaf-8d78-5e201cd0b7c6/change/ HTTP/1.1" 200 9395
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/aca7c40f-faac-4eaf-8d78-5e201cd0b7c6/delete/ HTTP/1.1" 200 17630
+"GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+"GET /admin/home/video/ HTTP/1.1" 200 29265
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/31/change/ HTTP/1.1" 200 13131
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29265
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/30/change/ HTTP/1.1" 200 13139
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29265
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/29/change/ HTTP/1.1" 200 13103
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/ HTTP/1.1" 200 13762
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/aca7c40f-faac-4eaf-8d78-5e201cd0b7c6/change/ HTTP/1.1" 200 9395
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/aca7c40f-faac-4eaf-8d78-5e201cd0b7c6/delete/ HTTP/1.1" 200 17630
+"POST /admin/home/category/aca7c40f-faac-4eaf-8d78-5e201cd0b7c6/delete/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 13643
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/add/ HTTP/1.1" 200 9079
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/category/add/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 13997
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/ HTTP/1.1" 200 6467
+"GET /admin/home/question/ HTTP/1.1" 200 42689
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21385
+"GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21685
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/47889664-b04f-4699-955f-3ac16adceddd/change/ HTTP/1.1" 200 31551
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/47889664-b04f-4699-955f-3ac16adceddd/history/ HTTP/1.1" 200 7355
+"POST /admin/logout/ HTTP/1.1" 200 1570
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2239
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10931
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET / HTTP/1.1" 200 7623
+"GET /static/css/login.css HTTP/1.1" 304 0
+"GET /admin/ HTTP/1.1" 200 10931
+"GET /admin/home/question/ HTTP/1.1" 200 42681
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21385
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/50d87051-7fe9-49e9-b927-b52fd0fccf29/change/ HTTP/1.1" 200 31862
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/50d87051-7fe9-49e9-b927-b52fd0fccf29/change/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21713
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/c55ab7d7-5678-42a7-81a2-4be8154918f9/change/ HTTP/1.1" 200 31509
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/c55ab7d7-5678-42a7-81a2-4be8154918f9/change/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 42968
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21385
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 42991
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21385
+"GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+"POST /admin/home/question/add/ HTTP/1.1" 200 21712
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43010
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21385
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 43009
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21385
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/14d0ad56-23e8-450d-927c-eecfd9d2f313/change/ HTTP/1.1" 200 31761
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/14d0ad56-23e8-450d-927c-eecfd9d2f313/change/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 42973
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21385
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 42985
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21385
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 42979
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 28246
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/add/ HTTP/1.1" 200 12762
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/add/ HTTP/1.1" 302 0
+"GET /admin/home/video/ HTTP/1.1" 200 28769
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/add/ HTTP/1.1" 200 12762
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/add/ HTTP/1.1" 302 0
+"GET /admin/home/video/ HTTP/1.1" 200 29125
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 28063
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13960
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 28693
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13960
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/60/change/ HTTP/1.1" 200 14874
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 28919
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/add/ HTTP/1.1" 200 12762
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/add/ HTTP/1.1" 302 0
+"GET /admin/home/video/ HTTP/1.1" 200 29435
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 28852
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13960
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/61/change/ HTTP/1.1" 200 14823
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/61/change/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 29477
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/logout/ HTTP/1.1" 200 1570
+"GET / HTTP/1.1" 200 7623
+"GET /static/css/login.css HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 9966
+Previously employee attempted quiz for 8 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 6149
+OTP validation is accessed!
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+"POST /validate/ HTTP/1.1" 302 0
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13359
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain DevOps, redirecting to quiz page
+"GET /quiz/?category=DevOps HTTP/1.1" 200 13222
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=DevOps HTTP/1.1" 200 4645
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.youtube.com/watch?v=5KtRF4NuUWE
+Based on quiz attempt employee got 0 score & selected domain DevOps
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 42
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10902
+"GET /static/css/result.css HTTP/1.1" 304 0
+Watched timer for youtube id: 5KtRF4NuUWE with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13359
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain PHP, redirecting to quiz page
+"GET /quiz/?category=PHP HTTP/1.1" 200 13213
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=PHP HTTP/1.1" 200 3780
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/php-for-complete-beginners-includes-msql-object-oriented/
+Based on quiz attempt employee got 0 score & selected domain PHP
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 16
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10968
+Watched timer for youtube id: 6EukZDFE_Zg with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13352
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain System Admin, redirecting to quiz page
+"GET /quiz/?category=System%20Admin HTTP/1.1" 200 13240
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=System%20Admin HTTP/1.1" 200 4573
+saving remaining time in database: 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain System Admin, redirecting to quiz page
+"GET /quiz/?category=System%20Admin HTTP/1.1" 200 13240
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=System%20Admin HTTP/1.1" 200 4387
+saving remaining time in database: 36
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2390
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 11100
+"GET /admin/home/category/ HTTP/1.1" 200 13762
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29229
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/41/change/ HTTP/1.1" 200 13166
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29229
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/42/change/ HTTP/1.1" 200 13113
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29229
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/43/change/ HTTP/1.1" 200 13130
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29229
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29229
+"GET /admin/home/video/42/change/ HTTP/1.1" 200 13113
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29229
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/42/change/ HTTP/1.1" 200 13113
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29229
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/43/change/ HTTP/1.1" 200 13130
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/ HTTP/1.1" 200 13762
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/32c13d00-4842-42d6-a75d-864ce6349ca3/change/ HTTP/1.1" 200 9419
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/32c13d00-4842-42d6-a75d-864ce6349ca3/delete/ HTTP/1.1" 200 20249
+"GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+"POST /admin/home/category/32c13d00-4842-42d6-a75d-864ce6349ca3/delete/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 13643
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/add/ HTTP/1.1" 200 9079
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/category/add/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 14003
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/ HTTP/1.1" 200 42485
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21385
+"GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+"GET /admin/home/category/ HTTP/1.1" 200 13762
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/e3dbb646-03da-4c26-a88e-a90a4a3e3e32/change/ HTTP/1.1" 200 9419
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/e3dbb646-03da-4c26-a88e-a90a4a3e3e32/delete/ HTTP/1.1" 200 7816
+"POST /admin/home/category/e3dbb646-03da-4c26-a88e-a90a4a3e3e32/delete/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 13643
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/ HTTP/1.1" 200 13480
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/add/ HTTP/1.1" 200 9079
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/category/add/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 14019
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/ HTTP/1.1" 200 42485
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21393
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21704
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 42807
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21393
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 42794
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21393
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21727
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 42814
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21393
+"GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21724
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21695
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 42817
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21393
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21716
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 42827
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/ HTTP/1.1" 200 6467
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 28019
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13968
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/ HTTP/1.1" 200 6467
+"GET /admin/home/video/ HTTP/1.1" 200 28164
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/add/ HTTP/1.1" 200 12770
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/add/ HTTP/1.1" 302 0
+"GET /admin/home/video/add/ HTTP/1.1" 200 13009
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/add/ HTTP/1.1" 302 0
+"GET /admin/home/video/add/ HTTP/1.1" 200 13009
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/add/ HTTP/1.1" 302 0
+"GET /admin/home/video/67/change/ HTTP/1.1" 200 13361
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/67/change/ HTTP/1.1" 302 0
+"GET /admin/home/video/ HTTP/1.1" 200 29414
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 28019
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13968
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/62/change/ HTTP/1.1" 200 15016
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/62/change/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 28690
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 28408
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13968
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 28408
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/62/change/ HTTP/1.1" 200 14707
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/62/change/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/62/change/ HTTP/1.1" 200 15018
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/62/change/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 28690
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13968
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/63/change/ HTTP/1.1" 200 14874
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/63/change/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 29081
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13968
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 28824
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/63/change/ HTTP/1.1" 200 14590
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/63/change/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 29085
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13968
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 29464
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/logout/ HTTP/1.1" 200 1570
+Not Found: /dashboard
+"GET /dashboard HTTP/1.1" 404 4911
+"GET / HTTP/1.1" 200 7623
+"GET /static/css/login.css HTTP/1.1" 304 0
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 1006807
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 4113
+Previously employee attempted quiz for 9 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 6149
+OTP validation is accessed!
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+"POST /validate/ HTTP/1.1" 302 0
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13368
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain System Administrator, redirecting to quiz page
+"GET /quiz/?category=System%20Administrator HTTP/1.1" 200 13264
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=System%20Administrator HTTP/1.1" 200 4575
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.youtube.com/watch?v=6Hh49NuZde8&ab_channel=CCNAMCITP
+Based on quiz attempt employee got 20 score & selected domain System Administrator
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 26
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10927
+"GET /static/css/result.css HTTP/1.1" 304 0
+Watched timer for youtube id: SRyJbiFynyk with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2390
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 11173
+"GET /admin/home/category/ HTTP/1.1" 200 13770
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/ HTTP/1.1" 200 42530
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/?p=2 HTTP/1.1" 200 45766
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/a3b77957-a244-4977-b7db-70a10bd6096c/change/?_changelist_filters=p%3D2 HTTP/1.1" 200 29208
+"GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+"POST /admin/home/question/a3b77957-a244-4977-b7db-70a10bd6096c/change/?_changelist_filters=p%3D2 HTTP/1.1" 302 0
+"GET /admin/home/question/a3b77957-a244-4977-b7db-70a10bd6096c/change/?_changelist_filters=p%3D2 HTTP/1.1" 200 31856
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/a3b77957-a244-4977-b7db-70a10bd6096c/change/?_changelist_filters=p%3D2 HTTP/1.1" 302 0
+"GET /admin/home/question/?p=2 HTTP/1.1" 200 46052
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/ HTTP/1.1" 200 13770
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/03ea948a-7391-4332-81ae-1388f88d592e/change/ HTTP/1.1" 200 9383
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29206
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/11/change/ HTTP/1.1" 200 13097
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29206
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/12/change/ HTTP/1.1" 200 13115
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29206
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/13/change/ HTTP/1.1" 200 13112
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/ HTTP/1.1" 200 13770
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/03ea948a-7391-4332-81ae-1388f88d592e/change/ HTTP/1.1" 200 9383
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/03ea948a-7391-4332-81ae-1388f88d592e/delete/ HTTP/1.1" 200 30765
+"GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+"POST /admin/home/category/03ea948a-7391-4332-81ae-1388f88d592e/delete/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 13651
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/category/add/ HTTP/1.1" 200 9079
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/category/add/ HTTP/1.1" 302 0
+"GET /admin/home/category/ HTTP/1.1" 200 14002
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/ HTTP/1.1" 200 42477
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21393
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 42705
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21393
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21705
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21728
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/logout/ HTTP/1.1" 200 1570
+"GET / HTTP/1.1" 200 7623
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2239
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 11163
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+"GET /admin/home/category/ HTTP/1.1" 200 13770
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/ HTTP/1.1" 200 11163
+"GET /admin/home/question/ HTTP/1.1" 200 42441
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/question/add/ HTTP/1.1" 200 21393
+"GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/inline-delete.svg HTTP/1.1" 304 0
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21721
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21702
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21715
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21710
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21689
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/add/ HTTP/1.1" 200 21711
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/question/add/ HTTP/1.1" 302 0
+"GET /admin/home/question/ HTTP/1.1" 200 42652
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/ HTTP/1.1" 200 6467
+"GET /admin/home/video/ HTTP/1.1" 200 28269
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/ HTTP/1.1" 200 6467
+"GET /admin/home/video/ HTTP/1.1" 200 28269
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/add/ HTTP/1.1" 200 12770
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/add/ HTTP/1.1" 302 0
+"GET /admin/home/video/add/ HTTP/1.1" 200 13009
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/add/ HTTP/1.1" 302 0
+"GET /admin/home/video/add/ HTTP/1.1" 200 13009
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/add/ HTTP/1.1" 302 0
+"GET /admin/home/video/add/ HTTP/1.1" 200 13009
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/ HTTP/1.1" 200 6467
+"GET /admin/home/video/ HTTP/1.1" 200 29213
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/69/change/ HTTP/1.1" 200 13115
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/69/change/ HTTP/1.1" 302 0
+"GET /admin/home/video/add/ HTTP/1.1" 200 13011
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/ HTTP/1.1" 200 6467
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 28041
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13968
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 14268
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 14268
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 200 14198
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 14268
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 29162
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/logout/ HTTP/1.1" 200 1570
+"GET / HTTP/1.1" 200 7623
+"GET /static/css/login.css HTTP/1.1" 304 0
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 0734
+Previously employee attempted quiz for 10 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 6149
+OTP validation is accessed!
+- Broken pipe from ('127.0.0.1', 50943)
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+- Broken pipe from ('127.0.0.1', 50858)
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 7623
+"GET /static/css/login.css HTTP/1.1" 200 1254
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 1006807
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 0395
+Previously employee attempted quiz for 11 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 6149
+OTP validation is accessed!
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+"POST /validate/ HTTP/1.1" 302 0
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13383
+"GET /static/css/dashboard.css HTTP/1.1" 200 4043
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain PHP, redirecting to quiz page
+"GET /quiz/?category=PHP HTTP/1.1" 200 13213
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=PHP HTTP/1.1" 200 3729
+Results page accessed!
+Based on employee score we are suggesting Intermediate course
+course url : https://www.youtube.com/watch?v=OK_JCtrrv-c
+Suggested udemy course: PHP Programming Language Tutoria
+Suggested youtube course: PHP Programming Language Tutorial
+Youtube ID: OK_JCtrrv-c
+Based on quiz attempt employee got 60 score & selected domain PHP
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 2
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10911
+"GET /static/css/result.css HTTP/1.1" 200 2907
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4917
+Watched timer for youtube id: OK_JCtrrv-c with percentage : 0.004437598912346002
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13380
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain React, redirecting to quiz page
+"GET /quiz/?category=React HTTP/1.1" 200 13219
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=React HTTP/1.1" 200 4022
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Based on quiz attempt employee got 0 score & selected domain React
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 33
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10938
+Watched timer for youtube id: bMknfKXIFA8 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13380
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain React, redirecting to quiz page
+"GET /quiz/?category=React HTTP/1.1" 200 13219
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=React HTTP/1.1" 200 4130
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/react-tutorial-and-projects-course/
+Based on quiz attempt employee got 40 score & selected domain React
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 0
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10939
+Watched timer for youtube id: bMknfKXIFA8 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13380
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain NodeJS, redirecting to quiz page
+"GET /quiz/?category=NodeJS HTTP/1.1" 200 13222
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=NodeJS HTTP/1.1" 200 3815
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+Based on quiz attempt employee got 20 score & selected domain NodeJS
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 20
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10833
+Watched timer for youtube id: TlB_eWDSMt4 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2390
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+"GET /static/admin/css/base.css HTTP/1.1" 200 20344
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 11027
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /admin/home/video/ HTTP/1.1" 200 29217
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6395
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/filters.js HTTP/1.1" 200 966
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/home/video/44/change/ HTTP/1.1" 200 13104
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 29162
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 29162
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13968
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/68/change/ HTTP/1.1" 200 14836
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /admin/home/video/ HTTP/1.1" 200 29217
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/45/change/ HTTP/1.1" 200 13118
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 29538
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13968
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/69/change/ HTTP/1.1" 200 14840
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/69/change/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 30163
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29217
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/46/change/ HTTP/1.1" 200 13111
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 29906
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13968
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 30536
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/logout/ HTTP/1.1" 200 1570
+"GET / HTTP/1.1" 200 7623
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 4174
+Previously employee attempted quiz for 12 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 6149
+OTP validation is accessed!
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+"POST /validate/ HTTP/1.1" 302 0
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13383
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain NodeJS, redirecting to quiz page
+"GET /quiz/?category=NodeJS HTTP/1.1" 200 13222
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=NodeJS HTTP/1.1" 200 3815
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.youtube.com/watch?v=TlB_eWDSMt4
+Based on quiz attempt employee got 20 score & selected domain NodeJS
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 26
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10897
+Watched timer for youtube id: TlB_eWDSMt4 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13383
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain Microstrategy, redirecting to quiz page
+"GET /quiz/?category=Microstrategy HTTP/1.1" 200 13243
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Microstrategy HTTP/1.1" 200 4187
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/introduction-to-microstrategy-report-development/
+Based on quiz attempt employee got 30 score & selected domain Microstrategy
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 33
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10941
+Watched timer for youtube id: K7KvhXto7r8 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13376
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain Mulesoft, redirecting to quiz page
+"GET /quiz/?category=Mulesoft HTTP/1.1" 200 13228
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Mulesoft HTTP/1.1" 200 4182
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/mule-4x-indepth-beginner-to-expert-with-real-time-use-cases/
+Based on quiz attempt employee got 10 score & selected domain Mulesoft
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 34
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10981
+Watched timer for youtube id: iaw9i45yp8g with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13381
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain Siebel, redirecting to quiz page
+"GET /quiz/?category=Siebel HTTP/1.1" 200 13222
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Siebel HTTP/1.1" 200 4515
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+Based on quiz attempt employee got 20 score & selected domain Siebel
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 33
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10833
+Watched timer for youtube id: 6sJpNippicY with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13381
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain Android , redirecting to quiz page
+"GET /quiz/?category=Android%20&%20IOS HTTP/1.1" 200 13228
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Android HTTP/1.1" 200 3765
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+Based on quiz attempt employee got 40 score & selected domain Android 
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 30
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10833
+Watched timer for youtube id: aS__9RbCyHg with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13381
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain Dot Net, redirecting to quiz page
+"GET /quiz/?category=Dot%20Net HTTP/1.1" 200 13225
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Dot%20Net HTTP/1.1" 200 3825
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/asp-net-core-true-ultimate-guide-real-project/
+Based on quiz attempt employee got 30 score & selected domain Dot Net
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 30
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10954
+Watched timer for youtube id: C5cnZ-gZy2I with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Not Found: /fadmin
+"GET /fadmin HTTP/1.1" 404 4902
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2390
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 11012
+"GET /admin/home/video/ HTTP/1.1" 200 29217
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/53/change/ HTTP/1.1" 200 13119
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29217
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/54/change/ HTTP/1.1" 200 13101
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29217
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/55/change/ HTTP/1.1" 200 13112
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 30281
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13968
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/71/change/ HTTP/1.1" 200 14832
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/71/change/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 30900
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 30643
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13968
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 31278
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13968
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/73/change/ HTTP/1.1" 200 14894
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/73/change/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 31699
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 31442
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29217
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 31442
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29217
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/47/change/ HTTP/1.1" 200 13133
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29217
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/48/change/ HTTP/1.1" 200 13107
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29217
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/49/change/ HTTP/1.1" 200 13120
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29217
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/49/change/ HTTP/1.1" 200 13120
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 31442
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13968
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 32089
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13968
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 32475
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/ HTTP/1.1" 200 29217
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/video/49/change/ HTTP/1.1" 200 13120
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/49/change/ HTTP/1.1" 302 0
+"GET /admin/home/video/ HTTP/1.1" 200 29425
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /admin/home/video/49/change/ HTTP/1.1" 200 13105
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/video/49/change/ HTTP/1.1" 302 0
+"GET /admin/home/video/ HTTP/1.1" 200 29435
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 32220
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"GET /admin/home/coursesuggession/add/ HTTP/1.1" 200 13968
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/home/coursesuggession/add/ HTTP/1.1" 302 0
+"GET /admin/home/coursesuggession/ HTTP/1.1" 200 32864
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/logout/ HTTP/1.1" 200 1570
+"GET / HTTP/1.1" 200 7623
+"GET /static/css/login.css HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 1777
+Previously employee attempted quiz for 13 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 6149
+OTP validation is accessed!
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+"POST /validate/ HTTP/1.1" 302 0
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13380
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain Android , redirecting to quiz page
+"GET /quiz/?category=Android%20&%20IOS HTTP/1.1" 200 13228
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Android HTTP/1.1" 200 3765
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.youtube.com/watch?v=aS__9RbCyHg
+Based on quiz attempt employee got 30 score & selected domain Android 
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 33
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10906
+"GET /static/css/result.css HTTP/1.1" 304 0
+Watched timer for youtube id: aS__9RbCyHg with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13380
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain Siebel, redirecting to quiz page
+"GET /quiz/?category=Siebel HTTP/1.1" 200 13222
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Siebel HTTP/1.1" 200 4515
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.youtube.com/watch?v=6sJpNippicY
+Based on quiz attempt employee got 40 score & selected domain Siebel
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 29
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10893
+Watched timer for youtube id: 6sJpNippicY with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+User session exists (remember me enabled), redirecting to the Dashboard page
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET / HTTP/1.1" 200 13380
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain NodeJS, redirecting to quiz page
+"GET /quiz/?category=NodeJS HTTP/1.1" 200 13222
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=NodeJS HTTP/1.1" 200 3815
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.youtube.com/watch?v=TlB_eWDSMt4
+Based on quiz attempt employee got 0 score & selected domain NodeJS
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 52
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10896
+Watched timer for youtube id: TlB_eWDSMt4 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+User session exists (remember me enabled), redirecting to the Dashboard page
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET / HTTP/1.1" 200 13380
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain Dot Net, redirecting to quiz page
+"GET /quiz/?category=Dot%20Net HTTP/1.1" 200 13225
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Dot%20Net HTTP/1.1" 200 3825
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/asp-net-core-true-ultimate-guide-real-project/
+Based on quiz attempt employee got 0 score & selected domain Dot Net
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 53
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10953
+Watched timer for youtube id: C5cnZ-gZy2I with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+User session exists (remember me enabled), redirecting to the Dashboard page
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET / HTTP/1.1" 200 13380
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+Employee is logged-out successfully!
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 7623
+"GET /static/css/login.css HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+"GET / HTTP/1.1" 200 7623
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/css/login.css HTTP/1.1" 200 1254
+"GET /static/images/loginimg.png HTTP/1.1" 200 1006807
+"GET / HTTP/1.1" 200 7623
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 7623
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 7623
+"GET / HTTP/1.1" 200 7623
+"GET / HTTP/1.1" 200 7623
+"GET / HTTP/1.1" 200 7623
+"GET / HTTP/1.1" 200 7623
+"GET / HTTP/1.1" 200 7623
+"GET / HTTP/1.1" 200 7623
+"GET / HTTP/1.1" 200 7623
+"GET /static/css/login.css HTTP/1.1" 200 1254
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 1006807
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 1388
+Previously employee attempted quiz for 14 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 6149
+"GET / HTTP/1.1" 200 7623
+"GET / HTTP/1.1" 200 7623
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 7623
+"GET /static/css/login.css HTTP/1.1" 200 1254
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 1006807
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4917
+"GET / HTTP/1.1" 200 7623
+"GET / HTTP/1.1" 200 7604
+"GET /static/css/login.css HTTP/1.1" 200 1254
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 1006807
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 7214
+Previously employee attempted quiz for 15 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 6149
+OTP validation is accessed!
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+"POST /validate/ HTTP/1.1" 302 0
+Dashboard page is accessed!
+Employee overall Progress: 0.0 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13380
+"GET /static/css/dashboard.css HTTP/1.1" 200 4043
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain PHP, redirecting to quiz page
+"GET /quiz/?category=PHP HTTP/1.1" 200 13213
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=PHP HTTP/1.1" 200 3729
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.youtube.com/watch?v=6EukZDFE_Zg
+Based on quiz attempt employee got 30 score & selected domain PHP
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 22
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10900
+"GET /static/css/result.css HTTP/1.1" 304 0
+Watched timer for youtube id: 6EukZDFE_Zg with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee is logged-out successfully!
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 7604
