@@ -451,9 +451,9 @@ def quiz(request):
                 rem_time[0][1] and rem_time[0][0] > 5:
             new_timer = update_timer
         else:
-            new_timer = 60
+            new_timer = 300
     else:
-        new_timer = 60
+        new_timer = 300
     context = {'category': request.GET.get('category'), 'new_timer': new_timer}
     logger.info('Employee agreed to terms and conditions with selected '
                 'domain {}, redirecting to quiz page'
