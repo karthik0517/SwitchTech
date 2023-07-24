@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <style>
+        .search_bar_icon {
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            float: right;
+            height: 157px;
+            top: 96px;
+            right: 0;
+        }
+
+        .Progress_bar {
+            position: absolute;
+            float: right;
+            height: 157px;
+            top: 276px;
+            right: 259px;
+        }
+
+        .header_searchbar {
+            width: 120px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            padding: 3px 3px 3px 30px;
+        }
+
+        .search_icon {
+            position: absolute;
+            top: 7px;
+            left: 7px;
+        }
+
+        .login_btn {
+            padding: 2px 10px;
+            background-color: #fff;
+            border-radius: 4px;
+            border-color: #fff;
+            margin-top: 6px;
+        }
+
+        .main_navbar_links ul li {
+            margin-left: 15px;
+        }
+
+        .signup_btn {
+            background-color: #068932;
+            color: #fff;
+            border-radius: 4px;
+            border-color: #068932;
+            margin-top: 6px;
+            padding: 2px 10px;
+        }
+
+        .dashboard_title_block {
+            /* width: 100%; */
+            float: left;
+            margin: 0 auto;
+            padding: 20px;
+            /* min-width: 1024px;
+            max-width: 1240px; */
+            /* border-bottom: 1px solid #000; */
+        }
+
+        .prepare_text {
+            width: 100%;
+            float: left;
+        }
+
+        .dashboards_text,
+        .certification_block {
+            width: 100%;
+            float: left;
+            padding-left: 93px;
+        }
+
+        .your_preparation_block {
+            width: 100%;
+            float: left;
+            margin: 0 auto;
+            padding: 20px;
+            min-width: 1240px;
+        }
+
+        .your_preparation_block,
+        .preparation_title h2 {
+            width: 100%;
+            float: left;
+            font-size: 24px;
+            text-transform: capitalize;
+        }
+
+
+
+        .ui_card {
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .ui_card span {
+            color: #738f93;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .ui_card h2 {
+            font-weight: bold;
+            font-size: 26px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+
+        .viewall_btn {
+            background-color: #068932;
+            color: #fff;
+            border-radius: 4px;
+            border-color: #068932;
+            margin-top: 10px;
+            width: 150px;
+        }
+
+        .explore_btn {
+            background-color: #bdc3c7;
+            color: #000;
+            border-color: #bdc3c7;
+        }
+
+        .black_card h3 {
+            font-size: 20px;
+        }
+
+        .black_card p {
+            font-size: 14px;
+        }
+
+        .black_card .btn {
+            margin: 0;
+        }
+
+        .column {
+            width: 76.34%;
+            margin-left: 12px;
+        }
+
+        .bg_white {
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .bg_white .nav-link {
+            color: #000 !important;
+        }
+
+        .header_logo {
+            width: 80px;
+            margin-right: 10px;
+        }
+
+        .logo_title {
+            font-weight: 600;
+            font-size: 24px;
+            color: #000;
+            line-height: 65px;
+        }
+
+        .username-wrapper {
+          display: flex;
+          align-items: center;
+          margin-right: 10px;
+        }
+
+        .greet {
+          font-weight: 600;
+          font-size: 20px;
+          color: #000;
+          margin-right: 5px;
+        }
+
+        .username {
+          font-weight: 600;
+          font-size: 20px;
+          color: #000;
+          text-transform: capitalize;
+          text-decoration: none;
+          position: relative;
+        }
+
+        .logout_btn {
+            padding: 6px 16px;
+            background-color: #3cc2e7;
+            color: #fff;
+            border-radius: 4px;
+            border: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout_btn:hover {
+            background-color: #05f635;
+        }
+        .align{
+            margin-left: 90px;
+        }
+        .chart-container {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            top: 30%;
+            left: 60%;
+        }
+
+        .chart-sum {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #000; /* Add this line to override the font-weight property */
+            white-space: nowrap;
+        }
+
+        .chart-title {
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: #17b8b838;">
+    <div class="header_block">
+        <nav class="navbar navbar-expand-md bg_white navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img class="header_logo" src="{% static 'images\ratnaglobal_logo.png' %}" alt="">
+                <span class="logo_title">SWITCHING TECH SYSTEMS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse main_navbar_links" id="collapseNavbar">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+<!--                      <a class="nav-link" href="#">My Learning</a>-->
+                  </li>
+                  <li class="nav-item">
+<!--                      <a class="nav-link" href="#" onclick="fetchHistory()">History</a>-->
+                  </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item dropdown">
+                      {% if user.is_authenticated %}
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="greet">Welcome</span>
+                          <span class="username">{{ request.user }}</span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item logout_btn" href="#" onclick="mylearning()">
+                            <i class="fas fa-sign-out-alt"></i> My Learning
+                          </a>
+                          <a class="dropdown-item logout_btn" href="#" onclick="fetchHistory()">
+                            <i class="fas fa-sign-out-alt"></i> History
+                          </a>
+                          <a class="dropdown-item logout_btn" href="#" onclick="LogoutUser()">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                          </a>
+                      </div>
+                      {% endif %}
+                  </li>
+              </ul>
+          </div>
+        </nav>
+    </div>
+    <div class="dashboard_title_block">
+        <div class="dashboards_text">
+            <h1>Employee Dashboard</h1>
+        </div>
+    </div>
+
+  <div class="certification_block your_preparation_block">
+    <div class="dashboard-section-header" style="width: 100%; float: left; padding-top: 10px;">
+        <h2 class="text-para-headline bold dashboard-section-title align">Select a domain to switch<span style="font-size: 14px; padding-left: 10px;"></span></h2>
+    </div>
+    <div class="" style="width: 33.33%; float: left; padding-top: 10px; padding-left: 111px; text-align: center;">
+        <ul class="list-group">
+            {% for category in categories %}
+                {% if forloop.counter0|divisibleby:3 %}
+                {% endif %}
+                <li class="list-group-item">
+                    <a href="javascript:void(0);" onclick="storeLink('{{ category.category_name }}')">{{ category.category_name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+  </div>
+  <div class="logo">
+      <img src="{% static 'images\dashboard.png' %}" alt="">
+  </div>
+  <div class="chart-container">
+    <h2 class="chart-title">Your Progress</h2>
+    <canvas id="doughnutChart"></canvas>
+    <div class="chart-sum" id="chartSum"></div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+        // Retrieve the canvas element
+        var canvas = document.getElementById('doughnutChart');
+
+        // Create the chart context
+        var ctx = canvas.getContext('2d');
+
+        // Define the labels and data for the chart
+        var labels = {{ list_categories|safe }};
+        var data = {{ list_overall_progress }};
+
+        // Calculate the sum of all data values
+        var sum = data.reduce(function (a, b) {
+          return a + b;
+        }, 0);
+
+        // Append the sum to the labels and data
+        labels.push('Remaining');
+        data.push(100 - sum);
+
+        // Define the colors for the chart segments
+        var colors = ['red', 'blue', 'green', 'orange', 'gray'];
+
+        // Create an array to store the background colors for the chart segments
+        var backgroundColors = [];
+
+        // Assign colors to each segment
+        for (var i = 0; i < labels.length; i++) {
+          if (labels[i] === 'Remaining') {
+            backgroundColors.push('gray');
+          } else {
+            backgroundColors.push(colors[i % colors.length]);
+          }
+        }
+
+        // Create the doughnut chart
+        var doughnutChart = new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+            labels: labels,
+            datasets: [
+              {
+                data: data,
+                backgroundColor: backgroundColors,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            legend: {
+              display: true,
+            },
+            plugins: {
+              labels: [
+                {
+                  render: function (args) {
+                    if (args.label === 'Total') {
+                      return {
+                        text: 'Total',
+                        position: 'default',
+                        fontColor: '#000',
+                        fontStyle: 'bold',
+                        fontSize: 14,
+                      };
+                    } else {
+                      return args.label + ': ' + args.value;
+                    }
+                  },
+                  position: 'outside',
+                  fontColor: '#000',
+                  fontStyle: 'bold',
+                  fontSize: 14,
+                },
+                {
+                  render: 'percentage',
+                  fontColor: '#fff',
+                  fontStyle: 'bold',
+                  fontSize: 12,
+                },
+              ],
+            },
+          },
+        });
+
+        // Display the sum in the center of the chart
+        chartSum.innerHTML = sum.toFixed(2) + '%<br> Completed';
+
+
+        function fetchHistory() {
+            window.location.href = '/history/';
+        }
+
+        function mylearning() {
+            window.location.href = '/mylearning/';
+        }
+
+        function LogoutUser() {
+            window.location.href = '/logout/';
+        }
+
+
+        function storeLink(link) {
+            // Store the selected link in local session
+            sessionStorage.setItem('selectedLink', link);
+            console.log('Selected Link:', link);
+
+            // Redirect to the other HTML page
+            window.location.href = '/validate/dashboard/index/';
+        }
+  </script>
+</body>
+</html>
