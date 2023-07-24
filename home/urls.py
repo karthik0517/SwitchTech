@@ -18,6 +18,8 @@ urlpatterns = [
     path('skipquiz/', views.skip_quiz, name='skipquiz'),
     path('save_time', views.save_time, name='save_time'),
     path('mylearning/', views.my_learning, name='mylearning'),
+    path('feedback/', views.feedback, name='feedback'),
+    path('submit_feedback/', views.submit_feedback, name='submit_feedback'),
     path('final/', views.final, name='final'),
     path('logout/', views.user_logout, name='logout'),
 ]

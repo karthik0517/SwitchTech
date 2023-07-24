@@ -282,6 +282,9 @@
                           <a class="dropdown-item logout_btn" href="#" onclick="fetchHistory()">
                             <i class="fas fa-sign-out-alt"></i> History
                           </a>
+                          <a class="dropdown-item logout_btn" href="#" onclick="feedback()">
+                            <i class="fas fa-sign-out-alt"></i>Feedback
+                          </a>
                           <a class="dropdown-item logout_btn" href="#" onclick="LogoutUser()">
                             <i class="fas fa-sign-out-alt"></i> Logout
                           </a>
@@ -325,6 +328,7 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
+
         // Retrieve the canvas element
         var canvas = document.getElementById('doughnutChart');
 
@@ -419,6 +423,10 @@
 
         function mylearning() {
             window.location.href = '/mylearning/';
+        }
+
+        function feedback() {
+          window.location.href = '/feedback/';
         }
 
         function LogoutUser() {
