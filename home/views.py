@@ -6,7 +6,7 @@ import math
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
 from django.contrib.auth import login, logout
-from .models import Question, QuizAttempt, QuizUserScore, Otp
+from .models import Question, QuizAttempt, QuizUserScore, Otp, Feedback
 from .models import PlayerActivity, CourseSuggession, Category, Video
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
@@ -14,6 +14,8 @@ from django.core.mail import send_mail
 from django.contrib.auth.models import User
 from django.utils import timezone
 from django.http import HttpResponseBadRequest
+from django.db.models import Q
+from django.contrib import messages
 
 
 logger = logging.getLogger(__name__)
@@ -21,7 +23,7 @@ logger = logging.getLogger(__name__)
 
 def generate_otp():
     '''
-    It is will generate an 6 digit random number
+    It is will generate an 4 digit random number
     '''
     digits = "0123456789"
     OTP = ""
@@ -85,12 +87,11 @@ def loginPage(request):
             latest_user = User.objects.latest('date_joined')
             last_user_id = int(latest_user.id) if latest_user else 1
             try:
-                user = User.objects.get(username=username)
-                if user.email != Employee_Mail:
-                    error_message = 'Invalid username or email-id.'
+                user = User.objects.get(Q(username__exact=username) | Q(email__exact=Employee_Mail))
+                if user.username != username or user.email != Employee_Mail:
+                    error_message = 'Invalid username or email.'
                     logger.info('Employee entered invalid username or email')
-                    return render(request, 'login.html',
-                                  {'error_message': error_message})
+                    return render(request, 'login.html', {'error_message': error_message})
             except User.DoesNotExist:
                 logger.info('New employee details are entered '
                             'and saving into database')
@@ -618,3 +619,58 @@ def my_learning(request):
             'no_data': True  # Add a flag to indicate no data
         }
         return render(request, 'mylearning.html', context=data)
+
+
+
+def feedback(request):
+    return render(request, 'feedback.html')
+
+
+def submit_feedback(request):
+    if request.method == 'POST':
+        mail = request.session.get('mail')
+        user = User.objects.get(email=mail)
+        logger.info('Employee accessed Feedback page')
+        emp_feedback = Feedback()
+        emp_feedback.user = user
+        emp_feedback.q1 = request.POST.get('q1')
+        emp_feedback.q2 = request.POST.get('q2')
+        emp_feedback.q3 = request.POST.get('q3')
+        emp_feedback.q4 = request.POST.get('q4')
+        emp_feedback.q5 = request.POST.get('q5')
+        emp_feedback.q6 = request.POST.get('q6')
+        emp_feedback.q7 = request.POST.get('q7')
+        emp_feedback.q8 = request.POST.get('q8')
+        emp_feedback.q9 = request.POST.get('q9')
+        emp_feedback.q10 = request.POST.get('q10')
+        emp_feedback.q11 = request.POST.get('q11')
+        emp_feedback.q12 = request.POST.get('q12')
+        emp_feedback.q13 = request.POST.get('q13')
+        emp_feedback.q14 = request.POST.get('q14')
+        emp_feedback.q15 = request.POST.get('q15')
+
+        user_feedback = Feedback.objects.filter(user=user)
+    
+        if user_feedback:
+            Feedback.objects.filter(user=user).update(overall_exp_with_STS=emp_feedback.q1, 
+                                                     expectation_in_assisting_tech_transition=emp_feedback.q2, 
+                                                     exp_in_navigation_finding_features=emp_feedback.q3, 
+                                                     quiz_engaging_and_interactive=emp_feedback.q4, 
+                                                     quiz_evaluation_of_tech_accuration=emp_feedback.q5, 
+                                                     udm_yt_recom_helpful=emp_feedback.q6, 
+                                                     cs_align_withur_curt_knowledge_levl=emp_feedback.q7, 
+                                                     conveniency_accessing_recom_yt_cs=emp_feedback.q8, 
+                                                     mylearningpage_layout_presentation=emp_feedback.q9, 
+                                                     valueof_progs_tracking_feature_on_dashboard=emp_feedback.q10, 
+                                                     motivate_to_complete_course=emp_feedback.q11, 
+                                                     specific_feature_you_feel_missing=emp_feedback.q12, 
+                                                     how_app_enhanced=emp_feedback.q13, 
+                                                     technical_prob_performance_issue=emp_feedback.q14, 
+                                                     exp_anythingelse_about_STS=emp_feedback.q15)
+        else:
+            
+            emp_feedback.save()
+    logger.info('Feedback submitted successfully!')
+    messages.success(request, 'Feedback submitted successfully!')
+
+    return redirect('dashboard')
