@@ -18569,6 +18569,7 @@ Employee overall Progress: 0.03 %
 Dashboard page is accessed
 "GET /validate/dashboard/ HTTP/1.1" 200 13895
 Watching for file changes with StatReloader
+<<<<<<< HEAD
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
 "GET / HTTP/1.1" 200 7604
@@ -18622,6 +18623,20 @@ Entered employee mail: abc@ratnaglobaltech.com
 OTP is generated 1436
 Previously employee attempted quiz for 2 time
 Otp is sent to employee mail-id: abc@ratnaglobaltech.com
+=======
+User session exists (remember me enabled), redirecting to the Dashboard page
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET / HTTP/1.1" 200 13895
+Employee is logged-out successfully!
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 7604
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 5144
+Previously employee attempted quiz for 29 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+>>>>>>> 8456d2fd35e0359c8367a8d22001de9125b4bb3f
 Employee details are saved into database
 Employee is redirected to otp validation page!
 "POST / HTTP/1.1" 200 6149
@@ -18631,6 +18646,7 @@ Employee checked keep me signed: True
 Employee logged-in successfully
 "POST /validate/ HTTP/1.1" 302 0
 Dashboard page is accessed!
+<<<<<<< HEAD
 Employee overall Progress: 0.0 %
 Dashboard page is accessed
 "GET /validate/dashboard/ HTTP/1.1" 200 13901
@@ -20252,6 +20268,39 @@ Entered employee mail: karthik@ratnaglobaltech.com
 OTP is generated 9292
 Previously employee attempted quiz for 1 time
 Otp is sent to employee mail-id: karthik@ratnaglobaltech.com
+=======
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13895
+Dashboard page is accessed!
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13895
+Dashboard page is accessed!
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13921
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/css/dashboard.css HTTP/1.1" 200 3999
+Dashboard page is accessed!
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13921
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+User session exists (remember me enabled), redirecting to the Dashboard page
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET / HTTP/1.1" 200 13921
+Employee is logged-out successfully!
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 7604
+"GET /static/css/login.css HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 4477
+Previously employee attempted quiz for 30 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
 Employee details are saved into database
 Employee is redirected to otp validation page!
 "POST / HTTP/1.1" 200 6149
@@ -20261,6 +20310,144 @@ Employee checked keep me signed: True
 Employee logged-in successfully
 "POST /validate/ HTTP/1.1" 302 0
 Dashboard page is accessed!
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13921
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+Dashboard page is accessed!
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13935
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+Dashboard page is accessed!
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13921
+Dashboard page is accessed!
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13916
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+Dashboard page is accessed!
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13915
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+Dashboard page is accessed!
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13915
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain Microstrategy, redirecting to quiz page
+"GET /quiz/?category=Microstrategy HTTP/1.1" 200 13243
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Microstrategy HTTP/1.1" 200 4021
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.udemy.com/course/introduction-to-microstrategy-report-development/
+Based on quiz attempt employee got 0 score & selected domain Microstrategy
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 50
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10940
+"GET /static/css/result.css HTTP/1.1" 200 2907
+Watched timer for youtube id: K7KvhXto7r8 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Dashboard page is accessed!
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13915
+Dashboard page is accessed!
+Internal Server Error: /validate/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\SwitchTech\home\views.py", line 208, in dashboard
+    user = User.objects.get(email=mail)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+"GET /validate/dashboard/ HTTP/1.1" 500 75604
+Dashboard page is accessed!
+Internal Server Error: /validate/dashboard/
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\SwitchTech\home\views.py", line 208, in dashboard
+    user = User.objects.get(email=mail)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\models\query.py", line 650, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+"GET /validate/dashboard/ HTTP/1.1" 500 75383
+"GET / HTTP/1.1" 200 7604
+"GET /static/css/login.css HTTP/1.1" 304 0
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 5390
+Previously employee attempted quiz for 31 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 6149
+OTP validation is accessed!
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+"POST /validate/ HTTP/1.1" 302 0
+Dashboard page is accessed!
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13915
+"GET /static/css/dashboard.css HTTP/1.1" 200 3999
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 11107
+"GET /static/css/mylearning.css HTTP/1.1" 200 1770
+"GET / HTTP/1.1" 200 7604
+"GET /static/css/login.css HTTP/1.1" 304 0
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 0802
+Previously employee attempted quiz for 32 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+>>>>>>> 8456d2fd35e0359c8367a8d22001de9125b4bb3f
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 200 6149
+OTP validation is accessed!
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+"POST /validate/ HTTP/1.1" 302 0
+Dashboard page is accessed!
+<<<<<<< HEAD
 No progress data found
 "GET /validate/dashboard/ HTTP/1.1" 200 13875
 "GET /feedback/ HTTP/1.1" 200 9740
@@ -20313,6 +20500,27 @@ Entered employee mail: abc@ratnaglobaltech.com
 OTP is generated 4136
 Previously employee attempted quiz for 7 time
 Otp is sent to employee mail-id: abc@ratnaglobaltech.com
+=======
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13915
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+Employee is logged-out successfully!
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 7604
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 7604
+"GET /static/css/login.css HTTP/1.1" 200 1254
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 1006807
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4917
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 4087
+Previously employee attempted quiz for 33 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+>>>>>>> 8456d2fd35e0359c8367a8d22001de9125b4bb3f
 Employee details are saved into database
 Employee is redirected to otp validation page!
 "POST / HTTP/1.1" 200 6149
@@ -20322,6 +20530,7 @@ Employee checked keep me signed: True
 Employee logged-in successfully
 "POST /validate/ HTTP/1.1" 302 0
 Dashboard page is accessed!
+<<<<<<< HEAD
 Employee overall Progress: 0.0 %
 Dashboard page is accessed
 "GET /validate/dashboard/ HTTP/1.1" 200 13913
@@ -21050,11 +21259,129 @@ saving remaining time in database: 1
 "POST /api/save-remaining-time/ HTTP/1.1" 200 48
 saving remaining time in database: 0
 "POST /api/save-remaining-time/ HTTP/1.1" 200 48
+=======
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13915
+"GET /static/css/dashboard.css HTTP/1.1" 200 3999
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain React.js, redirecting to quiz page
+"GET /quiz/?category=React.js HTTP/1.1" 200 13228
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=React.js HTTP/1.1" 200 4527
+Results page accessed!
+Based on employee score we are suggesting Intermediate course
+course url : https://www.youtube.com/watch?v=-bEzt5ISACA
+Suggested udemy course: React State Management – Intermediate JavaScript
+Suggested youtube course: React State Management – Intermediate JavaScript Course
+Youtube ID: bEzt5ISACA
+Based on quiz attempt employee got 60 score & selected domain React.js
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 3
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10928
+"GET /static/css/result.css HTTP/1.1" 200 2907
+"GET /validate/dashboard HTTP/1.1" 301 0
+Dashboard page is accessed!
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13915
+Internal Server Error: /save_time
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: home_playeractivity.percentage
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\SwitchTech\home\views.py", line 629, in save_time
+    PlayerActivity.objects.create(current_time=current_time,
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\models\query.py", line 671, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\models\base.py", line 812, in save
+    self.save_base(
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\models\base.py", line 863, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\models\base.py", line 1006, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\models\base.py", line 1047, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\models\query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\VenugopalPemma\Desktop\Git_july_Switching\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: home_playeractivity.percentage
+- Broken pipe from ('127.0.0.1', 50321)
+My Learning page accessed!
+Learning modules are present
+"GET /mylearning/ HTTP/1.1" 200 11107
+"GET /static/css/mylearning.css HTTP/1.1" 200 1770
+Dashboard page is accessed!
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13915
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain React.js, redirecting to quiz page
+"GET /quiz/?category=React.js HTTP/1.1" 200 13228
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=React.js HTTP/1.1" 200 4527
+>>>>>>> 8456d2fd35e0359c8367a8d22001de9125b4bb3f
 Results page accessed!
 Based on employee score we are suggesting Beginner course
 course url : https://www.youtube.com/watch?v=bMknfKXIFA8
 Based on quiz attempt employee got 0 score & selected domain React.js
 "POST /api/result/ HTTP/1.1" 200 0
+<<<<<<< HEAD
 saving remaining time in database: 0
 "POST /api/save-remaining-time/ HTTP/1.1" 200 48
 Employee redirect to results page with course suggestion
@@ -21276,6 +21603,38 @@ Entered employee mail: abc@ratnaglobaltech.com
 OTP is generated 3830
 Previously employee attempted quiz for 9 time
 Otp is sent to employee mail-id: abc@ratnaglobaltech.com
+=======
+saving remaining time in database: 48
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10939
+Watched timer for youtube id: bMknfKXIFA8 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10951
+Watched timer for youtube id: bMknfKXIFA8 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+"GET / HTTP/1.1" 200 7604
+"GET /static/css/login.css HTTP/1.1" 200 1254
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 1006807
+User session exists (remember me enabled), redirecting to the Dashboard page
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET / HTTP/1.1" 200 13915
+"GET /static/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+Employee is logged-out successfully!
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 7604
+"GET /static/css/login.css HTTP/1.1" 304 0
+"GET /static/images/loginimg.png HTTP/1.1" 304 0
+Login page accessed!
+Entered employee mail: venugopal.pemma@ratnaglobaltech.com
+OTP is generated 0154
+Previously employee attempted quiz for 34 time
+Otp is sent to employee mail-id: venugopal.pemma@ratnaglobaltech.com
+>>>>>>> 8456d2fd35e0359c8367a8d22001de9125b4bb3f
 Employee details are saved into database
 Employee is redirected to otp validation page!
 "POST / HTTP/1.1" 200 6149
@@ -21285,6 +21644,7 @@ Employee checked keep me signed: True
 Employee logged-in successfully
 "POST /validate/ HTTP/1.1" 302 0
 Dashboard page is accessed!
+<<<<<<< HEAD
 Internal Server Error: /validate/dashboard/
 Traceback (most recent call last):
   File "C:\Users\KarthikKonduru\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
@@ -21920,15 +22280,70 @@ Employee agreed to terms and conditions with selected domain Microstrategy, redi
 "GET /quiz/?category=Microstrategy HTTP/1.1" 200 15686
 Quiz question loaded successfully
 "GET /api/get-quiz/?category=Microstrategy HTTP/1.1" 200 4148
+=======
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET /validate/dashboard/ HTTP/1.1" 200 13915
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+"GET /static/images/Instruction.png HTTP/1.1" 304 0
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain Front End, redirecting to quiz page
+"GET /quiz/?category=Front%20End HTTP/1.1" 200 13231
+"GET /static/images/Quiz.png HTTP/1.1" 304 0
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Front%20End HTTP/1.1" 200 3841
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.youtube.com/watch?v=zJSY8tbf_ys
+Based on quiz attempt employee got 0 score & selected domain Front End
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 45
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10926
+"GET /static/css/result.css HTTP/1.1" 304 0
+Watched timer for youtube id: zJSY8tbf_ys with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10926
+Watched timer for youtube id: zJSY8tbf_ys with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+User session exists (remember me enabled), redirecting to the Dashboard page
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET / HTTP/1.1" 200 13915
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain Microstrategy, redirecting to quiz page
+"GET /quiz/?category=Microstrategy HTTP/1.1" 200 13243
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Microstrategy HTTP/1.1" 200 4151
+>>>>>>> 8456d2fd35e0359c8367a8d22001de9125b4bb3f
 Results page accessed!
 Based on employee score we are suggesting Beginner course
 course url : https://www.udemy.com/course/introduction-to-microstrategy-report-development/
 Based on quiz attempt employee got 0 score & selected domain Microstrategy
 "POST /api/result/ HTTP/1.1" 200 0
+<<<<<<< HEAD
+=======
+saving remaining time in database: 42
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10952
+Watched timer for youtube id: K7KvhXto7r8 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10952
+Watched timer for youtube id: K7KvhXto7r8 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+>>>>>>> 8456d2fd35e0359c8367a8d22001de9125b4bb3f
 Employee redirect to results page with course suggestion
 "GET /final/ HTTP/1.1" 200 10940
 Watched timer for youtube id: K7KvhXto7r8 with percentage : 0
 "POST /save_time HTTP/1.1" 200 38
+<<<<<<< HEAD
 Dashboard page is accessed!
 Employee overall Progress: 0.0 %
 Dashboard page is accessed
@@ -22878,3 +23293,77 @@ Feedback submitted successfully!
 Dashboard page is accessed!
 No progress data found
 "GET /validate/dashboard/ HTTP/1.1" 200 13348
+=======
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10952
+Watched timer for youtube id: K7KvhXto7r8 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10952
+Watched timer for youtube id: K7KvhXto7r8 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10952
+Watched timer for youtube id: K7KvhXto7r8 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10943
+Watched timer for youtube id: K7KvhXto7r8 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10940
+Watched timer for youtube id: K7KvhXto7r8 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10952
+Watched timer for youtube id: K7KvhXto7r8 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10952
+Watched timer for youtube id: K7KvhXto7r8 with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+User session exists (remember me enabled), redirecting to the Dashboard page
+Employee overall Progress: 0.03 %
+Dashboard page is accessed
+"GET / HTTP/1.1" 200 13915
+Instruction page is accessed
+"GET /validate/dashboard/index/ HTTP/1.1" 200 7774
+Employee still having the previous quiz timer with 51 sec
+Employee agreed to terms and conditions with selected domain Front End, redirecting to quiz page
+"GET /quiz/?category=Front%20End HTTP/1.1" 200 13231
+Quiz question loaded successfully
+"GET /api/get-quiz/?category=Front%20End HTTP/1.1" 200 3841
+Results page accessed!
+Based on employee score we are suggesting Beginner course
+course url : https://www.youtube.com/watch?v=zJSY8tbf_ys
+Based on quiz attempt employee got 0 score & selected domain Front End
+"POST /api/result/ HTTP/1.1" 200 0
+saving remaining time in database: 41
+"POST /api/save-remaining-time/ HTTP/1.1" 200 48
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10926
+Watched timer for youtube id: zJSY8tbf_ys with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11025
+Watched timer for youtube id: zJSY8tbf_ys with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11018
+Watched timer for youtube id: zJSY8tbf_ys with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10924
+Watched timer for youtube id: zJSY8tbf_ys with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 11202
+Watched timer for youtube id: zJSY8tbf_ys with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10926
+Watched timer for youtube id: zJSY8tbf_ys with percentage : 0
+"POST /save_time HTTP/1.1" 200 38
+Employee redirect to results page with course suggestion
+"GET /final/ HTTP/1.1" 200 10926
+>>>>>>> 8456d2fd35e0359c8367a8d22001de9125b4bb3f
