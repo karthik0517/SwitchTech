@@ -6,7 +6,7 @@ import math
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
 from django.contrib.auth import login, logout
-from .models import Question, QuizAttempt, QuizUserScore, Otp
+from .models import Question, QuizAttempt, QuizUserScore, Otp, Feedback
 from .models import PlayerActivity, CourseSuggession, Category, Video
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
@@ -15,7 +15,7 @@ from django.contrib.auth.models import User
 from django.utils import timezone
 from django.http import HttpResponseBadRequest
 from django.db.models import Q
-import ast
+from django.contrib import messages
 
 
 logger = logging.getLogger(__name__)
@@ -139,10 +139,10 @@ def loginPage(request):
                 logger.info(f'Otp is sent to employee '
                             f'mail-id: {Employee_Mail}')
 
-                # send_mail(subject="OTP", message=f"Your otp {otp}",
-                #           from_email="switchingtechsystem@gmail.com",
-                #           recipient_list=[Employee_Mail],
-                #           fail_silently=False)
+                send_mail(subject="OTP", message=f"Your otp {otp}",
+                          from_email="switchingtechsystem@gmail.com",
+                          recipient_list=[Employee_Mail],
+                          fail_silently=False)
                 
             else:
                 logger.info(f'Otp is sent to employee '
@@ -663,3 +663,71 @@ def my_learning(request):
             'no_data': True  # Add a flag to indicate no data
         }
         return render(request, 'mylearning.html', context=data)
+
+
+
+def feedback(request):
+    return render(request, 'feedback.html')
+
+
+def submit_feedback(request):
+    if request.method == 'POST':
+        mail = request.session.get('mail')
+        user = User.objects.get(email=mail)
+        logger.info('Employee accessed Feedback page')
+
+        q1 = request.POST.get('q1')
+        q2 = request.POST.get('q2')
+        q3 = request.POST.get('q3')
+        q4 = request.POST.get('q4')
+        q5 = request.POST.get('q5')
+        q6 = request.POST.get('q6')
+        q7 = request.POST.get('q7')
+        q8 = request.POST.get('q8')
+        q9 = request.POST.get('q9')
+        q10 = request.POST.get('q10')
+        q11 = request.POST.get('q11')
+        q12 = request.POST.get('q12')
+        q13 = request.POST.get('q13')
+        q14 = request.POST.get('q14')
+        q15 = request.POST.get('q15')
+
+        user_feedback = Feedback.objects.filter(user=user)
+
+        if user_feedback:
+            Feedback.objects.filter(user=user).update(overall_exp_with_STS=q1,
+                                                      expectation_in_assisting_tech_transition=q2,
+                                                      exp_in_navigation_finding_features=q3,
+                                                      quiz_engaging_and_interactive=q4,
+                                                      quiz_evaluation_of_tech_accuration=q5,
+                                                      udm_yt_recom_helpful=q6,
+                                                      cs_align_withur_curt_knowledge_levl=q7,
+                                                      conveniency_accessing_recom_yt_cs=q8,
+                                                      mylearningpage_layout_presentation=q9,
+                                                      valueof_progs_tracking_feature_on_dashboard=q10,
+                                                      motivate_to_complete_course=q11,
+                                                      specific_feature_you_feel_missing=q12,
+                                                      how_app_enhanced=q13,
+                                                      technical_prob_performance_issue=q14,
+                                                      exp_anythingelse_about_STS=q15)
+        else:
+            add_feedback = Feedback(overall_exp_with_STS=q1,
+                                    expectation_in_assisting_tech_transition=q2,
+                                    exp_in_navigation_finding_features=q3,
+                                    quiz_engaging_and_interactive=q4,
+                                    quiz_evaluation_of_tech_accuration=q5,
+                                    udm_yt_recom_helpful=q6,
+                                    cs_align_withur_curt_knowledge_levl=q7,
+                                    conveniency_accessing_recom_yt_cs=q8,
+                                    mylearningpage_layout_presentation=q9,
+                                    valueof_progs_tracking_feature_on_dashboard=q10,
+                                    motivate_to_complete_course=q11,
+                                    specific_feature_you_feel_missing=q12,
+                                    how_app_enhanced=q13,
+                                    technical_prob_performance_issue=q14,
+                                    exp_anythingelse_about_STS=q15, user=user)
+            add_feedback.save()
+    logger.info('Feedback submitted successfully!')
+    messages.success(request, 'Feedback submitted successfully!')
+
+    return redirect('dashboard')

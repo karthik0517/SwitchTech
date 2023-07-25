@@ -26,9 +26,7 @@
     <!-- Latest compiled and minified JavaScript -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-
         crossorigin="anonymous"></script>
 
     <!--    <script type="text/javascript">-->
@@ -140,7 +138,24 @@
 
                     <div class="course">
 
-                        <div class="course-type">Paid Course: <span class="colored-box">Yes</span></div>
+                        <!-- <div class="course-type">Paid Course: <span class="colored-box">Yes</span></div> -->
+                        <div class="course-level">Course level: <span class="colored-box">{% if difficulty == "BG" %}
+
+                            Beginner
+
+                            {% elif difficulty == "IN" %}
+
+                            Intermediate
+
+                            {% elif difficulty == "AD" %}
+
+                            Advanced
+
+                            {% else %}
+
+                            {{ difficulty }}
+
+                            {% endif %}</span></div>
 
                         <div class="course-name">Course name: <span class="colored-box">{{course_name}}</span></div>
 
@@ -172,7 +187,7 @@
 
                 <div id="popupModal" class="modal">
 
-                    <div class="modal-content">
+                    <div class="modal-content" style="width: 366PX;">
 
                         <span class="modal-close" onclick="closePopup()">&times;</span>
 
@@ -182,8 +197,24 @@
 
                             <button onclick="redirectToUdemy()">Yes</button>
 
-                            <button onclick="raiseTicket()">No</button>
+                            <button onclick="openkekapopup()">No</button>
 
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- close popup issue solved here -->
+
+                <div id="popupModalkeka" class="modal">
+                    <div class="modal-content" style="width: 366PX;">
+                        <span class="modal-close" onclick="closekekaPopup()">&times;</span>
+
+                        <p>You need to raise a ticket in Keka.</p>
+
+                        <div class="modal-buttons">
+                            <button onclick="redirectToKeka()">Keka</button>
                         </div>
 
                     </div>
@@ -192,24 +223,26 @@
 
             </div>
 
-            <div class="col-md-4 p-3 youtube">
+        <!-- </div> -->
 
-                <h2>Recommendations</h2>
+        <div class="col-md-4 p-3 youtube">
 
-                </h2>
+            <h2>Recommendations</h2>
+
+            </h2>
 
 
 
 
-                <div id="ytplayer" class="rounded p-1 mt-3" style="width: 100%; height: 310px;"></div>
+            <div id="ytplayer" class="rounded p-1 mt-3" style="width: 100%; height: 310px;"></div>
 
-                <!-- <h2>{{ Video.title }}</h2>
+            <!-- <h2>{{ Video.title }}</h2>
 
                 <p>{{ Video.duration }}</p> -->
 
-            </div>
-
         </div>
+
+    </div>
 
 
 
@@ -310,216 +343,103 @@
 
 
 
-
                 // Get the CSRF token value from the cookie
-
                 var csrftoken = getCookie('csrftoken');
-
-
-
-
                 // Send the current time, percentage, and youtube ID to the server using AJAX
-
                 var xhr = new XMLHttpRequest();
-
                 xhr.open('POST', '/save_time', true);
-
                 xhr.setRequestHeader('Content-Type', 'application/json');
-
                 xhr.setRequestHeader('X-CSRFToken', csrftoken); // Include the CSRF token in the request header
-
                 xhr.onreadystatechange = function () {
-
                     if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-
                         console.log('Time saved successfully');
-
                         isSaveExecuted = true; // Update the flag to prevent further saves
-
                     }
-
                 };
-
                 xhr.send(JSON.stringify({ 'current_time': currentTime, 'youtube_id': youtubeId, 'percentage': percentage, 'selectedcategory': selectedcategory }));
-
             } else {
-
                 console.log('Invalid current time or save operation already executed');
-
             }
-
         }
-
-
-
 
         // Helper function to get the CSRF cookie value
-
         function getCookie(name) {
-
             var cookieValue = null;
-
             if (document.cookie && document.cookie !== '') {
-
                 var cookies = document.cookie.split(';');
-
                 for (var i = 0; i < cookies.length; i++) {
-
                     var cookie = cookies[i].trim();
-
                     if (cookie.substring(0, name.length + 1) === (name + '=')) {
-
                         cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-
                         break;
-
                     }
-
                 }
-
             }
-
             return cookieValue;
-
         }
-
     </script>
-
     <script>
 
         function openPopup() {
-
             document.getElementById("popupModal").style.display = "block";
-
         }
 
+        function openkekapopup(){
+            document.getElementById("popupModalkeka").style.display = "block";
+        }
 
-
+        function closekekaPopup() {
+            document.getElementById("popupModalkeka").style.display = "none";
+        }
 
         function closePopup() {
-
             document.getElementById("popupModal").style.display = "none";
-
         }
-
-
-
 
         function redirectToUdemy() {
-
             // Redirect to Udemy login page
-
             const enrollButton = document.querySelector('.enroll-button');
-
             const suggestedUrl = enrollButton.getAttribute('data-suggested');
-
             const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";
-
             const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;
-
-
-
-
             // Open the Udemy login page in the same tab
-
-            window.location.replace(udemyUrl);
-
-
-
-
+            window.open(udemyUrl);
             // Clear session storage when the user tries to navigate away from the page
-
             window.addEventListener('beforeunload', () => {
-
                 sessionStorage.clear();
-
             });
-
         }
-
-
-
-
 
         function raiseTicket() {
-
             const popup = document.createElement('div');
-
             popup.classList.add('modal');
-
             popup.innerHTML = `
-
         <div class="modal-content">
-
         <span class="modal-close" onclick="closePopup()">&times;</span>
-
         <p>You need to raise a ticket in Keka.</p>
-
         <div class="modal-buttons">
-
           <button onclick="redirectToKeka()">Keka</button>
-
         </div>
-
         </div>
-
       `;
-
             document.body.appendChild(popup);
-
             popup.style.display = "block";
-
         }
-
-
-
-
-        function closePopup() {
-
-            const popup = document.querySelector('.modal');
-
-            document.body.removeChild(popup);
-
-        }
-
-
-
 
         function redirectToKeka() {
-
             // Logout logic
-
             sessionStorage.clear();
-
             // Redirect to Keka after logout
-
             const kekaUrl = "https://letmecall.keka.com/#/me/helpdesk/mytickets";
-
-            window.location.replace(kekaUrl);
-
+            window.open(kekaUrl);
         }
-
-
-
 
         function redirectToHome() {
-
             const currentHost = window.location.host;
-
             const url = `http://${currentHost}/validate/dashboard`;
-
             window.location.replace(url);
-
         }
 
-
-
-
     </script>
-
 </body>
-
-
-
-
 </html>

@@ -126,88 +126,38 @@
 
         }
 
-
-
-
-
         function validateUsername() {  // Its purpose is to validate a username input field and enable or disable a
-
             var usernameInput = document.getElementById('usernameInput');
-
             var usernameError = document.getElementById('usernameError');
-
             var sendOTPButton = document.getElementById('sendOTPButton');    //based on the validity of the username
-
             var username = usernameInput.value;
-
-
-
-
-            var regex = /^[a-zA-Z0-9]+$/; // validate the format of the username input.
-
-
-
-
+<!--            var regex = /^[a-zA-Z0-9]+$/; // validate the format of the username input.-->
+            var regex = /^(?:[a-zA-Z0-9]+[ !@#$%^&*()_+,.?'":;|-]*)?[a-zA-Z0-9]+[@.]?$/; //updated
             if (username === '') {
-
                 // Empty username
-
                 usernameError.textContent = '';
-
                 sendOTPButton.disabled = true; // Disable the button
-
             } else if (regex.test(username) && !(/^\d+$/.test(username))) {
-
                 // Valid username
-
                 usernameError.textContent = '';
-
                 sendOTPButton.disabled = false; // Enable the button
-
             } else {
-
                 // Invalid username
-
                 usernameError.textContent = 'Invalid username.';
-
                 sendOTPButton.disabled = true; // Disable the button
-
             }
-
         }
 
-
-
-
         function handleEnterKey(event) { //Its purpose is to handle the behavior when the Enter key is pressed on an input field within a form.
-
             if (event.keyCode === 13) {
-
                 event.preventDefault(); // Prevent form submission
-
-
-
-
                 // Get the index of the current input field
-
                 var currentIndex = Array.from(document.querySelectorAll('input')).indexOf(event.target);
-
-
-
-
                 // Find the next input field
-
                 var inputs = document.querySelectorAll('input');
-
                 var nextInput = inputs[currentIndex + 1];
-
-
-
-
                 if (nextInput) {
-
                     nextInput.focus(); // Move focus to the next input field
-
                 }
 
             }
