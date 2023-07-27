@@ -325,3 +325,5 @@ Watching for file changes with StatReloader
 "POST /admin/auth/user/ HTTP/1.1" 302 0
 "GET /admin/auth/user/ HTTP/1.1" 200 11515
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+C:\Users\BhaviyaBabu\Desktop\switch tech\SwitchTech\home\views.py changed, reloading.
+C:\Users\BhaviyaBabu\Desktop\switch tech\SwitchTech\home\views.py changed, reloading.
