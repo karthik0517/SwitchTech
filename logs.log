@@ -325,3 +325,48 @@ Watching for file changes with StatReloader
 "POST /admin/auth/user/ HTTP/1.1" 302 0
 "GET /admin/auth/user/ HTTP/1.1" 200 11515
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 7655
+"GET /static/css/login.css HTTP/1.1" 200 1254
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 200 7938
+"GET /static/images/loginimg.png HTTP/1.1" 200 1006807
+Login page accessed!
+New employee details are entered and saving into database
+OTP is generated 8163
+Otp is sent to employee mail-id: bhaviya.babu@ratnaglobaltech.com
+Employee details are saved into database
+Employee is redirected to otp validation page!
+"POST / HTTP/1.1" 302 0
+OTP validation is accessed!
+"GET /validate/ HTTP/1.1" 200 9581
+OTP validation is accessed!
+OTP is verified successfully
+Employee checked keep me signed: True
+Employee logged-in successfully
+"POST /validate/ HTTP/1.1" 302 0
+Dashboard page is accessed!
+No progress data found
+"GET /validate/dashboard/ HTTP/1.1" 200 13101
+"GET /static/css/dashboard.css HTTP/1.1" 200 3999
+Instruction page is accessed
+"GET /home/validate/dashboard/index/ HTTP/1.1" 200 8986
+"GET /static/images/Instruction.png HTTP/1.1" 200 91625
+Employee agreed to terms and conditions with selected domain Node js, redirecting to quiz page
+"GET /home/quiz/?category=Node%20js HTTP/1.1" 200 13724
+"GET /static/images/ratnaglobal_logo.png HTTP/1.1" 304 0
+"GET /static/images/Quiz.png HTTP/1.1" 200 89384
+Quiz question loaded successfully
+"GET /home/api/get-quiz/?category=Node%20js HTTP/1.1" 200 4317
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2393
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 10144
+"GET /admin/auth/user/ HTTP/1.1" 200 11798
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
+"POST /admin/auth/user/ HTTP/1.1" 200 8052
+"POST /admin/auth/user/ HTTP/1.1" 302 0
+"GET /admin/auth/user/ HTTP/1.1" 200 11514
+"GET /admin/jsi18n/ HTTP/1.1" 200 3343
