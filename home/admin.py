@@ -18,7 +18,6 @@ admin.site.register(Answer)
 admin.site.register(PlayerActivity)
 
 
-
 @admin.register(QuizUserScore)
 class QuizScore(admin.ModelAdmin):
     list_display = ['user', 'quiz_domain', 'created_at', 'score']

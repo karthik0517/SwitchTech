@@ -17,108 +17,17 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+      .custom-btn {
+          margin: 5px;
+      }
 
-        .header_title {
-            /* width: 100%; */
-            padding-left: 1.8rem;
-            /* float: left; */
-        }
-
-        .header_title .font_normal {
-
-            width: 100%;
-            /* float: left; */
-            font-weight: 400;
-            font-size: 40px;
-            margin: 0;
-            color: black;
-        }
-
-        .colored-box1 {
-            color: rgb(17, 0, 255);
-        }
-
-
-        .logo {
-            right: 62px;
-            position: relative;
-            right: 10;
-            height: 61px;
-            float: right;
-            margin-right: 10px;
-            width: 86px;
-        }
-
-        .logo1 {
-            /* width: 400px; */
-            height: 400px;
-            /* float:right; */
-        }
-
-        .highlight {
-            background-color: none;
-            font-weight: bold;
-            /* background-color: rgb(4, 255, 0); */
-        }
-    </style>
-    <style>
-        /* .header_title,
-        font_normal {
-            width: 100%;
-            /* float: left; */
-        /* margin-top: 90px;
-            font-size: 20px;
-            color: #6495ed; */
-        /* } */
-
-
-
-        p {
-            font-size: 18px;
-            line-height: 1.5;
-            margin-bottom: 20px;
-        }
-
-        .header_title {
-
-            width: 100%;
-            /* float: left; */
-
-        }
-
-        .header_title .font_normal {
-
-            width: 100%;
-            /* float: left; */
-            font-weight: 400;
-            font-size: 40px;
-            margin: 0;
-            color: black;
-            margin-left: -8px;
-        }
-        .question {
-            margin-left: 13px; /* Set a fixed margin value */
-        }
-
-        .align{
-            margin-left: -8px;
-        }
-
-        .timer {
-            position: fixed;
-            top: 90px;
-            right: 400px;
-        }
-
-        /* Disable text selection */
-        body {
-            -webkit-user-select: none; /* Safari */
-            -moz-user-select: none; /* Firefox */
-            -ms-user-select: none; /* IE10+/Edge */
-            user-select: none; /* Standard */
-        }
-
-    </style>
+      body {
+        -webkit-user-select: none; /* Disable text selection for Safari */
+        -moz-user-select: none; /* Disable text selection for Firefox */
+        -ms-user-select: none; /* Disable text selection for Internet Explorer/Edge */
+        user-select: none; /* Disable text selection for other browsers */
+      }
+  </style>
     <script>
         // Disable right-click
         document.addEventListener('contextmenu', function(e) {
@@ -128,86 +37,74 @@
 </head>
 
 <body>
-    <main>
-        <div class="timer" id="timer"></div>
-        <div class="email_form">
-            <form id="quiz-form" onsubmit="disableLeaveSiteMessage()" method="POST" action="result">
+  <div class="container">
+    <header class="row pt-3">
+      <div class="col-md-8">
+     <h1 class="font_normal ">SwitchTech <span class="colored-box1">SYSTEMS</span>
+      </div>
+      <div class="col-md-4">
+          <img class="logo-main" style="float: right;
+          margin-right: 88px;" src="{% static 'images/ratnaglobal_logo.png' %}" />
+      </div>
+    </header>
+    <div class="row pt-3">
+      <div class="col-md-6">
+        <h4 class=" mt-4 align" style="padding-left: 83px;">QUIZ</h4>
+      </div>
+
+      <div class="col-md-6 ">
+        <div class="timer" style="float: right;
+        margin-right: 97px;" id="timer">
+      </div>
+
+    </div>
+    <div class="email_form">
+            <form id="quiz-form" onsubmit="disableLeaveSiteMessage()" method="POST">
                 {% csrf_token %}
                 <div id="app">
-                    <div class=" mt-5">
-                        <div class="p-3 row">
-                            <div class="col-md-8 pl-5">
-                                <div class="header_title">
-                                     <!-- //This class defines the name of the project -->
-                                    <h1 class="font_normal ">SWITCHING TECH <span class="colored-box1">SYSTEMS</span>
-                                    </h1>
-                                    <h4 class=" mt-4 align">QUIZ PAGE</h4>
-                                </div>
-                                <div v-if="currentQuestion === index" v-for="(question, index) in questions"
-                                    class=" mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Question [[index + 1]]</h5>
-                                        <p class="card-text">[[question.question]]</p>
-                                        <div class="form-check" v-for="(answer, answerIndex) in question.answers">
-                                            <input type="radio"
-                                                @change="checkAnswer($event, question.uid, answer.is_correct)"
-                                                :value="answer.answer" :name="'question-' + question.uid"
-                                                class="form-check-input" required
-                                                :id="'option-' + question.uid + '-' + answerIndex"
-                                                :checked="selectedOptions[question.uid] === answer.answer">
-                                            <label class="form-check-label"
-                                                @click="selectOption(question.uid, answer.answer)">
-                                                [[answer.answer]]
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- //The below code defines the previous,next,submit and skip buttons in the questions page. -->
-                                <center>
-                                    <button v-if="currentQuestion > 0" type="button" class="btn btn-secondary" @click="previousQuestion">Previous</button>
-                                    <button v-if="currentQuestion < questions.length - 1" type="button" class="btn btn-primary" @click="nextQuestion">Next</button>
-                                    <button v-if="currentQuestion === questions.length - 1" type="button" class="btn btn-danger" id="submit-btn" @click="submitQuiz($event)">Submit</button>
-<!--                                    <button type="button" class="btn btn-warning" @click="skipQuestion">Skip</button>-->
-
-                                </center>
+                    <div class=" mt-4">
+                        <div class="container-fluid mt-5 bg-light" class="rounded p-3 mt-3" style="width: 87%; height: 310px;">
+                          <div class="row">
+                            <div class="col-md-8">
+                              <div v-if="currentQuestion === index" v-for="(question, index) in questions"
+                                  class=" mb-3">
+                                  <div class="card-body">
+                                      <h5 class="card-title">Question [[index + 1]]</h5>
+                                      <p class="card-text">[[question.question]]</p>
+                                      <div class="form-check" v-for="(answer, answerIndex) in question.answers">
+                                          <input type="radio"
+                                              @change="checkAnswer($event, question.uid, answer.is_correct)"
+                                              :value="answer.answer" :name="'question-' + question.uid"
+                                              class="form-check-input" required
+                                              :id="'option-' + question.uid + '-' + answerIndex"
+                                              :checked="selectedOptions[question.uid] === answer.answer">
+                                          <label class="form-check-label"
+                                              @click="selectOption(question.uid, answer.answer)">
+                                              [[answer.answer]]
+                                          </label>
+                                      </div>
+                                  </div>
+                              </div>
+                              <center>
+                                <button v-if="currentQuestion > 0" type="button" class="btn btn-secondary custom-btn" @click="previousQuestion">Previous</button>
+                                <button v-if="currentQuestion < questions.length - 1" type="button" class="btn btn-primary custom-btn" @click="nextQuestion">Next</button>
+                                <button v-if="currentQuestion === questions.length - 1" type="button" class="btn btn-danger custom-btn" id="submit-btn" @click="submitQuiz($event)">Submit</button>
+                                <!-- <button type="button" class="btn btn-warning" @click="skipQuestion">Skip</button> -->
+                              </center>
+                    
                             </div>
-                            <!-- //The below code defines the quiz page logo. -->
                             <div class="col-md-4">
-                                <img class="logo"
-                                    src="https://static.ambitionbox.com/assets/v2/images/rs:fit:200:200:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL3JhdG5hLWdsb2JhbC10ZWNobm9sb2dpZXMuanBn.webp"
-                                    alt="Logo">
-                                <img width="100%" class="logo1" src="{% static 'images\Quiz.png' %}" />
+                              <img width="100%" class="logo1" src="{% static 'images\Quiz.png' %}" />
                             </div>
+                          </div>
                         </div>
                     </div>
                 </div>
             </form>
-
-<!--            <div id="errorModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel"-->
-<!--                aria-hidden="true">-->
-<!--                <div class="modal-dialog" role="document">-->
-<!--                    <div class="modal-content">-->
-<!--                        <div class="modal-header">-->
-<!--                            <h5 class="modal-title" id="errorModalLabel">Error</h5>-->
-<!--                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-<!--                                <span aria-hidden="true">&times;</span>-->
-<!--                            </button>-->
-<!--                        &lt;!&ndash; </div>-->
-<!--                        //The below class defines the pop up if question didnot get answered. &ndash;&gt;-->
-<!--                        <div class="modal-body">-->
-<!--                            <p>Please select an answer before proceeding.</p>-->
-<!--                        </div>-->
-<!--                        <div class="modal-footer">-->
-<!--                            <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-
-
+            
             <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
             <script>
-              var countdown = {{ new_timer }}; // Total time in seconds
+              var countdown = localStorage.getItem('countdown') || {{ new_timer }}; // Retrieve countdown value from localStorage or set to default
               var timerDisplay = document.getElementById('timer');
 
               function updateTimer() {
@@ -218,6 +115,9 @@
                 var formattedTime = minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
 
                 timerDisplay.textContent = "Time Remaining: " + formattedTime; // Update the text content of the timer display element
+                
+                // Store the current countdown value in localStorage
+                localStorage.setItem('countdown', countdown);
 
                 if (countdown === 0) {
                   submitQuiz1(null, false);
@@ -233,10 +133,6 @@
               function submitQuiz1(event, showErrorModal = true) {
                 event && event.preventDefault();
                 const currentQuestionUid = app.questions[app.currentQuestion].uid;
-<!--                if (showErrorModal && !app.selectedOptions[currentQuestionUid] && app.currentQuestion !== app.questions.length) {-->
-<!--                  $('#errorModal').modal('show');-->
-<!--                  return;-->
-<!--                }-->
 
                 const scoreData = { score: app.score, category: app.category };
                 const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value; // get the CSRF token from the page
@@ -244,7 +140,7 @@
                 const formData = new FormData();
                 formData.append('score', app.score);
 
-                fetch(`/api/result/`, {
+                fetch(`/home/api/result/`, {
                   method: 'POST',
                   body: JSON.stringify(scoreData),
                   headers: {
@@ -253,10 +149,15 @@
                   }
                 }).then(response => {
                   console.log('Score submitted successfully');
-                  window.location.href = "/final/";
+                  window.location.href = "/home/final/";
                 }).catch(error => {
                   console.error('Error submitting score:', error);
                 });
+                
+                localStorage.removeItem('countdown');
+                localStorage.removeItem('currentQuestion');
+                localStorage.removeItem('selectedOptions');
+                
               }
 
 
@@ -278,7 +179,7 @@
                 methods: {
                   getQuestions() {
                     var _this = this;
-                    fetch(`/api/get-quiz/?category=${_this.category}`)
+                    fetch(`/home/api/get-quiz/?category=${_this.category}`)
                       .then(response => response.json())
                       .then(result => {
                         console.log(result);
@@ -301,10 +202,6 @@
 
                   nextQuestion() {
                     const currentQuestionUid = this.questions[this.currentQuestion].uid;
-<!--                    if (!this.selectedOptions[currentQuestionUid]) {-->
-<!--                      $('#errorModal').modal('show');-->
-<!--                      return;-->
-<!--                    }-->
                     this.currentQuestion++;
                   },
 
@@ -319,23 +216,13 @@
                       const currentQuestionUid = this.questions[this.currentQuestion].uid;
                       this.selectedOptions[currentQuestionUid] = null; // Set the selected option for the current question to null
                       this.currentQuestion++; // Move to the next question
-<!--                      $('#errorModal').modal('hide'); // Hide the error modal if it was displayed-->
                     }
                   },
-
-<!--                  showConfirmation() {-->
-<!--                    if (confirm("Are you sure you want to submit the quiz?")) {-->
-<!--                      this.submitQuiz(null, false); // To confirm the quiz submission without showing the error modal-->
-<!--                    }-->
-<!--                  },-->
 
                   submitQuiz(event, showErrorModal = true) {
                     event && event.preventDefault();
                     const currentQuestionUid = this.questions[this.currentQuestion].uid;
-<!--                    if (showErrorModal && !this.selectedOptions[currentQuestionUid] && this.currentQuestion !== this.questions.length) {-->
-<!--                      $('#errorModal').modal('show');-->
-<!--                      return;-->
-<!--                    }-->
+
                     const scoreData = { score: this.score, category: this.category };
                     const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value; // get the CSRF token from the page
                     console.log(JSON.stringify(scoreData));
@@ -343,7 +230,7 @@
                     const formData = new FormData();
                     formData.append('score', this.score);
 
-                    fetch(`/api/result/`, {
+                    fetch(`/home/api/result/`, {
                       method: 'POST',
                       body: JSON.stringify(scoreData),
                       headers: {
@@ -352,25 +239,61 @@
                       }
                     }).then(response => {
                       console.log('Score submitted successfully');
-                      window.location.href = "/final/";
+                      window.location.href = "/home/final/";
                     }).catch(error => {
                       console.error('Error submitting score:', error);
                     });
+
+                    localStorage.removeItem('countdown');
+                    localStorage.removeItem('currentQuestion');
+                    localStorage.removeItem('selectedOptions');
+
                   },
                 },
 
                 created() {
-                  this.getQuestions();
-                  console.log('Loaded');
+                    this.getQuestions();
+                    console.log('Loaded');
+
+                    // Retrieve quiz progress from localStorage and update the currentQuestion and selectedOptions
+                    const savedCurrentQuestion = localStorage.getItem('currentQuestion');
+                    const savedSelectedOptions = JSON.parse(localStorage.getItem('selectedOptions'));
+                    if (savedCurrentQuestion !== null && savedSelectedOptions !== null) {
+                        this.currentQuestion = parseInt(savedCurrentQuestion);
+                        this.selectedOptions = savedSelectedOptions;
+                    }
                 },
               });
+
+              // Disable the back button completely
+              function preventBack() {
+                  window.history.pushState(null, null, window.location.href);
+                  window.addEventListener('popstate', function (event) {
+                      window.history.pushState(null, null, window.location.href);
+                  });
+              }
+              preventBack();
             </script>
 
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <script type="text/javascript">
+              function disableF5(e) {
+                if ((e.which || e.keyCode) == 116 || (e.which || e.keyCode) == 82)
+                  e.preventDefault();
+              };
+
+              $(document).ready(function(){
+                // Attach the event listener to the document for the "keydown" event
+                $(document).on("keydown", disableF5);
+
+                // Your other scripts and code can go here if needed.
+                // ...
+              });
+            </script>
         </div>
-    </main>
+</div>
 </body>
 
 </html>

@@ -139,7 +139,6 @@ class PlayerActivity(models.Model):
     percentage = models.FloatField(default=0.0)
     category = models.CharField(max_length=50, default='')
 
-
     def __str__(self):
         return f"PlayerActivity - youtube_id: {self.youtube_id}, " \
                f"current_time: {self.current_time}, " \
@@ -157,7 +156,8 @@ class Feedback(models.Model):
     cs_align_withur_curt_knowledge_levl = models.CharField(max_length=50)
     conveniency_accessing_recom_yt_cs = models.CharField(max_length=50)
     mylearningpage_layout_presentation = models.CharField(max_length=50)
-    valueof_progs_tracking_feature_on_dashboard = models.CharField(max_length=50)
+    valueof_progs_tracking_feature_on_dashboard = models.CharField(
+        max_length=50)
     motivate_to_complete_course = models.CharField(max_length=50)
     specific_feature_you_feel_missing = models.CharField(max_length=1000)
     how_app_enhanced = models.CharField(max_length=1000)

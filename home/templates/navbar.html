@@ -1,4 +1,56 @@
 {% load static %} 
+
+<style>
+  /* Add some basic styling to the button */
+  .logout-button {
+    display: inline-block;
+    background-color: #f44336; /* Red background color (you can change this) */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding to make the button look bigger */
+    text-decoration: none; /* Remove underline from the text */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Font size (you can change this) */
+    cursor: pointer; /* Change cursor on hover */
+    
+  }
+
+  /* Add hover effect */
+  .logout-button:hover {
+    background-color: #d32f2f; /* Darker red background color on hover (you can change this) */
+  }
+
+  /* Add styles for the home button */
+  .home-button {
+    display: inline-block;
+    background-color: #4CAF50; /* Green background color (you can change this) */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding to make the button look bigger */
+    text-decoration: none; /* Remove underline from the text */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Font size (you can change this) */
+    cursor: pointer; /* Change cursor on hover */
+    position: absolute; /* Position the button absolutely */
+    top: 10px; /* Distance from the top of the container */
+    right: 1400px; /* Distance from the right of the container */
+  }
+
+  /* Add hover effect for the home button */
+  .home-button:hover {
+    background-color: #45a049; /* Darker green background color on hover (you can change this) */
+  }
+
+
+</style>
+<script>
+  function redirectToHome() {
+    const currentHost = window.location.host;
+    const url = `http://${currentHost}/validate/dashboard`;
+    window.location.replace(url);
+}
+</script>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -19,17 +71,12 @@
         <!-- <a class="nav-link" href="{% url 'addQuestion' %}">Add Question</a> -->
       </li>
       {% endif %} 
- 
-      <!-- </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'login' %}">Login</a>
-      </li> -->
     </ul>
   </div>
   {% if user.is_authenticated %}
-    <span class="greet" style="font-size: 18px; color: #fff; margin-right: 20px;">Hello, {{request.user}}</span>
-     <span ><a href="{% url 'logout' %}">Logout</a></span>
+      <span><a href="{% url 'dashboard:logout' %}" class="logout-button">Logout</a></span>
   {% endif %}
+    <span><a onclick="redirectToHome()" class="home-button">Home</a></span>
   <p></p>
  
 </nav>

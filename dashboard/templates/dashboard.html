@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-  <title>Dashboard</title>
+  <title>Dashboard Page</title>
   <link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,7 +22,7 @@
     <nav class="navbar navbar-expand-md bg_white navbar-dark">
       <a class="navbar-brand" href="#">
         <img class="header_logo" src="{% static 'images\ratnaglobal_logo.png' %}" alt="">
-        <span class="logo_title">SWITCHING TECH SYSTEMS</span>
+        <span class="logo_title">SwitchTech SYSTEM</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -73,9 +73,10 @@
             {% if forloop.counter0|divisibleby:3 %}
             {% endif %}
             <div class="col-md-4 mt-4">
-              <button class="btn btn-warning" style="width: 80%; background: #636262; border: 3px solid #e5e3e0;"><a
-                  style="color: #fff; text-decoration: none;" href="javascript:void(0);"
-                  onclick="storeLink('{{ category.category_name }}')">{{ category.category_name}}</a></button>
+                  <button class="btn btn-warning" style="width: 80%; background: #636262; border: 3px solid #e5e3e0;"
+                      onclick="storeLink('{{ category.category_name }}')">
+                    <a style="color: #fff; text-decoration: none;">{{ category.category_name}}</a>
+                  </button>
             </div>
             {% endfor %}
           </div>
@@ -209,7 +210,8 @@
       console.log('Selected Link is:', link);
 
       // Redirect to the other HTML page
-      window.location.href = '/validate/dashboard/index/';
+      window.location.href = "{% url 'home:index' %}";
+      // window.location.href = '/validate/dashboard/index/';
     }
   </script>
 </body>

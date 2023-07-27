@@ -7,347 +7,163 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Result PAGE</title>
+    <title>Result Page</title>
     <link href="{% static 'css/result.css' %}" rel="stylesheet">
-
-
-    <!-- Latest compiled and minified CSS -->
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-
-    <!-- Latest compiled and minified JavaScript -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
-    <!--    <script type="text/javascript">-->
-
-    <!--        function preventBack() { window.history.forward(); }-->
-
-    <!--        setTimeout("preventBack()", 0);-->
-
-    <!--        window.onunload = function () { null };-->
-
-    <!--    </script>-->
 </head>
 
-
 <body>
-
     <div class="container">
-
         <div class="row ">
-
             <div class="col-md-7 header_title">
-
-                <h1 class="header_title pt-3">SWITCHING TECH <span class="header_title1 ">SYSTEMS</span></h1>
-
+                <h1 class="header_title pt-3">SwitchTech <span class="header_title1 ">SYSTEMS</span></h1>
             </div>
-
             <div class="col-md-5 pt-3">
-
-                <!-- Its represents an ratnaglobal_logo image. -->
-
                 <img class="logo-main" src="{% static 'images/ratnaglobal_logo.png' %}" />
-
             </div>
-
         </div>
 
-
-
-
         <div class="row ">
-
             <div class="col-md-7 ">
-
                 <div class="QuizResults">
-
-
-
-
                     <h2>Quiz Results</h2>
-
-
-
-
                 </div>
-
             </div>
 
             <div class="col-md-5 ">
-
                 <div class="logout-home-container">
-
                     <button class="logout-button" onclick="openModal()">Logout</button>
-
                     <button class="home-button" onclick="redirectToHome()">Home</button>
-
                 </div>
 
                 <div id="myModal" class="modal">
-
-                    <div class="modal-content">
-
+                    <div class="modal-content" style="width: 366PX;">
                         <span class="modal-close" onclick="closeModal()">&times;</span>
-
                         <p>Are you sure you want to logout?</p>
-
                         <div class="modal-buttons">
-
                             <button onclick="logout()">Yes</button>
-
                             <button onclick="closeModal()">Cancel</button>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
     <div class="container-fluid mt-5 bg-light">
-
         <div class="row  p-5 " style="height: 100%;">
-
             <div class="col-md-8">
-
                 <div class="score">
-
                     <h2 class="display-6"><span class="highlight">Your Score is: {{score}} </span>
-
                 </div>
-
                 <div class="recommendations">
-
-                    <h2> Your Udemy Recommendations</h2>
-
+                    <h2>Udemy Recommendations</h2>
                     <div class="course">
-
                         <!-- <div class="course-type">Paid Course: <span class="colored-box">Yes</span></div> -->
                         <div class="course-level">Course level: <span class="colored-box">{% if difficulty == "BG" %}
-
                             Beginner
-
                             {% elif difficulty == "IN" %}
-
                             Intermediate
-
                             {% elif difficulty == "AD" %}
-
                             Advanced
-
                             {% else %}
-
                             {{ difficulty }}
-
                             {% endif %}</span></div>
-
                         <div class="course-name">Course name: <span class="colored-box">{{course_name}}</span></div>
-
                         <div class="course-rating">Course Ratings:<span class="colored-box"> {{ratings}}</span></div>
-
                         <div class="course-instructor">Course Instructor:<span class="colored-box">
-
                                 {{instructor}}</span>
-
                         </div>
-
                         <div class="course-duration">Course Duration: <span class="colored-box">{{duration}}
-
                                 hours</span>
-
                         </div>
-
                         <button class="enroll-button" onclick="openPopup()" data-suggested="{{ suggested }}">Enroll this
-
                             course</button>
-
-
-
-
-
                     </div>
-
                 </div>
-
                 <div id="popupModal" class="modal">
-
                     <div class="modal-content" style="width: 366PX;">
-
                         <span class="modal-close" onclick="closePopup()">&times;</span>
-
                         <p>Do you have Udemy credentials?</p>
-
                         <div class="modal-buttons">
-
                             <button onclick="redirectToUdemy()">Yes</button>
-
                             <button onclick="openkekapopup()">No</button>
-
                         </div>
-
                     </div>
-
                 </div>
-
-                <!-- close popup issue solved here -->
 
                 <div id="popupModalkeka" class="modal">
                     <div class="modal-content" style="width: 366PX;">
                         <span class="modal-close" onclick="closekekaPopup()">&times;</span>
-
                         <p>You need to raise a ticket in Keka.</p>
-
                         <div class="modal-buttons">
                             <button onclick="redirectToKeka()">Keka</button>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
 
-        <!-- </div> -->
-
         <div class="col-md-4 p-3 youtube">
-
             <h2>Recommendations</h2>
-
-            </h2>
-
-
-
-
             <div id="ytplayer" class="rounded p-1 mt-3" style="width: 100%; height: 310px;"></div>
-
-            <!-- <h2>{{ Video.title }}</h2>
-
-                <p>{{ Video.duration }}</p> -->
-
         </div>
 
     </div>
 
-
-
-
     </div>
-
     <script>
-
         function openModal() {
-
             document.getElementById("myModal").style.display = "block";
-
         }
-
-
-
 
         function closeModal() {
-
             document.getElementById("myModal").style.display = "none";
-
         }
-
-
-
 
         function logout() {
-
             console.log("Logout function called.")
-
-            window.location.href = "{% url 'logout' %}";
-
+            window.location.href = "{% url 'dashboard:logout' %}";
         }
-
     </script>
-
     <script>
-
         var tag = document.createElement('script');
-
         tag.src = "https://www.youtube.com/player_api";
-
         var firstScriptTag = document.getElementsByTagName('script')[0];
-
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
         var player;
-
         var isSaveExecuted = false; // Flag variable to track whether save operation has been executed
-
-        var youtubeId = '{{ YouTube_id }}'; // Add this line to get the YouTube video ID
-
-
-
-
+        var youtubeId = '{{ YouTube_id }}'; // Add this line to get the YouTube video I
         function onYouTubePlayerAPIReady() {
-
             player = new YT.Player('ytplayer', {
-
                 videoId: youtubeId, // Use the youtubeId variable here
-
             });
 
         }
 
-
-
-
         // Event listener for window unload (when the user closes the webpage)
-
         window.addEventListener('beforeunload', function () {
-
             saveCurrentTime();
-
         });
 
-
-
-
         // Function to save the current time
-
         function saveCurrentTime() {
-
             if (!isSaveExecuted && player && player.playerInfo && player.playerInfo.currentTime !== null) {
-
                 const currentTime = player.playerInfo.currentTime;
-
                 const duration = player.getDuration();
-
                 const percentage = (currentTime / duration) * 100;
-
                 const selectedcategory = sessionStorage.getItem('selectedLink')
-
                 console.log('Current Time:', currentTime);
-
                 console.log('Percentage:', percentage);
-
-
-
-
                 // Get the CSRF token value from the cookie
                 var csrftoken = getCookie('csrftoken');
                 // Send the current time, percentage, and youtube ID to the server using AJAX
                 var xhr = new XMLHttpRequest();
-                xhr.open('POST', '/save_time', true);
+                xhr.open('POST', '/home/save_time', true);
                 xhr.setRequestHeader('Content-Type', 'application/json');
                 xhr.setRequestHeader('X-CSRFToken', csrftoken); // Include the CSRF token in the request header
                 xhr.onreadystatechange = function () {
@@ -379,13 +195,13 @@
         }
     </script>
     <script>
-
         function openPopup() {
             document.getElementById("popupModal").style.display = "block";
         }
 
         function openkekapopup(){
             document.getElementById("popupModalkeka").style.display = "block";
+            document.getElementById("popupModal").style.display = "none";
         }
 
         function closekekaPopup() {
@@ -402,6 +218,8 @@
             const suggestedUrl = enrollButton.getAttribute('data-suggested');
             const loginUrl = "https://www.udemy.com/join/login-popup/?locale=en_US&response_type=html&next=";
             const udemyUrl = `${loginUrl}${encodeURIComponent(suggestedUrl)}`;
+            // closing opened popup
+            document.getElementById("popupModal").style.display = "none";
             // Open the Udemy login page in the same tab
             window.open(udemyUrl);
             // Clear session storage when the user tries to navigate away from the page
@@ -410,27 +228,13 @@
             });
         }
 
-        function raiseTicket() {
-            const popup = document.createElement('div');
-            popup.classList.add('modal');
-            popup.innerHTML = `
-        <div class="modal-content">
-        <span class="modal-close" onclick="closePopup()">&times;</span>
-        <p>You need to raise a ticket in Keka.</p>
-        <div class="modal-buttons">
-          <button onclick="redirectToKeka()">Keka</button>
-        </div>
-        </div>
-      `;
-            document.body.appendChild(popup);
-            popup.style.display = "block";
-        }
-
 
         function redirectToKeka() {
             // Logout logic
             sessionStorage.clear();
             // Redirect to Keka after logout
+            // closing the popup
+            document.getElementById("popupModalkeka").style.display = "none";
             const kekaUrl = "https://letmecall.keka.com/#/me/helpdesk/mytickets";
             window.open(kekaUrl);
         }

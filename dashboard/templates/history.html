@@ -12,7 +12,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
-  <title>Team Mebers</title>
+  <title>History Page</title>
   <link href="{% static 'css/login.css' %}" rel="stylesheet">
   <link href="{% static 'css/history.css' %}" rel="stylesheet">
 
@@ -22,7 +22,7 @@
   <div class="container">
     <header class="row">
       <div class="col-md-8">
-        <h1 class="header_title pt-3" style="margin-left: 150px;">SWITCHING TECH <span class="header_title1">SYSTEMS</span></h1>
+        <h1 class="header_title pt-3">SwitchTech <span class="header_title1">SYSTEM</span></h1>
       </div>
       <div class="col-md-4">
         <img class="logo-main" src="{% static 'images/ratnaglobal_logo.png' %}" />
@@ -30,7 +30,7 @@
     </header>
     <div class="row">
       <div class="col-md-7 pt-3">
-        <h1 class="quiz-history-title " style="float: left; margin-left: 150px;">Employee list</h1>
+        <h1 class="quiz-history-title " style="float: left; margin-left: 150px;">Quiz History</h1>
       </div>
       <div class="col-md-5 pt-3">
         <button onclick="goBack()" class="btn btn-primary" style="float: right; margin-right: 150px;">Go Back</button>
@@ -41,14 +41,19 @@
     <div class="col-md-8 mx-auto quiz-history-container">
       {% if no_data %}
       <div class="quiz-history-card">
-        <h5 class="card-title">Not assigned</h5>
+        <h5 class="card-title">No previous quiz data</h5>
       </div>
       {% else %}
-      {% for user in user_list %}
+      {% for attempt in attempts_data %}
       <div class="quiz-history-card">
-        {{user.username}} <br>
-        {{user.email}}
-        <button onclick="fetchListUser()" class="btn btn-primary" style="float: right; margin-right: 150px;">Add user</button>
+        <h5 class="card-title">Quiz Results</h5>
+        <hr>
+        <p class="quiz-history-card-text"><strong>Score:</strong> {{ attempt.user_score }}</p>
+        <p class="quiz-history-card-text"><strong>Attempt Date:</strong> {{ attempt.user_time }}</p>
+        <p class="quiz-history-card-text"><strong>Selected Domain:</strong> {{ attempt.previous_domain }}</p>
+        <p class="quiz-history-card-text"><strong>Go to course here:</strong> <a href="{{ attempt.suggestion_url }}">{{attempt.suggestion_url }}</a></p>
+        <p class="quiz-history-card-text"><strong>Youtube course:</strong> {{ attempt.title }}</p>
+
       </div>
       {% endfor %}
 
