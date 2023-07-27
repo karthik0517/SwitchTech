@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>Feedback Page</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -90,6 +92,7 @@
     </style>
 </head>
 <body>
+
     <h1>SwitchTech System Feedback</h1>
     <form action="/submit_feedback/" method="post" id="feedbackForm">
         {% csrf_token %}
@@ -109,6 +112,7 @@
             <input type="radio" name="q2" value="3">3
             <input type="radio" name="q2" value="4">4
             <input type="radio" name="q2" value="5">5
+
         </div>
 
         <div class="question">
@@ -118,6 +122,7 @@
             <input type="radio" name="q3" value="3">3
             <input type="radio" name="q3" value="4">4
             <input type="radio" name="q3" value="5">5
+
         </div>
 
         <div class="question">
@@ -127,6 +132,7 @@
             <input type="radio" name="q4" value="3">3
             <input type="radio" name="q4" value="4">4
             <input type="radio" name="q4" value="5">5
+
         </div>
 
         <div class="question">
@@ -136,6 +142,7 @@
             <input type="radio" name="q5" value="3">3
             <input type="radio" name="q5" value="4">4
             <input type="radio" name="q5" value="5">5
+
         </div>
 
         <div class="question">
@@ -145,6 +152,7 @@
             <input type="radio" name="q6" value="3">3
             <input type="radio" name="q6" value="4">4
             <input type="radio" name="q6" value="5">5
+
         </div>
 
         <div class="question">
@@ -154,6 +162,7 @@
             <input type="radio" name="q7" value="3">3
             <input type="radio" name="q7" value="4">4
             <input type="radio" name="q7" value="5">5
+
         </div>
 
         <div class="question">
@@ -163,6 +172,7 @@
             <input type="radio" name="q8" value="3">3
             <input type="radio" name="q8" value="4">4
             <input type="radio" name="q8" value="5">5
+
         </div>
 
         <div class="question">
@@ -172,6 +182,7 @@
             <input type="radio" name="q9" value="3">3
             <input type="radio" name="q9" value="4">4
             <input type="radio" name="q9" value="5">5
+
         </div>
 
         <div class="question">
@@ -181,27 +192,32 @@
             <input type="radio" name="q10" value="3">3
             <input type="radio" name="q10" value="4">4
             <input type="radio" name="q10" value="5">5
+
         </div>
 
         <div class="question">
             <label for="q11">11) Did it motivate you to complete the courses?</label>
             <input type="radio" name="q11" value="Yes">Yes
             <input type="radio" name="q11" value="No">No
+
         </div>
 
         <div class="question">
             <label for="q12">12) Is there any specific feature or functionality you feel is missing and would like to see added?</label>
             <textarea name="q12" rows="4" cols="50"></textarea>
+
         </div>
 
         <div class="question">
             <label for="q13">13) How can the application be enhanced to better support your technology transition?</label>
             <textarea name="q13" rows="4" cols="50"></textarea>
+
         </div>
 
         <div class="question">
             <label for="q14">14) Did you encounter any technical problems or performance issues while using the application? If yes, please provide details to help us identify and resolve the issues.</label>
             <textarea name="q14" rows="4" cols="50"></textarea>
+
         </div>
 
         <div class="question">
@@ -246,6 +262,7 @@
             // If all questions are answered, submit the form
             document.getElementById('feedbackForm').submit();
             alert("Feedback submitted successfully.");
+
         }
     </script>
 </body>
