@@ -10,8 +10,8 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  <title>Quiz</title>
+    
+  <title>SwitchTech-Instructions</title>
   <link href="{% static 'css/login.css' %}" rel="stylesheet">
   <script>
     //this function use the dropdown of domain
@@ -30,26 +30,6 @@
       }
     }
 
-    //this function defines the mylearning tab
-    function mylearning() {
-      window.location.href = '/mylearning/';
-    }
-
-    function skipQuiz() {
-      const selectedTechnology = document.getElementById("selectedCategory").value;
-      const currentHost = window.location.host;
-      const url = `http://${currentHost}/skipquiz/?category=${selectedTechnology}`;
-      window.location.replace(url);
-    }
-
-    //This function is used to start the quiz.
-    function startQuiz() {
-      const selectedTechnology = document.getElementById("selectedCategory").value;
-      const currentHost = window.location.host;
-      const url = `http://${currentHost}/quiz/?category=${selectedTechnology}`;
-      window.location.replace(url);
-    }
-
     document.addEventListener("DOMContentLoaded", function () {
       var selectedLink = sessionStorage.getItem('selectedLink');
       if (selectedLink) {
@@ -65,93 +45,59 @@
 
 <body>
 
-  {% include 'navbar.html' %}
+  <!-- {% include 'navbar.html' %} -->
   <div class="container">
-    <div class="row mb-4">
+    <div class="row mb-1">
       <div class="col-md-8">
-
-
-        <h1 class="header_title pt-3">SWITCHING TECH <span class="header_title1">SYSTEMS</span></h1>
-
+        <h1 class="header_title pt-3">SwitchTech <span class="header_title1">SYSTEM</span></h1>
       </div>
       <div class="col-md-4">
         <img class="logo-main" src="{% static 'images/ratnaglobal_logo.png' %}" />
       </div>
     </div>
 
-    <div class="row">
+    <div class="row mt-1 mb-1">
       <div class="col-md-6">
         <form action="" onsubmit="startQuiz(); return false;">
-
           <div>
-
             <div class="form-group">
-
               <!-- //here select a domain -->
-
               <p>
-              <h5>Selected Domain</h5><br>
+              <h5>Selected Domain</h5>
               </p>
-
               <input type="text" class="form-control" id="selectedCategory" onchange="enableButtons()" readonly>
-
             </div>
-
             <!-- //These are the user Instructions -->
-
             <h1>Instructions</h1>
-
             <p>Welcome to the quiz! Before we get started, please read and agree to the following terms and
-
               conditions:
-
             </p>
-
             <ol>
-
-              <li>The quiz contains 10 questions.</li>
-
-              <li>Each question is worth 10 marks.</li>
-
+              <li>The quiz contains 10 questions, Each question is worth 10 marks.</li>
               <li>Each question will have a single correct answer.</li>
-
+              <li>Timer will be running in the background for 5 minutes, if you not submit the quiz before the timer it will auto submits the quiz</li>
+              <li>Failure to attempt the question and clicking on the "next" button will result in zero marks being awarded for that question.</li>
+              <li>During the quiz, should not refreshing the page. If you do so, the quiz will restart from the beginning & your progress will be lost.</li>
               <li>Your final score will be displayed at the end of the quiz.</li>
-
             </ol>
-
             <div>
-
               <input type="checkbox" id="agreeCheckbox" onchange="enableButtons()">
-
               <label for="agreeCheckbox">I agree to the terms and conditions</label>
-
             </div>
-
             <!-- //This button is used to redirect the page to quiz page. -->
-
             <div class="d-flex ">
-
               <div class="button-container">
-
                 <button id="continueButton" class="btn btn-success mt-3 mx-3" style="background-color: green;"
                   disabled>Submit</button>
-
               </div>
-
             </div>
-
           </div>
-
         </form>
         <!-- //This function is used to skip the quiz by the user.  -->
-
         <div class="button-container skip_button">
-
           <button id="skipButton" class="btn btn-danger mt-3 me-2" onclick="skipQuiz()" style="background-color:red;"
             disabled>Skip Quiz</button>
-
         </div>
-
       </div>
       <div class="col-md-6">
         <img class="img-thumbnail rounded logo" src="{% static 'images/Instruction.png' %}" width="85%" />
@@ -159,121 +105,54 @@
     </div>
   </div>
     <script>
-
       //This function is used to enable the buttons.
 
       function enableButtons() {
-
         const dropdown = document.getElementById("selectedCategory");
-
         const agreeCheckbox = document.getElementById("agreeCheckbox");
-
         const continueButton = document.getElementById("continueButton");
-
         const skipButton = document.getElementById("skipButton");
 
-
-
-
         if (dropdown.value && agreeCheckbox.checked) {
-
           continueButton.disabled = false;
-
           skipButton.disabled = false;
-
         } else {
-
           continueButton.disabled = true;
-
           skipButton.disabled = true;
-
         }
-
       }
-
-
-
 
       //This function is used to skip the quiz by the user.
-
       function skipQuiz() {
-
         const selectedTechnology = document.getElementById("selectedCategory").value;
-
         const currentHost = window.location.host;
-
-        const url = `http://${currentHost}/skipquiz/?category=${selectedTechnology}`;
-
+        const url = `http://${currentHost}/home/skipquiz/?category=${selectedTechnology}`;
         window.location.replace(url);
-
       }
-
-
-
 
       //This function is used to start the quiz.
-
       function startQuiz() {
-
         const selectedTechnology = document.getElementById("selectedCategory").value;
-
         const currentHost = window.location.host;
-
-        const url = `http://${currentHost}/quiz/?category=${selectedTechnology}`;
-
+        const url = `http://${currentHost}/home/quiz/?category=${selectedTechnology}`;
         window.location.replace(url);
-
       }
 
-
-
-
       document.addEventListener("DOMContentLoaded", function () {
-
         var selectedLink = sessionStorage.getItem('selectedLink');
-
         if (selectedLink) {
-
           console.log('Stored Link:', selectedLink);
-
-
-
-
           // Set the stored link in the selectedCategory field
-
           document.getElementById('selectedCategory').value = selectedLink;
-
         }
-
       });
-
-
-
 
       document.getElementById("selectedCategory").addEventListener("change", function () {
-
         const selectedCategory = this.value;
-
         sessionStorage.setItem('selectedLink', selectedCategory);
-
       });
 
-
-
-
     </script>
-
-
-
-
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-
-
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pzjwLpsohi4ryZ9eBDSO+dqHi2mhYwlMj7klWJigFRDI4biL6NW3QLaW00Wsd4e7"

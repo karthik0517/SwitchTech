@@ -1,19 +1,40 @@
-<!-- mylearning.html -->
 {% load static %}
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Learning</title>
+    <title>SwitchTech-MyLearning</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="{% static 'css/login.css' %}" rel="stylesheet">
     <link href="{% static 'css/mylearning.css' %}" rel="stylesheet">
+    <style>
+        .video-details p[id^="percentage"] {
+            display: none;
+        }
+
+        #overall-percentage {
+            text-align: center;
+        }
+
+        .no-videos-message {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+
+    </style>
 </head>
 <body>
     <div class="container">
         <header class="row mb-4">
             <div class="col-md-8">
-                <h1 class="header_title pt-3">SWITCHING TECH <span class="header_title1">SYSTEMS</span></h1>
+                <h1 class="header_title pt-3">SwitchTech <span class="header_title1">SYSTEM</span></h1>
             </div>
             <div class="col-md-4">
                 <img class="logo-main" src="{% static 'images/ratnaglobal_logo.png' %}" />
@@ -21,11 +42,11 @@
         </header>
 
         <div class="row">
-            <div class="col-md-7 pt-3">
-              <h1 class="quiz-history-title " style="float: left; margin-left: 100px;">My Learning </h1>
+            <div class="col-md-1 pt-3">
+                <button class="home-button" onclick="redirectToHome()" >Home</button>
             </div>
-            <div class="col-md-5 pt-3">
-                <button class="home-button" onclick="redirectToHome()" style="float: right;">Home</button>
+            <div class="col-md-4 pt-3">
+              <h1 class="quiz-history-title " style="float: left; margin-left: 100px;">My Learning </h1>
             </div>
           </div>
         {% if videos %}
@@ -47,10 +68,10 @@
             {% endfor %}
         </div>
         <p id="total-duration"></p>
-        <p id="total-duration"></p>
+        <p id="overall-percentage" class="center-text"></p>
         <p class="note">Please watch this video on our website only, so that you can resume watch anytime.</p>
     {% else %}
-        <p>No videos found.</p>
+        <p class="no-videos-message">No videos found.</p>
     {% endif %}
     </div>
 
@@ -61,6 +82,7 @@
     <script>
         var players = [];
         var totalDuration = 0;
+        var overallPercentage = 0;
 
         function onYouTubeIframeAPIReady() {
             {% for video in videos %}
@@ -93,9 +115,10 @@
 
                 setInterval(function() {
                     var currentTime = player.getCurrentTime();
-                    var percentage = (currentTime / totalDuration) * 100;
+                    var percentage = (currentTime / duration) * 100;
                     var percentageElement = document.getElementById('percentage{{ forloop.counter }}');
                     percentageElement.textContent = 'Percentage: ' + percentage.toFixed(2) + '%';
+                    calculateOverallPercentage();
                 }, 1000); // Update every second
             }
         {% endfor %}
@@ -111,6 +134,21 @@
         function updateTotalDuration() {
             var totalDurationElement = document.getElementById('total-duration');
             totalDurationElement.textContent = 'Total Duration: ' + formatTime(totalDuration);
+        }
+
+        function calculateOverallPercentage() {
+            var overallPercentageSum = 0;
+    
+            players.forEach(function(player) {
+                var currentTime = player.getCurrentTime();
+                var duration = player.getDuration();
+                var percentage = (currentTime / duration) * 100;
+                overallPercentageSum += percentage;
+            });
+    
+            overallPercentage = overallPercentageSum / players.length;
+            var overallPercentageElement = document.getElementById('overall-percentage');
+            overallPercentageElement.textContent = 'Overall Percentage: ' + overallPercentage.toFixed(2) + '%';
         }
 
         window.addEventListener('beforeunload', function(event) {
@@ -134,7 +172,7 @@
         function saveCurrentTime(youtubeId, currentTime, percentage) {
             console.log('Saving current time for video:', youtubeId);
             if (currentTime > 0) {
-                var url = '/save_time';
+                var url = '/home/save_time';
                 var data = {
                     'youtube_id': youtubeId,
                     'current_time': currentTime,
