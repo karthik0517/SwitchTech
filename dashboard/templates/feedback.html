@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 {% load static%}
 <html lang="en">
 
@@ -15,13 +16,13 @@
         crossorigin="anonymous"></script>
 
 
+
     <title>Feedback Page</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-
             margin: 0 auto;
             background-color: #f8f8f8;
         }
@@ -310,6 +311,7 @@
             const url = `http://${currentHost}/validate/dashboard`;
             window.location.replace(url);
         }
+
         function validateForm(event) {
             event.preventDefault(); // Prevent the form from submitting by default
 
@@ -346,5 +348,5 @@
         }
     </script>
 </body>
-
 </html>
+

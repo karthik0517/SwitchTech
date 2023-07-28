@@ -113,6 +113,7 @@ def url(score, category):
     except Exception as e:
         logging.error(f"{e}")
 
+
 # Create your views here.
 
 
@@ -130,6 +131,7 @@ def generate_otp():
         return OTP
     except Exception as e:
         logging.error(f"{e}")
+
 
 
 count = 0
@@ -321,16 +323,19 @@ def validate(request):
         logging.error(f"{e}")
 
 
+
 def resend_otp(request):
     '''
     This method will resend the OTP to the employee's email.
     '''
+
     try:
         send_otp_mail(request)
         logging.info('OTP resened to mail')
         return JsonResponse({'message': 'OTP Re-sent successfully!'})
     except Exception as e:
         logging.error(f"{e}")
+
 
 
 def dashboard(request):
@@ -376,6 +381,7 @@ def dashboard(request):
             return render(request, 'dashboard.html', context)
     except Exception as e:
         logging.error(f"{e}")
+
 
 
 @login_required(login_url='login')
@@ -433,6 +439,7 @@ def history(request):
             return render(request, 'history.html', context=data)
     except Exception as e:
         logging.error(f"{e}")
+
 
 
 def my_learning(request):
@@ -553,3 +560,4 @@ def user_logout(request):
         return redirect('/')
     except Exception as e:
         logging.error(f"{e}")
+

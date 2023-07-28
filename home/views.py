@@ -12,6 +12,8 @@ from django.utils import timezone
 from django.http import HttpResponseBadRequest
 
 
+
+
 def index(request):
     '''
     Instructions page
@@ -118,10 +120,12 @@ def url(score, category):
                 logging.info(f'Youtube ID: {YouTube_id}')
                 break
 
+
         return suggesstion_url, course_name, ratings, \
             instructor, duration, difficulty, YouTube_id, Title
     except Exception as e:
         logging.error(f"{e}")
+
 
 
 @login_required(login_url='login')
@@ -339,3 +343,4 @@ def save_time(request):
             return HttpResponseBadRequest('Invalid request method')
     except Exception as e:
         logging.error(f"{e}")
+
