@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 Watching for file changes with StatReloader
 "GET / HTTP/1.1" 200 7655
 "GET /static/css/login.css HTTP/1.1" 200 1254
@@ -370,3 +372,4 @@ Quiz question loaded successfully
 "POST /admin/auth/user/ HTTP/1.1" 302 0
 "GET /admin/auth/user/ HTTP/1.1" 200 11514
 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+>>>>>>> origin/dev
