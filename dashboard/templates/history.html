@@ -1,0 +1,100 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>SwitchTech-History</title>
+
+  <link href="{% static 'css/login.css' %}" rel="stylesheet">
+  <link href="{% static 'css/history.css' %}" rel="stylesheet">
+  <style>
+    .home-button {
+           margin-top: 21px;
+           background-color: #000000;
+           color: #ffffff;
+           padding: 10px 20px;
+           border-radius: 5px;
+           font-size: 16px;
+           text-decoration: none;
+           cursor: pointer;
+           border: none;
+           outline: none;
+           transition: background-color 0.3s ease;
+       }
+
+       .home-button:hover {
+           background-color: #555;
+       }
+
+       .home-button:active {
+           background-color: #777;
+       }
+ </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <header class="row">
+      <div class="col-md-8">
+        <h1 class="header_title pt-3">SwitchTech <span class="header_title1">SYSTEM</span></h1>
+      </div>
+      <div class="col-md-4">
+        <img class="logo-main" src="{% static 'images/ratnaglobal_logo.png' %}" />
+      </div>
+    </header>
+    <div class="row">
+      <div class="col-md-2">
+        <button class="home-button" onclick="redirectToHome()">Home</button>
+      </div>
+      <div class="col-md-5 pt-3">
+        <h1 class="quiz-history-title " style="float: left; margin-left: 150px;">Quiz History</h1>
+      </div>
+      <!-- <div class="col-md-5 pt-3">
+        <button onclick="goBack()" class="btn btn-primary" style="float: right; margin-right: 150px;">Go Back</button>
+      </div> -->
+    </div>
+  </div>
+  <div class="container-fluid mt-2">
+    <div class="col-md-8 mx-auto quiz-history-container">
+      {% if no_data %}
+      <div class="quiz-history-card">
+        <h5 class="card-title">No previous quiz data</h5>
+      </div>
+      {% else %}
+      {% for attempt in attempts_data %}
+      <div class="quiz-history-card">
+        <h5 class="card-title">Quiz Results</h5>
+        <hr>
+        <p class="quiz-history-card-text"><strong>Score:</strong> {{ attempt.user_score }}</p>
+        <p class="quiz-history-card-text"><strong>Attempt Date:</strong> {{ attempt.user_time }}</p>
+        <p class="quiz-history-card-text"><strong>Selected Domain:</strong> {{ attempt.previous_domain }}</p>
+        <p class="quiz-history-card-text"><strong>Go to course here:</strong> <a
+            href="{{ attempt.suggestion_url }}">{{attempt.suggestion_url }}</a></p>
+        <p class="quiz-history-card-text"><strong>Youtube course:</strong> {{ attempt.title }}</p>
+
+      </div>
+      {% endfor %}
+
+      {% endif %}
+    </div>
+  </div>
+  <script>
+    function redirectToHome() {
+      const currentHost = window.location.host;
+      const url = `http://${currentHost}/validate/dashboard`;
+      window.location.replace(url);
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+.logout-button,
+
+.home-button {
+
+    width: 79px;
+
+
+
+
+    /* Adjust the width as needed */
+
+    height: 41px;
+
+    /* Adjust the height as needed */
+
+    background-color: #333;
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+
+
+.enroll-button {
+
+    width: 169px;
+
+    /* Adjust the width as needed */
+
+    height: 50px;
+
+    /* Adjust the height as needed */
+
+    background-color: #333;
+
+    color: #fff;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+
+
+.enroll-button:hover,
+
+.logout-button:hover,
+
+.home-button:hover {
+
+    background-color: #555;
+
+}
+
+
+
+
+.enroll-button:active,
+
+.logout-button:active,
+
+.home-button:active {
+
+    background-color: #777;
+
+}
+
+
+
+
+.enroll-button {
+
+    margin-top: 36px;
+
+}
+
+.img-thumbnail {
+
+    width: 100%;
+
+    height: 310px;;
+
+
+
+
+}
+
+.logout-home-container {
+
+    padding-top: 12px;
+
+    overflow: auto;
+
+    float: right;
+
+}
+
+.header_title1{
+
+    color: rgb(17, 0, 255);
+
+}
+
+.logo-main{
+
+    float:right;
+
+}
+
+.modal-content {
+
+    background-color: #fefefe;
+
+    margin: 15% auto;
+
+    padding: 20px;
+
+    border: 1px solid #888;
+
+    width: 500px;
+
+    text-align: center;
+
+    border-radius: 5px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+
+.modal-close {
+
+    color: #aaa;
+
+    float: right;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+
+
+.modal-buttons button:first-child {
+
+    margin-right: 10px;
+
+    background-color: #333;
+
+    color: #fff;
+
+}
+
+
+
+
+.modal-buttons button:last-child {
+
+    background-color: #aaa;
+
+    color: #fff;
+
+}
+
+
+
+
+.modal-buttons button:hover {
+
+    background-color: #555;
+
+}
+
+
+
+
+.modal-buttons {
+
+    margin-top: 20px;
+
+}
+
+
+
+
+.modal-buttons button {
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+.course{
+
+    color: #3e3d3b;
+
+    font-weight: bold;
+
+}
+body{
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard syntax */
+    -webkit-touch-callout: none; /* Chrome */
+  }

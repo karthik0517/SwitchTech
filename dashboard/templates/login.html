@@ -1,0 +1,173 @@
+{% extends 'dependencies.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwitchTech-Login</title>
+
+    <!-- for this html page css file linked -->
+    <link href="{% static 'css/login.css' %}" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="row mb-4">
+            <div class="col-md-8">
+                <h1 class="header_title pt-3">SwitchTech <span class="header_title1">SYSTEM</span></h1>
+            </div>
+            <div class="col-md-4">
+                <img class="logo-main" src="{% static 'images/ratnaglobal_logo.png' %}" />
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="email_main_form">
+
+                    <h4>!!! Do you want to learn new technology or do you want to switch to a new domain? </h4>
+
+                    <p class="header_desc ">If your answer is yes then you are at right place
+                        Are you ready to put your knowledge to the test? Sign in now and embark on a thrilling quiz
+                        journey.
+                        Challenge yourself, learn something new, and have a blast along the way.
+                        Welcome to the Quiz Page, where learning meets excitement!
+                    </p>
+
+
+                    <form method="POST" action="">
+
+                        {% csrf_token %}
+
+                        <!-- //here enter valid user name -->
+
+                        <div class="form-group">
+
+                            <label for="username">Username:</label>
+
+                            <input type="text" name="username" id="usernameInput" placeholder="Username"
+                                onkeydown="handleEnterKey(event)" oninput="validateUsername()" required>
+
+                            <span id="usernameError" style="color: red;"></span><br>
+
+                        </div>
+
+                        <!-- // here enter valid mail password -->
+
+                        <div class="form-group">
+
+                            <label for="mail">Email:</label>
+
+                            <input type="text" name="mail" required id="mail" pattern="[a-zA-Z].*@ratnaglobaltech\.com"
+                                placeholder="Enter your RGT Email only" onkeydown="handleEnterKey(event)"
+                                oninput="validateEmail()"><br>
+
+                        </div>
+
+                        {% if error_message %}
+
+
+                        <!-- //its a dispaly error messages -->
+
+                        <div class="error-message">
+
+                            {{ error_message }}
+
+                        </div>
+
+                        {% endif %}
+
+                        <!-- It serves as a container for the "Send OTP" button. -->
+
+                        <div class="validate_otp_button">
+                            <input class="btn btn-success" style="background: green;" id="sendOTPButton" type="submit"
+                                value="Send OTP" onclick="passValues()">
+
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-thumbnail rounded logo" src="{% static 'images/loginimg.png' %}" width="100%" />
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        //Its purpose is to retrieve the value of an email input field from an HTML form and store it in the browser's localStorage.
+
+        function passValues() {
+
+            const email = document.getElementById("mail").value; //method to retrieve the value of the input field with the id "mail".
+
+            localStorage.setItem('email', email); // method to store the email value in the browser's localStorage.
+
+        }
+
+        function validateUsername() {  // Its purpose is to validate a username input field and enable or disable a
+            var usernameInput = document.getElementById('usernameInput');
+            var usernameError = document.getElementById('usernameError');
+            var sendOTPButton = document.getElementById('sendOTPButton');    //based on the validity of the username
+            var username = usernameInput.value;
+<!--            var regex = /^[a-zA-Z0-9]+$/; // validate the format of the username input.-->
+            var regex = /^(?:[a-zA-Z0-9]+[ !@#$%^&*()_+,.?'":;|-]*)?[a-zA-Z0-9]+[@.]?$/; //updated
+            if (username === '') {
+                // Empty username
+                usernameError.textContent = '';
+                sendOTPButton.disabled = true; // Disable the button
+            } else if (regex.test(username) && !(/^\d+$/.test(username))) {
+                // Valid username
+                usernameError.textContent = '';
+                sendOTPButton.disabled = false; // Enable the button
+            } else {
+                // Invalid username
+                usernameError.textContent = 'Invalid username.';
+                sendOTPButton.disabled = true; // Disable the button
+            }
+        }
+
+        function handleEnterKey(event) { //Its purpose is to handle the behavior when the Enter key is pressed on an input field within a form.
+            if (event.keyCode === 13) {
+                event.preventDefault(); // Prevent form submission
+                // Get the index of the current input field
+                var currentIndex = Array.from(document.querySelectorAll('input')).indexOf(event.target);
+                // Find the next input field
+                var inputs = document.querySelectorAll('input');
+                var nextInput = inputs[currentIndex + 1];
+                if (nextInput) {
+                    nextInput.focus(); // Move focus to the next input field
+                }
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+{% endblock %}

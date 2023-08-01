@@ -38,7 +38,7 @@ class Video(admin.ModelAdmin):
 
 @admin.register(Otp)
 class Otp(admin.ModelAdmin):
-    list_display = ['user', 'mail', 'otp', 'count']
+    list_display = ['user', 'mail', 'otp', 'count', 'assigned_to']
 
 
 @admin.register(QuizAttempt)

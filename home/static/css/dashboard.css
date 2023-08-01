@@ -1,0 +1,251 @@
+@import url(//fonts.googleapis.com/css?family=Ubuntu);
+
+/* for Dashboard page */
+.search_bar_icon {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  float: right;
+  height: 157px;
+  top: 96px;
+  right: 0;
+}
+
+.Progress_bar {
+  position: absolute;
+  /* float: right; */
+  height: 157px;
+  top: 276px;
+  right: 259px;
+}
+
+.header_searchbar {
+  width: 120px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 3px 3px 30px;
+}
+
+.search_icon {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+.login_btn {
+  padding: 2px 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  border-color: #fff;
+  margin-top: 6px;
+}
+
+.main_navbar_links ul li {
+  margin-left: 15px;
+}
+
+.signup_btn {
+  background-color: #068932;
+  color: #fff;
+  border-radius: 4px;
+  border-color: #068932;
+  margin-top: 6px;
+  padding: 2px 10px;
+}
+
+.dashboard_title_block {
+  /* width: 100%; */
+  /* float: left; */
+  margin: 0 auto;
+  padding: 20px;
+  /* min-width: 1024px;
+  max-width: 1240px; */
+  /* border-bottom: 1px solid #000; */
+}
+
+.prepare_text {
+  width: 100%;
+  /* float: left; */
+}
+
+.dashboards_text,
+.certification_block {
+  width: 100%;
+  /* float: left; */
+  padding-left: 93px;
+}
+
+.your_preparation_block {
+  width: 100%;
+  /* float: left; */
+  margin: 0 auto;
+  padding: 20px;
+  min-width: 1240px;
+}
+
+.your_preparation_block,
+.preparation_title h2 {
+  width: 100%;
+  /* float: left; */
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.ui_card {
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.ui_card span {
+  color: #738f93;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.ui_card h2 {
+  font-weight: bold;
+  font-size: 26px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.viewall_btn {
+  background-color: #068932;
+  color: #fff;
+  border-radius: 4px;
+  border-color: #068932;
+  margin-top: 10px;
+  width: 150px;
+}
+
+.explore_btn {
+  background-color: #bdc3c7;
+  color: #000;
+  border-color: #bdc3c7;
+}
+
+.black_card h3 {
+  font-size: 20px;
+}
+
+.black_card p {
+  font-size: 14px;
+}
+
+.black_card .btn {
+  margin: 0;
+}
+
+.column {
+  width: 76.34%;
+  margin-left: 12px;
+}
+
+.bg_white {
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bg_white .nav-link {
+  color: #000 !important;
+}
+
+.header_logo {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.logo_title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #000;
+  line-height: 65px;
+}
+
+.username-wrapper {
+display: flex;
+align-items: center;
+margin-right: 10px;
+}
+
+.greet {
+font-weight: 600;
+font-size: 20px;
+color: #000;
+margin-right: 5px;
+}
+
+.username {
+font-weight: 600;
+font-size: 20px;
+color: #000;
+text-transform: capitalize;
+text-decoration: none;
+position: relative;
+}
+
+.logout_btn {
+  padding: 6px 16px;
+  background-color: #3cc2e7;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logout_btn:hover {
+  background-color: #05f635;
+}
+.align{
+  margin-left: 90px;
+}
+.chart-container {
+  height: 300px;
+  left: 60%;
+}
+
+.chart-sum {
+  position: absolute;
+  top: 54%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000; /* Add this line to override the font-weight property */
+  white-space: nowrap;
+}
+
+.chart-title {
+text-align: center;
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.list-group{
+  height: 283px; 
+  overflow: hidden; 
+  overflow-y: scroll;
+}
+
+.img-thumbnail {
+
+  width: 90%;
+
+  height: 100px;
+  ;
+}
+
+.body{
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard syntax */
+  -webkit-touch-callout: none; /* Chrome */
+}
