@@ -27,7 +27,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 STATIC_ROOT = os.path.join(BASE_DIR,'static/')
-CSRF_TRUSTED_ORIGINS = ['http://192.168.1.22:81,http://192.168.22:82']
+CSRF_TRUSTED_ORIGINS = ['http://192.168.1.22:81','http://192.168.22:82']
 # Application definition
 
 INSTALLED_APPS = [
