@@ -28,9 +28,6 @@ ALLOWED_HOSTS = ['*']
 
 STATIC_ROOT = os.path.join(BASE_DIR,'static/')
 
-
-ALLOWED_HOSTS = ['127.0.0.1', '192.168.2.101']
-
 # Application definition
 
 INSTALLED_APPS = [
